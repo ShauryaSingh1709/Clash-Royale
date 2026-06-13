@@ -1,5 +1,3 @@
-
-
 import joblib
 import pickle
 from pathlib import Path
@@ -11,48 +9,24 @@ logger = get_logger(__name__)
 
 
 class ModelLoader:
-
-
     _instance: Optional["ModelLoader"] = None
     _models_loaded: bool = False
-
     def __new__(cls) -> "ModelLoader":
-
         if cls._instance is None:
             cls._instance = super().__new__(cls)
         return cls._instance
 
     def __init__(self) -> None:
-
         if not ModelLoader._models_loaded:
             self.models_path: Path = Config.MODELS_PATH
             self._load_all_models()
             ModelLoader._models_loaded = True
-
-
-
-
-
     def _load_pkl(self, filename: str, use_pickle: bool = False) -> Any:
-
-
-
-
-
-
-
-
-
-
-
-
-
         file_path: Path = self.models_path / filename
 
         if not file_path.exists():
             logger.error(f"Model file not found: {file_path}")
             raise FileNotFoundError(f"Model file not found: {file_path}")
-
         try:
             if use_pickle:
                 with open(file_path, "rb") as f:
@@ -70,29 +44,18 @@ class ModelLoader:
         logger.info("=" * 60)
         logger.info("LOADING ML MODELS INTO MEMORY")
         logger.info("=" * 60)
-
-
         self.win_rate_model = self._load_pkl(Config.WIN_RATE_MODEL)
         self.strength_model = self._load_pkl(Config.STRENGTH_MODEL)
         self.archetype_model = self._load_pkl(Config.ARCHETYPE_MODEL)
         self.similar_deck_model = self._load_pkl(Config.SIMILAR_DECK_MODEL)
-
-
         self.scaler = self._load_pkl(Config.SCALER_FILE)
         self.label_encoder = self._load_pkl(Config.LABEL_ENCODER_FILE)
         self.card_binarizer = self._load_pkl(Config.CARD_BINARIZER_FILE)
-
-
         self.card_lookup = self._load_pkl(Config.CARD_LOOKUP_FILE, use_pickle=True)
 
         logger.info("=" * 60)
         logger.info(f"ALL MODELS LOADED ({len(self.list_loaded_models())} total)")
         logger.info("=" * 60)
-
-
-
-
-
     def list_loaded_models(self) -> list[str]:
 
         return [
