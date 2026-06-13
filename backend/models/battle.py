@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from dataclasses import dataclass, field
 from typing import Optional
 from backend.models.deck import Deck
@@ -25,21 +5,6 @@ from backend.models.deck import Deck
 
 @dataclass
 class Battle:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     battle_id: Optional[int] = None
     player_1_deck: Optional[Deck] = None
     player_2_deck: Optional[Deck] = None
@@ -49,11 +14,6 @@ class Battle:
     player_2_trophies: int = 0
     duration_sec: int = 0
     game_mode: str = "Ladder"
-
-
-
-
-
     @property
     def winner(self) -> str:
 
@@ -102,11 +62,6 @@ class Battle:
     def duration_minutes(self) -> float:
 
         return round(self.duration_sec / 60, 2)
-
-
-
-
-
     def get_winner_deck(self) -> Optional[Deck]:
 
         if self.winner == "player_1":
@@ -152,11 +107,6 @@ class Battle:
             },
             "game_mode": self.game_mode,
         }
-
-
-
-
-
     def __str__(self) -> str:
         return (
             f"Battle "

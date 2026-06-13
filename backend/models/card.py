@@ -1,27 +1,7 @@
-
 from dataclasses import dataclass, field, asdict
 from typing import Optional
-
-
 @dataclass
 class Card:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     name: str
     elixir_cost: int
     rarity: str
@@ -33,11 +13,6 @@ class Card:
     usage_rate: float = 0.0
     arena_unlocked: int = 0
     card_id: Optional[int] = None
-
-
-
-
-
     @property
     def is_cheap(self) -> bool:
 
@@ -92,18 +67,7 @@ class Card:
     def is_building(self) -> bool:
 
         return self.card_type == "Building"
-
-
-
-
-
     def to_dict(self) -> dict:
-
-
-
-
-
-
         data = asdict(self)
 
         data.update({
@@ -117,15 +81,6 @@ class Card:
 
     @classmethod
     def from_dict(cls, data: dict) -> "Card":
-
-
-
-
-
-
-
-
-
         return cls(
             name=data.get("name", "Unknown"),
             elixir_cost=int(data.get("elixir_cost", 0)),
@@ -139,11 +94,6 @@ class Card:
             arena_unlocked=int(data.get("arena_unlocked", 0)),
             card_id=data.get("card_id"),
         )
-
-
-
-
-
     def __str__(self) -> str:
         return f"{self.name} (Elixir: {self.elixir_cost} | {self.rarity} | {self.card_type})"
 
