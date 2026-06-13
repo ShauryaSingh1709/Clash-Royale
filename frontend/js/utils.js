@@ -112,9 +112,9 @@ const CARD_SLUG_MAP = {
 
 
 const CDN_SOURCES = [
-    (slug) => `https:
-    (slug) => `https:
-    (slug) => `https:
+    (slug) => `https://cdn.royaleapi.com/static/img/cards-150/${slug}.png`,
+    (slug) => `https://api.clashroyale.com/v1/cards/${slug}/image`,
+    (slug) => `https://royaleapi.com/cards/${slug}.png`
 ];
 
 
@@ -134,11 +134,11 @@ const Utils = {
     
     getTypeIcon(type) {
         const icons = {
-            'Troop': '⚔️',
-            'Spell': '✨',
-            'Building': '🏰'
+            'Troop': 'T',
+            'Spell': 'S',
+            'Building': 'B'
         };
-        return icons[type] || '🃏';
+        return icons[type] || 'C';
     },
 
     
