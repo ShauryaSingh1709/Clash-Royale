@@ -1,7 +1,3 @@
-/* ==========================================================================
-   👑 ROYALEFORGE - Navbar + Premium Footer
-   ========================================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
     renderNavbar();
     renderFooter();
@@ -74,10 +70,10 @@ function renderFooter() {
                             Build smarter decks with AI-powered insights.
                         </p>
                         <div class="footer-socials">
-                            <a href="https://github.com" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
+                            <a href="https://github.com/ShauryaSingh1709" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
                                 ${Icons.github}
                             </a>
-                            <a href="mailto:contact@royaleforge.com" class="footer-social-btn" title="Email">
+                            <a href="mailto:shaurya17092006@gmail.com" class="footer-social-btn" title="Email">
                                 ${Icons.mail}
                             </a>
                         </div>
@@ -106,7 +102,7 @@ function renderFooter() {
                     <div class="footer-col">
                         <h4 class="footer-col-title">Community</h4>
                         <ul class="footer-links">
-                            <li><a href="https://github.com" target="_blank" rel="noopener">
+                            <li><a href="https://github.com/ShauryaSingh1709" target="_blank" rel="noopener">
                                 GitHub ${Icons.arrow_up_right}
                             </a></li>
                             <li><a href="/contributing">How to Contribute</a></li>
@@ -126,7 +122,7 @@ function renderFooter() {
                     <div class="footer-legal">
                         <a href="/privacy">Privacy</a>
                         <span class="footer-dot">·</span>
-                        <a href="/terms">Terms</a>
+                        <a href="/terms">Terms and Conditions</a>
                     </div>
                     <div class="footer-disclaimer">
                         Not affiliated with Supercell. Clash Royale is a trademark of Supercell.
@@ -154,7 +150,7 @@ function initNavbar() {
         });
     }
 
-    // Active link highlighting
+
     const currentPath = window.location.pathname.replace('/', '');
     document.querySelectorAll('.navbar-link').forEach(link => {
         const page = link.dataset.page;
@@ -163,7 +159,6 @@ function initNavbar() {
         }
     });
 
-    // Navbar scroll effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 30) {
