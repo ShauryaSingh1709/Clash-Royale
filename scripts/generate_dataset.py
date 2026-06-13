@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 import pandas as pd
 import numpy as np
 import random
@@ -19,16 +10,7 @@ random.seed(42)
 OUTPUT_DIR = Path("dataset/raw")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-
-
-
-
-
-
 CARDS_DATA = [
-
-
-
     ("Knight", 3, "Common", "Troop", 0, 202, 1766, "Beatdown"),
     ("Archers", 3, "Common", "Troop", 0, 112, 304, "Control"),
     ("Bomber", 2, "Common", "Troop", 2, 225, 304, "Control"),
@@ -52,10 +34,6 @@ CARDS_DATA = [
     ("Royal Hogs", 5, "Common", "Troop", 10, 74, 837, "Beatdown"),
     ("Skeleton Barrel", 3, "Common", "Troop", 12, 145, 532, "Cycle"),
     ("Wall Breakers", 2, "Common", "Troop", 12, 350, 330, "Cycle"),
-    
-
-
-
     ("Mini PEKKA", 4, "Rare", "Troop", 0, 755, 1390, "Control"),
     ("Musketeer", 4, "Rare", "Troop", 0, 217, 721, "Control"),
     ("Giant", 5, "Rare", "Troop", 0, 253, 4090, "Beatdown"),
@@ -71,10 +49,6 @@ CARDS_DATA = [
     ("Battle Healer", 4, "Rare", "Troop", 13, 148, 1717, "Beatdown"),
     ("Elixir Golem", 3, "Rare", "Troop", 6, 253, 1569, "Beatdown"),
     ("Berserker", 2, "Rare", "Troop", 13, 102, 896, "Cycle"),
-    
-
-
-
     ("Witch", 5, "Epic", "Troop", 5, 135, 839, "Beatdown"),
     ("Skeleton Army", 3, "Epic", "Troop", 2, 81, 81, "Control"),
     ("Baby Dragon", 4, "Epic", "Troop", 0, 161, 1152, "Beatdown"),
@@ -98,10 +72,6 @@ CARDS_DATA = [
     ("Suspicious Bush", 2, "Epic", "Troop", 14, 0, 81, "Cycle"),
     ("Bush Goblins", 0, "Epic", "Troop", 14, 256, 304, "Cycle"),
     ("Rune Giant", 4, "Epic", "Troop", 14, 120, 2662, "Beatdown"),
-    
-
-
-
     ("Electro Wizard", 4, "Legendary", "Troop", 11, 115, 714, "Control"),
     ("Royal Ghost", 3, "Legendary", "Troop", 7, 261, 1210, "Control"),
     ("Princess", 3, "Legendary", "Troop", 7, 168, 261, "Control"),
@@ -120,10 +90,6 @@ CARDS_DATA = [
     ("Mother Witch", 4, "Legendary", "Troop", 12, 133, 529, "Control"),
     ("Phoenix", 4, "Legendary", "Troop", 14, 217, 1052, "Control"),
     ("Elixir Golemite", 0, "Legendary", "Troop", 14, 128, 762, "Beatdown"),
-    
-
-
-
     ("Royal Champion", 7, "Champion", "Troop", 0, 0, 0, "Beatdown"),
     ("Archer Queen", 5, "Champion", "Troop", 0, 225, 1000, "Control"),
     ("Skeleton King", 4, "Champion", "Troop", 0, 204, 2298, "Beatdown"),
@@ -134,10 +100,6 @@ CARDS_DATA = [
     ("Golden Knight", 4, "Champion", "Troop", 0, 161, 1799, "Beatdown"),
     ("Boss Bandit", 6, "Champion", "Troop", 0, 245, 2624, "Beatdown"),
     ("Spirit Empress", 6, "Champion", "Troop", 0, 307, 1244, "Control"),
-    
-
-
-
     ("Fireball", 4, "Rare", "Spell", 0, 688, 0, "Control"),
     ("Arrows", 3, "Common", "Spell", 0, 366, 0, "Control"),
     ("Zap", 2, "Common", "Spell", 5, 192, 0, "Control"),
@@ -159,10 +121,6 @@ CARDS_DATA = [
     ("Goblin Curse", 2, "Epic", "Spell", 14, 210, 0, "Control"),
     ("Vines", 3, "Epic", "Spell", 14, 306, 0, "Control"),
     ("Void", 3, "Epic", "Spell", 14, 1020, 0, "Control"),
-    
-
-
-
     ("Bomb Tower", 4, "Rare", "Building", 2, 222, 1356, "Control"),
     ("Cannon", 3, "Common", "Building", 3, 212, 824, "Control"),
     ("Tesla", 4, "Common", "Building", 4, 220, 1152, "Control"),
@@ -170,43 +128,25 @@ CARDS_DATA = [
     ("Mortar", 4, "Common", "Building", 1, 266, 1369, "Siege"),
     ("X-Bow", 6, "Epic", "Building", 1, 43, 1600, "Siege"),
     ("Goblin Cage", 4, "Rare", "Building", 10, 0, 780, "Control"),
-    
-
-
-
     ("Goblin Hut", 5, "Rare", "Building", 1, 32, 1180, "Control"),
     ("Furnace", 4, "Rare", "Building", 8, 179, 727, "Control"),
     ("Tombstone", 3, "Rare", "Building", 5, 0, 529, "Control"),
     ("Elixir Collector", 6, "Rare", "Building", 5, 0, 1070, "Beatdown"),
     ("Barbarian Hut", 6, "Rare", "Building", 14, 0, 1164, "Beatdown"),
     ("Goblin Drill", 4, "Epic", "Building", 14, 84, 1313, "Siege"),
-    
-
-
-
     ("Cannoneer", 0, "Tower", "Tower Troop", 0, 320, 2616, "Tower"),
     ("Dagger Duchess", 0, "Tower", "Tower Troop", 0, 214, 2768, "Tower"),
     ("Royal Chef", 0, "Tower", "Tower Troop", 0, 109, 2703, "Tower"),
     ("Tower Princess", 0, "Tower", "Tower Troop", 0, 109, 3052, "Tower"),
 ]
-
-
-
-
-
-
 def generate_cards_csv():
-
     print(f"Generating cards.csv with OFFICIAL data...")
-    
     cards = []
     for idx, (name, elixir, rarity, ctype, arena, dmg, hp, archetype) in enumerate(CARDS_DATA, 1):
-
         if ctype == "Tower Troop":
             win_rate = round(np.random.uniform(48, 55), 2)
             usage_rate = round(np.random.uniform(15, 30), 2)
         else:
-
             card_appearances = sum(1 for d in REAL_META_DECKS if name in d["cards"])
             
             if card_appearances >= 10:
@@ -223,7 +163,6 @@ def generate_cards_csv():
                 usage_rate = round(np.random.uniform(1, 5), 2)
         
         popularity = round((win_rate * 0.4 + usage_rate * 0.6), 2)
-
         cards.append({
             "card_id": idx,
             "name": name,
@@ -408,12 +347,6 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
     df.to_csv(OUTPUT_DIR / "meta_stats.csv", index=False)
     print(f"meta_stats.csv meta records saved\n")
     return df
-
-
-
-
-
-
 def main():
     print("=" * 60)
     print("ROYALEFORGE - OFFICIAL CR DATA GENERATOR")

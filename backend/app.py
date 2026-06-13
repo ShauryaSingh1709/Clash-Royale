@@ -1,27 +1,12 @@
-
-
-
-
-
-
-
-
-
-
-
 from pathlib import Path
 from flask import Flask, jsonify, send_from_directory, render_template
 from flask_cors import CORS
 from backend.config.settings import Config
 from backend.utils.logger import get_logger
-
-
 from backend.routes.card_routes import card_bp
 from backend.routes.deck_routes import deck_bp
 from backend.routes.meta_routes import meta_bp
 from backend.routes.recommendation_routes import recommend_bp
-
-
 from backend.ml.model_loader import ModelLoader
 
 logger = get_logger(__name__)
@@ -56,9 +41,6 @@ def create_app() -> Flask:
     app.register_blueprint(deck_bp, url_prefix=f"{api_prefix}/decks")
     app.register_blueprint(meta_bp, url_prefix=f"{api_prefix}/meta")
     app.register_blueprint(recommend_bp, url_prefix=f"{api_prefix}/recommend")
-
-
-
 
 
     @app.route("/")

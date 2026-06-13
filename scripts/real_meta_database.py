@@ -1,30 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 REAL_META_DECKS = [
-
-
-
     {
         "name": "2.6 Hog Cycle",
         "archetype": "Cycle",
@@ -85,10 +59,6 @@ REAL_META_DECKS = [
         "usage_rate": 6.7,
         "source": "OJ's favorite"
     },
-    
-
-
-
     {
         "name": "LavaLoon",
         "archetype": "Beatdown",
@@ -189,10 +159,6 @@ REAL_META_DECKS = [
         "usage_rate": 4.8,
         "source": "Heavy push deck"
     },
-    
-
-
-
     {
         "name": "Skeleton King Bridge",
         "archetype": "Beatdown",
@@ -363,10 +329,6 @@ REAL_META_DECKS = [
         "usage_rate": 1.6,
         "source": "Barrel bait"
     },
-    
-
-
-
     {
         "name": "Elite Barb Rage",
         "archetype": "Beatdown",
@@ -437,10 +399,6 @@ REAL_META_DECKS = [
         "usage_rate": 1.6,
         "source": "Cart push"
     },
-    
-
-
-
     {
         "name": "Monk Bridge",
         "archetype": "Beatdown",
@@ -511,10 +469,6 @@ REAL_META_DECKS = [
         "usage_rate": 4.2,
         "source": "AQ Giant push"
     },
-    
-
-
-
     {
         "name": "World Finals Hog",
         "archetype": "Cycle",
@@ -565,10 +519,6 @@ REAL_META_DECKS = [
         "usage_rate": 4.7,
         "source": "MorTen pro"
     },
-    
-
-
-
     {
         "name": "Fisherman Control",
         "archetype": "Control",
@@ -609,10 +559,6 @@ REAL_META_DECKS = [
         "usage_rate": 2.3,
         "source": "MA value"
     },
-    
-
-
-
     {
         "name": "Hog Cycle Variant",
         "archetype": "Cycle",
@@ -863,10 +809,6 @@ REAL_META_DECKS = [
         "usage_rate": 1.7,
         "source": "Heal Hog"
     },
-    
-
-
-
     {
         "name": "Hog Skeleton Army",
         "archetype": "Cycle",
