@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🃏 Cards - CR Analyzer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/cards.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <span class="navbar-logo-icon">🏆</span>
+                <span>CR Analyzer</span>
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="/" class="navbar-link">Home</a></li>
+                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
+                <li><a href="/cards" class="navbar-link">Cards</a></li>
+                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
+                <li><a href="/about" class="navbar-link">About</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container">
+                <h1 class="section-title">
+                    CARD <span class="gradient-text">EXPLORER</span>
+                </h1>
+                <p class="section-subtitle">
+                    Browse all cards with detailed statistics
+                </p>
+
+                <div class="cards-controls glass-card">
+                    <input type="text" class="input" id="searchInput" placeholder="🔍 Search cards...">
+                    <select class="input" id="rarityFilter">
+                        <option value="">All Rarities</option>
+                        <option value="Common">Common</option>
+                        <option value="Rare">Rare</option>
+                        <option value="Epic">Epic</option>
+                        <option value="Legendary">Legendary</option>
+                        <option value="Champion">Champion</option>
+                    </select>
+                    <select class="input" id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="Troop">⚔️ Troop</option>
+                        <option value="Spell">✨ Spell</option>
+                        <option value="Building">🏰 Building</option>
+                    </select>
+                    <select class="input" id="sortFilter">
+                        <option value="name">Sort: Name</option>
+                        <option value="elixir_cost">Sort: Elixir</option>
+                        <option value="win_rate">Sort: Win Rate</option>
+                        <option value="usage_rate">Sort: Usage</option>
+                    </select>
+                </div>
+
+                <div class="cards-grid" id="cardsGrid">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card Detail Modal -->
+        <div class="modal" id="cardModal">
+            <div class="modal-overlay" onclick="closeModal()"></div>
+            <div class="modal-content glass-card" id="modalContent"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Made with ❤️ | Powered by ML</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/cards.js"></script>
+</body>
+</html>

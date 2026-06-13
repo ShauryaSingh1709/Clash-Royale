@@ -1,0 +1,345 @@
+/* ==========================================================================
+   🏆 CLASH ROYALE DECK ANALYZER - Reusable Components
+   ========================================================================== */
+
+/* ── NAVBAR ─────────────────────────────────────────────────────────────── */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    background: rgba(10, 14, 39, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    z-index: 1000;
+    transition: all var(--transition-base);
+}
+
+.navbar-container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    cursor: pointer;
+}
+
+.navbar-logo-icon {
+    font-size: 2rem;
+    -webkit-text-fill-color: initial;
+    animation: float 3s ease-in-out infinite;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+
+.navbar-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all var(--transition-fast);
+    padding: 0.5rem 0;
+}
+
+.navbar-link:hover, .navbar-link.active {
+    color: var(--color-primary);
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: width var(--transition-base);
+}
+
+.navbar-link:hover::after, .navbar-link.active::after {
+    width: 100%;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* ── BUTTONS ────────────────────────────────────────────────────────────── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.875rem 2rem;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color-strong);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-glass);
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-ghost {
+    background: var(--bg-glass);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-ghost:hover {
+    background: var(--bg-glass-hover);
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background: var(--color-danger);
+    color: white;
+}
+
+.btn-lg {
+    padding: 1.125rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+}
+
+/* ── GLASS CARD ─────────────────────────────────────────────────────────── */
+.glass-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: all var(--transition-base);
+}
+
+.glass-card:hover {
+    background: var(--bg-glass-hover);
+    border-color: var(--border-color-strong);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ── BADGE ──────────────────────────────────────────────────────────────── */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.badge-common    { background: rgba(168, 218, 220, 0.2); color: #A8DADC; }
+.badge-rare      { background: rgba(255, 215, 0, 0.2); color: #FFD700; }
+.badge-epic      { background: rgba(155, 93, 229, 0.2); color: #9B5DE5; }
+.badge-legendary { background: rgba(255, 107, 53, 0.2); color: #FF6B35; }
+.badge-champion  { background: rgba(230, 57, 70, 0.2); color: #E63946; }
+.badge-success   { background: rgba(6, 214, 160, 0.2); color: #06D6A0; }
+.badge-info      { background: rgba(79, 195, 247, 0.2); color: #4FC3F7; }
+
+/* ── INPUT ──────────────────────────────────────────────────────────────── */
+.input {
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all var(--transition-fast);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: var(--bg-glass-hover);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ── LOADING SPINNER ────────────────────────────────────────────────────── */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--bg-glass);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 2rem auto;
+}
+
+.loading-text {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+/* ── PROGRESS BAR ───────────────────────────────────────────────────────── */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── FOOTER ─────────────────────────────────────────────────────────────── */
+.footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 0 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-text {
+    color: var(--text-tertiary);
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+/* ── SECTION TITLE ──────────────────────────────────────────────────────── */
+.section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+}
+
+/* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .navbar-menu {
+        position: fixed;
+        top: var(--navbar-height);
+        left: 0;
+        right: 0;
+        background: var(--bg-secondary);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1.5rem;
+        transform: translateX(100%);
+        transition: transform var(--transition-base);
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    section { padding: 4rem 0; }
+    .container { padding: 0 1rem; }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📄 About - CR Analyzer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <span class="navbar-logo-icon">🏆</span>
+                <span>CR Analyzer</span>
+            </a>
+            <ul class="navbar-menu">
+                <li><a href="/" class="navbar-link">Home</a></li>
+                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
+                <li><a href="/cards" class="navbar-link">Cards</a></li>
+                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
+                <li><a href="/about" class="navbar-link">About</a></li>
+            </ul>
+            <button class="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container" style="max-width: 900px;">
+                <h1 class="section-title">
+                    ABOUT <span class="gradient-text">CR ANALYZER</span>
+                </h1>
+
+                <div class="glass-card animate-fadeIn">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🎯 Mission</h3>
+                    <p>Clash Royale Deck Analyzer is an open-source platform that helps players master the game through 
+                    data-driven insights and AI-powered analysis. Our goal is to make competitive analytics 
+                    accessible to every player.</p>
+                </div>
+
+                <div class="glass-card mt-3 animate-fadeIn">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🛠️ Tech Stack</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                        <div>
+                            <h4 style="color: var(--color-accent);">Frontend</h4>
+                            <p>HTML5, CSS3, JavaScript, Chart.js</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--color-accent);">Backend</h4>
+                            <p>Python, Flask, REST API, OOP</p>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--color-accent);">ML & Data</h4>
+                            <p>Scikit-Learn, Pandas, NumPy, KNN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card mt-3 animate-fadeIn">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🤖 ML Models</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
+                            🎯 <strong>Win Rate Predictor</strong> - Random Forest Regressor
+                        </li>
+                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
+                            💪 <strong>Deck Strength Scorer</strong> - Gradient Boosting
+                        </li>
+                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
+                            🏷️ <strong>Archetype Classifier</strong> - Random Forest Classifier
+                        </li>
+                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
+                            🔍 <strong>Similar Deck Finder</strong> - KNN + Cosine Similarity
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card mt-3 animate-fadeIn text-center">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">⭐ Open Source</h3>
+                    <p>This project is open-source and welcomes contributions from the community.</p>
+                    <a href="https://github.com" class="btn btn-primary mt-3" target="_blank">
+                        🔗 View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Made with ❤️ | Powered by ML</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+</body>
+</html>
