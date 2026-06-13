@@ -69,14 +69,14 @@ function renderFooter() {
                             The most advanced Clash Royale analytics platform. 
                             Build smarter decks with AI-powered insights.
                         </p>
-                        <div class="footer-socials">
-                            <a href="https:
-                                ${Icons.github}
-                            </a>
-                            <a href="mailto:shaurya17092006@gmail.com" class="footer-social-btn" title="Email">
-                                ${Icons.mail}
-                            </a>
-                        </div>
+<div class="footer-socials">
+                             <a href="https://github.com/ShauryaSingh1709/Clash-Royale" class="footer-social-btn" title="GitHub">
+                                 ${Icons.github}
+                             </a>
+                             <a href="mailto:shaurya17092006@gmail.com" class="footer-social-btn" title="Email">
+                                 ${Icons.mail}
+                             </a>
+                         </div>
                     </div>
 
                     <div class="footer-col">
@@ -99,16 +99,16 @@ function renderFooter() {
                         </ul>
                     </div>
 
-                    <div class="footer-col">
-                        <h4 class="footer-col-title">Community</h4>
-                        <ul class="footer-links">
-                            <li><a href="https:
-                                GitHub ${Icons.arrow_up_right}
-                            </a></li>
-                            <li><a href="/contributing">How to Contribute</a></li>
-                            <li><a href="/bugs">Bug Reports</a></li>
-                        </ul>
-                    </div>
+<div class="footer-col">
+                         <h4 class="footer-col-title">Community</h4>
+                         <ul class="footer-links">
+                             <li><a href="https://github.com/ShauryaSingh1709/Clash-Royale" target="_blank">
+                                 GitHub ${Icons.arrow_up_right}
+                             </a></li>
+                             <li><a href="/contributing">How to Contribute</a></li>
+                             <li><a href="/bugs">Bug Reports</a></li>
+                         </ul>
+                     </div>
                 </div>
             </div>
         </div>
