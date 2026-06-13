@@ -1,8 +1,3 @@
-
-
-
-
-
 from backend.config.settings import Config
 from backend.utils.logger import get_logger
 from backend.utils.dataset_loader import DatasetLoader
@@ -13,7 +8,7 @@ def main():
 
     logger = get_logger("test_setup")
 
-print("\n" + "=" * 60)
+    print("\n" + "=" * 60)
     print("TESTING STEP 2: CONFIG + UTILITIES")
     print("=" * 60 + "\n")
 
@@ -58,7 +53,7 @@ print("\n" + "=" * 60)
     Config.display()
 
 
-    logger.info("Test 2: Logger working ✅")
+    logger.info("Test 2: Logger working ")
     logger.warning("This is a warning message")
     logger.error("This is an error message (just a test)")
 
@@ -69,10 +64,10 @@ print("\n" + "=" * 60)
     try:
         cards_df = loader.load_cards()
         decks_df = loader.load_decks()
-        print(f"\n✅ Cards loaded: {cards_df.shape}")
-        print(f"✅ Decks loaded: {decks_df.shape}")
+        print(f"\nCards loaded: {cards_df.shape}")
+        print(f"Decks loaded: {decks_df.shape}")
     except Exception as e:
-        logger.error(f"❌ Dataset loading failed: {e}")
+        logger.error(f"Dataset loading failed: {e}")
         return
 
 
@@ -84,15 +79,15 @@ print("\n" + "=" * 60)
     sample_deck = ["Hog Rider", "Musketeer", "Ice Spirit", "Skeletons",
                    "Fireball", "The Log", "Cannon", "Ice Golem"]
     is_valid, msg = cleaner.validate_deck(sample_deck)
-    print(f"\n✅ Valid deck test:    {is_valid} | {msg}")
+    print(f"\nValid deck test:    {is_valid} | {msg}")
 
 
     bad_deck = ["Hog Rider", "Musketeer", "Ice Spirit", "Skeletons", "Fireball"]
     is_valid, msg = cleaner.validate_deck(bad_deck)
-    print(f"❌ Invalid deck test:  {is_valid} | {msg}")
+    print(f"Invalid deck test:  {is_valid} | {msg}")
 
     print("\n" + "=" * 60)
-    print("🎉 ALL TESTS PASSED!")
+    print("ALL TESTS PASSED!")
     print("=" * 60 + "\n")
 
 
