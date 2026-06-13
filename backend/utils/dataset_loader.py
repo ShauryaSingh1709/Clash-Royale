@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import pandas as pd
 from pathlib import Path
 from typing import Optional
@@ -23,45 +8,13 @@ logger = get_logger(__name__)
 
 
 class DatasetLoader:
-
-
-
-
-
-
-
-
-
-
     def __init__(self, data_path: Optional[Path] = None) -> None:
-
-
-
-
-
-
         self.data_path: Path = data_path or Config.PROCESSED_DATA_PATH
         self._cache: dict[str, pd.DataFrame] = {}
         logger.info(f"DatasetLoader initialized with path: {self.data_path}")
 
 
-
-
-
     def _load_csv(self, filename: str) -> pd.DataFrame:
-
-
-
-
-
-
-
-
-
-
-
-
-
         if filename in self._cache:
             logger.debug(f"Returning cached: {filename}")
             return self._cache[filename]
@@ -81,11 +34,6 @@ class DatasetLoader:
         except Exception as e:
             logger.error(f"Failed to load {filename}: {e}")
             raise
-
-
-
-
-
     def load_cards(self) -> pd.DataFrame:
 
         return self._load_csv(Config.CARDS_FILE)
@@ -103,12 +51,6 @@ class DatasetLoader:
         return self._load_csv(Config.META_FILE)
 
     def load_all(self) -> dict[str, pd.DataFrame]:
-
-
-
-
-
-
         logger.info("Loading all datasets...")
         return {
             "cards":   self.load_cards(),
@@ -123,15 +65,6 @@ class DatasetLoader:
         logger.info("Cache cleared")
 
     def reload(self, filename: str) -> pd.DataFrame:
-
-
-
-
-
-
-
-
-
         if filename in self._cache:
             del self._cache[filename]
         return self._load_csv(filename)

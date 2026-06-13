@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import logging
 import sys
 from pathlib import Path
@@ -21,11 +6,6 @@ from backend.config.settings import Config
 
 
 class ColoredFormatter(logging.Formatter):
-
-
-
-
-
     COLORS = {
         "DEBUG":    "\033[36m",
         "INFO":     "\033[32m",
@@ -43,26 +23,10 @@ class ColoredFormatter(logging.Formatter):
 
 
 def get_logger(name: str) -> logging.Logger:
-
-
-
-
-
-
-
-
-
     logger = logging.getLogger(name)
-
-
     if logger.handlers:
         return logger
-
     logger.setLevel(Config.LOG_LEVEL)
-
-
-
-
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(Config.LOG_LEVEL)
     console_formatter = ColoredFormatter(
@@ -70,10 +34,6 @@ def get_logger(name: str) -> logging.Logger:
         datefmt=Config.LOG_DATE_FORMAT
     )
     console_handler.setFormatter(console_formatter)
-
-
-
-
     log_file: Path = Config.LOGS_PATH / "app.log"
     file_handler = RotatingFileHandler(
         filename=log_file,
@@ -87,12 +47,7 @@ def get_logger(name: str) -> logging.Logger:
         datefmt=Config.LOG_DATE_FORMAT
     )
     file_handler.setFormatter(file_formatter)
-
-
     logger.addHandler(console_handler)
     logger.addHandler(file_handler)
-
-
     logger.propagate = False
-
     return logger
