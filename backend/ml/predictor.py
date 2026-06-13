@@ -1,23 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import pandas as pd
 import numpy as np
 from typing import Optional
@@ -30,91 +10,32 @@ logger = get_logger(__name__)
 
 
 class MLPredictor:
-
-
-
-
-
-
-
-
-
-
-
     def __init__(self, model_loader: Optional[ModelLoader] = None) -> None:
-
-
-
-
-
-
         self.loader: ModelLoader = model_loader or ModelLoader()
         self.card_lookup: dict = self.loader.card_lookup
         logger.info("MLPredictor initialized")
-
-
-
-
-
     def _build_deck(self, card_names: list[str]) -> Deck:
-
         return Deck.from_card_names(card_names, self.card_lookup)
-
     def _prepare_features(self, deck: Deck) -> np.ndarray:
-
-
-
-
-
-
-
-
-
         features_dict = deck.to_ml_features()
         features_df = pd.DataFrame([features_dict])[Config.FEATURE_COLUMNS]
         return self.loader.scaler.transform(features_df)
-
-
-
-
-
     def predict_win_rate(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
         win_rate = float(self.loader.win_rate_model.predict(features)[0])
-
-
         if 45 <= win_rate <= 60:
             confidence = "High"
         elif 40 <= win_rate <= 65:
             confidence = "Medium"
         else:
             confidence = "Low"
-
         return {
             "predicted_win_rate": round(win_rate, 2),
             "confidence": confidence
         }
 
     def predict_strength(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
         score = float(self.loader.strength_model.predict(features)[0])
@@ -140,15 +61,6 @@ class MLPredictor:
         }
 
     def predict_archetype(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
 
@@ -174,17 +86,6 @@ class MLPredictor:
         }
 
     def find_similar_decks(self, card_names: list[str], top_n: int = 5) -> list[dict]:
-
-
-
-
-
-
-
-
-
-
-
         user_vector = self.loader.card_binarizer.transform([card_names])
 
 
@@ -220,27 +121,13 @@ class MLPredictor:
     def suggest_card_replacements(
         self, card_names: list[str], top_n: int = 3
     ) -> dict:
-
-
-
-
-
-
-
-
-
-
         deck = self._build_deck(card_names)
         weakest = deck.get_weakest_card()
 
         if not weakest:
             return {"weakest_card": None, "replacements": []}
-
-
         from backend.utils.dataset_loader import DatasetLoader
         cards_df = DatasetLoader().load_cards()
-
-
         candidates = cards_df[
             (cards_df["elixir_cost"].between(
                 weakest.elixir_cost - 1, weakest.elixir_cost + 1
@@ -273,21 +160,7 @@ class MLPredictor:
             },
             "replacements": replacements
         }
-
-
-
-
-
     def predict_all(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         logger.info(f"Running full prediction on deck: {card_names[:3]}...")
 
         deck = self._build_deck(card_names)

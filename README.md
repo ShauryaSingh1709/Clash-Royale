@@ -157,4 +157,4 @@ MIT License | Open-source and free to use
 
 ## Disclaimer
 
-Not affiliated with Supercell. Clash Royale is a registered trademark of Supercell Only.
+Not affiliated with Supercell. Clash Royale is a registered trademark of Supercell Oy.
