@@ -70,7 +70,7 @@ function renderFooter() {
                             Build smarter decks with AI-powered insights.
                         </p>
                         <div class="footer-socials">
-                            <a href="https://github.com/ShauryaSingh1709" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
+                            <a href="https://github.com/ShauryaSingh1709/Clash-Royale" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
                                 ${Icons.github}
                             </a>
                             <a href="mailto:shaurya17092006@gmail.com" class="footer-social-btn" title="Email">
@@ -102,7 +102,7 @@ function renderFooter() {
                     <div class="footer-col">
                         <h4 class="footer-col-title">Community</h4>
                         <ul class="footer-links">
-                            <li><a href="https://github.com/ShauryaSingh1709" target="_blank" rel="noopener">
+                            <li><a href="https://github.com/ShauryaSingh1709/Clash-Royale" target="_blank" rel="noopener">
                                 GitHub ${Icons.arrow_up_right}
                             </a></li>
                             <li><a href="/contributing">How to Contribute</a></li>
