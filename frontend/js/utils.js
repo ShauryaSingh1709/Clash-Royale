@@ -144,13 +144,13 @@ const Utils = {
     
     getArchetypeIcon(archetype) {
         const icons = {
-            'Beatdown': '💪',
-            'Control': '🎯',
-            'Cycle': '⚡',
-            'Siege': '🏹',
-            'Hog Cycle': '🐗'
+            'Beatdown': 'B',
+            'Control': 'C',
+            'Cycle': 'Y',
+            'Siege': 'S',
+            'Hog Cycle': 'H'
         };
-        return icons[archetype] || '🃏';
+        return icons[archetype] || 'U';
     },
 
     
@@ -299,7 +299,7 @@ const Utils = {
     showError(element, message) {
         element.innerHTML = `
             <div class="glass-card" style="text-align: center; padding: 3rem;">
-                <div style="font-size: 3rem;">⚠️</div>
+                <div style="font-size: 3rem;">!</div>
                 <h3 style="margin: 1rem 0; color: var(--color-danger);">Error</h3>
                 <p>${message}</p>
             </div>

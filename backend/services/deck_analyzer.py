@@ -89,53 +89,48 @@ class DeckAnalyzer:
 
 
         if deck.is_cheap_cycle:
-            strengths.append("⚡ Fast cycle potential (low elixir cost)")
+             strengths.append("Fast cycle potential (low elixir cost)")
         if deck.is_heavy_beatdown:
-            strengths.append("💪 Strong push potential (high damage)")
+             strengths.append("Strong push potential (high damage)")
         if deck.average_elixir > 4.5:
-            weaknesses.append("🐢 Slow cycle (high elixir average)")
+             weaknesses.append("Slow cycle (high elixir average)")
         if deck.average_elixir < 3.0:
-            weaknesses.append("💔 Limited damage output (very low elixir)")
-
+             weaknesses.append("Limited damage output (very low elixir)")
 
         if deck.num_spells >= 2:
-            strengths.append("🎯 Good spell coverage")
+             strengths.append("Good spell coverage")
         if deck.num_spells == 0:
-            weaknesses.append("❌ No spells - vulnerable to swarms")
+             weaknesses.append("No spells - vulnerable to swarms")
 
         if deck.num_buildings >= 1:
-            strengths.append("🛡️ Defensive structure available")
+             strengths.append("Defensive structure available")
         elif not deck.has_win_condition:
-            weaknesses.append("🏚️ No buildings & no win condition")
+             weaknesses.append("No buildings & no win condition")
 
         if deck.num_troops >= 5:
-            strengths.append("⚔️ Strong troop presence")
+             strengths.append("Strong troop presence")
         if deck.num_troops < 4:
-            weaknesses.append("⚠️ Few troops in deck")
-
+             weaknesses.append("Few troops in deck")
 
         if deck.has_win_condition:
-            strengths.append("🏆 Has clear win condition")
+             strengths.append("Has clear win condition")
         else:
-            weaknesses.append("❓ No clear win condition")
-
+             weaknesses.append("No clear win condition")
 
         if deck.average_card_win_rate >= 52:
-            strengths.append("📈 Cards with proven win rates")
+             strengths.append("Cards with proven win rates")
         if deck.average_card_win_rate < 48:
-            weaknesses.append("📉 Low average card win rates")
-
+             weaknesses.append("Low average card win rates")
 
         if deck.num_legendary >= 3:
-            strengths.append("👑 High-tier legendary cards")
+             strengths.append("High-tier legendary cards")
         if deck.num_legendary == 0:
-            weaknesses.append("📊 No legendary cards (limited power)")
-
+             weaknesses.append("No legendary cards (limited power)")
 
         if not strengths:
-            strengths.append("⚖️ Balanced deck composition")
+             strengths.append("Balanced deck composition")
         if not weaknesses:
-            weaknesses.append("✅ No major weaknesses detected")
+             weaknesses.append("No major weaknesses detected")
 
         return {
             "strengths": strengths,
@@ -159,15 +154,15 @@ class DeckAnalyzer:
 
         score = strength["strength_score"]
         if score >= 80:
-            rating_message = "🏆 Top-tier deck! Excellent choice."
+            rating_message = "Top-tier deck! Excellent choice."
         elif score >= 65:
-            rating_message = "💪 Strong deck with great potential."
+            rating_message = "Strong deck with great potential."
         elif score >= 50:
-            rating_message = "✅ Solid deck for ladder play."
+            rating_message = "Solid deck for ladder play."
         elif score >= 35:
-            rating_message = "⚠️ Below average - consider improvements."
+            rating_message = "Below average - consider improvements."
         else:
-            rating_message = "❌ Weak deck - significant changes needed."
+            rating_message = "Weak deck - significant changes needed."
 
         return {
             "win_rate": win_rate,
@@ -204,7 +199,7 @@ class DeckAnalyzer:
         score = self.score_deck(card_names)
         sw = self.get_strengths_weaknesses(card_names)
 
-        logger.info(f"✅ Deck analyzed | Score: {score['strength']['strength_score']}")
+        logger.info(f"Deck analyzed | Score: {score['strength']['strength_score']}")
 
         return {
             "success": True,

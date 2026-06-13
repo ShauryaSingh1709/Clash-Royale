@@ -197,7 +197,7 @@ CARDS_DATA = [
 
 def generate_cards_csv():
 
-    print("📦 Generating cards.csv with OFFICIAL data...")
+    print(f"Generating cards.csv with OFFICIAL data...")
     
     cards = []
     for idx, (name, elixir, rarity, ctype, arena, dmg, hp, archetype) in enumerate(CARDS_DATA, 1):
@@ -241,13 +241,13 @@ def generate_cards_csv():
 
     df = pd.DataFrame(cards)
     df.to_csv(OUTPUT_DIR / "cards.csv", index=False)
-    print(f"✅ {len(df)} cards saved (including tower troops)\n")
+    print(f"cards.csv dataset with {len(df)} cards saved (including tower troops)\n")
     return df
 
 
 def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
 
-    print(f"🃏 Generating decks from REAL meta templates...")
+    print(f"Generating decks from REAL meta templates...")
 
     card_dict = cards_df.set_index('name').to_dict('index')
     decks = []
@@ -308,13 +308,13 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
     
     df = pd.DataFrame(decks)
     df.to_csv(OUTPUT_DIR / "decks.csv", index=False)
-    print(f"✅ {len(df)} decks saved\n")
+    print(f"decks.csv deck saved\n")
     return df
 
 
 def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_battles: int = 5000):
 
-    print(f"⚔️ Generating {num_battles} battles...")
+    print(f"Generating {num_battles} battles...")
     
     battles = []
     for battle_id in range(1, num_battles + 1):
@@ -363,7 +363,7 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
     
     df = pd.DataFrame(battles)
     df.to_csv(OUTPUT_DIR / "battles.csv", index=False)
-    print(f"✅ {len(df)} battles saved\n")
+    print(f"battles.csv saved\n")
     return df
 
 
@@ -406,7 +406,7 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
     
     df = pd.DataFrame(meta_stats)
     df.to_csv(OUTPUT_DIR / "meta_stats.csv", index=False)
-    print(f"✅ {len(df)} meta records saved\n")
+    print(f"meta_stats.csv meta records saved\n")
     return df
 
 
@@ -416,42 +416,41 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
 
 def main():
     print("=" * 60)
-    print("🏆 ROYALEFORGE - OFFICIAL CR DATA GENERATOR")
+    print("ROYALEFORGE - OFFICIAL CR DATA GENERATOR")
     print("=" * 60 + "\n")
-    
-    print(f"📚 Loaded {len(REAL_META_DECKS)} REAL meta decks")
-    print(f"🃏 Total cards in database: {len(CARDS_DATA)}\n")
-    
+
+    print(f"Loaded {len(REAL_META_DECKS)} REAL meta decks")
+    print(f"Total cards in database: {len(CARDS_DATA)}\n")
+
     cards_df = generate_cards_csv()
     decks_df = generate_decks_csv(cards_df, target_count=500)
     battles_df = generate_battles_csv(cards_df, decks_df, num_battles=5000)
     meta_df = generate_meta_stats_csv(cards_df)
-    
+
     print("=" * 60)
-    print("🎉 DATASETS GENERATED!")
+    print("DATASETS GENERATED!")
     print("=" * 60)
-    
 
     troops = sum(1 for c in CARDS_DATA if c[3] == "Troop")
     spells = sum(1 for c in CARDS_DATA if c[3] == "Spell")
     buildings = sum(1 for c in CARDS_DATA if c[3] == "Building")
     towers = sum(1 for c in CARDS_DATA if c[3] == "Tower Troop")
-    
-    print(f"\n📊 Card Distribution:")
-    print(f"   • Troops:       {troops}")
-    print(f"   • Spells:       {spells}")
-    print(f"   • Buildings:    {buildings}")
-    print(f"   • Tower Troops: {towers}")
-    print(f"   • TOTAL:        {len(CARDS_DATA)}")
-    
-    print(f"\n📋 By Rarity:")
+
+    print(f"\nCard Distribution:")
+    print(f"   Troops:       {troops}")
+    print(f"   Spells:       {spells}")
+    print(f"   Buildings:    {buildings}")
+    print(f"   Tower Troops: {towers}")
+    print(f"   TOTAL:        {len(CARDS_DATA)}")
+
+    print(f"\nBy Rarity:")
     rarities = {}
     for c in CARDS_DATA:
         rarities[c[2]] = rarities.get(c[2], 0) + 1
     for r, count in sorted(rarities.items()):
-        print(f"   • {r}: {count}")
-    
-    print(f"\n🚀 Next Steps:")
+        print(f"   {r}: {count}")
+
+    print(f"\nNext Steps:")
     print(f"   1. Re-run notebook 02 (Data Cleaning)")
     print(f"   2. Re-run notebook 04 (ML Training)")
     print(f"   3. Re-run notebook 05 (Recommendations)")

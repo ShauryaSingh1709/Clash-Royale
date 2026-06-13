@@ -12,7 +12,7 @@ function renderNavbar() {
         <div class="navbar-container">
             <a href="/" class="navbar-logo">
                 <div class="navbar-logo-mark">
-                    <img src="https:
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png"
                          alt="RoyaleForge" />
                 </div>
                 <div class="navbar-logo-text">
@@ -58,7 +58,7 @@ function renderFooter() {
                     <div class="footer-brand-col">
                         <a href="/" class="footer-logo-link">
                             <div class="footer-logo">
-                                <img src="https:
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png"
                                      alt="RoyaleForge" />
                             </div>
                             <div class="footer-brand-text">

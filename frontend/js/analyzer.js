@@ -206,21 +206,21 @@ function renderResults(data, container) {
         <!-- Summary Cards -->
         <div class="results-summary animate-fadeIn">
             <div class="result-card">
-                <div class="result-card-icon">📈</div>
+                <div class="result-card-icon">W</div>
                 <div class="result-card-label">Win Rate</div>
                 <div class="result-card-value">${ml.win_rate.predicted_win_rate}%</div>
                 <div class="result-card-sub">${ml.win_rate.confidence} Confidence</div>
             </div>
 
             <div class="result-card">
-                <div class="result-card-icon">💪</div>
+                <div class="result-card-icon">S</div>
                 <div class="result-card-label">Strength Score</div>
                 <div class="result-card-value">${ml.strength.strength_score}</div>
                 <div class="result-card-sub">/ 100</div>
             </div>
 
             <div class="result-card">
-                <div class="result-card-icon">🏆</div>
+                <div class="result-card-icon">G</div>
                 <div class="result-card-label">Grade</div>
                 <div class="grade-display" style="color: ${gradeColor};">
                     ${ml.strength.grade}
@@ -239,7 +239,7 @@ function renderResults(data, container) {
 
         <!-- Rating Message -->
         <div class="analysis-block animate-fadeIn">
-            <h3>🎯 Overall Rating</h3>
+            <h3>Rating</h3>
             <p style="font-size: 1.2rem; color: var(--text-primary);">
                 ${analysis.scoring.rating_message}
             </p>
@@ -247,7 +247,7 @@ function renderResults(data, container) {
 
         <!-- Strengths -->
         <div class="analysis-block animate-fadeIn">
-            <h3>💪 Strengths</h3>
+            <h3>Strengths</h3>
             <ul class="list-items">
                 ${analysis.strengths.map(s => `<li>${s}</li>`).join('')}
             </ul>
@@ -255,7 +255,7 @@ function renderResults(data, container) {
 
         <!-- Weaknesses -->
         <div class="analysis-block animate-fadeIn">
-            <h3>⚠️ Weaknesses</h3>
+            <h3>Weaknesses</h3>
             <ul class="list-items weakness-list">
                 ${analysis.weaknesses.map(w => `<li>${w}</li>`).join('')}
             </ul>
@@ -264,9 +264,9 @@ function renderResults(data, container) {
         <!-- Improvements -->
         ${improvements.weakest_card ? `
         <div class="analysis-block animate-fadeIn">
-            <h3>💡 Suggested Improvements</h3>
+            <h3>Suggested Improvements</h3>
             <p style="margin-bottom: 1rem;">
-                ❌ Weakest card: <strong style="color: var(--color-danger);">
+                Weakest card: <strong style="color: var(--color-danger);">
                 ${improvements.weakest_card.name}</strong>
                 (${improvements.weakest_card.win_rate}%)
             </p>
@@ -280,8 +280,8 @@ function renderResults(data, container) {
                              style="width: 50px; height: 60px; object-fit: contain;">
                         <div>
                             <strong>${r.name}</strong>
-                            <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">
-                                ⚡ ${r.elixir_cost} | ${r.rarity} | Win Rate: ${r.win_rate}%
+<div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">
+                                 Elixir: ${r.elixir_cost} | ${r.rarity} | Win Rate: ${r.win_rate}%
                             </div>
                         </div>
                     </div>
@@ -294,7 +294,7 @@ function renderResults(data, container) {
         <!-- Similar Decks -->
         ${similar.length > 0 ? `
         <div class="analysis-block animate-fadeIn">
-            <h3>🔍 Similar Decks</h3>
+            <h3>Similar Decks</h3>
             ${similar.map((deck, i) => `
                 <div class="similar-deck">
                     <div class="similar-deck-header">

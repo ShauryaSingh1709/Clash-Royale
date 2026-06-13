@@ -1,25 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 
@@ -166,8 +145,7 @@ class Card:
 
 
     def __str__(self) -> str:
-
-        return f"🃏 {self.name} (⚡{self.elixir_cost} | {self.rarity} | {self.card_type})"
+        return f"{self.name} (Elixir: {self.elixir_cost} | {self.rarity} | {self.card_type})"
 
     def __repr__(self) -> str:
 

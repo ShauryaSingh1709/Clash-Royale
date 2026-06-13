@@ -97,7 +97,7 @@ function showCardDetail(card) {
     const rarityColor = Utils.getRarityColor(card.rarity);
 
     content.innerHTML = `
-        <button class="modal-close" onclick="closeModal()">✕</button>
+        <button class="modal-close" onclick="closeModal()">X</button>
         <div class="modal-header">
             <img src="${Utils.getCardImageUrl(card.name)}" 
                  alt="${card.name}" 
