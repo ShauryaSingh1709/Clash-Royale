@@ -1,10 +1,6 @@
-/* ==========================================================================
-   👑 ROYALEFORGE - Components
-   ========================================================================== */
 
-/* ════════════════════════════════════════════════════════════
-   GLASS NAVBAR (Floating)
-   ════════════════════════════════════════════════════════════ */
+
+
 .navbar {
     position: fixed;
     top: var(--space-4);
@@ -44,7 +40,7 @@
     gap: var(--space-6);
 }
 
-/* ── LOGO (Archer Queen) ── */
+
 .navbar-logo {
     display: flex;
     align-items: center;
@@ -109,7 +105,7 @@
     color: var(--cr-gold);
 }
 
-/* ── MENU ── */
+
 .navbar-menu {
     display: flex;
     align-items: center;
@@ -180,9 +176,7 @@
     height: 20px;
 }
 
-/* ════════════════════════════════════════════════════════════
-   BUTTONS
-   ════════════════════════════════════════════════════════════ */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -282,9 +276,7 @@
     transform: none !important;
 }
 
-/* ════════════════════════════════════════════════════════════
-   GLASS CARD
-   ════════════════════════════════════════════════════════════ */
+
 .glass-card {
     background: var(--bg-glass);
     backdrop-filter: blur(20px) saturate(150%);
@@ -316,9 +308,7 @@
     box-shadow: var(--shadow-xl), var(--shadow-inset);
 }
 
-/* ════════════════════════════════════════════════════════════
-   RARITY BADGES
-   ════════════════════════════════════════════════════════════ */
+
 .rarity-badge {
     display: inline-flex;
     align-items: center;
@@ -363,9 +353,7 @@
     border-color: rgba(251, 191, 36, 0.3);
 }
 
-/* ════════════════════════════════════════════════════════════
-   INPUT
-   ════════════════════════════════════════════════════════════ */
+
 .input {
     width: 100%;
     padding: var(--space-3) var(--space-4);
@@ -418,9 +406,7 @@ select.input {
     padding-right: calc(var(--space-4) * 2 + 14px);
 }
 
-/* ════════════════════════════════════════════════════════════
-   SPINNER
-   ════════════════════════════════════════════════════════════ */
+
 .spinner {
     width: 48px;
     height: 48px;
@@ -440,9 +426,7 @@ select.input {
     letter-spacing: 0.05em;
 }
 
-/* ════════════════════════════════════════════════════════════
-   SECTION HEADERS
-   ════════════════════════════════════════════════════════════ */
+
 .section-eyebrow {
     display: inline-flex;
     align-items: center;
@@ -490,9 +474,7 @@ select.input {
     margin: 0 auto;
 }
 
-/* ════════════════════════════════════════════════════════════
-   🏛️ PREMIUM CLASSIC FOOTER
-   ════════════════════════════════════════════════════════════ */
+
 .footer {
     background: linear-gradient(180deg, var(--bg-base) 0%, var(--bg-deep) 100%);
     border-top: 1px solid var(--border-default);
@@ -501,7 +483,7 @@ select.input {
     overflow: hidden;
 }
 
-/* Decorative pattern overlay */
+
 .footer-pattern {
     position: absolute;
     inset: 0;
@@ -511,7 +493,7 @@ select.input {
     pointer-events: none;
 }
 
-/* Top gold accent line */
+
 .footer::before {
     content: '';
     position: absolute;
@@ -524,7 +506,7 @@ select.input {
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
-/* ── Main Footer Section ── */
+
 .footer-main {
     padding: var(--space-16) 0 var(--space-12);
     position: relative;
@@ -537,7 +519,7 @@ select.input {
     gap: var(--space-12);
 }
 
-/* ── Brand Column ── */
+
 .footer-brand-col {
     max-width: 360px;
 }
@@ -607,7 +589,7 @@ select.input {
     margin-bottom: var(--space-6);
 }
 
-/* ── Social Buttons ── */
+
 .footer-socials {
     display: flex;
     gap: var(--space-2);
@@ -640,7 +622,7 @@ select.input {
     box-shadow: 0 6px 20px rgba(255, 215, 0, 0.2);
 }
 
-/* ── Link Columns ── */
+
 .footer-col-title {
     font-family: var(--font-display);
     font-size: 0.875rem;
@@ -693,7 +675,7 @@ select.input {
     opacity: 0.6;
 }
 
-/* ── Bottom Bar ── */
+
 .footer-bottom-bar {
     background: rgba(0, 0, 0, 0.3);
     border-top: 1px solid var(--border-subtle);
@@ -747,9 +729,7 @@ select.input {
     line-height: 1.4;
 }
 
-/* ════════════════════════════════════════════════════════════
-   RESPONSIVE
-   ════════════════════════════════════════════════════════════ */
+
 @media (max-width: 1024px) {
     .footer-grid {
         grid-template-columns: 1fr 1fr;

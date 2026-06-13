@@ -1,22 +1,22 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - ML Predictor
-==========================================================================
 
-Main interface for making ML predictions on decks.
 
-Combines loaded models with business logic to:
-    - Predict deck win rate
-    - Score deck strength
-    - Classify archetype
-    - Find similar decks
 
-Usage:
-    from backend.ml.predictor import MLPredictor
 
-    predictor = MLPredictor()
-    result = predictor.predict_all(["Hog Rider", "Musketeer", ...])
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import pandas as pd
 import numpy as np
@@ -30,69 +30,69 @@ logger = get_logger(__name__)
 
 
 class MLPredictor:
-    """
-    High-level interface for ML predictions on Clash Royale decks.
-    
-    Methods:
-        - predict_win_rate(deck):         Predict deck win rate %
-        - predict_strength(deck):         Predict deck strength score (0-100)
-        - predict_archetype(deck):        Classify deck archetype
-        - find_similar_decks(deck):       Find similar decks
-        - predict_all(deck):              Run all predictions at once
-    """
+
+
+
+
+
+
+
+
+
+
 
     def __init__(self, model_loader: Optional[ModelLoader] = None) -> None:
-        """
-        Initialize ML Predictor.
 
-        Args:
-            model_loader: Optional ModelLoader instance. If None, creates new one.
-        """
+
+
+
+
+
         self.loader: ModelLoader = model_loader or ModelLoader()
         self.card_lookup: dict = self.loader.card_lookup
         logger.info("MLPredictor initialized")
 
-    # ========================================================================
-    # 🔧 PRIVATE HELPER METHODS
-    # ========================================================================
+
+
+
 
     def _build_deck(self, card_names: list[str]) -> Deck:
-        """Build a Deck object from card names."""
+
         return Deck.from_card_names(card_names, self.card_lookup)
 
     def _prepare_features(self, deck: Deck) -> np.ndarray:
-        """
-        Prepare deck features as scaled numpy array for ML models.
 
-        Args:
-            deck: Deck object
 
-        Returns:
-            np.ndarray: Scaled feature array
-        """
+
+
+
+
+
+
+
         features_dict = deck.to_ml_features()
         features_df = pd.DataFrame([features_dict])[Config.FEATURE_COLUMNS]
         return self.loader.scaler.transform(features_df)
 
-    # ========================================================================
-    # 🎯 PREDICTION METHODS
-    # ========================================================================
+
+
+
 
     def predict_win_rate(self, card_names: list[str]) -> dict:
-        """
-        Predict the win rate of a deck.
 
-        Args:
-            card_names: List of 8 card names
 
-        Returns:
-            dict: {win_rate: float, confidence: str}
-        """
+
+
+
+
+
+
+
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
         win_rate = float(self.loader.win_rate_model.predict(features)[0])
 
-        # Confidence based on similarity to training data
+
         if 45 <= win_rate <= 60:
             confidence = "High"
         elif 40 <= win_rate <= 65:
@@ -106,21 +106,21 @@ class MLPredictor:
         }
 
     def predict_strength(self, card_names: list[str]) -> dict:
-        """
-        Predict the strength score of a deck (0-100).
 
-        Args:
-            card_names: List of 8 card names
 
-        Returns:
-            dict: {strength_score: float, grade: str}
-        """
+
+
+
+
+
+
+
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
         score = float(self.loader.strength_model.predict(features)[0])
-        score = max(0, min(100, score))  # Clamp to 0-100
+        score = max(0, min(100, score))
 
-        # Letter grade
+
         if score >= 85:
             grade = "S"
         elif score >= 75:
@@ -140,23 +140,23 @@ class MLPredictor:
         }
 
     def predict_archetype(self, card_names: list[str]) -> dict:
-        """
-        Classify the archetype of a deck.
 
-        Args:
-            card_names: List of 8 card names
 
-        Returns:
-            dict: {archetype: str, confidence: float, all_probabilities: dict}
-        """
+
+
+
+
+
+
+
         deck = self._build_deck(card_names)
         features = self._prepare_features(deck)
 
-        # Get prediction
+
         pred_idx = self.loader.archetype_model.predict(features)[0]
         archetype = self.loader.label_encoder.inverse_transform([pred_idx])[0]
 
-        # Get probabilities for all classes
+
         probabilities = self.loader.archetype_model.predict_proba(features)[0]
         classes = self.loader.label_encoder.classes_
 
@@ -174,31 +174,31 @@ class MLPredictor:
         }
 
     def find_similar_decks(self, card_names: list[str], top_n: int = 5) -> list[dict]:
-        """
-        Find decks similar to the input deck.
 
-        Args:
-            card_names: List of 8 card names
-            top_n:      Number of similar decks to return
 
-        Returns:
-            list[dict]: List of similar decks with similarity scores
-        """
-        # Vectorize the user deck
+
+
+
+
+
+
+
+
+
         user_vector = self.loader.card_binarizer.transform([card_names])
 
-        # Find nearest neighbors
+
         distances, indices = self.loader.similar_deck_model.kneighbors(
             user_vector, n_neighbors=top_n + 1
         )
 
-        # Load decks data
+
         from backend.utils.dataset_loader import DatasetLoader
         decks_df = DatasetLoader().load_decks()
 
         similar_decks = []
         for i, (dist, idx) in enumerate(zip(distances[0], indices[0])):
-            # Skip exact match (itself)
+
             if i == 0 and dist == 0:
                 continue
             if len(similar_decks) >= top_n:
@@ -220,27 +220,27 @@ class MLPredictor:
     def suggest_card_replacements(
         self, card_names: list[str], top_n: int = 3
     ) -> dict:
-        """
-        Suggest replacements for the weakest card in the deck.
 
-        Args:
-            card_names: List of 8 card names
-            top_n:      Number of suggestions
 
-        Returns:
-            dict: Weakest card + suggested replacements
-        """
+
+
+
+
+
+
+
+
         deck = self._build_deck(card_names)
         weakest = deck.get_weakest_card()
 
         if not weakest:
             return {"weakest_card": None, "replacements": []}
 
-        # Get all cards
+
         from backend.utils.dataset_loader import DatasetLoader
         cards_df = DatasetLoader().load_cards()
 
-        # Find candidates: similar elixir, same type, higher win rate
+
         candidates = cards_df[
             (cards_df["elixir_cost"].between(
                 weakest.elixir_cost - 1, weakest.elixir_cost + 1
@@ -274,20 +274,20 @@ class MLPredictor:
             "replacements": replacements
         }
 
-    # ========================================================================
-    # 🎯 ULTIMATE: ALL-IN-ONE PREDICTION
-    # ========================================================================
+
+
+
 
     def predict_all(self, card_names: list[str]) -> dict:
-        """
-        Run ALL predictions on a deck (complete analysis).
 
-        Args:
-            card_names: List of 8 card names
 
-        Returns:
-            dict: Complete analysis with all predictions
-        """
+
+
+
+
+
+
+
         logger.info(f"🔮 Running full prediction on deck: {card_names[:3]}...")
 
         deck = self._build_deck(card_names)

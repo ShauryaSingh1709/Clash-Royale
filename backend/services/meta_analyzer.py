@@ -1,10 +1,10 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Meta Analyzer Service
-==========================================================================
 
-Service for meta trends, popular cards, and game-wide statistics.
-"""
+
+
+
+
+
+
 
 from typing import Optional
 import pandas as pd
@@ -15,10 +15,10 @@ logger = get_logger(__name__)
 
 
 class MetaAnalyzer:
-    """Service for meta-level analysis and game-wide trends."""
+
 
     def __init__(self, loader: Optional[DatasetLoader] = None) -> None:
-        """Initialize MetaAnalyzer."""
+
         self.loader = loader or DatasetLoader()
         self._cards_df: Optional[pd.DataFrame] = None
         self._decks_df: Optional[pd.DataFrame] = None
@@ -43,12 +43,12 @@ class MetaAnalyzer:
             self._meta_df = self.loader.load_meta()
         return self._meta_df
 
-    # ========================================================================
-    # 📊 OVERVIEW STATS
-    # ========================================================================
+
+
+
 
     def get_meta_summary(self) -> dict:
-        """Get overall meta summary statistics."""
+
         return {
             "total_cards": len(self.cards_df),
             "total_decks_analyzed": len(self.decks_df),
@@ -60,33 +60,33 @@ class MetaAnalyzer:
             "seasons_tracked": sorted(self.meta_df["season"].unique().tolist())
         }
 
-    # ========================================================================
-    # 🏆 TOP CARDS
-    # ========================================================================
+
+
+
 
     def get_most_popular_cards(self, n: int = 10) -> list[dict]:
-        """Get top N most-used cards."""
+
         cols = ["name", "rarity", "type", "elixir_cost", "usage_rate", "win_rate"]
         return self.cards_df.nlargest(n, "usage_rate")[cols].to_dict("records")
 
     def get_highest_winrate_cards(self, n: int = 10) -> list[dict]:
-        """Get top N cards with highest win rate."""
+
         cols = ["name", "rarity", "type", "elixir_cost", "win_rate", "usage_rate"]
         return self.cards_df.nlargest(n, "win_rate")[cols].to_dict("records")
 
     def get_underrated_cards(self, n: int = 10) -> list[dict]:
-        """Get underrated cards: high win rate but low usage."""
+
         df = self.cards_df.copy()
         df["underrated_score"] = df["win_rate"] / (df["usage_rate"] + 1)
         cols = ["name", "rarity", "type", "win_rate", "usage_rate", "underrated_score"]
         return df.nlargest(n, "underrated_score")[cols].to_dict("records")
 
-    # ========================================================================
-    # 🃏 DECK ANALYSIS
-    # ========================================================================
+
+
+
 
     def get_archetype_distribution(self) -> dict:
-        """Get distribution of deck archetypes."""
+
         counts = self.decks_df["archetype"].value_counts()
         total = len(self.decks_df)
 
@@ -99,20 +99,20 @@ class MetaAnalyzer:
         }
 
     def get_top_decks(self, n: int = 10) -> list[dict]:
-        """
-        Get top N UNIQUE decks by win rate (deduplicated).
-        
-        Returns decks with proper names, tiers, sources, and full metadata.
-        """
-        # Sort all decks by win rate
+
+
+
+
+
+
         sorted_decks = self.decks_df.sort_values("win_rate", ascending=False)
         
-        # Deduplicate by card combination
+
         seen_decks = set()
         unique_decks = []
         
         for _, row in sorted_decks.iterrows():
-            # Create unique key from sorted cards
+
             cards_key = tuple(sorted([row[f"card_{i}"] for i in range(1, 9)]))
             
             if cards_key not in seen_decks:
@@ -122,14 +122,14 @@ class MetaAnalyzer:
                 if len(unique_decks) >= n:
                     break
         
-        # Build response with all available columns
+
         base_cols = [
             "deck_id", "card_1", "card_2", "card_3", "card_4",
             "card_5", "card_6", "card_7", "card_8",
             "avg_elixir", "archetype", "win_rate"
         ]
         
-        # Add optional metadata columns if they exist
+
         optional_cols = ["deck_name", "tier", "source", "quality", "usage_count", "total_battles"]
         for col in optional_cols:
             if col in self.decks_df.columns:
@@ -141,7 +141,7 @@ class MetaAnalyzer:
         ]
 
     def get_archetype_performance(self) -> list[dict]:
-        """Get average performance per archetype."""
+
         grouped = self.decks_df.groupby("archetype").agg(
             avg_win_rate=("win_rate", "mean"),
             avg_elixir=("avg_elixir", "mean"),
@@ -150,12 +150,12 @@ class MetaAnalyzer:
 
         return grouped.to_dict("records")
 
-    # ========================================================================
-    # 📈 TRENDS
-    # ========================================================================
+
+
+
 
     def get_meta_trends(self) -> dict:
-        """Get meta trends across all seasons."""
+
         seasonal = self.meta_df.groupby("season").agg(
             avg_win_rate=("win_rate", "mean"),
             avg_usage=("usage_rate", "mean")
@@ -169,16 +169,16 @@ class MetaAnalyzer:
         }
 
     def _get_trend_cards(self, trend: str, n: int = 10) -> list[str]:
-        """Get unique card names with a specific trend."""
+
         cards = self.meta_df[self.meta_df["trend"] == trend]["card_name"].unique()
         return list(cards[:n])
 
     def get_seasonal_data(self, season: str) -> list[dict]:
-        """Get data for a specific season."""
+
         df = self.meta_df[self.meta_df["season"] == season]
         return df.to_dict("records")
 
     def get_card_meta_history(self, card_name: str) -> list[dict]:
-        """Get historical meta data for a specific card."""
+
         df = self.meta_df[self.meta_df["card_name"] == card_name]
         return df.sort_values("season").to_dict("records")

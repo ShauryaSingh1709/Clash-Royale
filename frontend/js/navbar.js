@@ -12,7 +12,7 @@ function renderNavbar() {
         <div class="navbar-container">
             <a href="/" class="navbar-logo">
                 <div class="navbar-logo-mark">
-                    <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png" 
+                    <img src="https:
                          alt="RoyaleForge" />
                 </div>
                 <div class="navbar-logo-text">
@@ -58,7 +58,7 @@ function renderFooter() {
                     <div class="footer-brand-col">
                         <a href="/" class="footer-logo-link">
                             <div class="footer-logo">
-                                <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png" 
+                                <img src="https:
                                      alt="RoyaleForge" />
                             </div>
                             <div class="footer-brand-text">
@@ -70,7 +70,7 @@ function renderFooter() {
                             Build smarter decks with AI-powered insights.
                         </p>
                         <div class="footer-socials">
-                            <a href="https://github.com/ShauryaSingh1709/Clash-Royale" target="_blank" rel="noopener" class="footer-social-btn" title="GitHub">
+                            <a href="https:
                                 ${Icons.github}
                             </a>
                             <a href="mailto:shaurya17092006@gmail.com" class="footer-social-btn" title="Email">
@@ -102,7 +102,7 @@ function renderFooter() {
                     <div class="footer-col">
                         <h4 class="footer-col-title">Community</h4>
                         <ul class="footer-links">
-                            <li><a href="https://github.com/ShauryaSingh1709/Clash-Royale" target="_blank" rel="noopener">
+                            <li><a href="https:
                                 GitHub ${Icons.arrow_up_right}
                             </a></li>
                             <li><a href="/contributing">How to Contribute</a></li>

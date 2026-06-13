@@ -1,18 +1,18 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Deck Model
-==========================================================================
 
-OOP representation of a Clash Royale deck (8 cards).
 
-Usage:
-    from backend.models.deck import Deck
-    from backend.models.card import Card
 
-    deck = Deck(cards=[card1, card2, ..., card8])
-    print(deck.average_elixir)
-    print(deck.archetype)
-"""
+
+
+
+
+
+
+
+
+
+
+
+
 
 from dataclasses import dataclass, field
 from typing import Optional
@@ -23,15 +23,15 @@ from backend.config.settings import Config
 
 @dataclass
 class Deck:
-    """
-    Represents a Clash Royale deck (8 cards).
 
-    Attributes:
-        cards (list[Card]):    List of 8 Card objects
-        deck_id (Optional):    Optional deck ID
-        win_rate (float):      Deck's overall win rate
-        usage_count (int):     Number of times this deck was used
-    """
+
+
+
+
+
+
+
+
 
     cards: list[Card] = field(default_factory=list)
     deck_id: Optional[int] = None
@@ -39,103 +39,103 @@ class Deck:
     usage_count: int = 0
 
     def __post_init__(self) -> None:
-        """Validate deck after initialization."""
+
         if self.cards and len(self.cards) != Config.DECK_SIZE:
             raise ValueError(
                 f"Deck must contain exactly {Config.DECK_SIZE} cards "
                 f"(got {len(self.cards)})"
             )
 
-    # ========================================================================
-    # 📊 STATISTICAL PROPERTIES
-    # ========================================================================
+
+
+
 
     @property
     def average_elixir(self) -> float:
-        """Calculate average elixir cost of the deck."""
+
         if not self.cards:
             return 0.0
         return round(sum(c.elixir_cost for c in self.cards) / len(self.cards), 2)
 
     @property
     def total_elixir(self) -> int:
-        """Calculate total elixir cost of all cards."""
+
         return sum(c.elixir_cost for c in self.cards)
 
     @property
     def average_damage(self) -> float:
-        """Average damage across all cards."""
+
         if not self.cards:
             return 0.0
         return round(sum(c.damage for c in self.cards) / len(self.cards), 2)
 
     @property
     def average_hp(self) -> float:
-        """Average HP across all cards."""
+
         if not self.cards:
             return 0.0
         return round(sum(c.hitpoints for c in self.cards) / len(self.cards), 2)
 
     @property
     def average_card_win_rate(self) -> float:
-        """Average win rate of cards in the deck."""
+
         if not self.cards:
             return 0.0
         return round(sum(c.win_rate for c in self.cards) / len(self.cards), 2)
 
     @property
     def average_card_usage(self) -> float:
-        """Average usage rate of cards in the deck."""
+
         if not self.cards:
             return 0.0
         return round(sum(c.usage_rate for c in self.cards) / len(self.cards), 2)
 
-    # ========================================================================
-    # 🃏 COMPOSITION PROPERTIES
-    # ========================================================================
+
+
+
 
     @property
     def num_troops(self) -> int:
-        """Count of troop cards."""
+
         return sum(1 for c in self.cards if c.is_troop)
 
     @property
     def num_spells(self) -> int:
-        """Count of spell cards."""
+
         return sum(1 for c in self.cards if c.is_spell)
 
     @property
     def num_buildings(self) -> int:
-        """Count of building cards."""
+
         return sum(1 for c in self.cards if c.is_building)
 
     @property
     def num_legendary(self) -> int:
-        """Count of legendary cards."""
+
         return sum(1 for c in self.cards if c.rarity == "Legendary")
 
     @property
     def num_epic(self) -> int:
-        """Count of epic cards."""
+
         return sum(1 for c in self.cards if c.rarity == "Epic")
 
     @property
     def num_rare(self) -> int:
-        """Count of rare cards."""
+
         return sum(1 for c in self.cards if c.rarity == "Rare")
 
     @property
     def num_common(self) -> int:
-        """Count of common cards."""
+
         return sum(1 for c in self.cards if c.rarity == "Common")
 
-    # ========================================================================
-    # 🎯 ANALYSIS PROPERTIES
-    # ========================================================================
+
+
+
 
     @property
     def primary_archetype(self) -> str:
-        """Returns the most common archetype in the deck."""
+
         if not self.cards:
             return "Unknown"
         archetypes = [c.archetype for c in self.cards if c.archetype != "Unknown"]
@@ -145,22 +145,22 @@ class Deck:
 
     @property
     def card_names(self) -> list[str]:
-        """Returns list of card names in the deck."""
+
         return [c.name for c in self.cards]
 
     @property
     def is_cheap_cycle(self) -> bool:
-        """Returns True if deck has low average elixir (cycle deck)."""
+
         return self.average_elixir <= 3.0
 
     @property
     def is_heavy_beatdown(self) -> bool:
-        """Returns True if deck has high average elixir (beatdown)."""
+
         return self.average_elixir >= 4.5
 
     @property
     def has_win_condition(self) -> bool:
-        """Returns True if deck has at least one win condition card."""
+
         win_conditions = {
             "Hog Rider", "Giant", "Golem", "Royal Giant", "Balloon",
             "Mega Knight", "Goblin Barrel", "Miner", "Graveyard",
@@ -170,35 +170,35 @@ class Deck:
         }
         return bool(set(self.card_names) & win_conditions)
 
-    # ========================================================================
-    # 🛠️ METHODS
-    # ========================================================================
+
+
+
 
     def contains_card(self, card_name: str) -> bool:
-        """Check if deck contains a specific card."""
+
         return card_name in self.card_names
 
     def get_card(self, card_name: str) -> Optional[Card]:
-        """Get a specific Card by name."""
+
         for card in self.cards:
             if card.name == card_name:
                 return card
         return None
 
     def get_weakest_card(self) -> Optional[Card]:
-        """Returns the card with the lowest win rate."""
+
         if not self.cards:
             return None
         return min(self.cards, key=lambda c: c.win_rate)
 
     def get_strongest_card(self) -> Optional[Card]:
-        """Returns the card with the highest win rate."""
+
         if not self.cards:
             return None
         return max(self.cards, key=lambda c: c.win_rate)
 
     def to_dict(self) -> dict:
-        """Convert Deck to dictionary (for JSON API responses)."""
+
         return {
             "deck_id": self.deck_id,
             "cards": [c.to_dict() for c in self.cards],
@@ -231,12 +231,12 @@ class Deck:
         }
 
     def to_ml_features(self) -> dict:
-        """
-        Returns features in format compatible with ML models.
 
-        Returns:
-            dict: Features matching FEATURE_COLUMNS in Config
-        """
+
+
+
+
+
         return {
             "avg_elixir": self.average_elixir,
             "total_elixir": self.total_elixir,
@@ -255,16 +255,16 @@ class Deck:
 
     @classmethod
     def from_card_names(cls, card_names: list[str], card_lookup: dict) -> "Deck":
-        """
-        Build a Deck from list of card names + lookup dictionary.
 
-        Args:
-            card_names: List of 8 card names
-            card_lookup: Dictionary mapping names to card data
 
-        Returns:
-            Deck: New Deck instance
-        """
+
+
+
+
+
+
+
+
         cards = []
         for name in card_names:
             if name in card_lookup:
@@ -272,35 +272,35 @@ class Deck:
                 data["name"] = name
                 cards.append(Card.from_dict(data))
             else:
-                # Create placeholder card if not found
+
                 cards.append(Card(
                     name=name, elixir_cost=0, rarity="Unknown",
                     card_type="Unknown"
                 ))
         return cls(cards=cards)
 
-    # ========================================================================
-    # 🎨 MAGIC METHODS
-    # ========================================================================
+
+
+
 
     def __str__(self) -> str:
-        """Pretty print the deck."""
+
         header = f"🃏 Deck ({self.primary_archetype} | ⚡{self.average_elixir})"
         cards_str = "\n".join(f"   {i+1}. {c}" for i, c in enumerate(self.cards))
         return f"{header}\n{cards_str}"
 
     def __repr__(self) -> str:
-        """Developer representation."""
+
         return f"Deck(cards={len(self.cards)}, avg_elixir={self.average_elixir})"
 
     def __len__(self) -> int:
-        """Number of cards in deck."""
+
         return len(self.cards)
 
     def __contains__(self, card_name: str) -> bool:
-        """Support 'card_name in deck' syntax."""
+
         return self.contains_card(card_name)
 
     def __iter__(self):
-        """Allow iteration: 'for card in deck'"""
+
         return iter(self.cards)

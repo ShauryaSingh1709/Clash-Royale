@@ -1,35 +1,35 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Configuration Settings
-==========================================================================
 
-Centralized configuration for the entire application.
-All paths, constants, and environment variables are managed here.
 
-Usage:
-    from backend.config.settings import Config
-    print(Config.MODELS_PATH)
-"""
+
+
+
+
+
+
+
+
+
+
 
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+
 load_dotenv()
 
 
 class Config:
-    """
-    Application configuration class.
-    
-    Contains all settings, paths, and constants used across the app.
-    Uses environment variables when available, otherwise defaults.
-    """
 
-    # ====================================================================
-    # 📂 PROJECT PATHS
-    # ====================================================================
+
+
+
+
+
+
+
+
+
     BASE_DIR: Path = Path(__file__).resolve().parent.parent.parent
     BACKEND_DIR: Path = BASE_DIR / "backend"
     DATASET_DIR: Path = BASE_DIR / "dataset"
@@ -38,24 +38,24 @@ class Config:
     MODELS_PATH: Path = BACKEND_DIR / "ml" / "models"
     LOGS_PATH: Path = BASE_DIR / "logs"
 
-    # ====================================================================
-    # 🌐 FLASK SERVER CONFIGURATION
-    # ====================================================================
+
+
+
     HOST: str = os.getenv("HOST", "127.0.0.1")
     PORT: int = int(os.getenv("PORT", 5000))
     DEBUG: bool = os.getenv("FLASK_DEBUG", "True").lower() == "true"
 
-    # ====================================================================
-    # 📊 DATASET FILE NAMES
-    # ====================================================================
+
+
+
     CARDS_FILE: str = "cards_cleaned.csv"
     DECKS_FILE: str = "decks_cleaned.csv"
     BATTLES_FILE: str = "battles_cleaned.csv"
     META_FILE: str = "meta_cleaned.csv"
 
-    # ====================================================================
-    # 🤖 ML MODEL FILE NAMES
-    # ====================================================================
+
+
+
     WIN_RATE_MODEL: str = "win_rate_predictor.pkl"
     STRENGTH_MODEL: str = "deck_strength_scorer.pkl"
     ARCHETYPE_MODEL: str = "archetype_classifier.pkl"
@@ -65,9 +65,9 @@ class Config:
     CARD_BINARIZER_FILE: str = "card_binarizer.pkl"
     CARD_LOOKUP_FILE: str = "card_lookup.pkl"
 
-    # ====================================================================
-    # 🎯 ML FEATURE COLUMNS
-    # ====================================================================
+
+
+
     FEATURE_COLUMNS: list = [
         "avg_elixir", "total_elixir", "avg_damage", "avg_hp",
         "avg_card_win_rate", "avg_card_usage",
@@ -75,9 +75,9 @@ class Config:
         "num_troops", "num_spells", "num_buildings"
     ]
 
-    # ====================================================================
-    # 🃏 GAME CONSTANTS
-    # ====================================================================
+
+
+
     DECK_SIZE: int = 8
     MIN_ELIXIR: int = 1
     MAX_ELIXIR: int = 9
@@ -85,29 +85,29 @@ class Config:
     VALID_CARD_TYPES: list = ["Troop", "Spell", "Building"]
     VALID_ARCHETYPES: list = ["Beatdown", "Control", "Cycle", "Siege", "Hog Cycle"]
 
-    # ====================================================================
-    # 📝 LOGGING CONFIGURATION
-    # ====================================================================
+
+
+
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
     LOG_FORMAT: str = "%(asctime)s | %(levelname)-8s | %(name)-25s | %(message)s"
     LOG_DATE_FORMAT: str = "%Y-%m-%d %H:%M:%S"
 
-    # ====================================================================
-    # 🛡️ API CONFIGURATION
-    # ====================================================================
+
+
+
     API_PREFIX: str = "/api/v1"
-    CORS_ORIGINS: list = ["*"]  # Allow all origins (change in production)
-    MAX_REQUEST_SIZE: int = 16 * 1024 * 1024  # 16 MB
+    CORS_ORIGINS: list = ["*"]
+    MAX_REQUEST_SIZE: int = 16 * 1024 * 1024
 
     @classmethod
     def ensure_directories(cls) -> None:
-        """Create required directories if they don't exist."""
+
         for path in [cls.LOGS_PATH, cls.PROCESSED_DATA_PATH, cls.MODELS_PATH]:
             path.mkdir(parents=True, exist_ok=True)
 
     @classmethod
     def display(cls) -> None:
-        """Print all configuration settings (for debugging)."""
+
         print("=" * 60)
         print("🏆 CLASH ROYALE DECK ANALYZER - Configuration")
         print("=" * 60)
@@ -120,5 +120,5 @@ class Config:
         print("=" * 60)
 
 
-# Ensure required directories exist on import
+
 Config.ensure_directories()

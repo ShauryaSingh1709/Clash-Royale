@@ -1,15 +1,15 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Deck Routes
-==========================================================================
 
-REST API endpoints for deck analysis.
 
-Endpoints:
-    POST /decks/analyze   → Full deck analysis
-    POST /decks/validate  → Validate a deck
-    POST /decks/score     → Get deck scoring
-"""
+
+
+
+
+
+
+
+
+
+
 
 from flask import Blueprint, jsonify, request
 from backend.services.deck_analyzer import DeckAnalyzer
@@ -23,7 +23,7 @@ _deck_analyzer: DeckAnalyzer = None
 
 
 def get_deck_analyzer() -> DeckAnalyzer:
-    """Get or create DeckAnalyzer instance."""
+
     global _deck_analyzer
     if _deck_analyzer is None:
         _deck_analyzer = DeckAnalyzer()
@@ -31,7 +31,7 @@ def get_deck_analyzer() -> DeckAnalyzer:
 
 
 def _extract_deck_from_request() -> tuple[list, str]:
-    """Helper to extract and validate deck from JSON request."""
+
     data = request.get_json()
     if not data:
         return None, "Request body must be JSON"
@@ -43,20 +43,20 @@ def _extract_deck_from_request() -> tuple[list, str]:
     return cards, None
 
 
-# ============================================================================
-# 🎯 ROUTES
-# ============================================================================
+
+
+
 
 @deck_bp.route("/analyze", methods=["POST"])
 def analyze_deck():
-    """
-    Full deck analysis.
 
-    Request body:
-        {
-            "cards": ["Hog Rider", "Musketeer", ..., "Ice Golem"]
-        }
-    """
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -75,14 +75,14 @@ def analyze_deck():
 
 @deck_bp.route("/validate", methods=["POST"])
 def validate_deck():
-    """
-    Validate a deck without full analysis.
 
-    Request body:
-        {
-            "cards": ["Hog Rider", "Musketeer", ...]
-        }
-    """
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -103,14 +103,14 @@ def validate_deck():
 
 @deck_bp.route("/score", methods=["POST"])
 def score_deck():
-    """
-    Get deck scoring (win rate + strength + archetype).
 
-    Request body:
-        {
-            "cards": ["Hog Rider", "Musketeer", ...]
-        }
-    """
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:

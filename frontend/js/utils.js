@@ -1,10 +1,8 @@
-/* ==========================================================================
-   🏆 CLASH ROYALE DECK ANALYZER - Utility Functions
-   ========================================================================== */
 
-// ── ✨ COMPLETE CARD NAME → ROYALEAPI SLUG MAPPING ──
+
+
 const CARD_SLUG_MAP = {
-    // Common
+    
     "Knight": "knight",
     "Archers": "archers",
     "Bomber": "bomber",
@@ -30,7 +28,7 @@ const CARD_SLUG_MAP = {
     "Royal Delivery": "royal-delivery",
     "Firecracker": "firecracker",
     
-    // Rare
+    
     "Mini PEKKA": "mini-pekka",
     "Musketeer": "musketeer",
     "Giant": "giant",
@@ -58,7 +56,7 @@ const CARD_SLUG_MAP = {
     "Elixir Golem": "elixir-golem",
     "Heal Spirit": "heal-spirit",
     
-    // Epic
+    
     "Witch": "witch",
     "Skeleton Army": "skeleton-army",
     "Baby Dragon": "baby-dragon",
@@ -81,7 +79,7 @@ const CARD_SLUG_MAP = {
     "Clone": "clone",
     "Mirror": "mirror",
     
-    // Legendary
+    
     "Electro Wizard": "electro-wizard",
     "Royal Ghost": "royal-ghost",
     "Princess": "princess",
@@ -101,7 +99,7 @@ const CARD_SLUG_MAP = {
     "Fisherman": "fisherman",
     "Mother Witch": "mother-witch",
     
-    // Champion
+    
     "Royal Champion": "royal-champion",
     "Archer Queen": "archer-queen",
     "Skeleton King": "skeleton-king",
@@ -112,16 +110,16 @@ const CARD_SLUG_MAP = {
     "Monk": "monk"
 };
 
-// ── Fallback CDNs (tried in order) ──
+
 const CDN_SOURCES = [
-    (slug) => `https://cdn.royaleapi.com/static/img/cards-150/${slug}.png`,
-    (slug) => `https://royaleapi.github.io/cr-api-assets/cards/${slug}.png`,
-    (slug) => `https://statsroyale.com/images/cards/full/${slug}.png`,
+    (slug) => `https:
+    (slug) => `https:
+    (slug) => `https:
 ];
 
 
 const Utils = {
-    // ── Rarity colors ──
+    
     getRarityColor(rarity) {
         const colors = {
             'Common': '#A8DADC',
@@ -133,7 +131,7 @@ const Utils = {
         return colors[rarity] || '#FFFFFF';
     },
 
-    // ── Type icons ──
+    
     getTypeIcon(type) {
         const icons = {
             'Troop': '⚔️',
@@ -143,7 +141,7 @@ const Utils = {
         return icons[type] || '🃏';
     },
 
-    // ── Archetype icons ──
+    
     getArchetypeIcon(archetype) {
         const icons = {
             'Beatdown': '💪',
@@ -155,7 +153,7 @@ const Utils = {
         return icons[archetype] || '🃏';
     },
 
-    // ── Grade color ──
+    
     getGradeColor(grade) {
         const colors = {
             'S': '#FFD700',
@@ -168,14 +166,14 @@ const Utils = {
         return colors[grade] || '#FFFFFF';
     },
 
-    // ── Format number ──
+    
     formatNumber(num) {
         if (num >= 1_000_000) return (num / 1_000_000).toFixed(1) + 'M';
         if (num >= 1_000) return (num / 1_000).toFixed(1) + 'K';
         return num.toString();
     },
 
-    // ── Get slug from card name ──
+    
     getCardSlug(cardName) {
         if (CARD_SLUG_MAP[cardName]) return CARD_SLUG_MAP[cardName];
         return cardName
@@ -185,20 +183,20 @@ const Utils = {
             .replace(/[^a-z0-9-]/g, '');
     },
 
-    // ── Get primary card image URL ──
+    
     getCardImageUrl(cardName) {
         if (!cardName) return '';
         const slug = this.getCardSlug(cardName);
         return CDN_SOURCES[0](slug);
     },
 
-    // ── ✨ Smart fallback chain ──
+    
     handleImageError(img) {
         const cardName = img.alt || 'Unknown';
         const slug = this.getCardSlug(cardName);
         const attempts = parseInt(img.dataset.attempts || '0');
 
-        // Try next CDN
+        
         if (attempts < CDN_SOURCES.length - 1) {
             const nextAttempt = attempts + 1;
             img.dataset.attempts = nextAttempt.toString();
@@ -206,7 +204,7 @@ const Utils = {
             return;
         }
 
-        // ── Final fallback: Beautiful generated SVG card ──
+        
         img.onerror = null;
         img.style.display = 'none';
 
@@ -217,7 +215,7 @@ const Utils = {
         parent.appendChild(svgCard);
     },
 
-    // ── ✨ Generate beautiful SVG fallback card ──
+    
     generateFallbackCard(cardName, size = 80) {
         const initials = cardName
             .split(' ')
@@ -226,7 +224,7 @@ const Utils = {
             .join('')
             .toUpperCase();
 
-        // Random gradient based on card name (consistent for same card)
+        
         const hash = cardName.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
         const hue1 = hash % 360;
         const hue2 = (hash * 7) % 360;
@@ -262,7 +260,7 @@ const Utils = {
         return div;
     },
 
-    // ── Show toast notification ──
+    
     showToast(message, type = 'info') {
         const toast = document.createElement('div');
         toast.className = `toast toast-${type}`;
@@ -287,7 +285,7 @@ const Utils = {
         }, 3000);
     },
 
-    // ── Loading state ──
+    
     showLoading(element, message = 'Loading...') {
         element.innerHTML = `
             <div style="text-align: center; padding: 3rem;">
@@ -297,7 +295,7 @@ const Utils = {
         `;
     },
 
-    // ── Error state ──
+    
     showError(element, message) {
         element.innerHTML = `
             <div class="glass-card" style="text-align: center; padding: 3rem;">
@@ -308,7 +306,7 @@ const Utils = {
         `;
     },
 
-    // ── Debounce ──
+    
     debounce(func, delay) {
         let timeout;
         return (...args) => {

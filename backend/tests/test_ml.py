@@ -1,7 +1,7 @@
-"""
-Test ML integration: ModelLoader + MLPredictor
-Run: python -m backend.tests.test_ml
-"""
+
+
+
+
 
 import json
 from backend.ml.model_loader import ModelLoader
@@ -12,7 +12,7 @@ logger = get_logger("test_ml")
 
 
 def test_model_loader():
-    """Test ModelLoader loads all models."""
+
     print("\n" + "=" * 60)
     print("🤖 TEST 1: MODEL LOADER")
     print("=" * 60)
@@ -30,14 +30,14 @@ def test_model_loader():
 
 
 def test_predictor():
-    """Test all ML predictions on sample deck."""
+
     print("\n" + "=" * 60)
     print("🔮 TEST 2: ML PREDICTOR")
     print("=" * 60)
 
     predictor = MLPredictor()
 
-    # Sample deck: Classic Hog Cycle
+
     sample_deck = ["Hog Rider", "Musketeer", "Ice Spirit", "Skeletons",
                    "Fireball", "The Log", "Cannon", "Ice Golem"]
 
@@ -45,7 +45,7 @@ def test_predictor():
     for i, card in enumerate(sample_deck, 1):
         print(f"   {i}. {card}")
 
-    # ── Win Rate ────────────────────────────────────────────
+
     print(f"\n{'─' * 60}")
     print(f"🎯 WIN RATE PREDICTION")
     print(f"{'─' * 60}")
@@ -53,7 +53,7 @@ def test_predictor():
     print(f"   Win Rate:   {wr['predicted_win_rate']}%")
     print(f"   Confidence: {wr['confidence']}")
 
-    # ── Strength ───────────────────────────────────────────
+
     print(f"\n{'─' * 60}")
     print(f"💪 DECK STRENGTH")
     print(f"{'─' * 60}")
@@ -61,7 +61,7 @@ def test_predictor():
     print(f"   Strength:   {st['strength_score']}/100")
     print(f"   Grade:      {st['grade']}")
 
-    # ── Archetype ──────────────────────────────────────────
+
     print(f"\n{'─' * 60}")
     print(f"🏷️  ARCHETYPE CLASSIFICATION")
     print(f"{'─' * 60}")
@@ -72,16 +72,16 @@ def test_predictor():
     for a, p in arch['all_probabilities'].items():
         print(f"      • {a:15} {p}%")
 
-    # ── Similar Decks ──────────────────────────────────────
+
     print(f"\n{'─' * 60}")
     print(f"🔍 TOP 3 SIMILAR DECKS")
     print(f"{'─' * 60}")
     similar = predictor.find_similar_decks(sample_deck, top_n=3)
     for i, d in enumerate(similar, 1):
-        print(f"   #{i} Similarity: {d['similarity_score']}% | "
+        print(f"
               f"Win Rate: {d['win_rate']}% | {d['archetype']}")
 
-    # ── Suggestions ────────────────────────────────────────
+
     print(f"\n{'─' * 60}")
     print(f"💡 IMPROVEMENT SUGGESTIONS")
     print(f"{'─' * 60}")
@@ -95,7 +95,7 @@ def test_predictor():
 
 
 def test_predict_all():
-    """Test ultimate predict_all() method."""
+
     print("\n" + "=" * 60)
     print("🎯 TEST 3: ALL-IN-ONE PREDICTION")
     print("=" * 60)
@@ -116,7 +116,7 @@ def test_predict_all():
 
 
 def main():
-    """Run all tests."""
+
     print("\n" + "=" * 70)
     print("🧪 TESTING STEP 4: ML INTEGRATION")
     print("=" * 70)

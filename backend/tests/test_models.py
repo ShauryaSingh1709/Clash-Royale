@@ -1,7 +1,7 @@
-"""
-Test OOP models: Card, Deck, Battle
-Run from project root: python -m backend.tests.test_models
-"""
+
+
+
+
 
 from backend.models.card import Card
 from backend.models.deck import Deck
@@ -13,7 +13,7 @@ logger = get_logger("test_models")
 
 
 def test_card():
-    """Test Card class."""
+
     print("\n" + "=" * 60)
     print("🃏 TEST 1: CARD CLASS")
     print("=" * 60)
@@ -39,17 +39,17 @@ def test_card():
 
 
 def test_deck():
-    """Test Deck class with real data."""
+
     print("\n" + "=" * 60)
     print("🎴 TEST 2: DECK CLASS")
     print("=" * 60)
 
-    # Load real card data
+
     loader = DatasetLoader()
     cards_df = loader.load_cards()
     card_lookup = cards_df.set_index("name").to_dict("index")
 
-    # Create deck from card names
+
     user_deck = ["Hog Rider", "Musketeer", "Ice Spirit", "Skeletons",
                  "Fireball", "The Log", "Cannon", "Ice Golem"]
 
@@ -79,7 +79,7 @@ def test_deck():
 
 
 def test_battle():
-    """Test Battle class."""
+
     print("\n" + "=" * 60)
     print("⚔️  TEST 3: BATTLE CLASS")
     print("=" * 60)
@@ -123,7 +123,7 @@ def test_battle():
 
 
 def main():
-    """Run all tests."""
+
     print("\n" + "=" * 70)
     print("🧪 TESTING STEP 3: OOP MODELS")
     print("=" * 70)

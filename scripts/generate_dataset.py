@@ -1,11 +1,11 @@
-"""
-==========================================================================
-🏆 RoyaleForge - OFFICIAL Clash Royale Dataset Generator
-==========================================================================
 
-Uses REAL official Clash Royale card data.
-Includes ALL 120+ cards: troops, buildings, spells, tower troops.
-"""
+
+
+
+
+
+
+
 
 import pandas as pd
 import numpy as np
@@ -20,15 +20,15 @@ OUTPUT_DIR = Path("dataset/raw")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# ============================================================================
-# 🃏 OFFICIAL CARDS DATA (Source: Official CR Wiki)
-# Format: (name, elixir, rarity, type, arena, damage, hp, archetype)
-# ============================================================================
+
+
+
+
 
 CARDS_DATA = [
-    # ═══════════════════════════════════════════════════════════
-    # TROOPS - Common
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Knight", 3, "Common", "Troop", 0, 202, 1766, "Beatdown"),
     ("Archers", 3, "Common", "Troop", 0, 112, 304, "Control"),
     ("Bomber", 2, "Common", "Troop", 2, 225, 304, "Control"),
@@ -53,9 +53,9 @@ CARDS_DATA = [
     ("Skeleton Barrel", 3, "Common", "Troop", 12, 145, 532, "Cycle"),
     ("Wall Breakers", 2, "Common", "Troop", 12, 350, 330, "Cycle"),
     
-    # ═══════════════════════════════════════════════════════════
-    # TROOPS - Rare
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Mini PEKKA", 4, "Rare", "Troop", 0, 755, 1390, "Control"),
     ("Musketeer", 4, "Rare", "Troop", 0, 217, 721, "Control"),
     ("Giant", 5, "Rare", "Troop", 0, 253, 4090, "Beatdown"),
@@ -72,9 +72,9 @@ CARDS_DATA = [
     ("Elixir Golem", 3, "Rare", "Troop", 6, 253, 1569, "Beatdown"),
     ("Berserker", 2, "Rare", "Troop", 13, 102, 896, "Cycle"),
     
-    # ═══════════════════════════════════════════════════════════
-    # TROOPS - Epic
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Witch", 5, "Epic", "Troop", 5, 135, 839, "Beatdown"),
     ("Skeleton Army", 3, "Epic", "Troop", 2, 81, 81, "Control"),
     ("Baby Dragon", 4, "Epic", "Troop", 0, 161, 1152, "Beatdown"),
@@ -99,9 +99,9 @@ CARDS_DATA = [
     ("Bush Goblins", 0, "Epic", "Troop", 14, 256, 304, "Cycle"),
     ("Rune Giant", 4, "Epic", "Troop", 14, 120, 2662, "Beatdown"),
     
-    # ═══════════════════════════════════════════════════════════
-    # TROOPS - Legendary
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Electro Wizard", 4, "Legendary", "Troop", 11, 115, 714, "Control"),
     ("Royal Ghost", 3, "Legendary", "Troop", 7, 261, 1210, "Control"),
     ("Princess", 3, "Legendary", "Troop", 7, 168, 261, "Control"),
@@ -121,9 +121,9 @@ CARDS_DATA = [
     ("Phoenix", 4, "Legendary", "Troop", 14, 217, 1052, "Control"),
     ("Elixir Golemite", 0, "Legendary", "Troop", 14, 128, 762, "Beatdown"),
     
-    # ═══════════════════════════════════════════════════════════
-    # TROOPS - Champions
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Royal Champion", 7, "Champion", "Troop", 0, 0, 0, "Beatdown"),
     ("Archer Queen", 5, "Champion", "Troop", 0, 225, 1000, "Control"),
     ("Skeleton King", 4, "Champion", "Troop", 0, 204, 2298, "Beatdown"),
@@ -135,9 +135,9 @@ CARDS_DATA = [
     ("Boss Bandit", 6, "Champion", "Troop", 0, 245, 2624, "Beatdown"),
     ("Spirit Empress", 6, "Champion", "Troop", 0, 307, 1244, "Control"),
     
-    # ═══════════════════════════════════════════════════════════
-    # SPELLS
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Fireball", 4, "Rare", "Spell", 0, 688, 0, "Control"),
     ("Arrows", 3, "Common", "Spell", 0, 366, 0, "Control"),
     ("Zap", 2, "Common", "Spell", 5, 192, 0, "Control"),
@@ -160,9 +160,9 @@ CARDS_DATA = [
     ("Vines", 3, "Epic", "Spell", 14, 306, 0, "Control"),
     ("Void", 3, "Epic", "Spell", 14, 1020, 0, "Control"),
     
-    # ═══════════════════════════════════════════════════════════
-    # DEFENSIVE BUILDINGS
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Bomb Tower", 4, "Rare", "Building", 2, 222, 1356, "Control"),
     ("Cannon", 3, "Common", "Building", 3, 212, 824, "Control"),
     ("Tesla", 4, "Common", "Building", 4, 220, 1152, "Control"),
@@ -171,9 +171,9 @@ CARDS_DATA = [
     ("X-Bow", 6, "Epic", "Building", 1, 43, 1600, "Siege"),
     ("Goblin Cage", 4, "Rare", "Building", 10, 0, 780, "Control"),
     
-    # ═══════════════════════════════════════════════════════════
-    # PASSIVE BUILDINGS / SPAWNERS
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Goblin Hut", 5, "Rare", "Building", 1, 32, 1180, "Control"),
     ("Furnace", 4, "Rare", "Building", 8, 179, 727, "Control"),
     ("Tombstone", 3, "Rare", "Building", 5, 0, 529, "Control"),
@@ -181,9 +181,9 @@ CARDS_DATA = [
     ("Barbarian Hut", 6, "Rare", "Building", 14, 0, 1164, "Beatdown"),
     ("Goblin Drill", 4, "Epic", "Building", 14, 84, 1313, "Siege"),
     
-    # ═══════════════════════════════════════════════════════════
-    # 🏰 TOWER TROOPS (NEW!)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     ("Cannoneer", 0, "Tower", "Tower Troop", 0, 320, 2616, "Tower"),
     ("Dagger Duchess", 0, "Tower", "Tower Troop", 0, 214, 2768, "Tower"),
     ("Royal Chef", 0, "Tower", "Tower Troop", 0, 109, 2703, "Tower"),
@@ -191,22 +191,22 @@ CARDS_DATA = [
 ]
 
 
-# ============================================================================
-# 📦 GENERATE FUNCTIONS
-# ============================================================================
+
+
+
 
 def generate_cards_csv():
-    """Generate cards.csv with realistic statistics."""
+
     print("📦 Generating cards.csv with OFFICIAL data...")
     
     cards = []
     for idx, (name, elixir, rarity, ctype, arena, dmg, hp, archetype) in enumerate(CARDS_DATA, 1):
-        # Tower troops don't appear in meta decks, give them static stats
+
         if ctype == "Tower Troop":
             win_rate = round(np.random.uniform(48, 55), 2)
             usage_rate = round(np.random.uniform(15, 30), 2)
         else:
-            # Count appearances in real meta decks
+
             card_appearances = sum(1 for d in REAL_META_DECKS if name in d["cards"])
             
             if card_appearances >= 10:
@@ -246,7 +246,7 @@ def generate_cards_csv():
 
 
 def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
-    """Generate UNIQUE decks from REAL meta templates."""
+
     print(f"🃏 Generating decks from REAL meta templates...")
 
     card_dict = cards_df.set_index('name').to_dict('index')
@@ -313,7 +313,7 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
 
 
 def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_battles: int = 5000):
-    """Generate realistic battles."""
+
     print(f"⚔️ Generating {num_battles} battles...")
     
     battles = []
@@ -368,7 +368,7 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
 
 
 def generate_meta_stats_csv(cards_df: pd.DataFrame):
-    """Generate meta stats with seasonal trends."""
+
     print("📊 Generating meta_stats.csv...")
     
     seasons = ["Season_45", "Season_46", "Season_47", "Season_48", "Season_49"]
@@ -410,9 +410,9 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
     return df
 
 
-# ============================================================================
-# 🚀 MAIN
-# ============================================================================
+
+
+
 
 def main():
     print("=" * 60)
@@ -431,7 +431,7 @@ def main():
     print("🎉 DATASETS GENERATED!")
     print("=" * 60)
     
-    # Statistics
+
     troops = sum(1 for c in CARDS_DATA if c[3] == "Troop")
     spells = sum(1 for c in CARDS_DATA if c[3] == "Spell")
     buildings = sum(1 for c in CARDS_DATA if c[3] == "Building")

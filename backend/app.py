@@ -1,13 +1,13 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Main Flask Application
-==========================================================================
 
-Application factory pattern + serves frontend HTML pages.
 
-Run:
-    python -m backend.app
-"""
+
+
+
+
+
+
+
+
 
 from pathlib import Path
 from flask import Flask, jsonify, send_from_directory, render_template
@@ -15,41 +15,41 @@ from flask_cors import CORS
 from backend.config.settings import Config
 from backend.utils.logger import get_logger
 
-# Import all route blueprints
+
 from backend.routes.card_routes import card_bp
 from backend.routes.deck_routes import deck_bp
 from backend.routes.meta_routes import meta_bp
 from backend.routes.recommendation_routes import recommend_bp
 
-# Pre-load ML models
+
 from backend.ml.model_loader import ModelLoader
 
 logger = get_logger(__name__)
 
-# Frontend path
+
 FRONTEND_DIR: Path = Config.BASE_DIR / "frontend"
 
 
 def create_app() -> Flask:
-    """Application factory function."""
+
     app = Flask(
         __name__,
         static_folder=str(FRONTEND_DIR),
         static_url_path="/static"
     )
 
-    # ── CORS ────────────────────────────────────────────
+
     CORS(app, origins=Config.CORS_ORIGINS)
 
-    # ── Configuration ────────────────────────────────────
+
     app.config["MAX_CONTENT_LENGTH"] = Config.MAX_REQUEST_SIZE
 
-    # ── Pre-load ML models at startup ───────────────────
+
     logger.info("🚀 Pre-loading ML models...")
     ModelLoader()
     logger.info("✅ ML models ready!")
 
-    # ── Register API Blueprints ─────────────────────────
+
     api_prefix = Config.API_PREFIX
 
     app.register_blueprint(card_bp, url_prefix=f"{api_prefix}/cards")
@@ -57,33 +57,33 @@ def create_app() -> Flask:
     app.register_blueprint(meta_bp, url_prefix=f"{api_prefix}/meta")
     app.register_blueprint(recommend_bp, url_prefix=f"{api_prefix}/recommend")
 
-    # ════════════════════════════════════════════════════
-    # 🎨 FRONTEND ROUTES (Serve HTML pages)
-    # ════════════════════════════════════════════════════
+
+
+
 
     @app.route("/")
     def home():
-        """Serve home page."""
+
         return send_from_directory(FRONTEND_DIR, "index.html")
 
     @app.route("/analyzer")
     def analyzer():
-        """Serve deck analyzer page."""
+
         return send_from_directory(FRONTEND_DIR, "analyzer.html")
 
     @app.route("/cards")
     def cards():
-        """Serve cards explorer page."""
+
         return send_from_directory(FRONTEND_DIR, "cards.html")
 
     @app.route("/dashboard")
     def dashboard():
-        """Serve meta dashboard page."""
+
         return send_from_directory(FRONTEND_DIR, "dashboard.html")
 
     @app.route("/about")
     def about():
-        """Serve about page."""
+
         return send_from_directory(FRONTEND_DIR, "about.html")
     
     @app.route("/docs")
@@ -115,7 +115,7 @@ def create_app() -> Flask:
     def terms():
         return send_from_directory(FRONTEND_DIR, "terms.html")
 
-    # ── API Health Check ─────────────────────────────────
+
     @app.route(f"{api_prefix}/health")
     def health():
         return jsonify({
@@ -124,7 +124,7 @@ def create_app() -> Flask:
             "ml_models_loaded": True
         }), 200
 
-    # ── API Info endpoint ────────────────────────────────
+
     @app.route(f"{api_prefix}")
     def api_info():
         return jsonify({
@@ -139,10 +139,10 @@ def create_app() -> Flask:
             }
         }), 200
 
-    # ── Error handlers ──────────────────────────────────
+
     @app.errorhandler(404)
     def not_found(error):
-        # If API path, return JSON
+
         from flask import request
         if request.path.startswith(api_prefix):
             return jsonify({
@@ -150,7 +150,7 @@ def create_app() -> Flask:
                 "error": "Endpoint not found",
                 "code": 404
             }), 404
-        # Otherwise serve home page (SPA-like)
+
         return send_from_directory(FRONTEND_DIR, "index.html")
 
     @app.errorhandler(500)

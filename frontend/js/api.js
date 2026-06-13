@@ -1,11 +1,9 @@
-/* ==========================================================================
-   🏆 CLASH ROYALE DECK ANALYZER - API Client
-   ========================================================================== */
+
 
 const API_BASE = '/api/v1';
 
 const API = {
-    // ── Helper: Make request ──
+    
     async request(endpoint, options = {}) {
         try {
             const response = await fetch(`${API_BASE}${endpoint}`, {
@@ -23,12 +21,12 @@ const API = {
         }
     },
 
-    // ── GET ──
+    
     get(endpoint) {
         return this.request(endpoint, { method: 'GET' });
     },
 
-    // ── POST ──
+    
     post(endpoint, body) {
         return this.request(endpoint, {
             method: 'POST',
@@ -36,9 +34,9 @@ const API = {
         });
     },
 
-    // ─────────────────────────────────────────────────
-    // 🃏 CARDS
-    // ─────────────────────────────────────────────────
+    
+    
+    
     cards: {
         getAll(filters = {}) {
             const params = new URLSearchParams(filters).toString();
@@ -61,9 +59,9 @@ const API = {
         }
     },
 
-    // ─────────────────────────────────────────────────
-    // 🎴 DECKS
-    // ─────────────────────────────────────────────────
+    
+    
+    
     decks: {
         analyze(cards) {
             return API.post('/decks/analyze', { cards });
@@ -76,9 +74,9 @@ const API = {
         }
     },
 
-    // ─────────────────────────────────────────────────
-    // 📊 META
-    // ─────────────────────────────────────────────────
+    
+    
+    
     meta: {
         getSummary() {
             return API.get('/meta/summary');
@@ -100,9 +98,9 @@ const API = {
         }
     },
 
-    // ─────────────────────────────────────────────────
-    // 💡 RECOMMENDATIONS
-    // ─────────────────────────────────────────────────
+    
+    
+    
     recommend: {
         similar(cards, top_n = 5) {
             return API.post('/recommend/similar', { cards, top_n });

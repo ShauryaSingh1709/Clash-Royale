@@ -1,6 +1,4 @@
-/* ==========================================================================
-   🎯 DECK ANALYZER LOGIC
-   ========================================================================== */
+
 
 let allCards = [];
 let currentDeck = [];
@@ -13,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     initEventListeners();
 });
 
-// ── INIT DECK SLOTS ───────────────────────────────────────────────
+
 function initDeckSlots() {
     const slotsContainer = document.getElementById('deckSlots');
     slotsContainer.innerHTML = '';
@@ -27,7 +25,7 @@ function initDeckSlots() {
     }
 }
 
-// ── LOAD CARDS FROM API ───────────────────────────────────────────
+
 async function loadCards() {
     try {
         const data = await API.cards.getAll();
@@ -38,7 +36,7 @@ async function loadCards() {
     }
 }
 
-// ── RENDER CARD POOL ──────────────────────────────────────────────
+
 function renderCardPool() {
     const pool = document.getElementById('cardsPool');
     let filtered = allCards;
@@ -80,7 +78,7 @@ function renderCardPool() {
     }).join('');
 }
 
-// ── ADD CARD TO DECK ──────────────────────────────────────────────
+
 function addToDeck(cardName) {
     if (currentDeck.length >= 8) {
         Utils.showToast('Deck is full! Remove a card first.', 'error');
@@ -96,7 +94,7 @@ function addToDeck(cardName) {
     renderCardPool();
 }
 
-// ── REMOVE CARD FROM DECK ─────────────────────────────────────────
+
 function removeFromDeck(index) {
     if (currentDeck[index]) {
         currentDeck.splice(index, 1);
@@ -105,7 +103,7 @@ function removeFromDeck(index) {
     }
 }
 
-// ── UPDATE DECK DISPLAY ───────────────────────────────────────────
+
 function updateDeckDisplay() {
     const slots = document.querySelectorAll('.deck-slot');
     slots.forEach((slot, i) => {
@@ -133,9 +131,9 @@ function updateDeckDisplay() {
     document.getElementById('analyzeBtn').disabled = currentDeck.length !== 8;
 }
 
-// ── EVENT LISTENERS ───────────────────────────────────────────────
+
 function initEventListeners() {
-    // Filter buttons
+    
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -145,13 +143,13 @@ function initEventListeners() {
         });
     });
 
-    // Search
+    
     document.getElementById('cardSearch').addEventListener('input', Utils.debounce((e) => {
         currentSearch = e.target.value;
         renderCardPool();
     }, 300));
 
-    // Clear deck
+    
     document.getElementById('clearDeck').addEventListener('click', () => {
         currentDeck = [];
         updateDeckDisplay();
@@ -159,7 +157,7 @@ function initEventListeners() {
         document.getElementById('analysisResults').style.display = 'none';
     });
 
-    // Random deck
+    
     document.getElementById('randomDeck').addEventListener('click', () => {
         const shuffled = [...allCards].sort(() => Math.random() - 0.5);
         currentDeck = shuffled.slice(0, 8).map(c => c.name);
@@ -167,11 +165,11 @@ function initEventListeners() {
         renderCardPool();
     });
 
-    // Analyze button
+    
     document.getElementById('analyzeBtn').addEventListener('click', analyzeDeck);
 }
 
-// ── ANALYZE DECK ──────────────────────────────────────────────────
+
 async function analyzeDeck() {
     const resultsDiv = document.getElementById('analysisResults');
     const contentDiv = document.getElementById('resultsContent');
@@ -194,7 +192,7 @@ async function analyzeDeck() {
     }
 }
 
-// ── RENDER RESULTS ────────────────────────────────────────────────
+
 function renderResults(data, container) {
     const ml = data.ml_predictions;
     const analysis = data.analysis;

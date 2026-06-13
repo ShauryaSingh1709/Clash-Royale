@@ -1,12 +1,10 @@
-/* ==========================================================================
-   👑 ROYALEFORGE - Clash Royale Inspired Design System
-   ========================================================================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@600;700;800;900&display=swap');
 
-/* ── DESIGN TOKENS ─────────────────────────────────────────── */
+
 :root {
-    /* === CLASH ROYALE COLORS === */
+    
     --cr-gold:              #FFD700;
     --cr-gold-bright:       #FFED4E;
     --cr-gold-dark:         #B8860B;
@@ -21,7 +19,7 @@
     --cr-red:               #DC2626;
     --cr-orange:            #F97316;
     
-    /* === BACKGROUNDS (Royal Blue Theme) === */
+    
     --bg-base:              #0A0E2A;
     --bg-deep:              #060924;
     --bg-elevated:          #131B40;
@@ -30,33 +28,33 @@
     --bg-glass:             rgba(26, 36, 86, 0.5);
     --bg-glass-strong:      rgba(26, 36, 86, 0.85);
     
-    /* === BORDERS === */
+    
     --border-subtle:        rgba(255, 215, 0, 0.08);
     --border-default:       rgba(255, 215, 0, 0.15);
     --border-strong:        rgba(255, 215, 0, 0.3);
     --border-glow:          rgba(255, 215, 0, 0.5);
     
-    /* === TEXT === */
+    
     --text-primary:         #FFFFFF;
     --text-secondary:       #E0E7FF;
     --text-tertiary:        #A5B4FC;
     --text-muted:           #6366F1;
     
-    /* === RARITY COLORS === */
+    
     --rarity-common:        #B0B7C8;
     --rarity-rare:          #FFA500;
     --rarity-epic:          #C084FC;
     --rarity-legendary:     #FB7185;
     --rarity-champion:      #FBBF24;
     
-    /* === GRADIENTS === */
+    
     --gradient-gold:        linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
     --gradient-blue:        linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
     --gradient-royal:       linear-gradient(135deg, #FFD700 0%, #7C3AED 50%, #1E3A8A 100%);
     --gradient-hero:        linear-gradient(180deg, transparent 0%, rgba(10, 14, 42, 0.8) 70%, var(--bg-base) 100%);
     --gradient-card:        linear-gradient(180deg, rgba(255, 215, 0, 0.05) 0%, transparent 60%);
     
-    /* === SHADOWS === */
+    
     --shadow-sm:            0 2px 4px rgba(0, 0, 0, 0.3);
     --shadow-md:            0 4px 16px rgba(0, 0, 0, 0.4);
     --shadow-lg:            0 12px 32px rgba(0, 0, 0, 0.5);
@@ -65,11 +63,11 @@
     --shadow-blue:          0 0 32px rgba(59, 130, 246, 0.3);
     --shadow-inset:         inset 0 1px 0 rgba(255, 255, 255, 0.1);
     
-    /* === TYPOGRAPHY === */
+    
     --font-display:         'Manrope', 'Inter', sans-serif;
     --font-body:            'Inter', sans-serif;
     
-    /* === SPACING === */
+    
     --space-1:              0.25rem;
     --space-2:              0.5rem;
     --space-3:              0.75rem;
@@ -84,12 +82,12 @@
     --space-24:             6rem;
     --space-32:             8rem;
     
-    /* === LAYOUT === */
+    
     --container-max:        1280px;
     --container-narrow:     960px;
     --navbar-height:        72px;
     
-    /* === BORDER RADIUS === */
+    
     --radius-sm:            6px;
     --radius-md:            10px;
     --radius-lg:            16px;
@@ -97,7 +95,7 @@
     --radius-2xl:           32px;
     --radius-full:          9999px;
     
-    /* === TRANSITIONS === */
+    
     --ease:                 cubic-bezier(0.4, 0, 0.2, 1);
     --ease-out:             cubic-bezier(0.16, 1, 0.3, 1);
     --ease-bounce:          cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -105,14 +103,14 @@
     --transition-base:      250ms var(--ease);
     --transition-slow:      400ms var(--ease);
     
-    /* === Z-INDEX === */
+    
     --z-base:               1;
     --z-dropdown:           100;
     --z-fixed:              1000;
     --z-modal:              2000;
 }
 
-/* ── RESET ─────────────────────────────────────────────────── */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -135,7 +133,7 @@ body {
     position: relative;
 }
 
-/* ── ANIMATED BACKGROUND ───────────────────────────────────── */
+
 body::before {
     content: '';
     position: fixed;
@@ -160,7 +158,7 @@ body::after {
     pointer-events: none;
 }
 
-/* ── SCROLLBAR ─────────────────────────────────────────────── */
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -185,7 +183,7 @@ body::after {
     color: var(--bg-base);
 }
 
-/* ── TYPOGRAPHY ────────────────────────────────────────────── */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     font-weight: 900;
@@ -212,7 +210,7 @@ a {
     transition: color var(--transition-fast);
 }
 
-/* ── UTILITY CLASSES ───────────────────────────────────────── */
+
 .container {
     max-width: var(--container-max);
     margin: 0 auto;
@@ -242,7 +240,7 @@ a {
 
 .text-center { text-align: center; }
 
-/* ── ANIMATIONS ────────────────────────────────────────────── */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -290,14 +288,14 @@ a {
 .animate-floatReverse { animation: floatReverse 7s ease-in-out infinite; }
 .animate-glow { animation: glowPulse 3s ease-in-out infinite; }
 
-/* Delay utilities */
+
 .delay-100 { animation-delay: 100ms; opacity: 0; }
 .delay-200 { animation-delay: 200ms; opacity: 0; }
 .delay-300 { animation-delay: 300ms; opacity: 0; }
 .delay-400 { animation-delay: 400ms; opacity: 0; }
 .delay-500 { animation-delay: 500ms; opacity: 0; }
 
-/* ── LAYOUT ────────────────────────────────────────────────── */
+
 main {
     padding-top: var(--navbar-height);
     min-height: calc(100vh - var(--navbar-height));
@@ -308,7 +306,7 @@ section {
     position: relative;
 }
 
-/* ── ELIXIR DROP (Authentic CR Style) ───────────────────────── */
+
 .elixir-drop {
     display: inline-flex;
     align-items: center;
@@ -345,7 +343,7 @@ section {
 .elixir-md { width: 44px; height: 44px; font-size: 1.2rem; }
 .elixir-lg { width: 56px; height: 56px; font-size: 1.5rem; }
 
-/* ── RESPONSIVE ────────────────────────────────────────────── */
+
 @media (max-width: 1024px) {
     section { padding: var(--space-20) 0; }
 }

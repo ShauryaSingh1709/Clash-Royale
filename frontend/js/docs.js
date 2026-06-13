@@ -1,6 +1,4 @@
-/* ==========================================================================
-   📚 DOCS - Inject icons, FAQ toggle, copy buttons
-   ========================================================================== */
+
 
 document.addEventListener('DOMContentLoaded', () => {
     injectIcons();
@@ -30,7 +28,7 @@ function injectIcons() {
         updatedMeta: 'refresh'
     };
     
-    // Add check icon to Icons if missing
+    
     if (!Icons.check) {
         Icons.check = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`;
     }
@@ -58,7 +56,7 @@ function initActiveLinks() {
     
     if (!links.length || !sections.length) return;
 
-    // Click handlers
+    
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             links.forEach(l => l.classList.remove('active'));
@@ -66,7 +64,7 @@ function initActiveLinks() {
         });
     });
 
-    // Scroll spy
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

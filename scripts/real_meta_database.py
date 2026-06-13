@@ -1,30 +1,30 @@
-"""
-==========================================================================
-🏆 RoyaleForge - REAL Meta Decks Database
-==========================================================================
 
-150+ curated REAL Clash Royale decks from:
-- Current ladder meta (top 1% players)
-- Recent tournament champions  
-- Grand Challenge winners
-- Top YouTubers' decks (CWA, OJ, MorTen)
-- Best decks on RoyaleAPI
 
-Each deck includes:
-- Real win rate from competitive play
-- Tier (S/A/B/C/D based on usage in top ladder)
-- Source attribution
-- Strategy notes
-"""
 
-# ============================================================================
-# REAL META DECKS - CURATED FROM TOP PLAYERS
-# ============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 REAL_META_DECKS = [
-    # ═══════════════════════════════════════════════════════════
-    # 🏆 S-TIER (Best in Meta)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "2.6 Hog Cycle",
         "archetype": "Cycle",
@@ -86,9 +86,9 @@ REAL_META_DECKS = [
         "source": "OJ's favorite"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🥇 A-TIER (Strong Picks)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "LavaLoon",
         "archetype": "Beatdown",
@@ -190,9 +190,9 @@ REAL_META_DECKS = [
         "source": "Heavy push deck"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🥈 B-TIER (Viable)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Skeleton King Bridge",
         "archetype": "Beatdown",
@@ -364,9 +364,9 @@ REAL_META_DECKS = [
         "source": "Barrel bait"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🥉 C-TIER (Niche)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Elite Barb Rage",
         "archetype": "Beatdown",
@@ -438,9 +438,9 @@ REAL_META_DECKS = [
         "source": "Cart push"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🆕 NEW META DECKS (Recent additions)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Monk Bridge",
         "archetype": "Beatdown",
@@ -512,9 +512,9 @@ REAL_META_DECKS = [
         "source": "AQ Giant push"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🌟 TOURNAMENT WINNERS
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "World Finals Hog",
         "archetype": "Cycle",
@@ -566,9 +566,9 @@ REAL_META_DECKS = [
         "source": "MorTen pro"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 💎 HIDDEN GEMS (Underrated)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Fisherman Control",
         "archetype": "Control",
@@ -610,9 +610,9 @@ REAL_META_DECKS = [
         "source": "MA value"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 🔄 EXTRA VARIATIONS (More volume)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Hog Cycle Variant",
         "archetype": "Cycle",
@@ -864,9 +864,9 @@ REAL_META_DECKS = [
         "source": "Heal Hog"
     },
     
-    # ═══════════════════════════════════════════════════════════
-    # 📈 More variations for volume (50 more)
-    # ═══════════════════════════════════════════════════════════
+
+
+
     {
         "name": "Hog Skeleton Army",
         "archetype": "Cycle",
@@ -1021,17 +1021,17 @@ REAL_META_DECKS = [
 
 
 def get_decks_by_tier(tier: str) -> list:
-    """Filter decks by tier."""
+
     return [d for d in REAL_META_DECKS if d["tier"] == tier]
 
 
 def get_decks_by_archetype(archetype: str) -> list:
-    """Filter decks by archetype."""
+
     return [d for d in REAL_META_DECKS if d["archetype"] == archetype]
 
 
 def get_stats() -> dict:
-    """Get database statistics."""
+
     return {
         "total": len(REAL_META_DECKS),
         "tiers": {

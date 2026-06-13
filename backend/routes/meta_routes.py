@@ -1,18 +1,18 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Meta Routes
-==========================================================================
 
-REST API endpoints for meta-level statistics and trends.
 
-Endpoints:
-    GET /meta/summary       → Overall meta stats
-    GET /meta/popular       → Most popular cards
-    GET /meta/underrated    → Underrated cards
-    GET /meta/archetypes    → Archetype distribution
-    GET /meta/trends        → Meta trends across seasons
-    GET /meta/top-decks     → Top performing decks
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 from flask import Blueprint, jsonify, request
 from backend.services.meta_analyzer import MetaAnalyzer
@@ -26,20 +26,20 @@ _meta_analyzer: MetaAnalyzer = None
 
 
 def get_meta_analyzer() -> MetaAnalyzer:
-    """Get or create MetaAnalyzer instance."""
+
     global _meta_analyzer
     if _meta_analyzer is None:
         _meta_analyzer = MetaAnalyzer()
     return _meta_analyzer
 
 
-# ============================================================================
-# 📊 ROUTES
-# ============================================================================
+
+
+
 
 @meta_bp.route("/summary", methods=["GET"])
 def get_summary():
-    """Get overall meta summary."""
+
     try:
         analyzer = get_meta_analyzer()
         return jsonify({
@@ -53,7 +53,7 @@ def get_summary():
 
 @meta_bp.route("/popular", methods=["GET"])
 def get_popular_cards():
-    """Get most popular cards."""
+
     try:
         n = request.args.get("n", default=10, type=int)
         analyzer = get_meta_analyzer()
@@ -69,7 +69,7 @@ def get_popular_cards():
 
 @meta_bp.route("/underrated", methods=["GET"])
 def get_underrated_cards():
-    """Get underrated cards (high win rate, low usage)."""
+
     try:
         n = request.args.get("n", default=10, type=int)
         analyzer = get_meta_analyzer()
@@ -85,7 +85,7 @@ def get_underrated_cards():
 
 @meta_bp.route("/archetypes", methods=["GET"])
 def get_archetypes():
-    """Get archetype distribution and performance."""
+
     try:
         analyzer = get_meta_analyzer()
         return jsonify({
@@ -100,7 +100,7 @@ def get_archetypes():
 
 @meta_bp.route("/trends", methods=["GET"])
 def get_trends():
-    """Get meta trends across seasons."""
+
     try:
         analyzer = get_meta_analyzer()
         return jsonify({
@@ -114,7 +114,7 @@ def get_trends():
 
 @meta_bp.route("/top-decks", methods=["GET"])
 def get_top_decks():
-    """Get top performing decks."""
+
     try:
         n = request.args.get("n", default=10, type=int)
         analyzer = get_meta_analyzer()

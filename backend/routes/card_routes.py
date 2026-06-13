@@ -1,18 +1,18 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Card Routes
-==========================================================================
 
-REST API endpoints for card-related queries.
 
-Endpoints:
-    GET /cards                  → All cards
-    GET /cards/<name>           → Single card details
-    GET /cards/search?q=query   → Search cards
-    GET /cards/top/win-rate     → Top by win rate
-    GET /cards/top/usage        → Top by usage
-    GET /cards/stats            → Overall card statistics
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 from flask import Blueprint, jsonify, request
 from backend.services.card_analyzer import CardAnalyzer
@@ -20,39 +20,39 @@ from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Create Blueprint
+
 card_bp = Blueprint("cards", __name__, url_prefix="/cards")
 
-# Initialize service (singleton-like)
+
 _card_analyzer: CardAnalyzer = None
 
 
 def get_card_analyzer() -> CardAnalyzer:
-    """Get or create CardAnalyzer instance."""
+
     global _card_analyzer
     if _card_analyzer is None:
         _card_analyzer = CardAnalyzer()
     return _card_analyzer
 
 
-# ============================================================================
-# 📋 ROUTES
-# ============================================================================
+
+
+
 
 @card_bp.route("", methods=["GET"])
 def get_all_cards():
-    """Get all cards with optional filters."""
+
     try:
         analyzer = get_card_analyzer()
 
-        # Optional query params
+
         rarity = request.args.get("rarity")
         card_type = request.args.get("type")
         archetype = request.args.get("archetype")
         min_elixir = request.args.get("min_elixir", type=int)
         max_elixir = request.args.get("max_elixir", type=int)
 
-        # If filters provided, use filter method
+
         if any([rarity, card_type, archetype, min_elixir, max_elixir]):
             cards = analyzer.filter_cards(
                 rarity=rarity, card_type=card_type, archetype=archetype,
@@ -74,7 +74,7 @@ def get_all_cards():
 
 @card_bp.route("/<string:card_name>", methods=["GET"])
 def get_card_details(card_name: str):
-    """Get details of a specific card."""
+
     try:
         analyzer = get_card_analyzer()
         card = analyzer.get_card_details(card_name)
@@ -97,7 +97,7 @@ def get_card_details(card_name: str):
 
 @card_bp.route("/search", methods=["GET"])
 def search_cards():
-    """Search cards by name."""
+
     try:
         query = request.args.get("q", "").strip()
 
@@ -124,7 +124,7 @@ def search_cards():
 
 @card_bp.route("/top/win-rate", methods=["GET"])
 def get_top_by_win_rate():
-    """Get top cards by win rate."""
+
     try:
         n = request.args.get("n", default=10, type=int)
         analyzer = get_card_analyzer()
@@ -144,7 +144,7 @@ def get_top_by_win_rate():
 
 @card_bp.route("/top/usage", methods=["GET"])
 def get_top_by_usage():
-    """Get top cards by usage rate."""
+
     try:
         n = request.args.get("n", default=10, type=int)
         analyzer = get_card_analyzer()
@@ -164,7 +164,7 @@ def get_top_by_usage():
 
 @card_bp.route("/stats", methods=["GET"])
 def get_card_stats():
-    """Get overall card statistics."""
+
     try:
         analyzer = get_card_analyzer()
         stats = analyzer.get_card_statistics()

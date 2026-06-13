@@ -1,22 +1,22 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Battle Model
-==========================================================================
 
-OOP representation of a single battle between two players.
 
-Usage:
-    from backend.models.battle import Battle
 
-    battle = Battle(
-        battle_id=1,
-        player_1_deck=deck1,
-        player_2_deck=deck2,
-        player_1_crowns=3,
-        player_2_crowns=1
-    )
-    print(battle.winner)
-"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 from dataclasses import dataclass, field
 from typing import Optional
@@ -25,20 +25,20 @@ from backend.models.deck import Deck
 
 @dataclass
 class Battle:
-    """
-    Represents a Clash Royale battle.
 
-    Attributes:
-        battle_id (int):              Unique battle ID
-        player_1_deck (Deck):         Player 1's deck
-        player_2_deck (Deck):         Player 2's deck
-        player_1_crowns (int):        Crowns won by player 1 (0-3)
-        player_2_crowns (int):        Crowns won by player 2 (0-3)
-        player_1_trophies (int):      Player 1's trophy count
-        player_2_trophies (int):      Player 2's trophy count
-        duration_sec (int):           Battle duration in seconds
-        game_mode (str):              Game mode (Ladder, Tournament, etc.)
-    """
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     battle_id: Optional[int] = None
     player_1_deck: Optional[Deck] = None
@@ -50,13 +50,13 @@ class Battle:
     duration_sec: int = 0
     game_mode: str = "Ladder"
 
-    # ========================================================================
-    # 🏆 RESULT PROPERTIES
-    # ========================================================================
+
+
+
 
     @property
     def winner(self) -> str:
-        """Determine the winner of the battle."""
+
         if self.player_1_crowns > self.player_2_crowns:
             return "player_1"
         elif self.player_2_crowns > self.player_1_crowns:
@@ -65,27 +65,27 @@ class Battle:
 
     @property
     def is_draw(self) -> bool:
-        """Returns True if the battle was a draw."""
+
         return self.winner == "draw"
 
     @property
     def crown_difference(self) -> int:
-        """Absolute crown difference between players."""
+
         return abs(self.player_1_crowns - self.player_2_crowns)
 
     @property
     def is_dominant_win(self) -> bool:
-        """Returns True if winner won by 2+ crowns."""
+
         return self.crown_difference >= 2
 
     @property
     def trophy_difference(self) -> int:
-        """Absolute trophy difference between players."""
+
         return abs(self.player_1_trophies - self.player_2_trophies)
 
     @property
     def match_type(self) -> str:
-        """Returns match type based on trophy difference."""
+
         diff = self.trophy_difference
         if diff < 100:
             return "Balanced"
@@ -95,20 +95,20 @@ class Battle:
 
     @property
     def battle_intensity(self) -> int:
-        """Total crowns in the battle (intensity measure)."""
+
         return self.player_1_crowns + self.player_2_crowns
 
     @property
     def duration_minutes(self) -> float:
-        """Battle duration in minutes."""
+
         return round(self.duration_sec / 60, 2)
 
-    # ========================================================================
-    # 🛠️ METHODS
-    # ========================================================================
+
+
+
 
     def get_winner_deck(self) -> Optional[Deck]:
-        """Returns the winning player's deck (or None if draw)."""
+
         if self.winner == "player_1":
             return self.player_1_deck
         elif self.winner == "player_2":
@@ -116,7 +116,7 @@ class Battle:
         return None
 
     def get_loser_deck(self) -> Optional[Deck]:
-        """Returns the losing player's deck (or None if draw)."""
+
         if self.winner == "player_1":
             return self.player_2_deck
         elif self.winner == "player_2":
@@ -124,7 +124,7 @@ class Battle:
         return None
 
     def to_dict(self) -> dict:
-        """Convert Battle to dictionary (for JSON API responses)."""
+
         return {
             "battle_id": self.battle_id,
             "player_1": {
@@ -153,21 +153,21 @@ class Battle:
             "game_mode": self.game_mode,
         }
 
-    # ========================================================================
-    # 🎨 MAGIC METHODS
-    # ========================================================================
+
+
+
 
     def __str__(self) -> str:
-        """Pretty print the battle result."""
+
         result_emoji = "🤝" if self.is_draw else "🏆"
         return (
-            f"{result_emoji} Battle #{self.battle_id} | "
+            f"{result_emoji} Battle
             f"P1({self.player_1_crowns}) vs P2({self.player_2_crowns}) | "
             f"Winner: {self.winner.upper()} | Mode: {self.game_mode}"
         )
 
     def __repr__(self) -> str:
-        """Developer representation."""
+
         return (
             f"Battle(id={self.battle_id}, winner='{self.winner}', "
             f"crowns={self.player_1_crowns}-{self.player_2_crowns})"

@@ -1,6 +1,4 @@
-/* ==========================================================================
-   📊 DASHBOARD LOGIC - Charts + Premium Top Decks
-   ========================================================================== */
+
 
 const CHART_COLORS = [
     '#FFD700', '#FF6B35', '#4FC3F7', '#9B5DE5', '#06D6A0',
@@ -21,7 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     ]);
 });
 
-// ── POPULAR CARDS CHART ──────────────────────────────────────────
+
 async function loadPopularChart() {
     try {
         const data = await API.meta.getPopular(10);
@@ -50,7 +48,7 @@ async function loadPopularChart() {
     } catch (e) { console.error(e); }
 }
 
-// ── WIN RATE CHART ───────────────────────────────────────────────
+
 async function loadWinRateChart() {
     try {
         const data = await API.cards.getTopByWinRate(10);
@@ -79,7 +77,7 @@ async function loadWinRateChart() {
     } catch (e) { console.error(e); }
 }
 
-// ── ARCHETYPE CHART ──────────────────────────────────────────────
+
 async function loadArchetypeChart() {
     try {
         const data = await API.meta.getArchetypes();
@@ -107,7 +105,7 @@ async function loadArchetypeChart() {
     } catch (e) { console.error(e); }
 }
 
-// ── TRENDS CHART ─────────────────────────────────────────────────
+
 async function loadTrendsChart() {
     try {
         const data = await API.meta.getTrends();
@@ -144,9 +142,9 @@ async function loadTrendsChart() {
     } catch (e) { console.error(e); }
 }
 
-// ══════════════════════════════════════════════════════════════════
-// 🏆 TOP DECKS - PREMIUM DISPLAY WITH NAMES, TIERS, SOURCES
-// ══════════════════════════════════════════════════════════════════
+
+
+
 async function loadTopDecks() {
     const container = document.getElementById('topDecksList');
     try {
@@ -159,7 +157,7 @@ async function loadTopDecks() {
                 deck.card_5, deck.card_6, deck.card_7, deck.card_8
             ];
             
-            // Tier colors
+            
             const tierColors = {
                 'S': '#FFD700',
                 'A': '#A78BFA',
@@ -168,7 +166,7 @@ async function loadTopDecks() {
             };
             const tierColor = tierColors[deck.tier] || '#9CA3AF';
             
-            // Use real deck name or fallback
+            
             const deckName = deck.deck_name || `${deck.archetype} Deck #${i + 1}`;
             
             return `

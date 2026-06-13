@@ -1,10 +1,6 @@
-/* ==========================================================================
-   📚 DOCUMENTATION SYSTEM - Professional Premium Design
-   ========================================================================== */
 
-/* ════════════════════════════════════════════════════════════
-   PAGE HEADER (Premium)
-   ════════════════════════════════════════════════════════════ */
+
+
 .page-header {
     padding: var(--space-16) 0 var(--space-12);
     position: relative;
@@ -93,9 +89,7 @@
     background: var(--border-default);
 }
 
-/* ════════════════════════════════════════════════════════════
-   LAYOUT WITH SIDEBAR
-   ════════════════════════════════════════════════════════════ */
+
 .docs-layout {
     padding: var(--space-8) 0 var(--space-24);
 }
@@ -108,7 +102,7 @@
     margin: 0 auto;
 }
 
-/* ── SIDEBAR ── */
+
 .docs-sidebar {
     position: sticky;
     top: calc(var(--navbar-height) + var(--space-6));
@@ -158,7 +152,7 @@
     font-weight: 600;
 }
 
-/* ── MAIN CONTENT ── */
+
 .docs-main {
     min-width: 0;
     max-width: 760px;
@@ -260,9 +254,7 @@ code {
     font-weight: 500;
 }
 
-/* ════════════════════════════════════════════════════════════
-   CODE BLOCKS (Premium)
-   ════════════════════════════════════════════════════════════ */
+
 .code-block {
     background: var(--bg-deep);
     border: 1px solid var(--border-default);
@@ -337,9 +329,7 @@ code {
 .code-function { color: var(--cr-gold); }
 .code-property { color: #60A5FA; }
 
-/* ════════════════════════════════════════════════════════════
-   CALLOUT (Info/Warning/Success/Danger)
-   ════════════════════════════════════════════════════════════ */
+
 .callout {
     display: flex;
     gap: var(--space-4);
@@ -403,9 +393,7 @@ code {
 }
 .callout-danger .callout-icon, .callout-danger .callout-title { color: #EF4444; }
 
-/* ════════════════════════════════════════════════════════════
-   API ENDPOINT CARD (Professional)
-   ════════════════════════════════════════════════════════════ */
+
 .api-endpoint {
     background: var(--bg-glass);
     backdrop-filter: blur(20px);
@@ -521,9 +509,7 @@ code {
     border-color: var(--border-strong);
 }
 
-/* ════════════════════════════════════════════════════════════
-   STEP CARDS (Tutorials)
-   ════════════════════════════════════════════════════════════ */
+
 .tutorial-steps {
     display: flex;
     flex-direction: column;
@@ -586,9 +572,7 @@ code {
     margin-bottom: 0;
 }
 
-/* ════════════════════════════════════════════════════════════
-   CARD GRIDS (Doc home pages)
-   ════════════════════════════════════════════════════════════ */
+
 .doc-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -667,9 +651,7 @@ code {
     transform: translateX(4px);
 }
 
-/* ════════════════════════════════════════════════════════════
-   LEGAL PAGES (Privacy / Terms)
-   ════════════════════════════════════════════════════════════ */
+
 .legal-content {
     max-width: 800px;
     margin: 0 auto;
@@ -716,9 +698,7 @@ code {
     font-weight: 700;
 }
 
-/* ════════════════════════════════════════════════════════════
-   FAQ ACCORDION
-   ════════════════════════════════════════════════════════════ */
+
 .faq-list {
     display: flex;
     flex-direction: column;
@@ -783,9 +763,7 @@ code {
     padding: 0 var(--space-5) var(--space-4);
 }
 
-/* ════════════════════════════════════════════════════════════
-   CTA SECTION
-   ════════════════════════════════════════════════════════════ */
+
 .docs-cta {
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), rgba(124, 58, 237, 0.08));
     border: 1px solid var(--border-strong);
@@ -807,9 +785,7 @@ code {
     font-size: 0.9375rem;
 }
 
-/* ════════════════════════════════════════════════════════════
-   RESPONSIVE
-   ════════════════════════════════════════════════════════════ */
+
 @media (max-width: 968px) {
     .docs-layout-grid {
         grid-template-columns: 1fr;

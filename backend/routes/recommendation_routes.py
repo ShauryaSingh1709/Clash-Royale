@@ -1,15 +1,15 @@
-"""
-==========================================================================
-🏆 CLASH ROYALE DECK ANALYZER - Recommendation Routes
-==========================================================================
 
-REST API endpoints for smart deck recommendations.
 
-Endpoints:
-    POST /recommend/similar       → Find similar decks
-    POST /recommend/improvements  → Suggest card improvements
-    POST /recommend/full          → Complete recommendation report
-"""
+
+
+
+
+
+
+
+
+
+
 
 from flask import Blueprint, jsonify, request
 from backend.services.recommendation_engine import RecommendationEngine
@@ -23,7 +23,7 @@ _engine: RecommendationEngine = None
 
 
 def get_engine() -> RecommendationEngine:
-    """Get or create RecommendationEngine instance."""
+
     global _engine
     if _engine is None:
         _engine = RecommendationEngine()
@@ -31,7 +31,7 @@ def get_engine() -> RecommendationEngine:
 
 
 def _extract_deck_from_request() -> tuple[list, str]:
-    """Helper to extract deck from JSON request."""
+
     data = request.get_json()
     if not data:
         return None, "Request body must be JSON"
@@ -41,21 +41,21 @@ def _extract_deck_from_request() -> tuple[list, str]:
     return cards, None
 
 
-# ============================================================================
-# 💡 ROUTES
-# ============================================================================
+
+
+
 
 @recommend_bp.route("/similar", methods=["POST"])
 def find_similar():
-    """
-    Find decks similar to user's deck.
 
-    Request body:
-        {
-            "cards": ["Hog Rider", ...],
-            "top_n": 5
-        }
-    """
+
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -77,15 +77,15 @@ def find_similar():
 
 @recommend_bp.route("/improvements", methods=["POST"])
 def suggest_improvements():
-    """
-    Suggest improvements for user's deck.
 
-    Request body:
-        {
-            "cards": ["Hog Rider", ...],
-            "top_n": 3
-        }
-    """
+
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -107,14 +107,14 @@ def suggest_improvements():
 
 @recommend_bp.route("/full", methods=["POST"])
 def full_recommendation():
-    """
-    Get complete recommendation report (everything).
 
-    Request body:
-        {
-            "cards": ["Hog Rider", ...]
-        }
-    """
+
+
+
+
+
+
+
     try:
         cards, error = _extract_deck_from_request()
         if error:

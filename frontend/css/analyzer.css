@@ -1,6 +1,4 @@
-/* ==========================================================================
-   🎯 DECK ANALYZER STYLES
-   ========================================================================== */
+
 
 .analyzer-section {
     padding: 3rem 0 6rem;
@@ -13,7 +11,7 @@
     margin-top: 3rem;
 }
 
-/* ── DECK BUILDER ──────────────────────────────────────────────── */
+
 .deck-builder {
     padding: 2rem;
     position: sticky;
@@ -140,7 +138,7 @@
     cursor: not-allowed;
 }
 
-/* ── CARD PICKER ───────────────────────────────────────────────── */
+
 .card-picker {
     padding: 2rem;
 }
@@ -255,7 +253,7 @@
     letter-spacing: 0.5px;
 }
 
-/* ── RESULTS ───────────────────────────────────────────────────── */
+
 .results-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -402,7 +400,7 @@
     box-shadow: var(--shadow-sm);
 }
 
-/* ── RESPONSIVE ────────────────────────────────────────────────── */
+
 @media (max-width: 1024px) {
     .analyzer-grid {
         grid-template-columns: 1fr;
