@@ -70,16 +70,16 @@ class DatasetLoader:
         file_path: Path = self.data_path / filename
 
         if not file_path.exists():
-            logger.error(f"❌ File not found: {file_path}")
+            logger.error(f"File not found: {file_path}")
             raise FileNotFoundError(f"Dataset file not found: {file_path}")
 
         try:
             df = pd.read_csv(file_path)
             self._cache[filename] = df
-            logger.info(f"✅ Loaded: {filename} | Shape: {df.shape}")
+            logger.info(f"Loaded: {filename} | Shape: {df.shape}")
             return df
         except Exception as e:
-            logger.error(f"❌ Failed to load {filename}: {e}")
+            logger.error(f"Failed to load {filename}: {e}")
             raise
 
 

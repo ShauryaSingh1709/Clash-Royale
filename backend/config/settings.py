@@ -88,14 +88,14 @@ class Config:
     def display(cls) -> None:
 
         print("=" * 60)
-        print("🏆 CLASH ROYALE DECK ANALYZER - Configuration")
+        print("CLASH ROYALE DECK ANALYZER - Configuration")
         print("=" * 60)
-        print(f"📂 BASE_DIR:           {cls.BASE_DIR}")
-        print(f"📂 MODELS_PATH:        {cls.MODELS_PATH}")
-        print(f"📂 PROCESSED_DATA:     {cls.PROCESSED_DATA_PATH}")
-        print(f"🌐 HOST:PORT:          {cls.HOST}:{cls.PORT}")
-        print(f"🐛 DEBUG:              {cls.DEBUG}")
-        print(f"📝 LOG_LEVEL:          {cls.LOG_LEVEL}")
+        print(f"BASE_DIR:           {cls.BASE_DIR}")
+        print(f"MODELS_PATH:        {cls.MODELS_PATH}")
+        print(f"PROCESSED_DATA:     {cls.PROCESSED_DATA_PATH}")
+        print(f"HOST:PORT:          {cls.HOST}:{cls.PORT}")
+        print(f"DEBUG:              {cls.DEBUG}")
+        print(f"LOG_LEVEL:          {cls.LOG_LEVEL}")
         print("=" * 60)
 
 

@@ -50,7 +50,7 @@ class ModelLoader:
         file_path: Path = self.models_path / filename
 
         if not file_path.exists():
-            logger.error(f"❌ Model file not found: {file_path}")
+            logger.error(f"Model file not found: {file_path}")
             raise FileNotFoundError(f"Model file not found: {file_path}")
 
         try:
@@ -59,16 +59,16 @@ class ModelLoader:
                     model = pickle.load(f)
             else:
                 model = joblib.load(file_path)
-            logger.info(f"✅ Loaded: {filename}")
+            logger.info(f"Loaded: {filename}")
             return model
         except Exception as e:
-            logger.error(f"❌ Failed to load {filename}: {e}")
+            logger.error(f"Failed to load {filename}: {e}")
             raise
 
     def _load_all_models(self) -> None:
 
         logger.info("=" * 60)
-        logger.info("🤖 LOADING ML MODELS INTO MEMORY")
+        logger.info("LOADING ML MODELS INTO MEMORY")
         logger.info("=" * 60)
 
 
@@ -86,7 +86,7 @@ class ModelLoader:
         self.card_lookup = self._load_pkl(Config.CARD_LOOKUP_FILE, use_pickle=True)
 
         logger.info("=" * 60)
-        logger.info(f"🎉 ALL MODELS LOADED ({len(self.list_loaded_models())} total)")
+        logger.info(f"ALL MODELS LOADED ({len(self.list_loaded_models())} total)")
         logger.info("=" * 60)
 
 
@@ -122,7 +122,7 @@ class ModelLoader:
 
     def reload(self) -> None:
 
-        logger.warning("🔄 Reloading all models...")
+        logger.warning("Reloading all models...")
         ModelLoader._models_loaded = False
         self._load_all_models()
         ModelLoader._models_loaded = True

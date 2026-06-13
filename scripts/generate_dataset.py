@@ -369,7 +369,7 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
 
 def generate_meta_stats_csv(cards_df: pd.DataFrame):
 
-    print("📊 Generating meta_stats.csv...")
+    print("Generating meta_stats.csv...")
     
     seasons = ["Season_45", "Season_46", "Season_47", "Season_48", "Season_49"]
     meta_stats = []
