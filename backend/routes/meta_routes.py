@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from flask import Blueprint, jsonify, request
 from backend.services.meta_analyzer import MetaAnalyzer
 from backend.utils.logger import get_logger
@@ -31,12 +15,6 @@ def get_meta_analyzer() -> MetaAnalyzer:
     if _meta_analyzer is None:
         _meta_analyzer = MetaAnalyzer()
     return _meta_analyzer
-
-
-
-
-
-
 @meta_bp.route("/summary", methods=["GET"])
 def get_summary():
 

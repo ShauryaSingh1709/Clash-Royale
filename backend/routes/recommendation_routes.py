@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 from flask import Blueprint, jsonify, request
 from backend.services.recommendation_engine import RecommendationEngine
 from backend.utils.logger import get_logger
@@ -39,23 +26,8 @@ def _extract_deck_from_request() -> tuple[list, str]:
     if not cards:
         return None, "Field 'cards' is required (list of 8 card names)"
     return cards, None
-
-
-
-
-
-
 @recommend_bp.route("/similar", methods=["POST"])
 def find_similar():
-
-
-
-
-
-
-
-
-
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -77,15 +49,6 @@ def find_similar():
 
 @recommend_bp.route("/improvements", methods=["POST"])
 def suggest_improvements():
-
-
-
-
-
-
-
-
-
     try:
         cards, error = _extract_deck_from_request()
         if error:
@@ -107,14 +70,6 @@ def suggest_improvements():
 
 @recommend_bp.route("/full", methods=["POST"])
 def full_recommendation():
-
-
-
-
-
-
-
-
     try:
         cards, error = _extract_deck_from_request()
         if error:

@@ -1,31 +1,13 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from flask import Blueprint, jsonify, request
 from backend.services.card_analyzer import CardAnalyzer
 from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-
 card_bp = Blueprint("cards", __name__, url_prefix="/cards")
 
-
 _card_analyzer: CardAnalyzer = None
-
 
 def get_card_analyzer() -> CardAnalyzer:
 
@@ -33,11 +15,6 @@ def get_card_analyzer() -> CardAnalyzer:
     if _card_analyzer is None:
         _card_analyzer = CardAnalyzer()
     return _card_analyzer
-
-
-
-
-
 
 @card_bp.route("", methods=["GET"])
 def get_all_cards():
