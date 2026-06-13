@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 from typing import Optional
 import pandas as pd
 from backend.utils.dataset_loader import DatasetLoader
@@ -42,11 +34,6 @@ class MetaAnalyzer:
         if self._meta_df is None:
             self._meta_df = self.loader.load_meta()
         return self._meta_df
-
-
-
-
-
     def get_meta_summary(self) -> dict:
 
         return {
@@ -59,11 +46,6 @@ class MetaAnalyzer:
             "average_deck_elixir": round(float(self.decks_df["avg_elixir"].mean()), 2),
             "seasons_tracked": sorted(self.meta_df["season"].unique().tolist())
         }
-
-
-
-
-
     def get_most_popular_cards(self, n: int = 10) -> list[dict]:
 
         cols = ["name", "rarity", "type", "elixir_cost", "usage_rate", "win_rate"]
@@ -80,11 +62,6 @@ class MetaAnalyzer:
         df["underrated_score"] = df["win_rate"] / (df["usage_rate"] + 1)
         cols = ["name", "rarity", "type", "win_rate", "usage_rate", "underrated_score"]
         return df.nlargest(n, "underrated_score")[cols].to_dict("records")
-
-
-
-
-
     def get_archetype_distribution(self) -> dict:
 
         counts = self.decks_df["archetype"].value_counts()
@@ -99,12 +76,6 @@ class MetaAnalyzer:
         }
 
     def get_top_decks(self, n: int = 10) -> list[dict]:
-
-
-
-
-
-
         sorted_decks = self.decks_df.sort_values("win_rate", ascending=False)
         
 
@@ -149,11 +120,6 @@ class MetaAnalyzer:
         ).round(2).reset_index()
 
         return grouped.to_dict("records")
-
-
-
-
-
     def get_meta_trends(self) -> dict:
 
         seasonal = self.meta_df.groupby("season").agg(

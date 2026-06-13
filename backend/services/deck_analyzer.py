@@ -1,17 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from typing import Optional
 from backend.ml.predictor import MLPredictor
 from backend.models.deck import Deck
@@ -23,18 +9,6 @@ logger = get_logger(__name__)
 
 
 class DeckAnalyzer:
-
-
-
-
-
-
-
-
-
-
-
-
     def __init__(
         self,
         predictor: Optional[MLPredictor] = None,
@@ -46,42 +20,14 @@ class DeckAnalyzer:
         self.card_lookup = self.predictor.card_lookup
         self.cleaner = DataCleaner(valid_cards=set(self.card_lookup.keys()))
         logger.info("DeckAnalyzer initialized")
-
-
-
-
-
     def validate_deck(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         is_valid, message = self.cleaner.validate_deck(card_names)
         return {
             "valid": is_valid,
             "message": message,
             "deck_size": len(card_names) if isinstance(card_names, list) else 0
         }
-
-
-
-
-
     def get_strengths_weaknesses(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
         deck = Deck.from_card_names(card_names, self.card_lookup)
 
         strengths: list[str] = []
@@ -138,20 +84,10 @@ class DeckAnalyzer:
         }
 
     def score_deck(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
         win_rate = self.predictor.predict_win_rate(card_names)
         strength = self.predictor.predict_strength(card_names)
         archetype = self.predictor.predict_archetype(card_names)
-
-
         overall_grade = strength["grade"]
-
-
         score = strength["strength_score"]
         if score >= 80:
             rating_message = "Top-tier deck! Excellent choice."
@@ -171,30 +107,13 @@ class DeckAnalyzer:
             "overall_grade": overall_grade,
             "rating_message": rating_message
         }
-
-
-
-
-
     def analyze_deck(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
-
         validation = self.validate_deck(card_names)
         if not validation["valid"]:
             return {
                 "success": False,
                 "error": validation["message"]
             }
-
-
         deck = Deck.from_card_names(card_names, self.card_lookup)
         score = self.score_deck(card_names)
         sw = self.get_strengths_weaknesses(card_names)

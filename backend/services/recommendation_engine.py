@@ -1,18 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from typing import Optional
 from backend.ml.predictor import MLPredictor
 from backend.services.deck_analyzer import DeckAnalyzer
@@ -20,17 +5,7 @@ from backend.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-
 class RecommendationEngine:
-
-
-
-
-
-
-
-
-
     def __init__(
         self,
         predictor: Optional[MLPredictor] = None,
@@ -40,22 +15,7 @@ class RecommendationEngine:
         self.predictor = predictor or MLPredictor()
         self.deck_analyzer = deck_analyzer or DeckAnalyzer(predictor=self.predictor)
         logger.info("RecommendationEngine initialized")
-
-
-
-
-
     def find_similar_decks(self, card_names: list[str], top_n: int = 5) -> dict:
-
-
-
-
-
-
-
-
-
-
         validation = self.deck_analyzer.validate_deck(card_names)
         if not validation["valid"]:
             return {"success": False, "error": validation["message"]}
@@ -68,24 +28,9 @@ class RecommendationEngine:
             "similar_decks": similar,
             "total_found": len(similar)
         }
-
-
-
-
-
     def suggest_improvements(
         self, card_names: list[str], top_n: int = 3
     ) -> dict:
-
-
-
-
-
-
-
-
-
-
         validation = self.deck_analyzer.validate_deck(card_names)
         if not validation["valid"]:
             return {"success": False, "error": validation["message"]}
@@ -93,8 +38,6 @@ class RecommendationEngine:
         suggestions = self.predictor.suggest_card_replacements(
             card_names, top_n=top_n
         )
-
-
         expected_improvement = 0.0
         if suggestions["replacements"]:
             best = suggestions["replacements"][0]
@@ -107,23 +50,7 @@ class RecommendationEngine:
             "replacements": suggestions["replacements"],
             "expected_improvement_pct": round(expected_improvement, 2)
         }
-
-
-
-
-
     def get_full_recommendation(self, card_names: list[str]) -> dict:
-
-
-
-
-
-
-
-
-
-
-
         validation = self.deck_analyzer.validate_deck(card_names)
         if not validation["valid"]:
             return {"success": False, "error": validation["message"]}
