@@ -304,7 +304,7 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
             break
     
     if skipped:
-        print(f"⚠️  Skipped {len(skipped)} decks (missing cards)")
+        print(f"Skipped {len(skipped)} decks (missing cards)")
     
     df = pd.DataFrame(decks)
     df.to_csv(OUTPUT_DIR / "decks.csv", index=False)

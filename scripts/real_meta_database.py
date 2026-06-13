@@ -1052,7 +1052,7 @@ def get_stats() -> dict:
 if __name__ == "__main__":
     stats = get_stats()
     print("=" * 50)
-    print("🏆 REAL META DECKS DATABASE")
+    print("REAL META DECKS DATABASE")
     print("=" * 50)
     print(f"Total decks: {stats['total']}")
     print(f"\nBy Tier:")
