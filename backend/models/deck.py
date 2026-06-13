@@ -1,38 +1,10 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 from dataclasses import dataclass, field
 from typing import Optional
 from collections import Counter
 from backend.models.card import Card
 from backend.config.settings import Config
-
-
 @dataclass
 class Deck:
-
-
-
-
-
-
-
-
-
-
     cards: list[Card] = field(default_factory=list)
     deck_id: Optional[int] = None
     win_rate: float = 0.0
@@ -45,11 +17,6 @@ class Deck:
                 f"Deck must contain exactly {Config.DECK_SIZE} cards "
                 f"(got {len(self.cards)})"
             )
-
-
-
-
-
     @property
     def average_elixir(self) -> float:
 
@@ -89,11 +56,6 @@ class Deck:
         if not self.cards:
             return 0.0
         return round(sum(c.usage_rate for c in self.cards) / len(self.cards), 2)
-
-
-
-
-
     @property
     def num_troops(self) -> int:
 
@@ -128,11 +90,6 @@ class Deck:
     def num_common(self) -> int:
 
         return sum(1 for c in self.cards if c.rarity == "Common")
-
-
-
-
-
     @property
     def primary_archetype(self) -> str:
 
@@ -169,11 +126,6 @@ class Deck:
             "Sparky", "Elixir Golem", "Skeleton Barrel", "PEKKA"
         }
         return bool(set(self.card_names) & win_conditions)
-
-
-
-
-
     def contains_card(self, card_name: str) -> bool:
 
         return card_name in self.card_names
@@ -231,12 +183,6 @@ class Deck:
         }
 
     def to_ml_features(self) -> dict:
-
-
-
-
-
-
         return {
             "avg_elixir": self.average_elixir,
             "total_elixir": self.total_elixir,
@@ -255,16 +201,6 @@ class Deck:
 
     @classmethod
     def from_card_names(cls, card_names: list[str], card_lookup: dict) -> "Deck":
-
-
-
-
-
-
-
-
-
-
         cards = []
         for name in card_names:
             if name in card_lookup:
@@ -278,11 +214,6 @@ class Deck:
                     card_type="Unknown"
                 ))
         return cls(cards=cards)
-
-
-
-
-
     def __str__(self) -> str:
 
         header = f"Deck ({self.primary_archetype} | {self.average_elixir})"
