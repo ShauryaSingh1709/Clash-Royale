@@ -1,8 +1,3 @@
-
-
-
-
-
 from backend.models.card import Card
 from backend.models.deck import Deck
 from backend.models.battle import Battle
@@ -15,7 +10,7 @@ logger = get_logger("test_models")
 def test_card():
 
     print("\n" + "=" * 60)
-    print("🃏 TEST 1: CARD CLASS")
+    print("TEST 1: CARD CLASS")
     print("=" * 60)
 
     card = Card(
@@ -31,24 +26,22 @@ def test_card():
     )
 
     print(card)
-    print(f"   • Is cheap?:           {card.is_cheap}")
-    print(f"   • Cost category:       {card.cost_category}")
-    print(f"   • Damage per elixir:   {card.damage_per_elixir}")
-    print(f"   • HP per elixir:       {card.hp_per_elixir}")
-    print(f"   • Is troop?:           {card.is_troop}")
+    print(f"   Is cheap?:           {card.is_cheap}")
+    print(f"   Cost category:       {card.cost_category}")
+    print(f"   Damage per elixir:   {card.damage_per_elixir}")
+    print(f"   HP per elixir:       {card.hp_per_elixir}")
+    print(f"   Is troop?:           {card.is_troop}")
 
 
 def test_deck():
 
     print("\n" + "=" * 60)
-    print("🎴 TEST 2: DECK CLASS")
+    print("TEST 2: DECK CLASS")
     print("=" * 60)
-
 
     loader = DatasetLoader()
     cards_df = loader.load_cards()
     card_lookup = cards_df.set_index("name").to_dict("index")
-
 
     user_deck = ["Hog Rider", "Musketeer", "Ice Spirit", "Skeletons",
                  "Fireball", "The Log", "Cannon", "Ice Golem"]
@@ -56,32 +49,32 @@ def test_deck():
     deck = Deck.from_card_names(user_deck, card_lookup)
 
     print(deck)
-    print(f"\n📊 DECK STATS:")
-    print(f"   • Average Elixir:      {deck.average_elixir}")
-    print(f"   • Total Elixir:        {deck.total_elixir}")
-    print(f"   • Average Damage:      {deck.average_damage}")
-    print(f"   • Average HP:          {deck.average_hp}")
-    print(f"   • Primary Archetype:   {deck.primary_archetype}")
+    print(f"\nDECK STATS:")
+    print(f"   Average Elixir:      {deck.average_elixir}")
+    print(f"   Total Elixir:        {deck.total_elixir}")
+    print(f"   Average Damage:      {deck.average_damage}")
+    print(f"   Average HP:          {deck.average_hp}")
+    print(f"   Primary Archetype:   {deck.primary_archetype}")
 
-    print(f"\n🃏 COMPOSITION:")
-    print(f"   • Troops:    {deck.num_troops}")
-    print(f"   • Spells:    {deck.num_spells}")
-    print(f"   • Buildings: {deck.num_buildings}")
-    print(f"   • Legendary: {deck.num_legendary}")
+    print(f"\nCOMPOSITION:")
+    print(f"   Troops:    {deck.num_troops}")
+    print(f"   Spells:    {deck.num_spells}")
+    print(f"   Buildings: {deck.num_buildings}")
+    print(f"   Legendary: {deck.num_legendary}")
 
-    print(f"\n🎯 ANALYSIS:")
-    print(f"   • Is cheap cycle?:        {deck.is_cheap_cycle}")
-    print(f"   • Is heavy beatdown?:     {deck.is_heavy_beatdown}")
-    print(f"   • Has win condition?:     {deck.has_win_condition}")
-    print(f"   • Weakest card:           {deck.get_weakest_card().name}")
-    print(f"   • Strongest card:         {deck.get_strongest_card().name}")
-    print(f"   • 'Hog Rider' in deck?:   {'Hog Rider' in deck}")
+    print(f"\nANALYSIS:")
+    print(f"   Is cheap cycle?:        {deck.is_cheap_cycle}")
+    print(f"   Is heavy beatdown?:     {deck.is_heavy_beatdown}")
+    print(f"   Has win condition?:     {deck.has_win_condition}")
+    print(f"   Weakest card:           {deck.get_weakest_card().name}")
+    print(f"   Strongest card:         {deck.get_strongest_card().name}")
+    print(f"   'Hog Rider' in deck?:   {'Hog Rider' in deck}")
 
 
 def test_battle():
 
     print("\n" + "=" * 60)
-    print("⚔️  TEST 3: BATTLE CLASS")
+    print("TEST 3: BATTLE CLASS")
     print("=" * 60)
 
     loader = DatasetLoader()
@@ -113,19 +106,19 @@ def test_battle():
     )
 
     print(battle)
-    print(f"\n📊 BATTLE STATS:")
-    print(f"   • Winner:            {battle.winner}")
-    print(f"   • Crown Difference:  {battle.crown_difference}")
-    print(f"   • Dominant Win?:     {battle.is_dominant_win}")
-    print(f"   • Match Type:        {battle.match_type}")
-    print(f"   • Duration:          {battle.duration_minutes} minutes")
-    print(f"   • Intensity:         {battle.battle_intensity} total crowns")
+    print(f"\nBATTLE STATS:")
+    print(f"   Winner:            {battle.winner}")
+    print(f"   Crown Difference:  {battle.crown_difference}")
+    print(f"   Dominant Win?:     {battle.is_dominant_win}")
+    print(f"   Match Type:        {battle.match_type}")
+    print(f"   Duration:          {battle.duration_minutes} minutes")
+    print(f"   Intensity:         {battle.battle_intensity} total crowns")
 
 
 def main():
 
     print("\n" + "=" * 70)
-    print("🧪 TESTING STEP 3: OOP MODELS")
+    print("TESTING STEP 3: OOP MODELS")
     print("=" * 70)
 
     test_card()
@@ -133,7 +126,7 @@ def main():
     test_battle()
 
     print("\n" + "=" * 70)
-    print("🎉 ALL MODEL TESTS PASSED!")
+    print("ALL MODEL TESTS PASSED!")
     print("=" * 70 + "\n")
 
 

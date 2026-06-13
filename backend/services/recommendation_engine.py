@@ -128,7 +128,7 @@ class RecommendationEngine:
         if not validation["valid"]:
             return {"success": False, "error": validation["message"]}
 
-        logger.info(f"🎯 Generating full recommendation for deck")
+        logger.info(f"Generating full recommendation for deck")
 
 
         analysis = self.deck_analyzer.analyze_deck(card_names)

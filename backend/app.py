@@ -45,9 +45,9 @@ def create_app() -> Flask:
     app.config["MAX_CONTENT_LENGTH"] = Config.MAX_REQUEST_SIZE
 
 
-    logger.info("🚀 Pre-loading ML models...")
+    logger.info("Pre-loading ML models...")
     ModelLoader()
-    logger.info("✅ ML models ready!")
+    logger.info("ML models ready!")
 
 
     api_prefix = Config.API_PREFIX
@@ -128,7 +128,7 @@ def create_app() -> Flask:
     @app.route(f"{api_prefix}")
     def api_info():
         return jsonify({
-            "name": "🏆 Clash Royale Deck Analyzer API",
+            "name": "Clash Royale Deck Analyzer API",
             "version": "1.0.0",
             "status": "running",
             "endpoints": {
@@ -163,11 +163,11 @@ def create_app() -> Flask:
         }), 500
 
     logger.info("=" * 60)
-    logger.info("🏆 CLASH ROYALE DECK ANALYZER")
+    logger.info("CLASH ROYALE DECK ANALYZER")
     logger.info("=" * 60)
-    logger.info(f"📡 Server: http://{Config.HOST}:{Config.PORT}")
-    logger.info(f"🎨 Frontend served from: {FRONTEND_DIR}")
-    logger.info(f"🌐 API Prefix: {api_prefix}")
+    logger.info(f"Server: http://{Config.HOST}:{Config.PORT}")
+    logger.info(f"Frontend served from: {FRONTEND_DIR}")
+    logger.info(f"API Prefix: {api_prefix}")
     logger.info("=" * 60)
 
     return app

@@ -288,7 +288,7 @@ class MLPredictor:
 
 
 
-        logger.info(f"🔮 Running full prediction on deck: {card_names[:3]}...")
+        logger.info(f"Running full prediction on deck: {card_names[:3]}...")
 
         deck = self._build_deck(card_names)
 

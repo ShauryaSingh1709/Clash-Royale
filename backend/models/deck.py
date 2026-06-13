@@ -285,7 +285,7 @@ class Deck:
 
     def __str__(self) -> str:
 
-        header = f"🃏 Deck ({self.primary_archetype} | ⚡{self.average_elixir})"
+        header = f"Deck ({self.primary_archetype} | {self.average_elixir})"
         cards_str = "\n".join(f"   {i+1}. {c}" for i, c in enumerate(self.cards))
         return f"{header}\n{cards_str}"
 

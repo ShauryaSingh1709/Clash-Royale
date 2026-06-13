@@ -158,10 +158,8 @@ class Battle:
 
 
     def __str__(self) -> str:
-
-        result_emoji = "🤝" if self.is_draw else "🏆"
         return (
-            f"{result_emoji} Battle
+            f"Battle "
             f"P1({self.player_1_crowns}) vs P2({self.player_2_crowns}) | "
             f"Winner: {self.winner.upper()} | Mode: {self.game_mode}"
         )
