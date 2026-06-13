@@ -1,10 +1,10 @@
 """
 ==========================================================================
-🏆 RoyaleForge - Real Meta Dataset Generator
+🏆 RoyaleForge - OFFICIAL Clash Royale Dataset Generator
 ==========================================================================
 
-Uses REAL Clash Royale meta decks from real_meta_database.py
-Generates UNIQUE decks with proper names, tiers, and sources.
+Uses REAL official Clash Royale card data.
+Includes ALL 120+ cards: troops, buildings, spells, tower troops.
 """
 
 import pandas as pd
@@ -21,115 +21,173 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ============================================================================
-# 🃏 ALL CARDS DATA (Complete - 98 cards)
+# 🃏 OFFICIAL CARDS DATA (Source: Official CR Wiki)
+# Format: (name, elixir, rarity, type, arena, damage, hp, archetype)
 # ============================================================================
 
 CARDS_DATA = [
-    # name, elixir, rarity, type, arena, damage, hp, archetype
-    ("Knight", 3, "Common", "Troop", 0, 79, 685, "Beatdown"),
-    ("Archers", 3, "Common", "Troop", 0, 42, 125, "Control"),
-    ("Bomber", 3, "Common", "Troop", 2, 75, 150, "Control"),
-    ("Goblins", 2, "Common", "Troop", 1, 47, 80, "Cycle"),
-    ("Spear Goblins", 2, "Common", "Troop", 1, 32, 52, "Cycle"),
-    ("Skeletons", 1, "Common", "Troop", 2, 67, 67, "Cycle"),
-    ("Minions", 3, "Common", "Troop", 0, 40, 90, "Control"),
-    ("Minion Horde", 5, "Common", "Troop", 4, 40, 90, "Control"),
-    ("Barbarians", 5, "Common", "Troop", 3, 75, 262, "Beatdown"),
-    ("Royal Giant", 6, "Common", "Troop", 7, 122, 1200, "Siege"),
-    ("Cannon", 3, "Common", "Building", 3, 67, 380, "Control"),
-    ("Tesla", 4, "Common", "Building", 4, 79, 450, "Control"),
-    ("Mortar", 4, "Common", "Building", 1, 110, 600, "Siege"),
-    ("Fire Spirit", 2, "Common", "Troop", 5, 169, 60, "Cycle"),
-    ("Ice Spirit", 1, "Common", "Troop", 8, 79, 90, "Cycle"),
-    ("Royal Recruits", 7, "Common", "Troop", 10, 75, 286, "Beatdown"),
-    ("Rascals", 5, "Common", "Troop", 11, 70, 286, "Control"),
-    ("Elite Barbarians", 6, "Common", "Troop", 9, 188, 524, "Beatdown"),
-
-    ("Mini PEKKA", 4, "Rare", "Troop", 0, 340, 642, "Control"),
-    ("Musketeer", 4, "Rare", "Troop", 0, 142, 340, "Control"),
-    ("Giant", 5, "Rare", "Troop", 0, 132, 2000, "Beatdown"),
-    ("Valkyrie", 4, "Rare", "Troop", 1, 152, 836, "Control"),
-    ("Fireball", 4, "Rare", "Spell", 0, 572, 0, "Control"),
-    ("Arrows", 3, "Common", "Spell", 0, 137, 0, "Control"),
-    ("Hog Rider", 4, "Rare", "Troop", 4, 264, 776, "Hog Cycle"),
-    ("Wizard", 5, "Rare", "Troop", 5, 152, 598, "Control"),
-    ("Three Musketeers", 9, "Rare", "Troop", 7, 142, 340, "Beatdown"),
-    ("Battle Ram", 4, "Rare", "Troop", 9, 132, 595, "Beatdown"),
-    ("Zappies", 4, "Rare", "Troop", 11, 49, 252, "Control"),
-    ("Mega Minion", 3, "Rare", "Troop", 6, 138, 252, "Control"),
-    ("Goblin Hut", 5, "Rare", "Building", 1, 32, 682, "Control"),
-    ("Furnace", 4, "Rare", "Building", 8, 169, 612, "Control"),
-    ("Bomb Tower", 4, "Rare", "Building", 2, 75, 950, "Control"),
-    ("Flying Machine", 4, "Rare", "Troop", 6, 128, 252, "Control"),
-    ("Ice Golem", 2, "Rare", "Troop", 8, 36, 1090, "Cycle"),
-
-    ("Witch", 5, "Epic", "Troop", 5, 56, 696, "Beatdown"),
-    ("Skeleton Army", 3, "Epic", "Troop", 2, 67, 67, "Control"),
-    ("Baby Dragon", 4, "Epic", "Troop", 0, 100, 1152, "Beatdown"),
-    ("Prince", 5, "Epic", "Troop", 1, 220, 1100, "Beatdown"),
-    ("Giant Skeleton", 6, "Epic", "Troop", 1, 130, 2126, "Beatdown"),
-    ("Balloon", 5, "Epic", "Troop", 6, 600, 1050, "Beatdown"),
-    ("PEKKA", 7, "Epic", "Troop", 4, 510, 3286, "Beatdown"),
-    ("Goblin Barrel", 3, "Epic", "Spell", 1, 47, 80, "Cycle"),
-    ("Freeze", 4, "Epic", "Spell", 0, 100, 0, "Control"),
-    ("Rocket", 6, "Rare", "Spell", 0, 1300, 0, "Siege"),
-    ("Tombstone", 3, "Rare", "Building", 5, 50, 380, "Control"),
-    ("Dark Prince", 4, "Epic", "Troop", 1, 158, 1101, "Beatdown"),
-    ("Lightning", 6, "Epic", "Spell", 0, 877, 0, "Control"),
-    ("X-Bow", 6, "Epic", "Building", 1, 26, 1200, "Siege"),
-    ("Poison", 4, "Epic", "Spell", 0, 128, 0, "Control"),
-    ("Hunter", 4, "Epic", "Troop", 11, 79, 754, "Control"),
-    ("Goblin Gang", 3, "Common", "Troop", 9, 50, 80, "Cycle"),
-    ("Bowler", 5, "Epic", "Troop", 10, 100, 928, "Beatdown"),
-    ("Executioner", 5, "Epic", "Troop", 11, 150, 754, "Control"),
-    ("Cannon Cart", 5, "Epic", "Troop", 12, 132, 1086, "Beatdown"),
-    ("Electro Wizard", 4, "Legendary", "Troop", 11, 79, 598, "Control"),
-    ("Royal Ghost", 3, "Legendary", "Troop", 7, 158, 686, "Control"),
-
-    ("Princess", 3, "Legendary", "Troop", 7, 70, 216, "Control"),
-    ("Ice Wizard", 3, "Legendary", "Troop", 8, 49, 598, "Control"),
-    ("Miner", 3, "Legendary", "Troop", 6, 102, 1000, "Cycle"),
-    ("Sparky", 6, "Legendary", "Troop", 6, 1300, 1357, "Beatdown"),
-    ("Lava Hound", 7, "Legendary", "Troop", 0, 39, 3150, "Beatdown"),
-    ("Inferno Dragon", 4, "Legendary", "Troop", 6, 30, 1004, "Beatdown"),
-    ("Graveyard", 5, "Legendary", "Spell", 1, 107, 67, "Control"),
-    ("The Log", 2, "Legendary", "Spell", 6, 240, 0, "Control"),
-    ("Lumberjack", 4, "Legendary", "Troop", 6, 187, 686, "Beatdown"),
-    ("Night Witch", 4, "Legendary", "Troop", 6, 142, 1004, "Beatdown"),
-    ("Bandit", 3, "Legendary", "Troop", 9, 158, 750, "Control"),
-    ("Mega Knight", 7, "Legendary", "Troop", 10, 158, 2842, "Beatdown"),
-    ("Magic Archer", 4, "Legendary", "Troop", 11, 79, 446, "Control"),
-    ("Ram Rider", 5, "Legendary", "Troop", 12, 90, 1050, "Beatdown"),
-    ("Fisherman", 3, "Legendary", "Troop", 13, 158, 700, "Control"),
-
-    ("Skeleton Barrel", 3, "Common", "Troop", 12, 23, 280, "Cycle"),
-    ("Wall Breakers", 2, "Epic", "Troop", 12, 158, 134, "Cycle"),
-    ("Royal Hogs", 5, "Rare", "Troop", 10, 75, 540, "Beatdown"),
-    ("Zap", 2, "Common", "Spell", 5, 159, 0, "Control"),
-    ("Tornado", 3, "Epic", "Spell", 6, 88, 0, "Control"),
+    # ═══════════════════════════════════════════════════════════
+    # TROOPS - Common
+    # ═══════════════════════════════════════════════════════════
+    ("Knight", 3, "Common", "Troop", 0, 202, 1766, "Beatdown"),
+    ("Archers", 3, "Common", "Troop", 0, 112, 304, "Control"),
+    ("Bomber", 2, "Common", "Troop", 2, 225, 304, "Control"),
+    ("Goblins", 2, "Common", "Troop", 1, 120, 202, "Cycle"),
+    ("Spear Goblins", 2, "Common", "Troop", 1, 81, 133, "Cycle"),
+    ("Skeletons", 1, "Common", "Troop", 2, 81, 81, "Cycle"),
+    ("Minions", 3, "Common", "Troop", 0, 107, 230, "Control"),
+    ("Minion Horde", 5, "Common", "Troop", 4, 107, 230, "Control"),
+    ("Barbarians", 5, "Common", "Troop", 3, 192, 670, "Beatdown"),
+    ("Royal Giant", 6, "Common", "Troop", 7, 307, 3164, "Siege"),
+    ("Royal Recruits", 7, "Common", "Troop", 10, 133, 787, "Beatdown"),
+    ("Rascals", 5, "Common", "Troop", 11, 217, 1940, "Control"),
+    ("Elite Barbarians", 6, "Common", "Troop", 9, 384, 1341, "Beatdown"),
+    ("Fire Spirit", 1, "Common", "Troop", 5, 207, 230, "Cycle"),
+    ("Ice Spirit", 1, "Common", "Troop", 8, 110, 230, "Cycle"),
+    ("Heal Spirit", 1, "Common", "Troop", 13, 110, 230, "Cycle"),
+    ("Electro Spirit", 1, "Common", "Troop", 12, 99, 230, "Cycle"),
+    ("Firecracker", 3, "Common", "Troop", 12, 64, 304, "Control"),
+    ("Dart Goblin", 3, "Common", "Troop", 9, 151, 261, "Cycle"),
+    ("Goblin Gang", 3, "Common", "Troop", 9, 120, 202, "Cycle"),
+    ("Royal Hogs", 5, "Common", "Troop", 10, 74, 837, "Beatdown"),
+    ("Skeleton Barrel", 3, "Common", "Troop", 12, 145, 532, "Cycle"),
+    ("Wall Breakers", 2, "Common", "Troop", 12, 350, 330, "Cycle"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # TROOPS - Rare
+    # ═══════════════════════════════════════════════════════════
+    ("Mini PEKKA", 4, "Rare", "Troop", 0, 755, 1390, "Control"),
+    ("Musketeer", 4, "Rare", "Troop", 0, 217, 721, "Control"),
+    ("Giant", 5, "Rare", "Troop", 0, 253, 4090, "Beatdown"),
+    ("Valkyrie", 4, "Rare", "Troop", 1, 266, 1907, "Control"),
+    ("Hog Rider", 4, "Rare", "Troop", 4, 317, 1697, "Hog Cycle"),
+    ("Wizard", 5, "Rare", "Troop", 5, 281, 755, "Control"),
+    ("Three Musketeers", 9, "Rare", "Troop", 7, 217, 721, "Beatdown"),
+    ("Battle Ram", 4, "Rare", "Troop", 9, 286, 967, "Beatdown"),
+    ("Zappies", 4, "Rare", "Troop", 11, 117, 529, "Control"),
+    ("Mega Minion", 3, "Rare", "Troop", 6, 311, 837, "Control"),
+    ("Flying Machine", 4, "Rare", "Troop", 6, 171, 614, "Control"),
+    ("Ice Golem", 2, "Rare", "Troop", 8, 84, 1315, "Cycle"),
+    ("Battle Healer", 4, "Rare", "Troop", 13, 148, 1717, "Beatdown"),
+    ("Elixir Golem", 3, "Rare", "Troop", 6, 253, 1569, "Beatdown"),
+    ("Berserker", 2, "Rare", "Troop", 13, 102, 896, "Cycle"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # TROOPS - Epic
+    # ═══════════════════════════════════════════════════════════
+    ("Witch", 5, "Epic", "Troop", 5, 135, 839, "Beatdown"),
+    ("Skeleton Army", 3, "Epic", "Troop", 2, 81, 81, "Control"),
+    ("Baby Dragon", 4, "Epic", "Troop", 0, 161, 1152, "Beatdown"),
+    ("Prince", 5, "Epic", "Troop", 1, 391, 1920, "Beatdown"),
+    ("Giant Skeleton", 6, "Epic", "Troop", 1, 276, 3617, "Beatdown"),
+    ("Balloon", 5, "Epic", "Troop", 6, 640, 1679, "Beatdown"),
+    ("PEKKA", 7, "Epic", "Troop", 4, 816, 3760, "Beatdown"),
+    ("Dark Prince", 4, "Epic", "Troop", 1, 266, 1440, "Beatdown"),
+    ("Hunter", 4, "Epic", "Troop", 11, 84, 885, "Control"),
+    ("Bowler", 5, "Epic", "Troop", 10, 289, 2081, "Beatdown"),
+    ("Executioner", 5, "Epic", "Troop", 11, 168, 1280, "Control"),
+    ("Cannon Cart", 5, "Epic", "Troop", 12, 212, 1809, "Beatdown"),
+    ("Guards", 3, "Epic", "Troop", 7, 117, 337, "Control"),
+    ("Bats", 2, "Epic", "Troop", 6, 81, 81, "Cycle"),
+    ("Goblin Brawler", 4, "Epic", "Troop", 14, 337, 1080, "Beatdown"),
+    ("Goblin Giant", 6, "Epic", "Troop", 12, 176, 3020, "Beatdown"),
+    ("Goblin Demolisher", 4, "Epic", "Troop", 14, 186, 1300, "Beatdown"),
+    ("Electro Dragon", 5, "Epic", "Troop", 13, 192, 949, "Control"),
+    ("Electro Giant", 7, "Epic", "Troop", 14, 163, 3855, "Beatdown"),
+    ("Skeleton Dragons", 4, "Epic", "Troop", 14, 161, 560, "Beatdown"),
+    ("Suspicious Bush", 2, "Epic", "Troop", 14, 0, 81, "Cycle"),
+    ("Bush Goblins", 0, "Epic", "Troop", 14, 256, 304, "Cycle"),
+    ("Rune Giant", 4, "Epic", "Troop", 14, 120, 2662, "Beatdown"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # TROOPS - Legendary
+    # ═══════════════════════════════════════════════════════════
+    ("Electro Wizard", 4, "Legendary", "Troop", 11, 115, 714, "Control"),
+    ("Royal Ghost", 3, "Legendary", "Troop", 7, 261, 1210, "Control"),
+    ("Princess", 3, "Legendary", "Troop", 7, 168, 261, "Control"),
+    ("Ice Wizard", 3, "Legendary", "Troop", 8, 89, 688, "Control"),
+    ("Miner", 3, "Legendary", "Troop", 6, 194, 1210, "Cycle"),
+    ("Sparky", 6, "Legendary", "Troop", 6, 1331, 1451, "Beatdown"),
+    ("Lava Hound", 7, "Legendary", "Troop", 0, 53, 3581, "Beatdown"),
+    ("Inferno Dragon", 4, "Legendary", "Troop", 6, 422, 1295, "Beatdown"),
+    ("Lumberjack", 4, "Legendary", "Troop", 6, 256, 1282, "Beatdown"),
+    ("Night Witch", 4, "Legendary", "Troop", 6, 314, 906, "Beatdown"),
+    ("Bandit", 3, "Legendary", "Troop", 9, 194, 906, "Control"),
+    ("Mega Knight", 7, "Legendary", "Troop", 10, 268, 3993, "Beatdown"),
+    ("Magic Archer", 4, "Legendary", "Troop", 11, 143, 529, "Control"),
+    ("Ram Rider", 5, "Legendary", "Troop", 12, 250, 1697, "Beatdown"),
+    ("Fisherman", 3, "Legendary", "Troop", 13, 194, 870, "Control"),
+    ("Mother Witch", 4, "Legendary", "Troop", 12, 133, 529, "Control"),
+    ("Phoenix", 4, "Legendary", "Troop", 14, 217, 1052, "Control"),
+    ("Elixir Golemite", 0, "Legendary", "Troop", 14, 128, 762, "Beatdown"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # TROOPS - Champions
+    # ═══════════════════════════════════════════════════════════
+    ("Royal Champion", 7, "Champion", "Troop", 0, 0, 0, "Beatdown"),
+    ("Archer Queen", 5, "Champion", "Troop", 0, 225, 1000, "Control"),
+    ("Skeleton King", 4, "Champion", "Troop", 0, 204, 2298, "Beatdown"),
+    ("Mighty Miner", 4, "Champion", "Troop", 0, 409, 2250, "Control"),
+    ("Goblinstein", 5, "Champion", "Troop", 0, 92, 721, "Beatdown"),
+    ("Little Prince", 3, "Champion", "Troop", 0, 104, 698, "Control"),
+    ("Monk", 5, "Champion", "Troop", 0, 422, 2214, "Beatdown"),
+    ("Golden Knight", 4, "Champion", "Troop", 0, 161, 1799, "Beatdown"),
+    ("Boss Bandit", 6, "Champion", "Troop", 0, 245, 2624, "Beatdown"),
+    ("Spirit Empress", 6, "Champion", "Troop", 0, 307, 1244, "Control"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # SPELLS
+    # ═══════════════════════════════════════════════════════════
+    ("Fireball", 4, "Rare", "Spell", 0, 688, 0, "Control"),
+    ("Arrows", 3, "Common", "Spell", 0, 366, 0, "Control"),
+    ("Zap", 2, "Common", "Spell", 5, 192, 0, "Control"),
+    ("Rocket", 6, "Rare", "Spell", 0, 1484, 0, "Siege"),
+    ("Lightning", 6, "Epic", "Spell", 0, 1057, 0, "Control"),
+    ("Freeze", 4, "Epic", "Spell", 0, 148, 0, "Control"),
+    ("Poison", 4, "Epic", "Spell", 0, 736, 0, "Control"),
+    ("Goblin Barrel", 3, "Epic", "Spell", 1, 120, 0, "Cycle"),
+    ("The Log", 2, "Legendary", "Spell", 6, 268, 0, "Control"),
+    ("Tornado", 3, "Epic", "Spell", 6, 84, 0, "Control"),
+    ("Graveyard", 5, "Legendary", "Spell", 1, 81, 0, "Control"),
     ("Clone", 3, "Epic", "Spell", 9, 0, 0, "Beatdown"),
     ("Mirror", 1, "Epic", "Spell", 5, 0, 0, "Beatdown"),
-    ("Heal Spirit", 1, "Rare", "Troop", 13, 56, 67, "Cycle"),
-    ("Elixir Collector", 6, "Rare", "Building", 5, 0, 870, "Beatdown"),
-    ("Inferno Tower", 5, "Rare", "Building", 4, 30, 870, "Control"),
-    ("Royal Delivery", 3, "Common", "Spell", 9, 159, 1300, "Control"),
-    ("Earthquake", 3, "Rare", "Spell", 8, 89, 0, "Siege"),
-    ("Goblin Cage", 4, "Rare", "Building", 10, 56, 800, "Control"),
-    ("Battle Healer", 4, "Rare", "Troop", 13, 75, 1232, "Beatdown"),
-    ("Firecracker", 3, "Common", "Troop", 12, 84, 216, "Control"),
-    ("Elixir Golem", 3, "Rare", "Troop", 6, 39, 1900, "Beatdown"),
-    ("Mother Witch", 4, "Legendary", "Troop", 12, 38, 598, "Control"),
-    ("Royal Champion", 7, "Champion", "Troop", 0, 150, 1804, "Beatdown"),
-    ("Archer Queen", 5, "Champion", "Troop", 0, 122, 904, "Control"),
-    ("Skeleton King", 4, "Champion", "Troop", 0, 105, 1804, "Beatdown"),
-    ("Mighty Miner", 4, "Champion", "Troop", 0, 95, 1300, "Control"),
-    ("Phoenix", 4, "Champion", "Troop", 0, 80, 800, "Control"),
-    ("Goblinstein", 5, "Champion", "Troop", 0, 130, 1200, "Beatdown"),
-    ("Little Prince", 3, "Champion", "Troop", 0, 70, 600, "Control"),
-    ("Monk", 5, "Champion", "Troop", 0, 100, 1400, "Beatdown"),
+    ("Rage", 2, "Epic", "Spell", 4, 179, 0, "Beatdown"),
+    ("Earthquake", 3, "Rare", "Spell", 8, 243, 0, "Siege"),
+    ("Royal Delivery", 3, "Common", "Spell", 9, 437, 0, "Control"),
+    ("Giant Snowball", 2, "Common", "Spell", 13, 179, 0, "Control"),
+    ("Barbarian Barrel", 2, "Epic", "Spell", 14, 230, 0, "Cycle"),
+    ("Goblin Curse", 2, "Epic", "Spell", 14, 210, 0, "Control"),
+    ("Vines", 3, "Epic", "Spell", 14, 306, 0, "Control"),
+    ("Void", 3, "Epic", "Spell", 14, 1020, 0, "Control"),
     
-    # Additional cards used in REAL_META_DECKS
-    ("Bats", 2, "Epic", "Troop", 6, 67, 67, "Cycle"),
+    # ═══════════════════════════════════════════════════════════
+    # DEFENSIVE BUILDINGS
+    # ═══════════════════════════════════════════════════════════
+    ("Bomb Tower", 4, "Rare", "Building", 2, 222, 1356, "Control"),
+    ("Cannon", 3, "Common", "Building", 3, 212, 824, "Control"),
+    ("Tesla", 4, "Common", "Building", 4, 220, 1152, "Control"),
+    ("Inferno Tower", 5, "Rare", "Building", 4, 847, 1748, "Control"),
+    ("Mortar", 4, "Common", "Building", 1, 266, 1369, "Siege"),
+    ("X-Bow", 6, "Epic", "Building", 1, 43, 1600, "Siege"),
+    ("Goblin Cage", 4, "Rare", "Building", 10, 0, 780, "Control"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # PASSIVE BUILDINGS / SPAWNERS
+    # ═══════════════════════════════════════════════════════════
+    ("Goblin Hut", 5, "Rare", "Building", 1, 32, 1180, "Control"),
+    ("Furnace", 4, "Rare", "Building", 8, 179, 727, "Control"),
+    ("Tombstone", 3, "Rare", "Building", 5, 0, 529, "Control"),
+    ("Elixir Collector", 6, "Rare", "Building", 5, 0, 1070, "Beatdown"),
+    ("Barbarian Hut", 6, "Rare", "Building", 14, 0, 1164, "Beatdown"),
+    ("Goblin Drill", 4, "Epic", "Building", 14, 84, 1313, "Siege"),
+    
+    # ═══════════════════════════════════════════════════════════
+    # 🏰 TOWER TROOPS (NEW!)
+    # ═══════════════════════════════════════════════════════════
+    ("Cannoneer", 0, "Tower", "Tower Troop", 0, 320, 2616, "Tower"),
+    ("Dagger Duchess", 0, "Tower", "Tower Troop", 0, 214, 2768, "Tower"),
+    ("Royal Chef", 0, "Tower", "Tower Troop", 0, 109, 2703, "Tower"),
+    ("Tower Princess", 0, "Tower", "Tower Troop", 0, 109, 3052, "Tower"),
 ]
 
 
@@ -138,27 +196,31 @@ CARDS_DATA = [
 # ============================================================================
 
 def generate_cards_csv():
-    """Generate cards.csv with realistic statistics based on meta appearances."""
-    print("📦 Generating cards.csv...")
+    """Generate cards.csv with realistic statistics."""
+    print("📦 Generating cards.csv with OFFICIAL data...")
     
     cards = []
     for idx, (name, elixir, rarity, ctype, arena, dmg, hp, archetype) in enumerate(CARDS_DATA, 1):
-        # Count appearances in real meta decks
-        card_appearances = sum(1 for d in REAL_META_DECKS if name in d["cards"])
-        
-        # Smart stats: popular cards have higher win/usage rates
-        if card_appearances >= 10:
-            win_rate = round(np.random.uniform(52, 58), 2)
-            usage_rate = round(np.random.uniform(15, 25), 2)
-        elif card_appearances >= 5:
-            win_rate = round(np.random.uniform(50, 55), 2)
-            usage_rate = round(np.random.uniform(8, 18), 2)
-        elif card_appearances >= 2:
-            win_rate = round(np.random.uniform(48, 53), 2)
-            usage_rate = round(np.random.uniform(3, 10), 2)
+        # Tower troops don't appear in meta decks, give them static stats
+        if ctype == "Tower Troop":
+            win_rate = round(np.random.uniform(48, 55), 2)
+            usage_rate = round(np.random.uniform(15, 30), 2)
         else:
-            win_rate = round(np.random.uniform(45, 51), 2)
-            usage_rate = round(np.random.uniform(1, 5), 2)
+            # Count appearances in real meta decks
+            card_appearances = sum(1 for d in REAL_META_DECKS if name in d["cards"])
+            
+            if card_appearances >= 10:
+                win_rate = round(np.random.uniform(52, 58), 2)
+                usage_rate = round(np.random.uniform(15, 25), 2)
+            elif card_appearances >= 5:
+                win_rate = round(np.random.uniform(50, 55), 2)
+                usage_rate = round(np.random.uniform(8, 18), 2)
+            elif card_appearances >= 2:
+                win_rate = round(np.random.uniform(48, 53), 2)
+                usage_rate = round(np.random.uniform(3, 10), 2)
+            else:
+                win_rate = round(np.random.uniform(45, 51), 2)
+                usage_rate = round(np.random.uniform(1, 5), 2)
         
         popularity = round((win_rate * 0.4 + usage_rate * 0.6), 2)
 
@@ -179,39 +241,34 @@ def generate_cards_csv():
 
     df = pd.DataFrame(cards)
     df.to_csv(OUTPUT_DIR / "cards.csv", index=False)
-    print(f"✅ {len(df)} cards saved\n")
+    print(f"✅ {len(df)} cards saved (including tower troops)\n")
     return df
 
 
 def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
-    """Generate UNIQUE decks from REAL meta templates with proper names."""
+    """Generate UNIQUE decks from REAL meta templates."""
     print(f"🃏 Generating decks from REAL meta templates...")
 
     card_dict = cards_df.set_index('name').to_dict('index')
     decks = []
     deck_id = 1
 
-    # Each real deck gets variations
     variations_per_deck = max(1, target_count // len(REAL_META_DECKS))
-    
     skipped = []
     
     for template in REAL_META_DECKS:
         cards = template["cards"]
         
-        # Validate all cards exist
         valid_cards = [c for c in cards if c in card_dict]
         if len(valid_cards) < 8:
             missing = [c for c in cards if c not in card_dict]
             skipped.append(f"{template['name']}: missing {missing}")
             continue
         
-        # Calculate REAL average elixir
         avg_elixir = round(
             sum(card_dict[c]['elixir_cost'] for c in valid_cards[:8]) / 8, 2
         )
         
-        # Add multiple variations
         for variation in range(variations_per_deck):
             base_wr = template["win_rate"]
             win_rate = round(max(35, min(70, base_wr + np.random.uniform(-1.5, 1.5))), 2)
@@ -222,9 +279,9 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
             
             decks.append({
                 "deck_id": deck_id,
-                "deck_name": template["name"],            # ✨ Real deck name
-                "tier": template["tier"],                  # ✨ S/A/B/C tier
-                "source": template.get("source", ""),      # ✨ Source info
+                "deck_name": template["name"],
+                "tier": template["tier"],
+                "source": template.get("source", ""),
                 "card_1": valid_cards[0],
                 "card_2": valid_cards[1],
                 "card_3": valid_cards[2],
@@ -247,17 +304,17 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
             break
     
     if skipped:
-        print(f"⚠️  Skipped {len(skipped)} decks with missing cards")
+        print(f"⚠️  Skipped {len(skipped)} decks (missing cards)")
     
     df = pd.DataFrame(decks)
     df.to_csv(OUTPUT_DIR / "decks.csv", index=False)
-    print(f"✅ {len(df)} decks saved ({len(REAL_META_DECKS) - len(skipped)} unique templates)\n")
+    print(f"✅ {len(df)} decks saved\n")
     return df
 
 
 def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_battles: int = 5000):
-    """Generate realistic battles using real decks."""
-    print(f"⚔️ Generating {num_battles} battles from real decks...")
+    """Generate realistic battles."""
+    print(f"⚔️ Generating {num_battles} battles...")
     
     battles = []
     for battle_id in range(1, num_battles + 1):
@@ -311,7 +368,7 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
 
 
 def generate_meta_stats_csv(cards_df: pd.DataFrame):
-    """Generate meta stats with realistic seasonal trends."""
+    """Generate meta stats with seasonal trends."""
     print("📊 Generating meta_stats.csv...")
     
     seasons = ["Season_45", "Season_46", "Season_47", "Season_48", "Season_49"]
@@ -359,10 +416,11 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
 
 def main():
     print("=" * 60)
-    print("🏆 ROYALEFORGE - REAL META DATA GENERATOR")
+    print("🏆 ROYALEFORGE - OFFICIAL CR DATA GENERATOR")
     print("=" * 60 + "\n")
     
-    print(f"📚 Loaded {len(REAL_META_DECKS)} REAL meta decks\n")
+    print(f"📚 Loaded {len(REAL_META_DECKS)} REAL meta decks")
+    print(f"🃏 Total cards in database: {len(CARDS_DATA)}\n")
     
     cards_df = generate_cards_csv()
     decks_df = generate_decks_csv(cards_df, target_count=500)
@@ -372,11 +430,27 @@ def main():
     print("=" * 60)
     print("🎉 DATASETS GENERATED!")
     print("=" * 60)
-    print(f"\n📊 Generated:")
-    print(f"   • {len(cards_df)} cards")
-    print(f"   • {len(decks_df)} decks (with names, tiers, sources)")
-    print(f"   • {len(battles_df)} battles")
-    print(f"   • {len(meta_df)} meta records")
+    
+    # Statistics
+    troops = sum(1 for c in CARDS_DATA if c[3] == "Troop")
+    spells = sum(1 for c in CARDS_DATA if c[3] == "Spell")
+    buildings = sum(1 for c in CARDS_DATA if c[3] == "Building")
+    towers = sum(1 for c in CARDS_DATA if c[3] == "Tower Troop")
+    
+    print(f"\n📊 Card Distribution:")
+    print(f"   • Troops:       {troops}")
+    print(f"   • Spells:       {spells}")
+    print(f"   • Buildings:    {buildings}")
+    print(f"   • Tower Troops: {towers}")
+    print(f"   • TOTAL:        {len(CARDS_DATA)}")
+    
+    print(f"\n📋 By Rarity:")
+    rarities = {}
+    for c in CARDS_DATA:
+        rarities[c[2]] = rarities.get(c[2], 0) + 1
+    for r, count in sorted(rarities.items()):
+        print(f"   • {r}: {count}")
+    
     print(f"\n🚀 Next Steps:")
     print(f"   1. Re-run notebook 02 (Data Cleaning)")
     print(f"   2. Re-run notebook 04 (ML Training)")

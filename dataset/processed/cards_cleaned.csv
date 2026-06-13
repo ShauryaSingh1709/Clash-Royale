@@ -1,99 +1,122 @@
 card_id,name,elixir_cost,rarity,type,arena_unlocked,damage,hitpoints,archetype,win_rate,usage_rate,popularity_score,damage_per_elixir,hp_per_elixir,strength_score,cost_category
-1,Knight,3,Common,Troop,0,79,685,Beatdown,54.25,24.51,36.41,26.33,228.33,41.76,Medium
-2,Archers,3,Common,Troop,0,42,125,Control,51.66,7.19,24.98,14.0,41.67,32.98,Medium
-3,Bomber,3,Common,Troop,2,75,150,Control,48.78,4.09,21.97,25.0,50.0,30.01,Medium
-4,Goblins,2,Common,Troop,1,47,80,Cycle,45.35,4.46,20.82,23.5,40.0,28.18,Cheap
-5,Spear Goblins,2,Common,Troop,1,32,52,Cycle,48.61,3.83,21.74,16.0,26.0,29.8,Cheap
-6,Skeletons,1,Common,Troop,2,67,67,Cycle,52.12,24.7,35.67,67.0,67.0,40.6,Cheap
-7,Minions,3,Common,Troop,0,40,90,Control,52.16,4.49,23.56,13.33,30.0,32.14,Medium
-8,Minion Horde,5,Common,Troop,4,40,90,Control,46.09,1.73,19.47,8.0,18.0,27.46,Expensive
-9,Barbarians,5,Common,Troop,3,75,262,Beatdown,46.83,3.1,20.59,15.0,52.4,28.46,Expensive
-10,Royal Giant,6,Common,Troop,7,122,1200,Siege,52.16,10.91,27.41,20.33,200.0,34.84,Expensive
-11,Cannon,3,Common,Building,3,67,380,Control,55.67,16.39,32.1,22.33,126.67,39.17,Medium
-12,Tesla,4,Common,Building,4,79,450,Control,49.46,5.56,23.12,19.75,112.5,31.02,Medium
-13,Mortar,4,Common,Building,1,110,600,Siege,50.28,8.5,25.21,27.5,150.0,32.73,Medium
-14,Fire Spirit,2,Common,Troop,5,169,60,Cycle,46.2,3.06,20.32,84.5,30.0,28.08,Cheap
-15,Ice Spirit,1,Common,Troop,8,79,90,Cycle,55.55,15.46,31.5,79.0,90.0,38.71,Cheap
-16,Royal Recruits,7,Common,Troop,10,75,286,Beatdown,53.04,9.71,27.04,10.71,40.86,34.84,Heavy
-17,Rascals,5,Common,Troop,11,70,286,Control,45.39,4.8,21.04,14.0,57.2,28.34,Expensive
-18,Elite Barbarians,6,Common,Troop,9,188,524,Beatdown,50.79,4.23,22.85,31.33,87.33,31.23,Expensive
-19,Mini PEKKA,4,Rare,Troop,0,340,642,Control,49.52,3.68,22.02,85.0,160.5,30.27,Medium
-20,Musketeer,4,Rare,Troop,0,142,340,Control,56.11,19.4,34.08,35.5,85.0,40.69,Medium
-21,Giant,5,Rare,Troop,0,132,2000,Beatdown,52.73,19.95,33.06,26.4,400.0,38.96,Expensive
-22,Valkyrie,4,Rare,Troop,1,152,836,Control,48.17,9.37,24.89,38.0,209.0,31.87,Medium
-23,Fireball,4,Rare,Spell,0,572,0,Control,53.55,21.63,34.4,143.0,0.0,40.14,Medium
-24,Arrows,3,Common,Spell,0,137,0,Control,49.56,6.64,23.81,45.67,0.0,31.53,Medium
-25,Hog Rider,4,Rare,Troop,4,264,776,Hog Cycle,55.28,16.85,32.22,66.0,194.0,39.14,Medium
-26,Wizard,5,Rare,Troop,5,152,598,Control,54.85,15.75,31.39,30.4,119.6,38.43,Expensive
-27,Three Musketeers,9,Rare,Troop,7,142,340,Beatdown,52.7,9.26,26.64,15.78,37.78,34.46,Heavy
-28,Battle Ram,4,Rare,Troop,9,132,595,Beatdown,55.59,24.22,36.77,33.0,148.75,42.42,Medium
-29,Zappies,4,Rare,Troop,11,49,252,Control,45.53,1.78,19.28,12.25,63.0,27.16,Medium
-30,Mega Minion,3,Rare,Troop,6,138,252,Control,52.27,18.25,31.86,46.0,84.0,37.98,Medium
-31,Goblin Hut,5,Rare,Building,1,32,682,Control,47.33,2.09,20.19,6.4,136.4,28.33,Expensive
-32,Furnace,4,Rare,Building,8,169,612,Control,49.97,2.43,21.45,42.25,153.0,30.0,Medium
-33,Bomb Tower,4,Rare,Building,2,75,950,Control,46.69,3.17,20.58,18.75,237.5,28.41,Medium
-34,Flying Machine,4,Rare,Troop,6,128,252,Control,45.85,4.21,20.87,32.0,63.0,28.36,Medium
-35,Ice Golem,2,Rare,Troop,8,36,1090,Cycle,52.45,24.87,35.9,18.0,545.0,40.87,Cheap
-36,Witch,5,Epic,Troop,5,56,696,Beatdown,51.86,4.39,23.38,11.2,139.2,31.92,Expensive
-37,Skeleton Army,3,Epic,Troop,2,67,67,Control,50.03,16.15,29.7,22.33,22.33,35.8,Medium
-38,Baby Dragon,4,Epic,Troop,0,100,1152,Beatdown,51.53,8.1,25.47,25.0,288.0,33.29,Medium
-39,Prince,5,Epic,Troop,1,220,1100,Beatdown,51.86,3.52,22.86,44.0,220.0,31.56,Expensive
-40,Giant Skeleton,6,Epic,Troop,1,130,2126,Beatdown,49.79,3.81,22.2,21.67,354.33,30.48,Expensive
-41,Balloon,5,Epic,Troop,6,600,1050,Beatdown,52.32,7.36,25.34,120.0,210.0,33.44,Expensive
-42,PEKKA,7,Epic,Troop,4,510,3286,Beatdown,51.65,8.64,25.84,72.86,469.43,33.58,Heavy
-43,Goblin Barrel,3,Epic,Spell,1,47,80,Cycle,51.55,11.25,27.37,15.67,26.67,34.62,Medium
-44,Freeze,4,Epic,Spell,0,100,0,Control,51.65,7.46,25.14,25.0,0.0,33.09,Medium
-45,Rocket,6,Rare,Spell,0,1300,0,Siege,57.32,19.72,34.76,216.67,0.0,41.53,Expensive
-46,Tombstone,3,Rare,Building,5,50,380,Control,52.72,22.13,34.37,16.67,126.67,39.87,Medium
-47,Dark Prince,4,Epic,Troop,1,158,1101,Beatdown,51.8,6.93,24.88,39.5,275.25,32.96,Medium
-48,Lightning,6,Epic,Spell,0,877,0,Control,51.85,6.46,24.62,146.17,0.0,32.79,Expensive
-49,X-Bow,6,Epic,Building,1,26,1200,Siege,50.61,5.99,23.84,4.33,200.0,31.87,Expensive
-50,Poison,4,Epic,Spell,0,128,0,Control,52.15,16.08,30.51,32.0,0.0,37.0,Medium
-51,Hunter,4,Epic,Troop,11,79,754,Control,50.16,14.36,28.68,19.75,188.5,35.12,Medium
-52,Goblin Gang,3,Common,Troop,9,50,80,Cycle,53.89,20.09,33.61,16.67,26.67,39.69,Medium
-53,Bowler,5,Epic,Troop,10,100,928,Beatdown,52.54,4.75,23.87,20.0,185.6,32.47,Expensive
-54,Executioner,5,Epic,Troop,11,150,754,Control,47.46,4.02,21.4,30.0,150.8,29.22,Expensive
-55,Cannon Cart,5,Epic,Troop,12,132,1086,Beatdown,46.37,1.31,19.33,26.4,217.2,27.44,Expensive
-56,Electro Wizard,4,Legendary,Troop,11,79,598,Control,53.74,16.61,31.46,19.75,149.5,38.15,Medium
-57,Royal Ghost,3,Legendary,Troop,7,158,686,Control,57.58,23.08,36.88,52.67,228.67,43.09,Medium
-58,Princess,3,Legendary,Troop,7,70,216,Control,55.8,23.71,36.55,23.33,72.0,42.32,Medium
-59,Ice Wizard,3,Legendary,Troop,8,49,598,Control,49.82,1.75,20.98,16.33,199.33,29.63,Medium
-60,Miner,3,Legendary,Troop,6,102,1000,Cycle,54.46,13.39,29.82,34.0,333.33,37.21,Medium
-61,Sparky,6,Legendary,Troop,6,1300,1357,Beatdown,52.04,9.27,26.38,216.67,226.17,34.08,Expensive
-62,Lava Hound,7,Legendary,Troop,0,39,3150,Beatdown,49.59,3.77,22.1,5.57,450.0,30.35,Heavy
-63,Inferno Dragon,4,Legendary,Troop,6,30,1004,Beatdown,51.14,12.27,27.82,7.5,251.0,34.82,Medium
-64,Graveyard,5,Legendary,Spell,1,107,67,Control,52.09,9.03,26.25,21.4,13.4,34.0,Expensive
-65,The Log,2,Legendary,Spell,6,240,0,Control,52.04,20.11,32.88,120.0,0.0,38.63,Cheap
-66,Lumberjack,4,Legendary,Troop,6,187,686,Beatdown,50.09,4.55,22.77,46.75,171.5,30.96,Medium
-67,Night Witch,4,Legendary,Troop,6,142,1004,Beatdown,48.6,5.36,22.66,35.5,251.0,30.44,Medium
-68,Bandit,3,Legendary,Troop,9,158,750,Control,57.66,18.23,34.0,52.67,250.0,41.1,Medium
-69,Mega Knight,7,Legendary,Troop,10,158,2842,Beatdown,52.59,15.03,30.05,22.57,406.0,36.81,Heavy
-70,Magic Archer,4,Legendary,Troop,11,79,446,Control,54.18,24.72,36.5,19.75,111.5,41.81,Medium
-71,Ram Rider,5,Legendary,Troop,12,90,1050,Beatdown,50.77,2.01,21.51,18.0,210.0,30.29,Expensive
-72,Fisherman,3,Legendary,Troop,13,158,700,Control,52.49,11.01,27.6,52.67,233.33,35.07,Medium
-73,Skeleton Barrel,3,Common,Troop,12,23,280,Cycle,46.71,1.15,19.37,7.67,93.33,27.57,Medium
-74,Wall Breakers,2,Epic,Troop,12,158,134,Cycle,48.66,3.01,21.27,79.0,67.0,29.49,Cheap
-75,Royal Hogs,5,Rare,Troop,10,75,540,Beatdown,48.26,4.95,22.27,15.0,108.0,30.07,Expensive
-76,Zap,2,Common,Spell,5,159,0,Control,57.45,17.4,33.42,79.5,0.0,40.63,Cheap
-77,Tornado,3,Epic,Spell,6,88,0,Control,48.72,6.43,23.35,29.33,0.0,30.96,Medium
-78,Clone,3,Epic,Spell,9,0,0,Beatdown,50.91,1.97,21.55,0.0,0.0,30.36,Medium
-79,Mirror,1,Epic,Spell,5,0,0,Beatdown,49.03,4.05,22.04,0.0,0.0,30.14,Cheap
-80,Heal Spirit,1,Rare,Troop,13,56,67,Cycle,49.19,8.1,24.54,56.0,67.0,31.93,Cheap
-81,Elixir Collector,6,Rare,Building,5,0,870,Beatdown,49.84,7.43,24.39,0.0,145.0,32.03,Expensive
-82,Inferno Tower,5,Rare,Building,4,30,870,Control,53.17,13.36,29.28,6.0,174.0,36.45,Expensive
-83,Royal Delivery,3,Common,Spell,9,159,1300,Control,45.54,4.34,20.82,53.0,433.33,28.24,Medium
-84,Earthquake,3,Rare,Spell,8,89,0,Siege,51.6,9.87,26.56,29.67,0.0,34.07,Medium
-85,Goblin Cage,4,Rare,Building,10,56,800,Control,45.24,3.36,20.11,14.0,200.0,27.65,Medium
-86,Battle Healer,4,Rare,Troop,13,75,1232,Beatdown,51.39,3.12,22.43,18.75,308.0,31.12,Medium
-87,Firecracker,3,Common,Troop,12,84,216,Control,48.07,1.91,20.37,28.0,72.0,28.68,Medium
-88,Elixir Golem,3,Rare,Troop,6,39,1900,Beatdown,48.87,1.7,20.57,13.0,633.33,29.06,Medium
-89,Mother Witch,4,Legendary,Troop,12,38,598,Control,49.15,2.55,21.19,9.5,149.5,29.58,Medium
-90,Royal Champion,7,Champion,Troop,0,150,1804,Beatdown,50.62,1.55,21.18,21.43,257.71,30.01,Heavy
-91,Archer Queen,5,Champion,Troop,0,122,904,Control,49.71,3.79,22.16,24.4,180.8,30.42,Expensive
-92,Skeleton King,4,Champion,Troop,0,105,1804,Beatdown,50.55,4.51,22.93,26.25,451.0,31.21,Medium
-93,Mighty Miner,4,Champion,Troop,0,95,1300,Control,51.29,14.6,29.28,23.75,325.0,35.88,Medium
-94,Phoenix,4,Champion,Troop,0,80,800,Control,49.9,3.22,21.89,20.0,200.0,30.29,Medium
-95,Goblinstein,5,Champion,Troop,0,130,1200,Beatdown,48.18,1.97,20.45,26.0,240.0,28.77,Expensive
-96,Little Prince,3,Champion,Troop,0,70,600,Control,45.56,4.59,20.98,23.33,200.0,28.35,Medium
-97,Monk,5,Champion,Troop,0,100,1400,Beatdown,50.4,3.53,22.28,20.0,280.0,30.72,Expensive
-98,Bats,2,Epic,Troop,6,67,67,Cycle,51.7,11.49,27.57,33.5,33.5,34.81,Cheap
+1,Knight,3,Common,Troop,0,202,1766,Beatdown,54.25,24.51,36.41,67.33,588.67,41.76,Medium
+2,Archers,3,Common,Troop,0,112,304,Control,51.66,7.19,24.98,37.33,101.33,32.98,Medium
+3,Bomber,2,Common,Troop,2,225,304,Control,48.78,4.09,21.97,112.5,152.0,30.01,Cheap
+4,Goblins,2,Common,Troop,1,120,202,Cycle,45.35,4.46,20.82,60.0,101.0,28.18,Cheap
+5,Spear Goblins,2,Common,Troop,1,81,133,Cycle,48.61,3.83,21.74,40.5,66.5,29.8,Cheap
+6,Skeletons,1,Common,Troop,2,81,81,Cycle,52.12,24.7,35.67,81.0,81.0,40.6,Cheap
+7,Minions,3,Common,Troop,0,107,230,Control,52.16,4.49,23.56,35.67,76.67,32.14,Medium
+8,Minion Horde,5,Common,Troop,4,107,230,Control,46.09,1.73,19.47,21.4,46.0,27.46,Expensive
+9,Barbarians,5,Common,Troop,3,192,670,Beatdown,46.83,3.1,20.59,38.4,134.0,28.46,Expensive
+10,Royal Giant,6,Common,Troop,7,307,3164,Siege,52.16,10.91,27.41,51.17,527.33,34.84,Expensive
+11,Royal Recruits,7,Common,Troop,10,133,787,Beatdown,53.06,9.39,26.86,19.0,112.43,34.72,Heavy
+12,Rascals,5,Common,Troop,11,217,1940,Control,46.75,2.47,20.18,43.4,388.0,28.15,Expensive
+13,Elite Barbarians,6,Common,Troop,9,384,1341,Beatdown,47.74,4.14,21.58,64.0,223.5,29.43,Expensive
+14,Fire Spirit,1,Common,Troop,5,207,230,Cycle,46.2,3.06,20.32,207.0,230.0,28.08,Cheap
+15,Ice Spirit,1,Common,Troop,8,110,230,Cycle,55.55,15.46,31.5,110.0,230.0,38.71,Cheap
+16,Heal Spirit,1,Common,Troop,13,110,230,Cycle,51.04,4.19,22.93,110.0,230.0,31.36,Cheap
+17,Electro Spirit,1,Common,Troop,12,99,230,Cycle,45.39,4.8,21.04,99.0,230.0,28.34,Cheap
+18,Firecracker,3,Common,Troop,12,64,304,Control,50.79,4.23,22.85,21.33,101.33,31.23,Medium
+19,Dart Goblin,3,Common,Troop,9,151,261,Cycle,46.83,1.39,19.57,50.33,87.0,27.75,Medium
+20,Goblin Gang,3,Common,Troop,9,120,202,Cycle,56.11,19.4,34.08,40.0,67.33,40.69,Medium
+21,Royal Hogs,5,Common,Troop,10,74,837,Beatdown,48.61,6.47,23.33,14.8,167.4,30.91,Expensive
+22,Skeleton Barrel,3,Common,Troop,12,145,532,Cycle,45.21,4.64,20.87,48.33,177.33,28.17,Medium
+23,Wall Breakers,2,Common,Troop,12,350,330,Cycle,46.55,3.65,20.81,175.0,165.0,28.53,Cheap
+24,Mini PEKKA,4,Rare,Troop,0,755,1390,Control,49.56,6.64,23.81,188.75,347.5,31.53,Medium
+25,Musketeer,4,Rare,Troop,0,217,721,Control,55.28,16.85,32.22,54.25,180.25,39.14,Medium
+26,Giant,5,Rare,Troop,0,253,4090,Beatdown,57.82,22.75,36.78,50.6,818.0,43.09,Expensive
+27,Valkyrie,4,Rare,Troop,1,266,1907,Control,52.7,9.26,26.64,66.5,476.75,34.46,Medium
+28,Hog Rider,4,Rare,Troop,4,317,1697,Hog Cycle,55.59,24.22,36.77,79.25,424.25,42.42,Medium
+29,Wizard,5,Rare,Troop,5,281,755,Control,50.44,9.96,26.15,56.2,151.0,33.44,Expensive
+30,Three Musketeers,9,Rare,Troop,7,217,721,Beatdown,48.23,5.28,22.46,24.11,80.11,30.19,Heavy
+31,Battle Ram,4,Rare,Troop,9,286,967,Beatdown,54.33,17.71,32.36,71.5,241.75,38.95,Medium
+32,Zappies,4,Rare,Troop,11,117,529,Control,49.97,2.43,21.45,29.25,132.25,30.0,Medium
+33,Mega Minion,3,Rare,Troop,6,311,837,Control,53.69,20.43,33.73,103.67,279.0,39.72,Medium
+34,Flying Machine,4,Rare,Troop,6,171,614,Control,45.85,4.21,20.87,42.75,153.5,28.36,Medium
+35,Ice Golem,2,Rare,Troop,8,84,1315,Cycle,52.45,24.87,35.9,42.0,657.5,40.87,Cheap
+36,Battle Healer,4,Rare,Troop,13,148,1717,Beatdown,51.86,4.39,23.38,37.0,429.25,31.92,Medium
+37,Elixir Golem,3,Rare,Troop,6,253,1569,Beatdown,45.03,4.26,20.57,84.33,523.0,27.91,Medium
+38,Berserker,2,Rare,Troop,13,102,896,Cycle,49.24,3.92,22.05,51.0,448.0,30.21,Cheap
+39,Witch,5,Epic,Troop,5,135,839,Beatdown,51.86,3.52,22.86,27.0,167.8,31.56,Expensive
+40,Skeleton Army,3,Epic,Troop,2,81,81,Control,51.79,9.16,26.21,27.0,27.0,33.89,Medium
+41,Baby Dragon,4,Epic,Troop,0,161,1152,Beatdown,52.32,7.36,25.34,40.25,288.0,33.44,Medium
+42,Prince,5,Epic,Troop,1,391,1920,Beatdown,49.65,3.44,21.92,78.2,384.0,30.24,Expensive
+43,Giant Skeleton,6,Epic,Troop,1,276,3617,Beatdown,49.55,5.28,22.99,46.0,602.83,30.96,Expensive
+44,Balloon,5,Epic,Troop,6,640,1679,Beatdown,51.65,7.46,25.14,128.0,335.8,33.09,Expensive
+45,PEKKA,7,Epic,Troop,4,816,3760,Beatdown,54.44,12.72,29.41,116.57,537.14,36.92,Heavy
+46,Dark Prince,4,Epic,Troop,1,266,1440,Beatdown,48.6,7.99,24.23,66.5,360.0,31.54,Medium
+47,Hunter,4,Epic,Troop,11,84,885,Control,53.8,13.61,29.69,21.0,221.25,36.92,Medium
+48,Bowler,5,Epic,Troop,10,289,2081,Beatdown,51.85,6.46,24.62,57.8,416.2,32.79,Expensive
+49,Executioner,5,Epic,Troop,11,168,1280,Control,48.14,2.71,20.88,33.6,256.0,29.06,Expensive
+50,Cannon Cart,5,Epic,Troop,12,212,1809,Beatdown,45.15,1.43,18.92,42.4,361.8,26.79,Expensive
+51,Guards,3,Epic,Troop,7,117,337,Control,45.19,3.55,20.21,39.0,112.33,27.7,Medium
+52,Bats,2,Epic,Troop,6,81,81,Cycle,51.57,13.09,28.48,40.5,40.5,35.41,Cheap
+53,Goblin Brawler,4,Epic,Troop,14,337,1080,Beatdown,50.45,2.0,21.38,84.25,270.0,30.1,Medium
+54,Goblin Giant,6,Epic,Troop,12,176,3020,Beatdown,47.46,4.02,21.4,29.33,503.33,29.22,Expensive
+55,Goblin Demolisher,4,Epic,Troop,14,186,1300,Beatdown,46.37,1.31,19.33,46.5,325.0,27.44,Medium
+56,Electro Dragon,5,Epic,Troop,13,192,949,Control,46.74,1.64,19.68,38.4,189.8,27.8,Expensive
+57,Electro Giant,7,Epic,Troop,14,163,3855,Beatdown,50.58,4.23,22.77,23.29,550.71,31.11,Heavy
+58,Skeleton Dragons,4,Epic,Troop,14,161,560,Beatdown,48.8,4.49,22.21,40.25,140.0,30.19,Medium
+59,Suspicious Bush,2,Epic,Troop,14,0,81,Cycle,49.82,1.75,20.98,0.0,40.5,29.63,Cheap
+61,Rune Giant,4,Epic,Troop,14,120,2662,Beatdown,49.84,4.58,22.68,30.0,665.5,30.83,Medium
+62,Electro Wizard,4,Legendary,Troop,11,115,714,Control,53.91,16.1,31.22,28.75,178.5,38.03,Medium
+63,Royal Ghost,3,Legendary,Troop,7,261,1210,Control,53.37,19.27,32.91,87.0,403.33,39.05,Medium
+64,Princess,3,Legendary,Troop,7,168,261,Control,56.91,23.61,36.93,56.0,87.0,42.92,Medium
+65,Ice Wizard,3,Legendary,Troop,8,89,688,Control,45.04,3.04,19.84,29.67,229.33,27.4,Medium
+66,Miner,3,Legendary,Troop,6,194,1210,Cycle,52.09,10.22,26.97,64.67,403.33,34.51,Medium
+67,Sparky,6,Legendary,Troop,6,1331,1451,Beatdown,48.6,5.36,22.66,221.83,241.83,30.44,Expensive
+68,Lava Hound,7,Legendary,Troop,0,53,3581,Beatdown,52.71,5.26,24.24,7.57,511.57,32.78,Heavy
+69,Inferno Dragon,4,Legendary,Troop,6,422,1295,Beatdown,52.59,15.03,30.05,105.5,323.75,36.81,Medium
+70,Lumberjack,4,Legendary,Troop,6,256,1282,Beatdown,49.82,9.8,25.81,64.0,320.5,33.01,Medium
+71,Night Witch,4,Legendary,Troop,6,314,906,Beatdown,52.81,4.76,23.98,78.5,226.5,32.63,Medium
+72,Bandit,3,Legendary,Troop,9,194,906,Control,54.98,18.01,32.8,64.67,302.0,39.45,Medium
+73,Mega Knight,7,Legendary,Troop,10,268,3993,Beatdown,51.42,8.37,25.59,38.29,570.43,33.34,Heavy
+74,Magic Archer,4,Legendary,Troop,11,143,529,Control,55.66,20.03,34.28,35.75,132.25,40.7,Medium
+75,Ram Rider,5,Legendary,Troop,12,250,1697,Beatdown,45.31,2.11,19.39,50.0,339.4,27.17,Expensive
+76,Fisherman,3,Legendary,Troop,13,194,870,Control,54.54,10.4,28.06,64.67,290.0,36.0,Medium
+77,Mother Witch,4,Legendary,Troop,12,133,529,Control,45.87,2.96,20.12,33.25,132.25,27.85,Medium
+78,Phoenix,4,Legendary,Troop,14,217,1052,Control,50.91,1.97,21.55,54.25,263.0,30.36,Medium
+80,Royal Champion,7,Champion,Troop,0,0,0,Beatdown,46.43,3.91,20.92,0.0,0.0,28.57,Heavy
+81,Archer Queen,5,Champion,Troop,0,225,1000,Control,49.84,7.43,24.39,45.0,200.0,32.03,Expensive
+82,Skeleton King,4,Champion,Troop,0,204,2298,Beatdown,48.8,3.14,21.4,51.0,574.5,29.62,Medium
+83,Mighty Miner,4,Champion,Troop,0,409,2250,Control,50.45,16.35,29.99,102.25,562.5,36.13,Medium
+84,Goblinstein,5,Champion,Troop,0,92,721,Beatdown,46.92,1.75,19.82,18.4,144.2,27.95,Expensive
+85,Little Prince,3,Champion,Troop,0,104,698,Control,45.24,3.36,20.11,34.67,232.67,27.65,Medium
+86,Monk,5,Champion,Troop,0,422,2214,Beatdown,49.07,1.07,20.27,84.4,442.8,28.91,Expensive
+87,Golden Knight,4,Champion,Troop,0,161,1799,Beatdown,48.07,1.91,20.37,40.25,449.75,28.68,Medium
+88,Boss Bandit,6,Champion,Troop,0,245,2624,Beatdown,48.87,1.7,20.57,40.83,437.33,29.06,Expensive
+89,Spirit Empress,6,Champion,Troop,0,307,1244,Control,49.15,2.55,21.19,51.17,207.33,29.58,Expensive
+90,Fireball,4,Rare,Spell,0,688,0,Control,57.62,16.38,32.88,172.0,0.0,40.3,Medium
+91,Arrows,3,Common,Spell,0,366,0,Control,49.71,3.79,22.16,122.0,0.0,30.42,Medium
+92,Zap,2,Common,Spell,5,192,0,Control,57.55,23.77,37.28,96.0,0.0,43.36,Cheap
+93,Rocket,6,Rare,Spell,0,1484,0,Siege,53.55,21.6,34.38,247.33,0.0,40.13,Expensive
+94,Lightning,6,Epic,Spell,0,1057,0,Control,52.09,6.89,24.97,176.17,0.0,33.11,Expensive
+95,Freeze,4,Epic,Spell,0,148,0,Control,50.65,4.69,23.07,37.0,0.0,31.35,Medium
+96,Poison,4,Epic,Spell,0,736,0,Control,52.56,23.97,35.41,184.0,0.0,40.55,Medium
+97,Goblin Barrel,3,Epic,Spell,1,120,0,Cycle,54.5,14.33,30.4,40.0,0.0,37.63,Medium
+98,The Log,2,Legendary,Spell,6,268,0,Control,54.03,18.49,32.71,134.0,0.0,39.1,Cheap
+99,Tornado,3,Epic,Spell,6,84,0,Control,51.63,9.28,26.22,28.0,0.0,33.84,Medium
+100,Graveyard,5,Legendary,Spell,1,81,0,Control,52.44,8.46,26.05,16.2,0.0,33.97,Expensive
+101,Clone,3,Epic,Spell,9,0,0,Beatdown,48.85,1.34,20.34,0.0,0.0,28.9,Medium
+102,Mirror,1,Epic,Spell,5,0,0,Beatdown,45.97,4.59,21.14,0.0,0.0,28.59,Cheap
+103,Rage,2,Epic,Spell,4,179,0,Beatdown,48.64,1.04,20.08,89.5,0.0,28.65,Cheap
+104,Earthquake,3,Rare,Spell,8,243,0,Siege,50.51,14.64,28.99,81.0,0.0,35.44,Medium
+105,Royal Delivery,3,Common,Spell,9,437,0,Control,45.03,1.64,19.0,145.67,0.0,26.81,Medium
+106,Giant Snowball,2,Common,Spell,13,179,0,Control,48.29,3.77,21.58,89.5,0.0,29.59,Cheap
+107,Barbarian Barrel,2,Epic,Spell,14,230,0,Cycle,48.91,1.9,20.7,115.0,0.0,29.16,Cheap
+108,Goblin Curse,2,Epic,Spell,14,210,0,Control,49.27,1.95,20.88,105.0,0.0,29.4,Cheap
+109,Vines,3,Epic,Spell,14,306,0,Control,46.95,3.99,21.17,102.0,0.0,28.91,Medium
+110,Void,3,Epic,Spell,14,1020,0,Control,48.9,4.4,22.2,340.0,0.0,30.21,Medium
+111,Bomb Tower,4,Rare,Building,2,222,1356,Control,48.95,3.27,21.54,55.5,339.0,29.76,Medium
+112,Cannon,3,Common,Building,3,212,824,Control,52.56,18.68,32.23,70.67,274.67,38.33,Medium
+113,Tesla,4,Common,Building,4,220,1152,Control,49.33,4.71,22.56,55.0,288.0,30.59,Medium
+114,Inferno Tower,5,Rare,Building,4,847,1748,Control,54.87,11.93,29.11,169.4,349.6,36.84,Expensive
+115,Mortar,4,Common,Building,1,266,1369,Siege,52.46,7.42,25.44,66.5,342.25,33.54,Medium
+116,X-Bow,6,Epic,Building,1,43,1600,Siege,51.97,6.52,24.7,7.17,266.67,32.88,Expensive
+117,Goblin Cage,4,Rare,Building,10,0,780,Control,48.46,2.97,21.17,0.0,195.0,29.36,Medium
+118,Goblin Hut,5,Rare,Building,1,32,1180,Control,46.17,3.89,20.8,6.4,236.0,28.41,Expensive
+119,Furnace,4,Rare,Building,8,179,727,Control,46.68,1.1,19.33,44.75,181.75,27.54,Medium
+120,Tombstone,3,Rare,Building,5,0,529,Control,55.87,16.77,32.41,0.0,176.33,39.45,Medium
+121,Elixir Collector,6,Rare,Building,5,0,1070,Beatdown,52.7,9.68,26.89,0.0,178.33,34.63,Expensive
+122,Barbarian Hut,6,Rare,Building,14,0,1164,Beatdown,50.49,2.48,21.68,0.0,194.0,30.33,Expensive
+123,Goblin Drill,4,Epic,Building,14,84,1313,Siege,45.09,4.71,20.86,21.0,328.25,28.13,Medium
