@@ -92,7 +92,7 @@ async function loadArchetypeChart() {
                 datasets: [{
                     data: Object.values(dist),
                     backgroundColor: CHART_COLORS,
-                    borderColor: 'var(--bg-primary)',
+                    borderColor: '#0A0E27',
                     borderWidth: 3
                 }]
             },
@@ -162,7 +162,14 @@ async function loadTopDecks() {
                     <div class="deck-info">
                         <strong>${deck.archetype}</strong> | Avg Elixir: ${deck.avg_elixir}
                         <div class="deck-cards-display">
-                            ${cards.map(c => `<span class="deck-card-chip">${c}</span>`).join('')}
+                            ${cards.map(c => `
+                                <div class="deck-card-chip-img" title="${c}">
+                                    <img src="${Utils.getCardImageUrl(c)}" 
+                                         alt="${c}" 
+                                         onerror="Utils.handleImageError(this)"
+                                         style="width: 50px; height: 60px; object-fit: contain;">
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                     <div class="deck-metric">

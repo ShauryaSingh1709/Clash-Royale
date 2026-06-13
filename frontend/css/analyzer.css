@@ -74,6 +74,14 @@
     background: var(--gradient-card);
 }
 
+.deck-slot.filled img {
+    transition: transform var(--transition-fast);
+}
+
+.deck-slot.filled:hover img {
+    transform: scale(1.1);
+}
+
 .deck-slot-empty {
     color: var(--text-muted);
     font-size: 2rem;
@@ -85,11 +93,14 @@
 }
 
 .deck-slot-name {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.2;
     margin-top: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .deck-slot-elixir {
@@ -98,15 +109,16 @@
     right: 4px;
     background: var(--color-purple);
     color: white;
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     box-shadow: var(--shadow-sm);
+    z-index: 2;
 }
 
 .builder-actions {
@@ -182,7 +194,7 @@
     background: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
-    padding: 0.75rem 0.5rem;
+    padding: 0.5rem;
     cursor: pointer;
     transition: all var(--transition-base);
     position: relative;
@@ -193,6 +205,14 @@
     transform: translateY(-3px);
     border-color: var(--color-primary);
     box-shadow: var(--shadow-glow);
+}
+
+.pool-card:hover img {
+    transform: scale(1.1);
+}
+
+.pool-card img {
+    transition: transform var(--transition-fast);
 }
 
 .pool-card.added {
@@ -214,18 +234,22 @@
     justify-content: center;
     font-weight: 700;
     font-size: 0.75rem;
+    z-index: 2;
 }
 
 .pool-card-name {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     color: var(--text-primary);
-    margin-top: 1.5rem;
+    margin-top: 0.4rem;
     line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .pool-card-rarity {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     margin-top: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -364,12 +388,18 @@
     flex-wrap: wrap;
 }
 
-.mini-card {
+.mini-card-img {
     background: var(--bg-card);
-    padding: 0.25rem 0.6rem;
+    padding: 0.3rem;
     border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.mini-card-img:hover {
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
 }
 
 /* ── RESPONSIVE ────────────────────────────────────────────────── */

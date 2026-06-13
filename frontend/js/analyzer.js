@@ -54,7 +54,7 @@ function renderCardPool() {
     }
 
     if (filtered.length === 0) {
-        pool.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:2rem;">No cards found</p>';
+        pool.innerHTML = '<p style="text-align:center;color:var(--text-muted);padding:2rem;grid-column:1/-1;">No cards found</p>';
         return;
     }
 
@@ -67,6 +67,10 @@ function renderCardPool() {
                  onclick="addToDeck('${card.name.replace(/'/g, "\\'")}')"
                  style="border-color: ${isInDeck ? rarityColor : ''};">
                 <div class="pool-card-elixir">${card.elixir_cost}</div>
+                <img src="${Utils.getCardImageUrl(card.name)}" 
+                     alt="${card.name}" 
+                     onerror="Utils.handleImageError(this)"
+                     style="width: 70px; height: 85px; object-fit: contain; margin: 0 auto; display: block;">
                 <div class="pool-card-name">${card.name}</div>
                 <div class="pool-card-rarity" style="color: ${rarityColor};">
                     ${card.rarity}
@@ -112,6 +116,10 @@ function updateDeckDisplay() {
             slot.innerHTML = `
                 <div class="deck-slot-elixir">${card.elixir_cost}</div>
                 <div class="deck-slot-card">
+                    <img src="${Utils.getCardImageUrl(card.name)}" 
+                         alt="${card.name}" 
+                         onerror="Utils.handleImageError(this)"
+                         style="width: 100%; height: 70px; object-fit: contain;">
                     <div class="deck-slot-name">${card.name}</div>
                 </div>
             `;
@@ -267,10 +275,16 @@ function renderResults(data, container) {
             <p style="margin-bottom: 1rem;">Recommended replacements:</p>
             ${improvements.replacements.map(r => `
                 <div class="replacement-card">
-                    <div>
-                        <strong>${r.name}</strong>
-                        <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">
-                            ⚡ ${r.elixir_cost} | ${r.rarity} | Win Rate: ${r.win_rate}%
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <img src="${Utils.getCardImageUrl(r.name)}" 
+                             alt="${r.name}" 
+                             onerror="Utils.handleImageError(this)"
+                             style="width: 50px; height: 60px; object-fit: contain;">
+                        <div>
+                            <strong>${r.name}</strong>
+                            <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">
+                                ⚡ ${r.elixir_cost} | ${r.rarity} | Win Rate: ${r.win_rate}%
+                            </div>
                         </div>
                     </div>
                     <span class="improvement-badge">+${r.improvement}%</span>
@@ -289,12 +303,19 @@ function renderResults(data, container) {
                         <strong>Deck #${i + 1} - ${deck.archetype}</strong>
                         <span class="similarity-score">${deck.similarity_score}% match</span>
                     </div>
-                    <div style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.5rem;">
+                    <div style="color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 0.75rem;">
                         Win Rate: <strong style="color: var(--color-success);">${deck.win_rate}%</strong>
                         | Avg Elixir: ${deck.avg_elixir}
                     </div>
                     <div class="deck-cards-list">
-                        ${deck.cards.map(c => `<span class="mini-card">${c}</span>`).join('')}
+                        ${deck.cards.map(c => `
+                            <div class="mini-card-img" title="${c}">
+                                <img src="${Utils.getCardImageUrl(c)}" 
+                                     alt="${c}" 
+                                     onerror="Utils.handleImageError(this)"
+                                     style="width: 45px; height: 55px; object-fit: contain;">
+                            </div>
+                        `).join('')}
                     </div>
                 </div>
             `).join('')}

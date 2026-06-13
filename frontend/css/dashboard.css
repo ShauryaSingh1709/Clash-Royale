@@ -57,25 +57,37 @@
     justify-content: center;
     font-weight: 700;
     font-size: 1.1rem;
+    flex-shrink: 0;
 }
 
 .deck-info {
     flex: 1;
+    min-width: 250px;
 }
 
 .deck-cards-display {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
 }
 
-.deck-card-chip {
+.deck-card-chip-img {
     background: var(--bg-card);
-    padding: 0.25rem 0.6rem;
+    padding: 0.3rem;
     border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-fast);
+}
+
+.deck-card-chip-img:hover {
+    transform: translateY(-3px) scale(1.05);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.deck-card-chip-img img {
+    display: block;
 }
 
 .deck-metric {

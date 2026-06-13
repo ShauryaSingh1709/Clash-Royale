@@ -11,7 +11,7 @@
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
     gap: 1.25rem;
 }
 
@@ -19,11 +19,12 @@
     background: var(--bg-glass);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
-    padding: 1.25rem;
+    padding: 1.25rem 1rem;
     cursor: pointer;
     transition: all var(--transition-base);
     position: relative;
     backdrop-filter: blur(20px);
+    text-align: center;
 }
 
 .card-tile:hover {
@@ -38,31 +39,44 @@
     right: 12px;
     background: var(--color-purple);
     color: white;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
     box-shadow: var(--shadow-sm);
+    z-index: 2;
 }
 
 .card-tile-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110px;
+}
+
+.card-tile-icon img {
+    transition: transform var(--transition-base);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.card-tile:hover .card-tile-icon img {
+    transform: scale(1.15) rotate(-3deg);
 }
 
 .card-tile-name {
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .card-tile-rarity {
     display: inline-block;
-    padding: 0.2rem 0.6rem;
+    padding: 0.2rem 0.7rem;
     border-radius: var(--radius-full);
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -76,14 +90,20 @@
     justify-content: space-between;
     padding-top: 0.75rem;
     border-top: 1px solid var(--border-color);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--text-secondary);
+}
+
+.card-tile-stat {
+    text-align: center;
+    flex: 1;
 }
 
 .card-tile-stat strong {
     color: var(--color-primary);
     display: block;
     font-size: 0.95rem;
+    margin-top: 0.25rem;
 }
 
 /* ── MODAL ──────────────────────────────────────────────────────── */
@@ -115,6 +135,7 @@
     max-height: 90vh;
     overflow-y: auto;
     z-index: 1;
+    animation: fadeIn 0.3s ease;
 }
 
 .modal-close {
@@ -129,6 +150,13 @@
     color: var(--text-primary);
     cursor: pointer;
     font-size: 1.2rem;
+    z-index: 2;
+    transition: all var(--transition-fast);
+}
+
+.modal-close:hover {
+    background: var(--color-danger);
+    border-color: var(--color-danger);
 }
 
 .modal-header {
@@ -140,11 +168,11 @@
     display: inline-block;
     background: var(--color-purple);
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    line-height: 60px;
-    font-size: 1.8rem;
+    line-height: 50px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }

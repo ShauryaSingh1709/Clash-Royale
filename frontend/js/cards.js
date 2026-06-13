@@ -35,9 +35,14 @@ function renderCards() {
     grid.innerHTML = filtered.map(card => `
         <div class="card-tile" onclick='showCardDetail(${JSON.stringify(card).replace(/'/g, "&apos;")})'>
             <div class="card-tile-elixir">${card.elixir_cost}</div>
-            <div class="card-tile-icon">${Utils.getTypeIcon(card.type)}</div>
+            <div class="card-tile-icon">
+                <img src="${Utils.getCardImageUrl(card.name)}" 
+                     alt="${card.name}" 
+                     onerror="Utils.handleImageError(this)"
+                     style="width: 90px; height: 110px; object-fit: contain;">
+            </div>
             <div class="card-tile-name">${card.name}</div>
-            <span class="card-tile-rarity badge-${card.rarity.toLowerCase()}" 
+            <span class="card-tile-rarity" 
                   style="background: ${Utils.getRarityColor(card.rarity)}33; color: ${Utils.getRarityColor(card.rarity)};">
                 ${card.rarity}
             </span>
@@ -96,6 +101,10 @@ function showCardDetail(card) {
     content.innerHTML = `
         <button class="modal-close" onclick="closeModal()">✕</button>
         <div class="modal-header">
+            <img src="${Utils.getCardImageUrl(card.name)}" 
+                 alt="${card.name}" 
+                 onerror="Utils.handleImageError(this)"
+                 style="width: 140px; height: 170px; object-fit: contain; margin: 0 auto 1rem; display: block; filter: drop-shadow(0 10px 30px rgba(255, 215, 0, 0.4));">
             <div class="modal-elixir">${card.elixir_cost}</div>
             <h2>${card.name}</h2>
             <span class="badge" style="background:${rarityColor}33;color:${rarityColor};margin-top:0.5rem;">
