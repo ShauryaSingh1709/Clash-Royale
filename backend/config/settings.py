@@ -1,16 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 from pathlib import Path
 from dotenv import load_dotenv
@@ -20,15 +8,6 @@ load_dotenv()
 
 
 class Config:
-
-
-
-
-
-
-
-
-
 
     BASE_DIR: Path = Path(__file__).resolve().parent.parent.parent
     BACKEND_DIR: Path = BASE_DIR / "backend"

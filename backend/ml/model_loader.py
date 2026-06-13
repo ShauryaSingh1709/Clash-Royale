@@ -1,21 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import joblib
 import pickle
 from pathlib import Path
@@ -27,21 +11,6 @@ logger = get_logger(__name__)
 
 
 class ModelLoader:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     _instance: Optional["ModelLoader"] = None
