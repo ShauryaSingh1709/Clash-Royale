@@ -1,0 +1,491 @@
+card_name,season,usage_rate,win_rate,ranking,trend
+Knight,Season_45,23.52,50.59,50,Falling
+Knight,Season_46,24.64,57.83,68,Falling
+Knight,Season_47,2.69,43.74,99,Rising
+Knight,Season_48,22.68,47.0,82,Falling
+Knight,Season_49,14.09,57.58,38,Falling
+Archers,Season_45,9.59,56.53,48,Rising
+Archers,Season_46,25.07,55.74,50,Falling
+Archers,Season_47,9.23,57.61,33,Rising
+Archers,Season_48,24.47,47.4,43,Falling
+Archers,Season_49,26.82,45.6,65,Rising
+Bomber,Season_45,28.71,56.02,36,Stable
+Bomber,Season_46,11.67,57.91,70,Falling
+Bomber,Season_47,27.68,43.75,65,Rising
+Bomber,Season_48,25.13,56.53,96,Stable
+Bomber,Season_49,26.98,51.78,86,Falling
+Goblins,Season_45,29.51,51.07,87,Rising
+Goblins,Season_46,25.37,55.0,22,Rising
+Goblins,Season_47,5.17,58.55,1,Stable
+Goblins,Season_48,7.85,48.57,96,Falling
+Goblins,Season_49,9.55,52.86,69,Rising
+Spear Goblins,Season_45,1.16,46.37,65,Stable
+Spear Goblins,Season_46,8.15,51.38,42,Stable
+Spear Goblins,Season_47,14.19,58.75,26,Rising
+Spear Goblins,Season_48,27.03,53.5,7,Falling
+Spear Goblins,Season_49,16.29,50.99,93,Stable
+Skeletons,Season_45,6.67,44.42,2,Falling
+Skeletons,Season_46,7.65,48.45,52,Rising
+Skeletons,Season_47,6.28,44.58,58,Rising
+Skeletons,Season_48,18.05,46.66,46,Rising
+Skeletons,Season_49,7.56,47.88,41,Rising
+Minions,Season_45,29.89,48.08,65,Stable
+Minions,Season_46,22.76,42.18,11,Stable
+Minions,Season_47,18.87,45.73,16,Falling
+Minions,Season_48,7.13,57.59,14,Falling
+Minions,Season_49,24.21,53.34,13,Rising
+Minion Horde,Season_45,24.5,54.05,65,Falling
+Minion Horde,Season_46,28.96,45.53,95,Rising
+Minion Horde,Season_47,25.59,51.96,52,Stable
+Minion Horde,Season_48,13.04,42.25,58,Stable
+Minion Horde,Season_49,23.7,59.54,45,Rising
+Barbarians,Season_45,12.72,44.24,44,Rising
+Barbarians,Season_46,29.9,49.57,53,Stable
+Barbarians,Season_47,4.32,42.76,31,Falling
+Barbarians,Season_48,23.39,53.17,19,Falling
+Barbarians,Season_49,5.74,49.99,19,Rising
+Royal Giant,Season_45,24.66,53.0,39,Stable
+Royal Giant,Season_46,8.19,49.95,52,Falling
+Royal Giant,Season_47,27.7,58.4,38,Falling
+Royal Giant,Season_48,8.8,56.3,41,Stable
+Royal Giant,Season_49,15.8,59.82,5,Rising
+Cannon,Season_45,24.9,51.73,54,Stable
+Cannon,Season_46,5.09,55.25,1,Stable
+Cannon,Season_47,18.69,53.75,34,Falling
+Cannon,Season_48,26.87,45.01,33,Falling
+Cannon,Season_49,18.11,43.54,61,Falling
+Tesla,Season_45,7.0,52.66,68,Falling
+Tesla,Season_46,23.31,55.02,94,Stable
+Tesla,Season_47,19.53,57.26,58,Rising
+Tesla,Season_48,5.57,50.84,53,Stable
+Tesla,Season_49,11.62,48.58,59,Rising
+Mortar,Season_45,13.14,46.2,67,Rising
+Mortar,Season_46,24.2,50.0,23,Falling
+Mortar,Season_47,11.13,52.17,42,Stable
+Mortar,Season_48,28.03,58.12,4,Falling
+Mortar,Season_49,28.57,59.12,63,Rising
+Fire Spirit,Season_45,6.7,45.94,28,Stable
+Fire Spirit,Season_46,10.09,52.41,23,Stable
+Fire Spirit,Season_47,11.22,57.13,22,Falling
+Fire Spirit,Season_48,3.12,48.75,13,Falling
+Fire Spirit,Season_49,20.63,50.52,48,Stable
+Ice Spirit,Season_45,6.7,48.07,91,Falling
+Ice Spirit,Season_46,15.77,44.79,28,Falling
+Ice Spirit,Season_47,21.57,44.66,71,Rising
+Ice Spirit,Season_48,21.3,58.9,74,Stable
+Ice Spirit,Season_49,3.52,55.88,4,Stable
+Royal Recruits,Season_45,17.66,42.12,87,Rising
+Royal Recruits,Season_46,4.63,45.18,2,Falling
+Royal Recruits,Season_47,28.79,44.92,25,Stable
+Royal Recruits,Season_48,10.62,49.13,7,Falling
+Royal Recruits,Season_49,10.84,48.82,33,Rising
+Rascals,Season_45,24.88,47.63,77,Falling
+Rascals,Season_46,29.48,51.67,86,Falling
+Rascals,Season_47,13.61,48.65,85,Stable
+Rascals,Season_48,19.78,52.08,51,Rising
+Rascals,Season_49,27.95,43.91,59,Rising
+Elite Barbarians,Season_45,4.24,44.32,51,Stable
+Elite Barbarians,Season_46,24.72,46.34,45,Rising
+Elite Barbarians,Season_47,11.39,59.8,15,Falling
+Elite Barbarians,Season_48,10.61,53.66,8,Stable
+Elite Barbarians,Season_49,26.12,47.81,13,Rising
+Mini PEKKA,Season_45,3.55,42.98,14,Falling
+Mini PEKKA,Season_46,26.58,58.96,45,Stable
+Mini PEKKA,Season_47,11.98,44.2,78,Falling
+Mini PEKKA,Season_48,26.2,52.8,89,Rising
+Mini PEKKA,Season_49,12.96,48.21,64,Stable
+Musketeer,Season_45,4.26,57.36,31,Stable
+Musketeer,Season_46,7.35,59.65,29,Falling
+Musketeer,Season_47,23.35,46.31,52,Falling
+Musketeer,Season_48,4.1,45.53,78,Rising
+Musketeer,Season_49,13.19,48.52,18,Stable
+Giant,Season_45,6.59,44.78,64,Falling
+Giant,Season_46,24.62,49.17,73,Stable
+Giant,Season_47,20.26,52.38,32,Rising
+Giant,Season_48,14.11,44.07,49,Rising
+Giant,Season_49,7.93,43.46,20,Rising
+Valkyrie,Season_45,11.92,58.82,51,Rising
+Valkyrie,Season_46,5.81,54.97,36,Rising
+Valkyrie,Season_47,22.15,51.02,24,Stable
+Valkyrie,Season_48,26.11,57.35,92,Stable
+Valkyrie,Season_49,3.8,56.49,28,Rising
+Fireball,Season_45,3.9,49.06,94,Falling
+Fireball,Season_46,19.2,49.5,73,Falling
+Fireball,Season_47,8.83,52.91,64,Rising
+Fireball,Season_48,8.07,57.81,36,Stable
+Fireball,Season_49,7.71,44.34,89,Stable
+Arrows,Season_45,9.39,51.45,59,Falling
+Arrows,Season_46,4.69,55.54,95,Falling
+Arrows,Season_47,15.65,43.15,29,Stable
+Arrows,Season_48,7.03,53.62,2,Falling
+Arrows,Season_49,11.14,44.38,19,Rising
+Hog Rider,Season_45,4.5,52.36,62,Rising
+Hog Rider,Season_46,20.59,46.95,75,Falling
+Hog Rider,Season_47,14.48,43.66,1,Rising
+Hog Rider,Season_48,24.28,51.25,98,Falling
+Hog Rider,Season_49,9.38,53.92,61,Stable
+Wizard,Season_45,11.63,58.77,75,Rising
+Wizard,Season_46,17.48,55.29,25,Falling
+Wizard,Season_47,11.96,58.57,38,Rising
+Wizard,Season_48,24.03,55.09,95,Rising
+Wizard,Season_49,19.69,54.11,90,Stable
+Three Musketeers,Season_45,22.19,59.09,96,Stable
+Three Musketeers,Season_46,27.91,43.54,80,Stable
+Three Musketeers,Season_47,2.84,59.07,89,Falling
+Three Musketeers,Season_48,13.23,59.52,41,Stable
+Three Musketeers,Season_49,18.07,58.75,28,Stable
+Battle Ram,Season_45,17.38,59.48,50,Rising
+Battle Ram,Season_46,9.54,46.88,17,Stable
+Battle Ram,Season_47,25.31,43.9,35,Stable
+Battle Ram,Season_48,17.55,52.24,53,Rising
+Battle Ram,Season_49,22.31,57.93,78,Rising
+Zappies,Season_45,15.29,45.95,88,Rising
+Zappies,Season_46,2.56,50.91,22,Stable
+Zappies,Season_47,6.55,57.22,92,Rising
+Zappies,Season_48,14.84,56.85,9,Falling
+Zappies,Season_49,14.32,55.53,92,Stable
+Mega Minion,Season_45,28.65,47.1,61,Rising
+Mega Minion,Season_46,4.46,45.68,49,Falling
+Mega Minion,Season_47,26.26,44.71,25,Stable
+Mega Minion,Season_48,7.48,44.82,51,Rising
+Mega Minion,Season_49,21.22,45.08,12,Rising
+Goblin Hut,Season_45,26.6,53.11,4,Stable
+Goblin Hut,Season_46,13.81,50.29,4,Stable
+Goblin Hut,Season_47,27.49,56.91,69,Rising
+Goblin Hut,Season_48,4.26,43.72,12,Rising
+Goblin Hut,Season_49,28.72,58.01,73,Rising
+Furnace,Season_45,27.44,52.53,42,Stable
+Furnace,Season_46,9.43,43.58,62,Rising
+Furnace,Season_47,17.2,49.13,8,Falling
+Furnace,Season_48,3.81,59.36,24,Rising
+Furnace,Season_49,28.39,46.11,63,Falling
+Bomb Tower,Season_45,25.69,57.19,41,Stable
+Bomb Tower,Season_46,24.52,44.89,40,Rising
+Bomb Tower,Season_47,16.37,59.27,60,Stable
+Bomb Tower,Season_48,19.34,48.96,50,Rising
+Bomb Tower,Season_49,15.8,48.69,87,Rising
+Flying Machine,Season_45,13.67,45.38,16,Rising
+Flying Machine,Season_46,18.61,44.0,43,Falling
+Flying Machine,Season_47,26.49,51.34,98,Stable
+Flying Machine,Season_48,20.31,47.92,97,Stable
+Flying Machine,Season_49,12.19,59.78,37,Rising
+Ice Golem,Season_45,22.32,42.42,51,Rising
+Ice Golem,Season_46,16.3,48.57,85,Rising
+Ice Golem,Season_47,25.9,59.82,89,Falling
+Ice Golem,Season_48,26.63,44.51,71,Falling
+Ice Golem,Season_49,1.64,51.93,56,Stable
+Witch,Season_45,14.9,57.71,23,Stable
+Witch,Season_46,11.9,52.68,7,Falling
+Witch,Season_47,19.68,57.75,94,Falling
+Witch,Season_48,19.24,58.46,26,Rising
+Witch,Season_49,7.47,50.47,12,Stable
+Skeleton Army,Season_45,26.75,53.98,44,Stable
+Skeleton Army,Season_46,28.46,51.63,98,Stable
+Skeleton Army,Season_47,3.68,44.11,70,Rising
+Skeleton Army,Season_48,26.72,56.92,70,Falling
+Skeleton Army,Season_49,13.92,50.54,46,Rising
+Baby Dragon,Season_45,14.79,52.78,43,Rising
+Baby Dragon,Season_46,5.74,59.8,59,Stable
+Baby Dragon,Season_47,28.13,51.11,29,Rising
+Baby Dragon,Season_48,12.25,52.1,28,Falling
+Baby Dragon,Season_49,6.57,58.75,97,Rising
+Prince,Season_45,23.98,44.26,20,Rising
+Prince,Season_46,26.83,59.73,42,Falling
+Prince,Season_47,15.99,45.35,79,Rising
+Prince,Season_48,11.25,58.86,97,Falling
+Prince,Season_49,6.61,47.81,54,Rising
+Giant Skeleton,Season_45,24.53,52.21,5,Stable
+Giant Skeleton,Season_46,19.92,53.53,69,Falling
+Giant Skeleton,Season_47,22.31,44.46,71,Stable
+Giant Skeleton,Season_48,17.5,51.06,57,Rising
+Giant Skeleton,Season_49,26.69,48.19,77,Falling
+Balloon,Season_45,1.2,53.86,22,Rising
+Balloon,Season_46,8.08,52.4,87,Stable
+Balloon,Season_47,9.7,44.99,20,Rising
+Balloon,Season_48,19.24,46.16,38,Rising
+Balloon,Season_49,16.32,55.24,83,Rising
+PEKKA,Season_45,11.86,45.2,61,Stable
+PEKKA,Season_46,10.96,51.45,55,Stable
+PEKKA,Season_47,11.94,59.76,39,Falling
+PEKKA,Season_48,11.79,49.34,86,Rising
+PEKKA,Season_49,22.55,44.63,60,Rising
+Goblin Barrel,Season_45,6.72,57.83,27,Falling
+Goblin Barrel,Season_46,12.65,45.37,86,Rising
+Goblin Barrel,Season_47,1.95,56.97,13,Rising
+Goblin Barrel,Season_48,2.03,58.22,7,Rising
+Goblin Barrel,Season_49,13.25,42.12,20,Rising
+Freeze,Season_45,21.99,44.72,67,Rising
+Freeze,Season_46,11.3,48.54,14,Stable
+Freeze,Season_47,11.82,43.59,12,Stable
+Freeze,Season_48,15.61,52.09,94,Stable
+Freeze,Season_49,4.09,47.91,41,Falling
+Rocket,Season_45,5.11,49.66,42,Falling
+Rocket,Season_46,29.45,59.02,29,Stable
+Rocket,Season_47,12.39,49.34,23,Falling
+Rocket,Season_48,15.11,57.37,47,Stable
+Rocket,Season_49,10.09,57.61,11,Rising
+Tombstone,Season_45,12.51,50.04,5,Rising
+Tombstone,Season_46,19.31,59.42,42,Rising
+Tombstone,Season_47,25.71,53.7,88,Stable
+Tombstone,Season_48,18.32,56.93,72,Falling
+Tombstone,Season_49,27.16,51.19,96,Stable
+Dark Prince,Season_45,9.37,55.6,75,Falling
+Dark Prince,Season_46,13.16,50.38,40,Falling
+Dark Prince,Season_47,1.69,42.93,25,Rising
+Dark Prince,Season_48,16.26,52.34,22,Rising
+Dark Prince,Season_49,10.18,51.66,95,Stable
+Lightning,Season_45,13.28,47.17,24,Stable
+Lightning,Season_46,27.74,54.01,92,Rising
+Lightning,Season_47,25.38,44.52,20,Stable
+Lightning,Season_48,12.3,42.68,4,Rising
+Lightning,Season_49,23.2,47.16,82,Stable
+X-Bow,Season_45,4.77,51.83,60,Falling
+X-Bow,Season_46,4.86,48.24,96,Stable
+X-Bow,Season_47,16.83,57.16,2,Rising
+X-Bow,Season_48,12.3,54.32,63,Stable
+X-Bow,Season_49,27.0,47.38,77,Falling
+Poison,Season_45,7.45,51.78,21,Falling
+Poison,Season_46,5.66,46.36,26,Falling
+Poison,Season_47,3.72,58.69,96,Rising
+Poison,Season_48,11.78,44.29,19,Stable
+Poison,Season_49,25.92,53.4,72,Rising
+Hunter,Season_45,1.89,56.22,43,Rising
+Hunter,Season_46,18.59,52.02,55,Rising
+Hunter,Season_47,25.88,45.51,83,Stable
+Hunter,Season_48,25.09,58.54,19,Rising
+Hunter,Season_49,28.63,53.34,74,Stable
+Goblin Gang,Season_45,5.14,45.89,18,Falling
+Goblin Gang,Season_46,7.56,53.58,15,Stable
+Goblin Gang,Season_47,5.33,53.18,45,Stable
+Goblin Gang,Season_48,21.89,59.1,40,Rising
+Goblin Gang,Season_49,28.16,52.28,48,Falling
+Bowler,Season_45,29.24,59.59,23,Stable
+Bowler,Season_46,3.95,49.48,51,Stable
+Bowler,Season_47,27.99,55.05,49,Rising
+Bowler,Season_48,20.11,49.89,16,Falling
+Bowler,Season_49,1.9,47.29,83,Rising
+Executioner,Season_45,19.61,44.58,47,Rising
+Executioner,Season_46,6.4,47.81,67,Rising
+Executioner,Season_47,7.47,43.31,11,Rising
+Executioner,Season_48,16.11,51.48,54,Stable
+Executioner,Season_49,14.3,49.7,26,Falling
+Cannon Cart,Season_45,15.89,57.64,5,Falling
+Cannon Cart,Season_46,3.51,53.3,69,Rising
+Cannon Cart,Season_47,22.13,42.64,83,Rising
+Cannon Cart,Season_48,28.94,55.23,70,Stable
+Cannon Cart,Season_49,13.15,49.5,1,Rising
+Electro Wizard,Season_45,6.84,52.18,29,Rising
+Electro Wizard,Season_46,6.96,56.68,73,Stable
+Electro Wizard,Season_47,29.34,45.89,34,Falling
+Electro Wizard,Season_48,9.93,47.97,46,Falling
+Electro Wizard,Season_49,11.35,55.27,3,Rising
+Royal Ghost,Season_45,4.64,49.16,59,Falling
+Royal Ghost,Season_46,13.1,46.91,97,Falling
+Royal Ghost,Season_47,17.82,43.37,93,Falling
+Royal Ghost,Season_48,25.16,58.88,60,Stable
+Royal Ghost,Season_49,19.08,49.05,24,Falling
+Princess,Season_45,29.97,48.72,90,Rising
+Princess,Season_46,8.52,44.23,60,Rising
+Princess,Season_47,7.68,48.29,52,Stable
+Princess,Season_48,4.65,45.14,1,Rising
+Princess,Season_49,18.03,52.84,38,Stable
+Ice Wizard,Season_45,15.8,44.79,66,Rising
+Ice Wizard,Season_46,28.66,47.84,56,Rising
+Ice Wizard,Season_47,10.74,44.68,16,Rising
+Ice Wizard,Season_48,12.98,54.58,54,Falling
+Ice Wizard,Season_49,23.19,53.33,33,Stable
+Miner,Season_45,25.71,52.24,28,Rising
+Miner,Season_46,5.09,49.71,5,Rising
+Miner,Season_47,21.48,47.2,17,Rising
+Miner,Season_48,5.19,51.5,89,Stable
+Miner,Season_49,1.48,50.04,61,Falling
+Sparky,Season_45,21.64,54.18,31,Stable
+Sparky,Season_46,25.79,52.63,29,Stable
+Sparky,Season_47,21.88,47.48,2,Falling
+Sparky,Season_48,21.16,48.06,93,Falling
+Sparky,Season_49,16.36,51.03,85,Rising
+Lava Hound,Season_45,3.9,56.25,18,Stable
+Lava Hound,Season_46,9.28,54.77,99,Stable
+Lava Hound,Season_47,8.68,59.46,50,Falling
+Lava Hound,Season_48,24.42,58.64,16,Rising
+Lava Hound,Season_49,12.75,50.66,16,Rising
+Inferno Dragon,Season_45,27.57,42.21,18,Falling
+Inferno Dragon,Season_46,6.18,51.58,3,Rising
+Inferno Dragon,Season_47,27.89,49.66,99,Rising
+Inferno Dragon,Season_48,21.98,50.24,73,Rising
+Inferno Dragon,Season_49,21.33,42.28,70,Stable
+Graveyard,Season_45,18.56,59.45,79,Falling
+Graveyard,Season_46,25.35,55.01,28,Rising
+Graveyard,Season_47,8.54,47.65,27,Falling
+Graveyard,Season_48,23.55,46.24,46,Rising
+Graveyard,Season_49,24.95,57.45,57,Rising
+The Log,Season_45,24.08,58.73,55,Falling
+The Log,Season_46,20.87,45.42,14,Stable
+The Log,Season_47,19.48,45.55,88,Falling
+The Log,Season_48,5.67,44.82,40,Rising
+The Log,Season_49,26.43,45.19,44,Falling
+Lumberjack,Season_45,10.13,42.6,2,Rising
+Lumberjack,Season_46,6.72,55.93,95,Rising
+Lumberjack,Season_47,12.3,58.17,99,Stable
+Lumberjack,Season_48,23.13,47.48,17,Falling
+Lumberjack,Season_49,17.56,42.68,27,Rising
+Night Witch,Season_45,25.91,56.95,19,Falling
+Night Witch,Season_46,25.55,51.19,85,Falling
+Night Witch,Season_47,16.47,45.8,40,Rising
+Night Witch,Season_48,3.18,49.35,88,Falling
+Night Witch,Season_49,24.94,58.04,72,Stable
+Bandit,Season_45,10.45,59.25,17,Rising
+Bandit,Season_46,16.57,55.85,39,Stable
+Bandit,Season_47,12.6,49.34,28,Falling
+Bandit,Season_48,26.7,56.43,54,Falling
+Bandit,Season_49,1.66,47.64,76,Rising
+Mega Knight,Season_45,25.84,52.32,40,Falling
+Mega Knight,Season_46,6.07,44.62,84,Rising
+Mega Knight,Season_47,24.34,45.42,83,Rising
+Mega Knight,Season_48,12.77,43.98,42,Stable
+Mega Knight,Season_49,25.69,51.87,32,Stable
+Magic Archer,Season_45,17.71,54.42,17,Rising
+Magic Archer,Season_46,25.17,54.52,26,Falling
+Magic Archer,Season_47,17.83,54.17,60,Rising
+Magic Archer,Season_48,22.58,56.65,3,Rising
+Magic Archer,Season_49,26.31,50.7,98,Falling
+Ram Rider,Season_45,14.69,51.71,87,Falling
+Ram Rider,Season_46,1.28,45.18,28,Falling
+Ram Rider,Season_47,29.96,44.89,86,Rising
+Ram Rider,Season_48,19.05,42.97,6,Falling
+Ram Rider,Season_49,9.48,54.27,35,Rising
+Fisherman,Season_45,9.07,49.9,6,Falling
+Fisherman,Season_46,10.16,49.81,65,Stable
+Fisherman,Season_47,17.65,58.99,58,Rising
+Fisherman,Season_48,9.71,49.96,48,Stable
+Fisherman,Season_49,4.59,42.09,51,Stable
+Skeleton Barrel,Season_45,22.44,53.71,93,Rising
+Skeleton Barrel,Season_46,21.42,51.01,8,Stable
+Skeleton Barrel,Season_47,14.51,42.46,49,Stable
+Skeleton Barrel,Season_48,14.54,49.07,92,Rising
+Skeleton Barrel,Season_49,7.11,44.44,56,Rising
+Flying Machine,Season_45,19.51,54.59,15,Falling
+Flying Machine,Season_46,7.53,48.33,40,Stable
+Flying Machine,Season_47,9.97,55.42,85,Falling
+Flying Machine,Season_48,8.13,58.53,74,Rising
+Flying Machine,Season_49,13.15,50.87,29,Stable
+Wall Breakers,Season_45,1.99,56.03,48,Falling
+Wall Breakers,Season_46,8.28,59.38,88,Falling
+Wall Breakers,Season_47,20.96,52.52,25,Falling
+Wall Breakers,Season_48,11.46,49.82,29,Rising
+Wall Breakers,Season_49,4.93,50.12,85,Stable
+Royal Hogs,Season_45,10.35,46.76,72,Falling
+Royal Hogs,Season_46,27.95,51.71,27,Stable
+Royal Hogs,Season_47,18.52,58.2,47,Rising
+Royal Hogs,Season_48,16.48,46.04,47,Rising
+Royal Hogs,Season_49,15.05,54.14,23,Falling
+Zap,Season_45,5.12,49.46,37,Falling
+Zap,Season_46,20.45,47.06,30,Stable
+Zap,Season_47,24.4,52.1,81,Rising
+Zap,Season_48,1.65,52.2,65,Stable
+Zap,Season_49,8.19,51.84,35,Rising
+Tornado,Season_45,20.29,56.6,40,Stable
+Tornado,Season_46,5.38,58.38,74,Rising
+Tornado,Season_47,19.61,48.15,45,Falling
+Tornado,Season_48,26.78,49.83,69,Rising
+Tornado,Season_49,22.41,44.44,23,Rising
+Clone,Season_45,16.67,56.18,69,Falling
+Clone,Season_46,23.65,55.68,22,Stable
+Clone,Season_47,7.95,50.11,59,Stable
+Clone,Season_48,18.99,56.96,47,Rising
+Clone,Season_49,8.6,58.51,62,Falling
+Mirror,Season_45,22.96,58.54,43,Stable
+Mirror,Season_46,6.72,54.71,81,Falling
+Mirror,Season_47,8.14,56.87,3,Falling
+Mirror,Season_48,2.15,51.11,98,Stable
+Mirror,Season_49,7.79,59.94,38,Rising
+Heal Spirit,Season_45,21.65,49.34,2,Falling
+Heal Spirit,Season_46,18.05,48.82,59,Falling
+Heal Spirit,Season_47,21.83,45.74,56,Rising
+Heal Spirit,Season_48,26.51,51.57,98,Rising
+Heal Spirit,Season_49,11.31,59.01,26,Stable
+Elixir Collector,Season_45,5.19,51.29,99,Rising
+Elixir Collector,Season_46,11.01,43.71,6,Stable
+Elixir Collector,Season_47,7.16,47.69,43,Stable
+Elixir Collector,Season_48,9.6,42.08,11,Falling
+Elixir Collector,Season_49,2.88,52.58,26,Rising
+Inferno Tower,Season_45,9.42,55.02,5,Rising
+Inferno Tower,Season_46,25.01,49.15,55,Falling
+Inferno Tower,Season_47,17.06,48.39,46,Falling
+Inferno Tower,Season_48,13.67,43.44,81,Rising
+Inferno Tower,Season_49,13.66,44.94,90,Stable
+Royal Delivery,Season_45,28.41,44.83,96,Rising
+Royal Delivery,Season_46,29.4,55.3,85,Rising
+Royal Delivery,Season_47,17.92,56.81,10,Falling
+Royal Delivery,Season_48,6.47,59.94,20,Stable
+Royal Delivery,Season_49,4.24,46.31,54,Falling
+Earthquake,Season_45,9.62,43.67,59,Rising
+Earthquake,Season_46,29.58,47.43,1,Stable
+Earthquake,Season_47,27.24,47.94,6,Falling
+Earthquake,Season_48,21.78,43.53,30,Stable
+Earthquake,Season_49,22.68,58.13,75,Stable
+Goblin Cage,Season_45,4.38,50.18,74,Stable
+Goblin Cage,Season_46,28.22,51.73,37,Rising
+Goblin Cage,Season_47,9.35,51.88,66,Falling
+Goblin Cage,Season_48,6.4,45.28,26,Falling
+Goblin Cage,Season_49,18.25,46.39,31,Rising
+Battle Healer,Season_45,10.83,57.89,54,Stable
+Battle Healer,Season_46,25.42,52.98,56,Falling
+Battle Healer,Season_47,27.94,58.14,43,Rising
+Battle Healer,Season_48,13.28,55.19,85,Falling
+Battle Healer,Season_49,25.03,57.0,27,Stable
+Firecracker,Season_45,11.79,44.51,50,Falling
+Firecracker,Season_46,21.56,51.09,48,Stable
+Firecracker,Season_47,13.72,56.84,81,Stable
+Firecracker,Season_48,11.86,56.16,53,Rising
+Firecracker,Season_49,28.91,46.04,5,Stable
+Elixir Golem,Season_45,29.56,59.25,40,Rising
+Elixir Golem,Season_46,22.23,57.13,46,Falling
+Elixir Golem,Season_47,18.8,43.13,18,Stable
+Elixir Golem,Season_48,9.32,51.09,63,Falling
+Elixir Golem,Season_49,11.68,59.92,50,Stable
+Mother Witch,Season_45,15.28,59.97,7,Rising
+Mother Witch,Season_46,8.23,48.88,74,Falling
+Mother Witch,Season_47,25.88,43.98,94,Falling
+Mother Witch,Season_48,18.65,53.03,91,Falling
+Mother Witch,Season_49,23.21,52.37,87,Stable
+Royal Champion,Season_45,27.76,55.69,87,Stable
+Royal Champion,Season_46,4.04,43.03,73,Stable
+Royal Champion,Season_47,27.06,44.59,39,Stable
+Royal Champion,Season_48,11.09,54.49,63,Rising
+Royal Champion,Season_49,12.07,48.08,53,Stable
+Archer Queen,Season_45,11.8,51.02,25,Rising
+Archer Queen,Season_46,1.81,44.57,26,Stable
+Archer Queen,Season_47,23.22,56.43,29,Falling
+Archer Queen,Season_48,6.91,43.52,59,Stable
+Archer Queen,Season_49,4.32,50.32,39,Rising
+Skeleton King,Season_45,24.55,56.35,79,Stable
+Skeleton King,Season_46,16.08,59.2,23,Stable
+Skeleton King,Season_47,22.94,57.34,3,Falling
+Skeleton King,Season_48,16.24,47.52,8,Rising
+Skeleton King,Season_49,9.2,42.42,72,Rising
+Mighty Miner,Season_45,24.08,48.71,2,Falling
+Mighty Miner,Season_46,9.52,50.49,52,Falling
+Mighty Miner,Season_47,6.27,57.74,77,Falling
+Mighty Miner,Season_48,16.05,51.14,54,Stable
+Mighty Miner,Season_49,16.71,50.03,65,Rising
+Phoenix,Season_45,29.72,56.63,33,Falling
+Phoenix,Season_46,1.74,52.23,79,Falling
+Phoenix,Season_47,5.41,45.38,78,Rising
+Phoenix,Season_48,21.53,51.47,7,Stable
+Phoenix,Season_49,16.84,58.86,1,Stable
+Goblinstein,Season_45,16.92,54.24,49,Stable
+Goblinstein,Season_46,11.21,50.0,13,Rising
+Goblinstein,Season_47,14.9,57.71,80,Stable
+Goblinstein,Season_48,18.95,57.01,12,Stable
+Goblinstein,Season_49,16.05,42.14,22,Rising
+Little Prince,Season_45,11.46,44.61,66,Rising
+Little Prince,Season_46,13.47,57.71,7,Falling
+Little Prince,Season_47,26.82,46.76,51,Rising
+Little Prince,Season_48,17.28,51.84,4,Stable
+Little Prince,Season_49,18.23,58.52,46,Rising
+Monk,Season_45,6.55,43.83,32,Stable
+Monk,Season_46,2.4,42.18,76,Falling
+Monk,Season_47,18.5,42.29,43,Stable
+Monk,Season_48,4.17,56.49,45,Stable
+Monk,Season_49,27.28,47.64,97,Stable

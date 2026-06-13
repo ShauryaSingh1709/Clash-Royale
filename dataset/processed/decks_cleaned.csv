@@ -1,0 +1,501 @@
+deck_id,card_1,card_2,card_3,card_4,card_5,card_6,card_7,card_8,avg_elixir,archetype,win_rate,usage_count,total_battles,quality
+1,Goblin Barrel,Tornado,Royal Recruits,PEKKA,Furnace,Mortar,X-Bow,Barbarians,4.88,Beatdown,53.82,5901,20190,Good
+2,Zappies,Royal Delivery,Lightning,Cannon,Cannon Cart,Balloon,Phoenix,Firecracker,4.12,Beatdown,52.29,9927,38220,Good
+3,Fisherman,Baby Dragon,Mother Witch,Executioner,Skeletons,Bandit,Royal Hogs,Ice Spirit,3.25,Cycle,56.81,7751,2167,Good
+4,Inferno Tower,Tesla,Flying Machine,Sparky,Monk,Archers,Goblinstein,Ram Rider,4.62,Control,44.24,6919,37487,Weak
+5,Firecracker,Prince,Goblin Cage,Arrows,Witch,Magic Archer,Hunter,Sparky,4.25,Control,55.43,6981,7949,Good
+6,Skeleton Army,Executioner,Archer Queen,Freeze,X-Bow,Tombstone,Witch,Magic Archer,4.38,Control,51.19,6982,35674,Good
+7,Fireball,Mirror,Lumberjack,Furnace,Minions,Ice Golem,Zappies,Royal Recruits,3.62,Beatdown,64.75,2160,6287,Excellent
+8,Princess,Tesla,Cannon Cart,Lumberjack,Goblin Barrel,Goblin Cage,Mortar,Clone,3.75,Hog Cycle,53.5,2471,36659,Good
+9,Minion Horde,Prince,Tornado,Bomber,Goblin Cage,Skeleton Barrel,Royal Recruits,Royal Ghost,4.12,Beatdown,41.68,2582,25442,Weak
+10,Mortar,Hog Rider,Bowler,Heal Spirit,Rascals,Firecracker,Barbarians,Archer Queen,4.0,Hog Cycle,64.36,1487,30975,Excellent
+11,Royal Recruits,Firecracker,Royal Champion,Royal Delivery,Poison,Clone,Inferno Dragon,Night Witch,4.38,Siege,40.13,6767,27212,Weak
+12,Royal Delivery,Tombstone,Skeletons,Battle Ram,Musketeer,Elixir Collector,Witch,Goblin Gang,3.62,Beatdown,50.53,3860,3050,Good
+13,Three Musketeers,Mini PEKKA,Knight,Bomb Tower,Battle Healer,Minions,Baby Dragon,Giant,4.5,Beatdown,41.9,5333,10516,Weak
+14,Barbarians,Little Prince,Bomber,Skeleton Army,Giant,Dark Prince,Hunter,Cannon Cart,4.0,Beatdown,54.86,5226,45064,Good
+15,Goblin Hut,Magic Archer,Mirror,Earthquake,Skeleton Army,Royal Giant,Executioner,PEKKA,4.25,Control,43.65,6831,39559,Weak
+16,Ice Golem,Lightning,Flying Machine,Princess,Bowler,Goblin Barrel,Monk,Earthquake,3.88,Control,55.15,9733,12171,Good
+17,Zap,Ice Wizard,Mortar,Night Witch,Hog Rider,Minions,Flying Machine,Earthquake,3.38,Hog Cycle,61.7,5442,7638,Excellent
+18,Prince,Royal Ghost,Ice Golem,Miner,Wall Breakers,Electro Wizard,Furnace,Inferno Tower,3.5,Hog Cycle,53.56,6571,36631,Good
+19,Fire Spirit,Skeletons,Executioner,Royal Delivery,Fisherman,Mega Knight,Balloon,Poison,3.75,Beatdown,45.42,8953,12695,Average
+20,Phoenix,Royal Delivery,Dark Prince,Cannon Cart,Knight,Heal Spirit,Fire Spirit,Battle Ram,3.25,Hog Cycle,42.32,6649,27342,Weak
+21,Heal Spirit,Mirror,Spear Goblins,Flying Machine,Inferno Dragon,Magic Archer,Royal Ghost,Clone,2.75,Control,51.5,4837,37618,Good
+22,Tombstone,Valkyrie,Mega Knight,Miner,Balloon,Freeze,Bomber,Firecracker,4.0,Hog Cycle,51.27,7440,32186,Good
+23,Earthquake,Executioner,PEKKA,Prince,Skeletons,Bomb Tower,Elixir Golem,Ice Golem,3.75,Siege,61.05,7627,18030,Excellent
+24,Royal Delivery,Mega Knight,Night Witch,Battle Ram,Minions,Bomb Tower,Witch,Arrows,4.12,Control,48.89,1180,38804,Average
+25,Fireball,Balloon,Tombstone,Flying Machine,Goblin Barrel,Earthquake,Minion Horde,Knight,3.75,Siege,43.28,7836,8710,Weak
+26,Barbarians,Tombstone,Baby Dragon,Elixir Collector,Firecracker,Goblin Hut,Lumberjack,Goblin Barrel,4.12,Hog Cycle,52.43,2424,13819,Good
+27,Rascals,Royal Delivery,Zap,Flying Machine,Magic Archer,Mighty Miner,Bowler,Inferno Tower,4.0,Cycle,49.48,326,16036,Average
+28,Mirror,Monk,Spear Goblins,Royal Champion,Furnace,Goblin Barrel,Ice Wizard,Minions,3.5,Beatdown,58.85,7980,6075,Good
+29,Hunter,Archer Queen,Royal Ghost,Executioner,Clone,Elite Barbarians,Royal Giant,Monk,4.62,Control,51.81,9021,5378,Good
+30,Fisherman,Arrows,Bandit,Valkyrie,Skeletons,Phoenix,Baby Dragon,Mirror,2.88,Siege,55.31,870,20539,Good
+31,Bandit,Royal Ghost,Elixir Collector,Princess,Elixir Golem,Barbarians,Sparky,Royal Delivery,4.0,Cycle,43.25,2269,19556,Weak
+32,Archers,Flying Machine,Lightning,Lava Hound,Executioner,Royal Hogs,Bomb Tower,Mother Witch,4.75,Cycle,54.43,6168,49077,Good
+33,Phoenix,Elixir Golem,Bomb Tower,Elite Barbarians,Furnace,Tesla,Bowler,Battle Ram,4.25,Control,45.81,3051,18622,Average
+34,Battle Healer,Witch,Wall Breakers,Goblinstein,Skeleton Army,Minions,Giant Skeleton,Phoenix,4.0,Control,57.6,6418,29694,Good
+35,The Log,Royal Ghost,Mini PEKKA,Zappies,Prince,Wizard,Inferno Dragon,Spear Goblins,3.62,Cycle,50.89,1624,30336,Good
+36,Elixir Collector,Prince,Dark Prince,Lava Hound,Tornado,Mega Minion,Inferno Dragon,Archer Queen,4.62,Beatdown,56.48,9567,32279,Good
+37,Archer Queen,Skeleton Barrel,Royal Delivery,Goblin Gang,Monk,Royal Recruits,Spear Goblins,Ice Spirit,3.62,Beatdown,56.99,2880,13996,Good
+38,Little Prince,Monk,Elixir Golem,Rascals,Bomb Tower,Archers,Poison,Freeze,3.88,Siege,59.52,8812,10168,Good
+39,Princess,Tornado,Bowler,Royal Hogs,Night Witch,Elixir Golem,PEKKA,Barbarians,4.38,Beatdown,47.19,239,2424,Average
+40,Royal Hogs,Hunter,Night Witch,Miner,Heal Spirit,Earthquake,Fireball,Goblin Barrel,3.38,Cycle,45.33,3094,48994,Average
+41,Sparky,Mighty Miner,Archers,Goblin Gang,Battle Healer,Tesla,Ram Rider,Zappies,4.12,Cycle,59.68,2917,21025,Good
+42,Flying Machine,Earthquake,Goblin Hut,Royal Giant,Mini PEKKA,Lightning,Magic Archer,Graveyard,4.62,Hog Cycle,62.27,7217,22113,Excellent
+43,Elixir Collector,Musketeer,Little Prince,Monk,Goblins,Balloon,Skeletons,Mega Minion,3.62,Cycle,64.2,9023,31835,Excellent
+44,Spear Goblins,Bowler,Royal Delivery,Electro Wizard,Dark Prince,Goblin Barrel,Heal Spirit,Arrows,3.12,Beatdown,58.71,6304,14440,Good
+45,Tornado,Firecracker,Executioner,Royal Delivery,Dark Prince,Elixir Collector,Graveyard,Mega Minion,4.0,Siege,43.46,7932,39163,Weak
+46,Goblinstein,Skeleton Barrel,Witch,Barbarians,Skeleton Army,Princess,Graveyard,Mirror,3.75,Hog Cycle,57.28,3394,40542,Good
+47,Skeletons,Fire Spirit,Magic Archer,Earthquake,Wall Breakers,Skeleton Barrel,Lumberjack,Monk,3.0,Beatdown,56.4,4015,49555,Good
+48,PEKKA,Royal Hogs,Goblin Barrel,Tombstone,Electro Wizard,Elixir Golem,Dark Prince,Cannon,4.0,Siege,51.89,1747,14878,Good
+49,Minions,Wizard,Firecracker,Sparky,Ice Wizard,Elite Barbarians,Zap,Monk,4.12,Beatdown,44.12,283,4358,Weak
+50,Ram Rider,Mini PEKKA,Goblin Hut,Little Prince,Balloon,Royal Recruits,Giant Skeleton,The Log,4.62,Hog Cycle,40.79,6200,19103,Weak
+51,Barbarians,Fisherman,Miner,Battle Healer,Royal Delivery,Royal Ghost,Mega Minion,Firecracker,3.38,Cycle,45.51,3947,37343,Average
+52,Minion Horde,Giant,Elixir Golem,Arrows,Bowler,Zappies,Tornado,Battle Healer,4.0,Hog Cycle,50.5,5974,9378,Good
+53,Arrows,Ram Rider,Elixir Golem,Knight,Electro Wizard,Flying Machine,Monk,Ice Golem,3.62,Cycle,40.87,6029,40560,Weak
+54,Executioner,Elixir Golem,Skeletons,Lightning,Royal Champion,Cannon Cart,Fisherman,Fireball,4.25,Hog Cycle,56.82,1509,27270,Good
+55,Ram Rider,Phoenix,Firecracker,Mega Minion,Hog Rider,Mega Knight,Mother Witch,Ice Golem,4.0,Control,54.57,2340,21350,Good
+56,Dark Prince,Inferno Tower,Witch,Goblin Cage,Elite Barbarians,Archers,Furnace,The Log,4.12,Beatdown,49.45,9369,33284,Average
+57,Ice Spirit,Zap,Wall Breakers,Fireball,Battle Healer,Giant Skeleton,Tombstone,Hog Rider,3.25,Beatdown,42.15,9856,2184,Weak
+58,Mega Minion,Fisherman,Tombstone,Giant Skeleton,Inferno Dragon,Goblin Cage,Knight,Firecracker,3.62,Control,54.73,5931,37824,Good
+59,Giant Skeleton,Baby Dragon,Ice Spirit,Bandit,Bomb Tower,X-Bow,Mother Witch,Goblins,3.75,Cycle,61.99,6140,11304,Excellent
+60,Mortar,Three Musketeers,Goblins,Goblin Gang,Firecracker,Wall Breakers,Magic Archer,The Log,3.62,Beatdown,45.35,5151,28223,Average
+61,Furnace,Lava Hound,Ram Rider,Lightning,Bomb Tower,Hunter,Mega Minion,Monk,4.75,Control,53.65,2320,42932,Good
+62,Prince,Goblinstein,Tesla,Poison,Mortar,Clone,Bowler,Fisherman,4.12,Beatdown,41.4,4274,27957,Weak
+63,Mother Witch,Tesla,Mighty Miner,Mini PEKKA,Elixir Golem,Ice Spirit,Bandit,Royal Hogs,3.5,Siege,46.99,292,40405,Average
+64,Bomb Tower,Little Prince,Lumberjack,Archer Queen,Zap,Minion Horde,Furnace,Spear Goblins,3.62,Cycle,50.28,8420,11740,Good
+65,Inferno Dragon,Arrows,Miner,Tombstone,Skeleton King,Mini PEKKA,Valkyrie,The Log,3.38,Siege,43.08,3820,20267,Weak
+66,Ice Wizard,Prince,Hunter,Magic Archer,Goblinstein,Ram Rider,Miner,Spear Goblins,3.88,Cycle,45.15,5191,43919,Average
+67,Prince,Flying Machine,Firecracker,PEKKA,Lava Hound,Balloon,Mega Minion,Phoenix,4.75,Control,44.59,4832,28518,Weak
+68,Cannon Cart,Ice Wizard,Fisherman,Clone,Skeleton Army,Dark Prince,Royal Recruits,Balloon,4.12,Cycle,57.13,5057,33018,Good
+69,Lightning,Inferno Tower,X-Bow,Musketeer,Clone,Ice Wizard,Mini PEKKA,Fire Spirit,4.12,Cycle,42.48,8713,36651,Weak
+70,The Log,Royal Ghost,Goblinstein,Zap,Tornado,X-Bow,Goblin Cage,Goblin Hut,3.75,Control,50.43,7311,41633,Good
+71,Goblins,Archers,Dark Prince,Ram Rider,Sparky,Princess,Cannon,Ice Golem,3.5,Cycle,41.6,6199,22939,Weak
+72,Minion Horde,Bowler,Executioner,Flying Machine,Poison,The Log,Wizard,Goblin Barrel,4.12,Beatdown,57.95,5127,16867,Good
+73,Inferno Tower,X-Bow,Magic Archer,Mighty Miner,Flying Machine,Giant,Earthquake,Goblin Barrel,4.25,Hog Cycle,41.7,8601,16138,Weak
+74,Giant,Royal Hogs,Dark Prince,Barbarians,Poison,Sparky,Elite Barbarians,Wall Breakers,4.62,Control,47.41,4877,16994,Average
+75,Rascals,Minion Horde,Fire Spirit,Flying Machine,Royal Hogs,Bandit,Mighty Miner,Flying Machine,4.0,Hog Cycle,57.49,2402,3283,Good
+76,Furnace,Inferno Tower,Prince,Freeze,Mother Witch,Elite Barbarians,Skeletons,Tesla,4.12,Control,55.46,9893,26401,Good
+77,Minion Horde,Mega Minion,Barbarians,Skeletons,Giant,Baby Dragon,Dark Prince,Fire Spirit,3.62,Control,56.93,2531,25363,Good
+78,Flying Machine,Fireball,Lumberjack,Fisherman,Night Witch,Goblin Gang,Elixir Golem,Graveyard,3.75,Siege,44.16,5519,36490,Weak
+79,Goblins,Fire Spirit,Fisherman,Skeletons,Goblin Gang,Ice Wizard,Zappies,Furnace,2.75,Siege,40.73,5838,48894,Weak
+80,Furnace,Graveyard,Electro Wizard,Musketeer,Minion Horde,Battle Ram,Firecracker,Lumberjack,4.12,Cycle,57.01,2006,41167,Good
+81,Arrows,Phoenix,Ram Rider,Princess,Fire Spirit,Executioner,Flying Machine,Royal Champion,4.12,Hog Cycle,50.45,8144,9169,Good
+82,Bandit,Skeleton Barrel,Royal Champion,Ice Wizard,Hunter,Skeleton King,PEKKA,Lightning,4.62,Control,56.6,6185,13390,Good
+83,Mortar,Goblinstein,Archer Queen,Balloon,Skeletons,Inferno Tower,Flying Machine,Royal Recruits,4.5,Cycle,43.87,6223,18558,Weak
+84,Tombstone,Cannon Cart,Musketeer,Ice Wizard,Bomber,Royal Recruits,Monk,Skeleton Army,4.12,Beatdown,49.47,6135,43578,Average
+85,Hunter,Goblins,Lumberjack,Goblin Hut,Ice Golem,Graveyard,Mortar,Heal Spirit,3.38,Control,55.03,2018,4232,Good
+86,Cannon Cart,Mini PEKKA,Firecracker,Bomber,Archer Queen,Battle Ram,Hunter,Royal Hogs,4.12,Beatdown,44.34,3470,39744,Weak
+87,Rocket,Goblins,Bomber,Battle Healer,Executioner,Balloon,Giant,Arrows,4.12,Cycle,41.03,9733,41048,Weak
+88,Bomber,Fire Spirit,Balloon,Ram Rider,Mega Knight,Minion Horde,Skeleton Barrel,Three Musketeers,4.88,Siege,58.39,5162,45645,Good
+89,Ice Golem,X-Bow,Dark Prince,Hunter,Graveyard,Tesla,Minions,PEKKA,4.38,Cycle,62.73,3086,1400,Excellent
+90,Bowler,Executioner,Fire Spirit,Inferno Dragon,Giant,Zappies,Royal Champion,Dark Prince,4.5,Beatdown,46.98,5489,20747,Average
+91,Cannon,Monk,Bomb Tower,Goblin Cage,Giant,Magic Archer,Earthquake,Bandit,3.88,Control,40.1,8123,7849,Weak
+92,Three Musketeers,Freeze,Tornado,Little Prince,Bomber,Wall Breakers,Arrows,Heal Spirit,3.5,Hog Cycle,51.61,2270,37159,Good
+93,Arrows,Royal Ghost,Goblin Gang,Ram Rider,Rocket,Mirror,Princess,The Log,3.25,Cycle,51.96,3267,20381,Good
+94,Poison,Lava Hound,Prince,Electro Wizard,Clone,Fireball,Goblin Gang,Knight,4.12,Control,62.06,1569,11892,Excellent
+95,Skeletons,Little Prince,Mortar,Battle Ram,Wizard,Skeleton King,Cannon Cart,PEKKA,4.12,Siege,41.96,6038,8999,Weak
+96,Valkyrie,Mega Knight,Fisherman,Firecracker,Skeletons,Monk,Royal Ghost,Goblin Cage,3.75,Siege,42.14,3103,30256,Weak
+97,Witch,PEKKA,Lightning,Graveyard,Tesla,Phoenix,Wall Breakers,Spear Goblins,4.38,Siege,50.96,2115,43618,Good
+98,Fisherman,Ice Golem,Phoenix,Clone,Witch,Graveyard,Ram Rider,Earthquake,3.75,Control,47.12,3358,32262,Average
+99,Phoenix,Hunter,Freeze,Mother Witch,Elite Barbarians,Fireball,Zap,Battle Healer,4.0,Cycle,43.23,9681,5515,Weak
+100,Magic Archer,Battle Healer,Night Witch,Mirror,Mighty Miner,Electro Wizard,Fire Spirit,Royal Champion,3.75,Control,44.09,3841,46708,Weak
+101,Royal Recruits,Heal Spirit,Minion Horde,Zap,Mortar,Ice Golem,Valkyrie,Baby Dragon,3.62,Control,62.32,5341,24778,Excellent
+102,Goblin Barrel,Rascals,Ice Golem,Flying Machine,Goblinstein,Mighty Miner,Barbarians,Mirror,3.62,Hog Cycle,56.44,8819,35263,Good
+103,Miner,Goblin Gang,Ice Spirit,Witch,Archer Queen,Spear Goblins,Poison,Bowler,3.5,Hog Cycle,42.94,1561,45476,Weak
+104,Lava Hound,Ice Spirit,Giant,Wizard,Royal Champion,X-Bow,Skeletons,PEKKA,4.88,Cycle,56.78,6134,45239,Good
+105,X-Bow,Cannon,Electro Wizard,Little Prince,Baby Dragon,Tesla,Graveyard,Hog Rider,4.12,Hog Cycle,63.99,1260,23361,Excellent
+106,Mega Knight,Goblinstein,Giant,Skeleton King,Wizard,Musketeer,Inferno Dragon,Mighty Miner,4.75,Siege,51.35,2893,3892,Good
+107,Cannon Cart,Hunter,Spear Goblins,Battle Ram,Bomb Tower,Firecracker,Little Prince,Elixir Golem,3.5,Hog Cycle,51.43,3188,46783,Good
+108,Royal Delivery,Flying Machine,Skeleton Army,Goblin Cage,Magic Archer,PEKKA,Prince,Goblins,4.0,Siege,56.73,1983,3886,Good
+109,Barbarians,Rocket,Mini PEKKA,Knight,Dark Prince,Archer Queen,Firecracker,Goblinstein,4.38,Cycle,45.34,8352,31844,Average
+110,Executioner,X-Bow,Wall Breakers,Arrows,Poison,Bandit,Archer Queen,Sparky,4.25,Control,54.62,3918,14273,Good
+111,Goblin Hut,Ice Golem,Mirror,Skeleton King,Magic Archer,Bomb Tower,Tombstone,The Log,3.12,Control,43.35,4667,49920,Weak
+112,Clone,Barbarians,Wall Breakers,Earthquake,Mega Minion,Minion Horde,Battle Ram,Tombstone,3.5,Hog Cycle,45.11,5639,44967,Average
+113,Three Musketeers,Bowler,Goblin Barrel,Balloon,Magic Archer,Sparky,Mega Minion,Goblins,4.62,Siege,54.16,4896,38374,Good
+114,Royal Giant,Princess,Archers,Royal Delivery,Executioner,Spear Goblins,Lumberjack,Sparky,4.0,Beatdown,61.25,2528,36801,Excellent
+115,Tesla,Sparky,Fireball,Giant,Royal Giant,The Log,Mighty Miner,Flying Machine,4.38,Beatdown,56.34,640,33844,Good
+116,Mini PEKKA,Fireball,Battle Healer,Mega Minion,Battle Ram,Goblin Barrel,X-Bow,Lumberjack,4.0,Beatdown,42.28,2529,29208,Weak
+117,Mortar,Mighty Miner,Mother Witch,Prince,Tombstone,Elite Barbarians,Royal Recruits,Clone,4.5,Control,46.93,6141,15610,Average
+118,Sparky,Royal Hogs,Firecracker,Inferno Dragon,Fisherman,Barbarians,Furnace,Giant Skeleton,4.5,Control,54.74,1079,30410,Good
+119,Royal Hogs,Furnace,Cannon Cart,Zappies,Wizard,Prince,Baby Dragon,Elixir Collector,4.75,Siege,59.29,7714,2245,Good
+120,PEKKA,Executioner,Goblin Hut,Cannon Cart,Goblin Barrel,Skeleton Army,Skeleton Barrel,Tombstone,4.25,Hog Cycle,42.62,1729,22446,Weak
+121,Mother Witch,Sparky,Knight,X-Bow,Valkyrie,Royal Delivery,Royal Giant,Skeleton Army,4.38,Beatdown,49.73,2383,21942,Average
+122,Skeleton King,Mother Witch,Bomber,Goblinstein,Lightning,Monk,Elixir Collector,Wall Breakers,4.38,Siege,62.86,6142,18861,Excellent
+123,Wall Breakers,Tombstone,Fisherman,Princess,Bowler,Knight,Goblins,Rocket,3.38,Siege,51.75,6613,8394,Good
+124,Hog Rider,Skeleton Army,Ice Spirit,Lumberjack,Goblin Barrel,Witch,Inferno Tower,Night Witch,3.62,Hog Cycle,44.23,9952,1260,Weak
+125,Rocket,Lumberjack,Archers,Tombstone,Fireball,Royal Ghost,Flying Machine,Goblin Barrel,3.75,Siege,54.73,8836,11956,Good
+126,Tombstone,Elixir Golem,Cannon Cart,Fisherman,Mother Witch,Prince,Archers,The Log,3.5,Hog Cycle,60.51,7522,20171,Excellent
+127,Wall Breakers,Fireball,Monk,Giant Skeleton,Royal Champion,Mini PEKKA,Prince,Flying Machine,4.62,Cycle,58.38,9214,40846,Good
+128,Mega Knight,Ice Golem,Cannon,Flying Machine,Firecracker,Ice Spirit,Elite Barbarians,Goblin Gang,3.62,Hog Cycle,44.72,6940,38834,Weak
+129,Cannon,Archers,Mini PEKKA,Prince,Night Witch,Zappies,Royal Ghost,Tesla,3.75,Beatdown,50.69,8696,49807,Good
+130,Royal Recruits,Elixir Golem,Skeletons,PEKKA,Balloon,Royal Delivery,Flying Machine,Ram Rider,4.38,Beatdown,41.54,8975,35063,Weak
+131,Tesla,Zappies,Freeze,Hog Rider,Lightning,The Log,Ram Rider,Fireball,4.12,Hog Cycle,43.3,1317,28796,Weak
+132,Zap,Flying Machine,Hog Rider,Battle Ram,Little Prince,Spear Goblins,X-Bow,Magic Archer,3.62,Cycle,58.35,3527,39680,Good
+133,Bomb Tower,Phoenix,Valkyrie,Battle Healer,Tornado,Dark Prince,Goblin Hut,Arrows,3.88,Cycle,56.47,5592,30722,Good
+134,Cannon,Magic Archer,Cannon Cart,Royal Hogs,Minion Horde,Earthquake,Balloon,Princess,4.12,Beatdown,53.99,4969,7387,Good
+135,Skeletons,Mirror,Arrows,Spear Goblins,Clone,Cannon,Poison,Minions,2.5,Cycle,42.07,8531,46612,Weak
+136,Monk,Zappies,Royal Hogs,Elite Barbarians,Witch,Giant,Cannon Cart,Bomb Tower,4.88,Siege,55.18,2782,46650,Good
+137,X-Bow,Furnace,Tesla,Royal Champion,Mirror,Barbarians,Zappies,Royal Hogs,4.5,Control,48.43,2586,22219,Average
+138,Royal Giant,Knight,Bowler,Poison,Spear Goblins,Royal Champion,Lightning,Mother Witch,4.62,Siege,49.94,5151,28313,Average
+139,Electro Wizard,Flying Machine,Wizard,Fire Spirit,Tornado,Royal Ghost,Royal Hogs,Skeletons,3.38,Beatdown,55.56,2888,27451,Good
+140,Furnace,Tombstone,Ice Spirit,Bowler,Baby Dragon,Royal Champion,Executioner,Ice Golem,3.88,Cycle,42.47,8961,30389,Weak
+141,Mega Knight,Rocket,Royal Giant,Three Musketeers,Spear Goblins,Bomber,Graveyard,Zappies,5.25,Hog Cycle,59.23,6665,23467,Good
+142,Zap,Ram Rider,Goblinstein,PEKKA,Wall Breakers,Electro Wizard,Mega Knight,Tombstone,4.38,Control,48.09,6311,43723,Average
+143,Musketeer,Giant,Cannon Cart,Goblins,Knight,Poison,Ice Spirit,Freeze,3.5,Hog Cycle,58.48,5626,32086,Good
+144,Dark Prince,Hunter,Royal Recruits,Furnace,Witch,Spear Goblins,Royal Delivery,Flying Machine,4.12,Beatdown,47.42,2961,46610,Average
+145,Phoenix,Royal Giant,Cannon Cart,Flying Machine,Miner,Sparky,Little Prince,Bomber,4.25,Cycle,50.49,5732,37551,Good
+146,Giant,The Log,Phoenix,Goblin Hut,Mega Minion,Electro Wizard,Baby Dragon,Ice Golem,3.62,Hog Cycle,46.06,945,28385,Average
+147,Mega Knight,Night Witch,Prince,Rocket,Elite Barbarians,Archer Queen,Mirror,Goblins,4.5,Hog Cycle,50.83,8867,34447,Good
+148,Mortar,Earthquake,Inferno Tower,Arrows,Bandit,Archer Queen,Mega Knight,Royal Delivery,4.12,Control,42.7,4212,46531,Weak
+149,Rascals,Goblin Barrel,Flying Machine,Barbarians,Giant,Ice Wizard,Prince,Skeletons,3.88,Control,45.22,9443,23559,Average
+150,Graveyard,Goblin Gang,Magic Archer,Tombstone,Miner,Royal Delivery,The Log,Ram Rider,3.5,Cycle,41.31,8626,25073,Weak
+151,Sparky,Ice Wizard,X-Bow,Miner,Barbarians,Wall Breakers,Goblin Gang,Royal Champion,4.38,Control,58.58,6064,25555,Good
+152,Tornado,Wall Breakers,Monk,Archer Queen,Graveyard,Goblins,Dark Prince,Elite Barbarians,4.0,Hog Cycle,45.99,4163,44214,Average
+153,Miner,Wizard,Fireball,Flying Machine,X-Bow,Royal Delivery,Sparky,Bomb Tower,4.38,Hog Cycle,46.68,2770,41863,Average
+154,Bomber,Arrows,Inferno Tower,Dark Prince,Monk,Goblins,Flying Machine,Tesla,3.75,Beatdown,40.58,8892,19409,Weak
+155,Electro Wizard,Arrows,PEKKA,Skeleton King,Balloon,Royal Delivery,Monk,Archers,4.25,Hog Cycle,62.94,6292,19061,Excellent
+156,X-Bow,Monk,Royal Recruits,Royal Ghost,Hog Rider,Tornado,Bomb Tower,Lava Hound,4.88,Cycle,60.79,7632,41134,Excellent
+157,Dark Prince,Royal Ghost,Wizard,Mini PEKKA,Spear Goblins,Skeleton Army,Minion Horde,Executioner,3.88,Siege,50.08,1594,45844,Good
+158,Mega Knight,Clone,Monk,Skeleton King,Ice Golem,Fireball,Night Witch,Tornado,4.0,Beatdown,43.78,8321,37534,Weak
+159,Spear Goblins,Executioner,Wall Breakers,Phoenix,Wizard,Minions,Skeleton Army,Goblin Gang,3.38,Beatdown,45.5,7604,34368,Average
+160,Bandit,Rocket,Zap,Giant Skeleton,The Log,Hunter,Furnace,Dark Prince,3.88,Cycle,58.42,4036,32174,Good
+161,Knight,Giant,Goblin Hut,Little Prince,Baby Dragon,Ram Rider,Giant Skeleton,Inferno Tower,4.5,Cycle,62.74,282,1164,Excellent
+162,Goblin Hut,Monk,Executioner,Ice Golem,Graveyard,Royal Giant,Royal Ghost,Mini PEKKA,4.38,Control,54.99,9915,22966,Good
+163,Goblin Barrel,Lumberjack,Battle Ram,Executioner,Bomb Tower,Ice Spirit,Electro Wizard,Fisherman,3.5,Beatdown,49.0,4655,36162,Average
+164,Dark Prince,Electro Wizard,Mini PEKKA,Zap,Fireball,Wall Breakers,Elixir Collector,Royal Giant,4.0,Control,52.56,2020,14227,Good
+165,Goblins,Goblin Hut,Mother Witch,Musketeer,Cannon,Royal Recruits,Little Prince,Hog Rider,4.0,Hog Cycle,62.5,3645,25798,Excellent
+166,Goblin Hut,Battle Healer,Furnace,Lightning,Magic Archer,Firecracker,Mortar,Royal Recruits,4.62,Beatdown,46.16,7057,19595,Average
+167,Inferno Tower,Earthquake,Sparky,Mighty Miner,PEKKA,Tombstone,Battle Healer,Flying Machine,4.5,Beatdown,55.13,6537,7076,Good
+168,Graveyard,Furnace,Tombstone,Mortar,Mini PEKKA,Musketeer,PEKKA,Archer Queen,4.5,Siege,61.99,9857,37989,Excellent
+169,Rocket,Miner,Archer Queen,Fire Spirit,Witch,Zappies,Tombstone,Mother Witch,4.0,Beatdown,53.79,8852,14440,Good
+170,Giant Skeleton,Bomber,Inferno Tower,Goblin Hut,Rascals,Furnace,Clone,Mortar,4.38,Hog Cycle,59.54,1743,24729,Good
+171,Clone,Rascals,Barbarians,Minion Horde,Baby Dragon,PEKKA,Skeletons,Royal Giant,4.5,Control,41.34,6451,35461,Weak
+172,Witch,Goblin Barrel,Archers,Lumberjack,Goblins,Hunter,Ice Golem,Bomb Tower,3.38,Control,51.28,3780,43771,Good
+173,Zap,Inferno Dragon,Fireball,Sparky,Fisherman,Prince,Minions,Royal Recruits,4.25,Siege,55.45,8591,29274,Good
+174,Mega Minion,Cannon Cart,Witch,Valkyrie,Musketeer,Mortar,Little Prince,Baby Dragon,4.0,Hog Cycle,56.68,3909,22248,Good
+175,Goblin Hut,Mother Witch,Fisherman,Giant Skeleton,Electro Wizard,Princess,Royal Recruits,Archers,4.38,Control,63.67,3638,24404,Excellent
+176,Witch,Spear Goblins,Mini PEKKA,Mortar,Fireball,Lumberjack,Skeleton Army,Graveyard,3.88,Cycle,52.34,5599,34282,Good
+177,Cannon,Knight,Executioner,Elite Barbarians,Fire Spirit,Bomber,Princess,Zappies,3.62,Hog Cycle,52.58,7801,23925,Good
+178,Heal Spirit,Freeze,Wizard,Clone,Battle Ram,Ice Wizard,Zappies,Tombstone,3.38,Hog Cycle,64.4,3713,42351,Excellent
+179,Zap,Furnace,Ice Golem,Rocket,Lava Hound,Freeze,Magic Archer,Skeleton King,4.12,Siege,40.8,448,5601,Weak
+180,Furnace,Rocket,Princess,Fisherman,Bomb Tower,Battle Healer,Musketeer,Mirror,3.62,Control,63.97,846,42800,Excellent
+181,Valkyrie,Sparky,Lumberjack,Bowler,Giant Skeleton,Rocket,Royal Delivery,Skeleton King,4.75,Hog Cycle,60.9,1626,41677,Excellent
+182,Lumberjack,Night Witch,Elixir Collector,Ram Rider,Minions,Firecracker,Royal Hogs,Rascals,4.38,Control,44.57,1322,21967,Weak
+183,Bandit,Miner,Graveyard,Battle Healer,Goblin Barrel,Valkyrie,Bomb Tower,Tornado,3.62,Cycle,56.47,487,14603,Good
+184,Musketeer,Goblin Hut,X-Bow,Clone,Phoenix,Goblins,Monk,Zap,3.88,Siege,53.18,8496,23942,Good
+185,Goblin Barrel,Heal Spirit,Skeleton Army,Cannon,Spear Goblins,Bowler,Sparky,Knight,3.25,Cycle,61.62,2254,22614,Excellent
+186,Magic Archer,Heal Spirit,Balloon,Inferno Tower,Ice Spirit,Prince,Mortar,Elixir Collector,3.88,Siege,47.46,5974,24354,Average
+187,Mega Knight,Hunter,Mega Minion,Bowler,Night Witch,Cannon Cart,Hog Rider,Tombstone,4.38,Hog Cycle,51.33,9445,38968,Good
+188,Tesla,Ice Golem,Inferno Tower,Royal Hogs,Skeleton Barrel,Battle Healer,Executioner,Sparky,4.25,Siege,54.43,7749,45261,Good
+189,Princess,Zap,Balloon,Cannon Cart,Electro Wizard,Zappies,Ram Rider,Spear Goblins,3.75,Beatdown,49.93,4050,34217,Average
+190,Giant,Monk,Rocket,Magic Archer,Skeleton Barrel,Goblin Cage,Sparky,Graveyard,4.75,Control,52.91,502,23951,Good
+191,Sparky,Battle Healer,Goblinstein,Ice Wizard,Royal Ghost,Inferno Dragon,Freeze,Clone,4.0,Control,56.26,2873,5462,Good
+192,Ram Rider,Freeze,Skeleton Army,Furnace,Valkyrie,Royal Recruits,Goblins,Goblin Gang,4.0,Beatdown,43.37,1788,20369,Weak
+193,Goblin Hut,Earthquake,Three Musketeers,Royal Champion,Princess,Inferno Dragon,Skeletons,Royal Ghost,4.38,Cycle,44.65,7647,30482,Weak
+194,Elixir Collector,Mega Minion,Furnace,Musketeer,Bomber,Zappies,Miner,Monk,4.0,Beatdown,48.68,3649,4078,Average
+195,Heal Spirit,Earthquake,Sparky,Zappies,Goblin Cage,Knight,Spear Goblins,Ram Rider,3.5,Hog Cycle,45.63,4202,24258,Average
+196,Ice Spirit,Baby Dragon,Tombstone,Skeleton Barrel,Tornado,Night Witch,Ice Golem,Goblin Cage,3.0,Hog Cycle,59.64,5124,25691,Good
+197,Rascals,Battle Ram,Balloon,Elixir Golem,Giant,Archer Queen,Ice Spirit,Skeletons,3.62,Control,43.05,7946,23555,Weak
+198,Ice Wizard,Bomb Tower,Dark Prince,Arrows,Flying Machine,Goblins,Ice Golem,Poison,3.25,Hog Cycle,49.49,7802,20298,Average
+199,Royal Giant,Tesla,Skeleton Barrel,Musketeer,Royal Hogs,Night Witch,Three Musketeers,Lumberjack,4.88,Control,59.02,4239,16221,Good
+200,Wizard,Elixir Golem,Spear Goblins,Tombstone,Furnace,Clone,Balloon,Fisherman,3.5,Beatdown,47.85,9097,10934,Average
+201,Zap,Royal Champion,Mirror,Royal Ghost,Mighty Miner,The Log,Hog Rider,Sparky,3.62,Beatdown,53.52,4297,43589,Good
+202,X-Bow,Goblinstein,Mother Witch,Clone,Knight,Tesla,Earthquake,Bomb Tower,4.0,Beatdown,56.48,1140,42274,Good
+203,Ice Spirit,Electro Wizard,Clone,Balloon,Sparky,Minion Horde,Royal Champion,Three Musketeers,5.0,Control,49.87,4390,31138,Average
+204,Zap,Firecracker,Bomber,Princess,Royal Hogs,The Log,Witch,Goblin Cage,3.38,Beatdown,59.52,5539,5307,Good
+205,Goblin Cage,Royal Champion,Goblin Barrel,X-Bow,Poison,Hunter,Three Musketeers,Royal Giant,5.38,Beatdown,51.32,9731,49330,Good
+206,Giant,Fire Spirit,Poison,Tornado,Rocket,Clone,Lumberjack,Skeleton Army,3.75,Cycle,62.26,7374,49527,Excellent
+207,Mirror,Inferno Dragon,Tombstone,Zap,Prince,Barbarians,Mini PEKKA,Tornado,3.38,Beatdown,52.84,1617,18917,Good
+208,Inferno Tower,Cannon,Musketeer,Royal Ghost,Royal Giant,Poison,Archer Queen,Skeletons,3.88,Hog Cycle,59.62,8166,43141,Good
+209,The Log,Hog Rider,Minions,Lightning,Lumberjack,Flying Machine,Elixir Collector,Battle Ram,4.12,Control,41.85,3854,32899,Weak
+210,Ice Golem,Lumberjack,Prince,Fireball,Barbarians,Minion Horde,Tesla,Skeletons,3.75,Cycle,52.2,1048,43528,Good
+211,Mega Knight,Giant,X-Bow,Electro Wizard,Prince,Valkyrie,Battle Ram,Minions,4.75,Siege,59.64,3577,3202,Good
+212,Mother Witch,Royal Ghost,Goblin Hut,Battle Healer,Spear Goblins,Goblin Cage,Mini PEKKA,Lumberjack,3.75,Control,49.15,1316,15800,Average
+213,Flying Machine,Monk,Knight,Wizard,Ice Golem,Skeleton King,Firecracker,Princess,3.62,Hog Cycle,41.21,4282,43368,Weak
+214,Musketeer,Mother Witch,Royal Champion,Zap,Skeleton Barrel,Rocket,Phoenix,Night Witch,4.25,Control,57.66,6677,23110,Good
+215,Mighty Miner,Sparky,Zappies,Furnace,Mega Knight,Ice Spirit,Giant Skeleton,Wizard,4.62,Hog Cycle,47.55,8401,22313,Average
+216,Miner,Royal Ghost,Graveyard,Tesla,Tombstone,Bowler,The Log,Goblin Cage,3.62,Hog Cycle,50.7,9457,36549,Good
+217,Elite Barbarians,Inferno Dragon,Rocket,Ram Rider,Giant,Bowler,Skeleton Army,Mother Witch,4.75,Siege,45.87,9426,26411,Average
+218,Mirror,Elixir Collector,Fireball,Valkyrie,Ice Spirit,Lightning,Graveyard,Baby Dragon,3.88,Control,45.11,9152,9673,Average
+219,Wall Breakers,Prince,Ice Spirit,Mirror,Goblin Hut,Executioner,Giant Skeleton,Goblin Gang,3.5,Siege,59.0,3877,19499,Good
+220,Tesla,Royal Champion,Ice Golem,Three Musketeers,Giant Skeleton,Inferno Tower,Executioner,Elite Barbarians,5.5,Siege,56.31,2382,24170,Good
+221,Goblin Barrel,Valkyrie,Mighty Miner,Wall Breakers,Little Prince,Goblinstein,Battle Healer,Electro Wizard,3.62,Control,54.25,6272,12252,Good
+222,Royal Recruits,Elixir Collector,Zap,Ice Wizard,Battle Ram,Dark Prince,Poison,Tornado,4.12,Beatdown,56.33,5348,37197,Good
+223,Inferno Dragon,Rocket,Cannon,Three Musketeers,Mega Knight,Freeze,Prince,Goblin Hut,5.38,Beatdown,59.62,3577,31131,Good
+224,Royal Hogs,Valkyrie,Bomb Tower,Minion Horde,X-Bow,Zappies,Skeleton King,Three Musketeers,5.12,Siege,51.02,8860,30910,Good
+225,Elixir Collector,Mini PEKKA,Little Prince,PEKKA,Tornado,Hog Rider,Mortar,Skeleton Army,4.25,Cycle,40.63,5998,46608,Weak
+226,Mini PEKKA,Fireball,Mirror,Battle Ram,Royal Recruits,Balloon,Mega Minion,Minions,3.88,Siege,52.5,188,15772,Good
+227,Balloon,PEKKA,Bandit,Valkyrie,Flying Machine,Bomb Tower,Rocket,Archer Queen,4.75,Siege,52.26,1350,5558,Good
+228,Zappies,Royal Champion,Royal Hogs,Mother Witch,Bomb Tower,Lumberjack,Goblin Gang,Mega Knight,4.75,Siege,51.66,2174,46765,Good
+229,Skeletons,Zappies,Archer Queen,Flying Machine,Lightning,Barbarians,Fisherman,Skeleton Army,3.88,Beatdown,52.93,5282,33938,Good
+230,Bowler,Mega Knight,Zappies,Cannon Cart,Mortar,Prince,Balloon,Giant,5.0,Beatdown,60.08,2172,1097,Excellent
+231,Musketeer,Witch,Executioner,Skeleton Army,Minion Horde,Arrows,Hog Rider,Skeleton King,4.12,Beatdown,56.29,3564,11683,Good
+232,PEKKA,Cannon,Skeleton Barrel,Elite Barbarians,Royal Champion,Phoenix,Valkyrie,Bowler,4.88,Siege,54.02,7907,24224,Good
+233,Balloon,Knight,Cannon Cart,Fire Spirit,Bomb Tower,Skeleton Army,Mortar,Electro Wizard,3.75,Cycle,51.98,1084,18344,Good
+234,Goblin Cage,Electro Wizard,Mega Knight,Giant Skeleton,Minion Horde,Hog Rider,Mini PEKKA,The Log,4.5,Beatdown,42.9,353,4657,Weak
+235,Royal Ghost,Archers,Elixir Golem,Skeleton Army,Royal Champion,Arrows,Mother Witch,Goblinstein,3.88,Control,47.25,6709,25440,Average
+236,Elixir Collector,Royal Giant,Firecracker,Barbarians,Tesla,Bandit,Graveyard,Goblins,4.25,Control,43.82,4133,19277,Weak
+237,Bomb Tower,PEKKA,Flying Machine,Barbarians,Royal Delivery,Bandit,Cannon,Skeleton Barrel,4.0,Control,57.57,7254,33242,Good
+238,Royal Hogs,Goblin Hut,Giant,Phoenix,Sparky,Fisherman,Royal Champion,Tornado,4.75,Hog Cycle,63.49,8810,27817,Excellent
+239,Battle Ram,Goblin Cage,Valkyrie,Royal Champion,Goblin Barrel,Skeleton King,Mini PEKKA,Inferno Tower,4.38,Siege,58.92,4358,5371,Good
+240,Goblin Barrel,Skeleton Barrel,Giant,Battle Healer,Graveyard,Rocket,Flying Machine,Valkyrie,4.25,Control,49.78,3281,20259,Average
+241,Battle Ram,Skeletons,Three Musketeers,Mother Witch,X-Bow,Goblin Barrel,Night Witch,Inferno Tower,4.5,Siege,62.6,6082,37088,Excellent
+242,Zappies,Fireball,Cannon Cart,Three Musketeers,Sparky,Elixir Collector,Archer Queen,Skeleton Army,5.25,Control,61.02,3751,19447,Excellent
+243,Battle Healer,Ice Spirit,Elixir Collector,Wall Breakers,Royal Champion,Spear Goblins,Rascals,Miner,3.75,Cycle,52.86,995,10368,Good
+244,Mini PEKKA,Battle Healer,Inferno Tower,Skeleton Army,Zap,Monk,Musketeer,Ice Golem,3.62,Siege,40.58,6225,7634,Weak
+245,Poison,Goblin Cage,Fireball,Royal Ghost,Lava Hound,Graveyard,Elite Barbarians,Goblinstein,4.75,Control,46.68,4321,16327,Average
+246,Mother Witch,Battle Ram,Inferno Tower,Goblin Gang,Knight,Prince,Elixir Collector,Wall Breakers,4.0,Beatdown,53.34,8489,46471,Good
+247,Inferno Dragon,Goblin Cage,Elite Barbarians,Night Witch,Heal Spirit,Inferno Tower,Bowler,Archers,4.0,Siege,49.21,8236,12888,Average
+248,Tornado,Knight,Firecracker,Skeletons,Mega Minion,Elite Barbarians,Battle Ram,Mighty Miner,3.38,Hog Cycle,57.77,863,14543,Good
+249,Cannon,Elite Barbarians,Minions,Ram Rider,PEKKA,Magic Archer,Battle Ram,Lumberjack,4.5,Beatdown,41.04,5365,19195,Weak
+250,Bandit,Royal Giant,Earthquake,Furnace,Cannon,Goblin Gang,Firecracker,Miner,3.5,Beatdown,54.75,3979,20320,Good
+251,PEKKA,Lightning,Poison,Rocket,Wizard,Fire Spirit,Wall Breakers,Furnace,4.5,Hog Cycle,42.46,6030,24226,Weak
+252,Fire Spirit,Battle Ram,Zap,Dark Prince,Monk,Little Prince,Balloon,Elite Barbarians,3.88,Beatdown,42.73,1087,20579,Weak
+253,Arrows,Miner,Royal Recruits,Ram Rider,Elite Barbarians,Cannon Cart,Minion Horde,Giant,4.88,Beatdown,40.26,8195,45899,Weak
+254,Firecracker,Earthquake,Royal Giant,Prince,Zap,Fireball,Graveyard,Fire Spirit,3.75,Control,52.48,1087,47059,Good
+255,Lumberjack,Elixir Golem,Dark Prince,Lightning,Valkyrie,Poison,Prince,Bomb Tower,4.25,Control,45.72,5837,41770,Average
+256,Princess,Skeleton Barrel,Lava Hound,Archer Queen,Heal Spirit,Inferno Tower,Lumberjack,Skeleton King,4.0,Siege,46.98,602,13756,Average
+257,Skeletons,Inferno Tower,Fisherman,Goblin Cage,Executioner,Three Musketeers,Skeleton King,Hog Rider,4.38,Siege,59.07,4592,37326,Good
+258,Baby Dragon,Royal Ghost,Tesla,Goblin Barrel,Goblinstein,Lightning,Magic Archer,Miner,4.0,Siege,46.88,6422,19472,Average
+259,Giant Skeleton,Hog Rider,Baby Dragon,Mega Knight,Tombstone,Mortar,Goblinstein,The Log,4.38,Control,41.66,1191,43861,Weak
+260,Goblin Barrel,The Log,Zap,Goblin Gang,Inferno Dragon,Royal Ghost,Phoenix,Miner,3.0,Siege,47.52,1927,22086,Average
+261,Lightning,Giant,Fire Spirit,Ice Wizard,Royal Champion,Fisherman,Executioner,Night Witch,4.38,Beatdown,59.04,8719,48470,Good
+262,Monk,Poison,Witch,Skeleton Barrel,Wizard,Clone,Goblin Barrel,Tombstone,3.88,Control,63.13,3040,49119,Excellent
+263,Zap,Goblin Hut,Elixir Collector,Poison,Skeleton Army,Clone,Balloon,Magic Archer,4.0,Siege,44.44,3466,12084,Weak
+264,Balloon,Musketeer,Phoenix,Hunter,Clone,Mortar,Lava Hound,Ice Wizard,4.25,Beatdown,62.58,4279,10332,Excellent
+265,Barbarians,Rocket,Inferno Dragon,Firecracker,Arrows,Musketeer,Royal Hogs,Elixir Collector,4.5,Siege,58.14,7802,41023,Good
+266,Tesla,Graveyard,Royal Hogs,Arrows,Royal Delivery,Inferno Dragon,Earthquake,Wizard,4.0,Cycle,64.9,4457,13105,Excellent
+267,Cannon,Executioner,Witch,Prince,Musketeer,Hog Rider,Mini PEKKA,Battle Healer,4.25,Siege,64.9,815,10837,Excellent
+268,Magic Archer,Furnace,Witch,Flying Machine,Poison,Skeleton Barrel,Knight,Earthquake,3.75,Cycle,54.34,7916,2076,Good
+269,Magic Archer,Musketeer,Mortar,Rascals,Royal Champion,Fireball,Freeze,Bomb Tower,4.5,Siege,41.35,9904,39190,Weak
+270,Arrows,Miner,Firecracker,Skeleton Barrel,Valkyrie,Lightning,Lumberjack,Royal Ghost,3.62,Hog Cycle,46.62,5329,3241,Average
+271,Sparky,Heal Spirit,Goblins,Ice Spirit,Valkyrie,Mighty Miner,Firecracker,Archer Queen,3.25,Siege,49.33,860,9965,Average
+272,Heal Spirit,Clone,Executioner,Inferno Dragon,Balloon,Elixir Golem,Skeleton Barrel,Ice Golem,3.25,Control,53.21,767,34152,Good
+273,Goblins,Three Musketeers,Freeze,Mighty Miner,Hunter,Giant Skeleton,Royal Giant,Inferno Tower,5.0,Control,60.93,3004,45260,Excellent
+274,Hog Rider,Earthquake,Dark Prince,Wizard,Zap,Royal Ghost,Lightning,Flying Machine,3.88,Cycle,63.66,2117,7673,Excellent
+275,Minions,Royal Ghost,Flying Machine,Fisherman,Balloon,Minion Horde,Goblin Gang,Skeleton Barrel,3.62,Control,45.79,6648,3539,Average
+276,Fisherman,Monk,Furnace,Hunter,Elite Barbarians,Mini PEKKA,Executioner,Electro Wizard,4.38,Beatdown,48.19,1210,9653,Average
+277,Bowler,Hunter,Fisherman,Zappies,Witch,Mega Knight,Bandit,Lightning,4.62,Hog Cycle,54.42,2589,30842,Good
+278,Bowler,Freeze,Battle Ram,Inferno Tower,Zap,Inferno Dragon,Poison,Rocket,4.25,Hog Cycle,53.14,9317,17833,Good
+279,Elixir Golem,Prince,Wizard,Mortar,Freeze,Battle Healer,Goblin Gang,Miner,3.88,Beatdown,63.44,2683,43689,Excellent
+280,Goblins,Royal Giant,Cannon Cart,Prince,Mirror,Graveyard,Dark Prince,Royal Recruits,4.38,Cycle,52.52,8097,11809,Good
+281,Elixir Collector,Bandit,Spear Goblins,Mother Witch,Mighty Miner,Goblinstein,Tornado,Lightning,4.12,Beatdown,58.26,2663,20335,Good
+282,Electro Wizard,Zappies,Valkyrie,Lightning,Heal Spirit,Minions,Lumberjack,Prince,3.88,Beatdown,64.49,6827,45388,Excellent
+283,Baby Dragon,Arrows,Poison,Cannon Cart,Bomber,Witch,Balloon,Elixir Collector,4.38,Hog Cycle,64.12,1844,12175,Excellent
+284,Battle Ram,Knight,Arrows,Lumberjack,Firecracker,Giant Skeleton,Graveyard,Lightning,4.25,Siege,55.79,7412,48680,Good
+285,Bomber,Tornado,Mirror,Fisherman,Elite Barbarians,Lava Hound,Archers,Minion Horde,3.88,Hog Cycle,46.87,2511,16674,Average
+286,Giant Skeleton,Giant,Mirror,Tesla,Cannon,Balloon,Tornado,Three Musketeers,4.5,Hog Cycle,49.43,1725,19231,Average
+287,Mirror,Barbarians,Goblin Cage,Goblin Gang,Heal Spirit,Battle Ram,Firecracker,Zappies,3.12,Control,62.03,9298,11042,Excellent
+288,Giant Skeleton,Minion Horde,Spear Goblins,Bomber,Hog Rider,Hunter,Fireball,Heal Spirit,3.62,Beatdown,51.45,6170,12707,Good
+289,Rascals,Firecracker,Little Prince,Night Witch,Goblinstein,Battle Healer,Goblin Gang,Magic Archer,3.88,Hog Cycle,47.88,3180,36228,Average
+290,Night Witch,Cannon Cart,Royal Delivery,Mother Witch,Heal Spirit,Bomber,Skeleton Barrel,Wizard,3.5,Beatdown,55.52,4645,43428,Good
+291,Firecracker,Hunter,Monk,Cannon Cart,Witch,Knight,Royal Giant,Zap,4.12,Control,52.16,9598,48500,Good
+292,Three Musketeers,Archer Queen,Mirror,Valkyrie,Tombstone,Mortar,Poison,Bomb Tower,4.25,Beatdown,44.05,3756,35218,Weak
+293,Lava Hound,Skeleton Barrel,Ice Spirit,Night Witch,Dark Prince,Goblin Barrel,Goblin Cage,Spear Goblins,3.5,Hog Cycle,64.32,4913,20691,Excellent
+294,Freeze,Rascals,Three Musketeers,Phoenix,Miner,Goblin Hut,Clone,Ram Rider,4.75,Beatdown,44.84,5232,30396,Weak
+295,Elite Barbarians,Phoenix,Giant Skeleton,Firecracker,Cannon,Princess,Graveyard,Cannon Cart,4.38,Control,59.76,867,32644,Good
+296,Valkyrie,Royal Hogs,Cannon,Minions,Miner,Firecracker,Heal Spirit,Royal Champion,3.62,Siege,42.75,7471,35037,Weak
+297,The Log,Prince,Poison,Musketeer,Skeleton King,Goblinstein,Royal Champion,Fire Spirit,4.12,Beatdown,58.7,1175,7876,Good
+298,Musketeer,Clone,Skeleton King,Rocket,Ice Wizard,Goblinstein,Knight,Bandit,3.88,Hog Cycle,60.78,4060,14417,Excellent
+299,Lightning,Little Prince,Archer Queen,Goblin Gang,Balloon,Royal Ghost,Bomber,Skeleton King,4.0,Control,41.35,1506,29159,Weak
+300,Royal Delivery,Ram Rider,Goblin Hut,Royal Giant,Tesla,Battle Ram,Three Musketeers,Lightning,5.25,Hog Cycle,57.33,5397,22245,Good
+301,Freeze,Minion Horde,Prince,Spear Goblins,PEKKA,Goblin Barrel,Princess,Giant Skeleton,4.38,Hog Cycle,53.2,9142,43856,Good
+302,Battle Ram,Ram Rider,Mega Minion,Cannon Cart,Wall Breakers,Tornado,Archers,Valkyrie,3.62,Beatdown,59.92,7810,26196,Good
+303,Goblin Cage,Cannon Cart,Skeleton Barrel,Royal Giant,Tesla,Bomber,Little Prince,Wall Breakers,3.75,Hog Cycle,55.63,556,1500,Good
+304,Mother Witch,Giant Skeleton,Bandit,Lightning,Tombstone,Mega Minion,Freeze,Fisherman,4.0,Beatdown,48.51,3114,11773,Average
+305,Wall Breakers,Inferno Dragon,Tombstone,PEKKA,Battle Healer,Barbarians,Wizard,Skeleton Army,4.12,Siege,63.86,1260,45941,Excellent
+306,Goblin Barrel,Hog Rider,Inferno Tower,Sparky,Goblins,Goblin Gang,Tornado,Electro Wizard,3.75,Hog Cycle,61.72,7199,24500,Excellent
+307,Graveyard,Lumberjack,Miner,Royal Champion,The Log,Goblins,Clone,Inferno Tower,3.88,Hog Cycle,62.09,5213,4372,Excellent
+308,Phoenix,Executioner,Inferno Tower,Ice Wizard,Hog Rider,Minions,Archers,Flying Machine,3.88,Hog Cycle,54.79,8767,9056,Good
+309,Elixir Collector,Musketeer,Magic Archer,Three Musketeers,Archers,Graveyard,Goblins,Heal Spirit,4.25,Cycle,58.77,9065,44179,Good
+310,Ice Wizard,Goblinstein,Miner,Sparky,Clone,Archers,Rocket,Tornado,4.0,Cycle,60.0,913,29917,Excellent
+311,Goblin Hut,Witch,Royal Giant,The Log,Skeletons,Knight,Magic Archer,Giant Skeleton,4.0,Control,61.82,9064,19876,Excellent
+312,Graveyard,Wall Breakers,Flying Machine,Monk,Lava Hound,Balloon,Valkyrie,Minions,4.38,Cycle,63.41,4206,37189,Excellent
+313,Musketeer,Battle Ram,Bandit,Monk,The Log,Royal Ghost,Goblin Barrel,Lumberjack,3.5,Control,59.91,3412,9014,Good
+314,Bomber,Elixir Golem,Mega Minion,Minions,Dark Prince,Knight,Tesla,Mother Witch,3.38,Cycle,45.05,6612,32403,Average
+315,The Log,Zap,Arrows,Minions,Balloon,Earthquake,Goblinstein,Elixir Collector,3.62,Siege,47.89,2525,16011,Average
+316,Phoenix,Tombstone,Clone,The Log,Lumberjack,Princess,Goblin Hut,Ice Wizard,3.38,Control,62.03,8485,41159,Excellent
+317,Skeleton Barrel,Elite Barbarians,Goblin Hut,Elixir Golem,The Log,Witch,Goblinstein,Royal Champion,4.5,Cycle,63.47,236,23131,Excellent
+318,Valkyrie,Mighty Miner,Rascals,Cannon,Lava Hound,Bandit,Bomber,X-Bow,4.38,Siege,55.82,9353,38429,Good
+319,Royal Champion,Prince,Executioner,Inferno Dragon,Lumberjack,Fisherman,Royal Recruits,Baby Dragon,4.88,Cycle,63.54,4094,9491,Excellent
+320,Goblin Cage,Valkyrie,Wall Breakers,Skeletons,Knight,Ice Spirit,Giant,Musketeer,3.0,Beatdown,50.99,2748,32835,Good
+321,Flying Machine,Skeletons,The Log,Inferno Dragon,Sparky,Musketeer,Mortar,Archers,3.5,Beatdown,40.28,151,7058,Weak
+322,Giant Skeleton,Dark Prince,Lightning,Elixir Golem,Mega Knight,Minion Horde,Spear Goblins,PEKKA,5.0,Siege,46.84,9733,4501,Average
+323,Fisherman,Skeleton King,Heal Spirit,Battle Healer,Cannon,Elixir Golem,Goblin Hut,Prince,3.5,Hog Cycle,60.44,7323,14421,Excellent
+324,Goblin Cage,Goblin Barrel,Royal Hogs,Fisherman,Skeleton Army,Giant,Baby Dragon,Goblin Gang,3.75,Hog Cycle,64.36,4753,9033,Excellent
+325,Giant,Minions,Lava Hound,Three Musketeers,Mighty Miner,Hunter,Royal Ghost,Fire Spirit,4.62,Beatdown,55.14,3762,22804,Good
+326,Little Prince,Earthquake,Arrows,Archers,X-Bow,Royal Champion,Cannon Cart,Skeleton King,4.25,Beatdown,48.02,3179,20359,Average
+327,Royal Giant,Ice Golem,Minion Horde,Barbarians,Ram Rider,Skeleton King,Three Musketeers,Archers,4.88,Hog Cycle,44.52,2518,38844,Weak
+328,Zappies,Musketeer,Little Prince,Mirror,Knight,Royal Ghost,Executioner,Battle Ram,3.38,Control,52.23,5527,27747,Good
+329,Skeleton King,Valkyrie,Little Prince,Electro Wizard,Fireball,Battle Ram,Ram Rider,Hunter,4.0,Hog Cycle,55.14,3708,42053,Good
+330,Flying Machine,Skeleton Barrel,Tornado,Skeleton Army,Night Witch,Wall Breakers,Battle Healer,Flying Machine,3.38,Cycle,58.98,7211,21973,Good
+331,Goblin Cage,Baby Dragon,Miner,Rascals,Skeleton Barrel,Hunter,Royal Delivery,Lava Hound,4.12,Control,50.5,5813,41079,Good
+332,Cannon Cart,Zap,Royal Hogs,Miner,Royal Delivery,Goblinstein,Battle Healer,Elite Barbarians,4.12,Cycle,58.78,5261,29102,Good
+333,Bomb Tower,Freeze,Mighty Miner,Flying Machine,Rascals,Knight,Princess,Minions,3.75,Beatdown,45.72,6964,24778,Average
+334,Goblinstein,Knight,Mother Witch,Heal Spirit,Executioner,Flying Machine,Flying Machine,Ice Golem,3.5,Control,41.54,4695,12697,Weak
+335,Goblins,Bomber,Executioner,Giant,Royal Champion,Fisherman,Baby Dragon,Clone,4.0,Cycle,45.37,7316,17544,Average
+336,Rocket,Hunter,Battle Healer,Clone,Giant Skeleton,Inferno Dragon,Mega Minion,Archers,4.12,Cycle,60.72,8064,44043,Excellent
+337,Valkyrie,Cannon Cart,Rocket,Musketeer,Goblin Gang,Magic Archer,Lava Hound,Mortar,4.62,Control,50.99,6001,5085,Good
+338,Three Musketeers,Sparky,Battle Healer,Goblin Hut,Knight,Inferno Tower,Goblin Cage,Baby Dragon,5.0,Siege,63.92,5786,48443,Excellent
+339,Knight,Royal Champion,Skeleton King,Mega Minion,Sparky,Flying Machine,Goblins,Three Musketeers,4.75,Hog Cycle,50.6,1098,4343,Good
+340,Graveyard,Fireball,Electro Wizard,Flying Machine,Arrows,PEKKA,Monk,Knight,4.38,Cycle,52.11,5489,31024,Good
+341,Mega Knight,Archer Queen,Battle Ram,Earthquake,Little Prince,Firecracker,Wall Breakers,Wizard,4.0,Hog Cycle,59.07,8911,7725,Good
+342,Flying Machine,Goblins,Archers,Inferno Dragon,Ice Golem,Minion Horde,Battle Ram,Little Prince,3.38,Hog Cycle,46.82,553,20118,Average
+343,Graveyard,Battle Ram,Archer Queen,Lightning,The Log,Elite Barbarians,Sparky,X-Bow,5.0,Beatdown,50.49,3868,40049,Good
+344,Archers,Little Prince,Heal Spirit,Elixir Collector,Tombstone,Bomber,Royal Champion,Inferno Tower,3.88,Hog Cycle,62.14,3528,26209,Excellent
+345,Royal Recruits,Sparky,Rocket,Minions,Ram Rider,Zappies,Tornado,Goblin Cage,4.75,Cycle,55.77,1858,39548,Good
+346,Flying Machine,Spear Goblins,Lumberjack,Royal Champion,Ram Rider,Magic Archer,Clone,Skeletons,3.75,Beatdown,63.78,2610,31837,Excellent
+347,Magic Archer,Executioner,Skeleton Barrel,Ram Rider,Valkyrie,Dark Prince,Royal Giant,The Log,4.12,Control,51.72,9575,48761,Good
+348,Mega Minion,Giant,Fire Spirit,Fisherman,Goblin Barrel,Firecracker,Royal Champion,Hog Rider,3.75,Cycle,53.52,3143,23363,Good
+349,Poison,Baby Dragon,Giant Skeleton,Phoenix,Fire Spirit,Miner,Zappies,Archer Queen,4.0,Beatdown,51.85,3070,38676,Good
+350,Hunter,Elixir Collector,Wizard,Zap,Mother Witch,Fisherman,Royal Giant,Graveyard,4.38,Beatdown,58.95,344,5572,Good
+351,Lava Hound,Freeze,Barbarians,Bowler,Monk,Knight,Three Musketeers,Goblin Hut,5.38,Hog Cycle,44.46,117,2268,Weak
+352,Prince,Zap,PEKKA,Ice Wizard,Tombstone,Baby Dragon,Goblin Cage,Sparky,4.25,Control,49.1,8478,1145,Average
+353,Goblinstein,Witch,Bomber,Rascals,Bandit,Mega Minion,Heal Spirit,Balloon,3.75,Cycle,43.16,9165,35349,Weak
+354,Furnace,Little Prince,Skeleton Army,Inferno Tower,Elixir Golem,Mother Witch,Wizard,Hog Rider,3.88,Cycle,58.31,2450,4623,Good
+355,Minion Horde,Elixir Golem,Flying Machine,Tornado,Dark Prince,Hog Rider,Inferno Tower,Royal Delivery,3.88,Hog Cycle,49.26,4237,21520,Average
+356,Battle Healer,Flying Machine,Minion Horde,Fireball,Lava Hound,Balloon,Zap,Furnace,4.38,Control,43.53,8713,41830,Weak
+357,Flying Machine,Ice Wizard,PEKKA,Royal Delivery,Bandit,Rascals,Executioner,Mighty Miner,4.25,Cycle,61.19,5123,27418,Excellent
+358,Barbarians,Ice Wizard,Lumberjack,Phoenix,Fire Spirit,Goblin Barrel,Poison,Mother Witch,3.62,Control,44.34,4889,42028,Weak
+359,Ram Rider,X-Bow,Giant,Heal Spirit,Battle Ram,Mega Knight,Musketeer,Mini PEKKA,4.5,Cycle,47.61,5449,33199,Average
+360,Goblin Barrel,Night Witch,Ice Golem,Ice Wizard,PEKKA,Clone,Royal Champion,Tesla,4.12,Hog Cycle,58.18,234,28835,Good
+361,Hog Rider,Tombstone,Elixir Collector,Furnace,Elixir Golem,X-Bow,Hunter,Archers,4.12,Siege,61.36,8113,36812,Excellent
+362,Giant,Night Witch,Miner,Rocket,Tornado,Barbarians,Goblins,Valkyrie,4.0,Cycle,64.02,3434,16866,Excellent
+363,Goblin Hut,Goblin Cage,Bomber,Archer Queen,Royal Recruits,Fire Spirit,Ice Spirit,Lava Hound,4.25,Beatdown,60.78,4844,41503,Excellent
+364,Bomb Tower,Phoenix,Royal Giant,Hog Rider,Mother Witch,Royal Champion,Goblinstein,Firecracker,4.62,Beatdown,46.74,3384,44302,Average
+365,Firecracker,Flying Machine,Ram Rider,Inferno Dragon,Mini PEKKA,X-Bow,Little Prince,Mother Witch,4.12,Siege,49.55,2721,3529,Average
+366,Arrows,Executioner,Cannon,Royal Champion,Hog Rider,Royal Recruits,Wall Breakers,Tesla,4.38,Cycle,61.99,4058,10876,Excellent
+367,Elite Barbarians,Knight,Mighty Miner,Mortar,Three Musketeers,Magic Archer,Royal Delivery,Rocket,4.88,Beatdown,50.1,5235,40519,Good
+368,Night Witch,Royal Hogs,Tesla,Cannon,Graveyard,Fireball,Fire Spirit,Goblin Gang,3.75,Beatdown,44.25,1272,8317,Weak
+369,Wall Breakers,Graveyard,Ice Spirit,Archer Queen,Mighty Miner,Flying Machine,Knight,Electro Wizard,3.5,Cycle,57.5,3324,17095,Good
+370,Mega Knight,Elixir Collector,Magic Archer,Battle Healer,Zap,Tornado,Royal Recruits,Goblin Hut,4.75,Control,62.42,4271,27025,Excellent
+371,Arrows,Barbarians,Minion Horde,Firecracker,Little Prince,Bomber,Royal Giant,Poison,4.0,Cycle,50.67,8373,25570,Good
+372,Skeleton King,Flying Machine,Elixir Collector,Wall Breakers,Royal Champion,Miner,Inferno Tower,Ice Wizard,4.25,Control,45.94,4556,2208,Average
+373,Zap,Skeleton Army,Ice Wizard,Tombstone,Royal Giant,Knight,Graveyard,Ice Spirit,3.25,Siege,55.13,9910,45572,Good
+374,Fire Spirit,Tesla,Wall Breakers,Flying Machine,Goblins,Skeleton King,Freeze,Ice Spirit,2.88,Hog Cycle,41.51,9548,14240,Weak
+375,Giant,Balloon,Phoenix,Inferno Dragon,Valkyrie,Mighty Miner,Furnace,Skeleton Barrel,4.12,Siege,57.02,2256,46904,Good
+376,Mighty Miner,Hog Rider,Goblinstein,Flying Machine,Inferno Tower,Lava Hound,Mother Witch,Musketeer,4.62,Hog Cycle,43.05,9209,11937,Weak
+377,Heal Spirit,Mighty Miner,Bowler,Inferno Tower,Royal Ghost,Zappies,Ram Rider,Elite Barbarians,4.12,Beatdown,58.84,1209,29755,Good
+378,Royal Ghost,Tornado,Monk,Elixir Collector,Skeleton King,Battle Ram,Goblinstein,Mini PEKKA,4.25,Beatdown,53.84,7971,17917,Good
+379,Ram Rider,Night Witch,Mega Knight,Cannon Cart,Princess,Mirror,Bandit,Inferno Tower,4.12,Beatdown,59.72,3577,40892,Good
+380,X-Bow,Royal Champion,Fire Spirit,Witch,Royal Giant,Musketeer,Dark Prince,Freeze,4.75,Control,63.86,770,49890,Excellent
+381,Hunter,Spear Goblins,Goblin Barrel,Executioner,Knight,Mini PEKKA,Royal Recruits,Sparky,4.25,Hog Cycle,42.34,9569,35195,Weak
+382,Balloon,Princess,Mega Minion,Dark Prince,Valkyrie,Archers,Royal Ghost,Giant Skeleton,3.88,Beatdown,44.19,4523,48601,Weak
+383,Cannon,Musketeer,Tombstone,Skeleton King,Mighty Miner,Mother Witch,Minions,Firecracker,3.5,Cycle,41.99,4349,40814,Weak
+384,Lumberjack,Goblins,Sparky,Earthquake,Ice Spirit,Barbarians,Mother Witch,PEKKA,4.0,Hog Cycle,50.41,5925,14732,Good
+385,Elite Barbarians,Poison,Mini PEKKA,Archer Queen,Ice Wizard,Graveyard,Royal Hogs,Bomb Tower,4.5,Hog Cycle,47.42,8080,2610,Average
+386,Goblin Cage,Elixir Collector,Mother Witch,Royal Hogs,Clone,Royal Recruits,Phoenix,Night Witch,4.62,Control,43.09,4837,17027,Weak
+387,Mother Witch,Rocket,Goblin Gang,Witch,Poison,Skeleton King,Inferno Dragon,Lightning,4.5,Siege,62.61,4161,13843,Excellent
+388,Graveyard,Mirror,Princess,Lava Hound,Magic Archer,Rascals,Mortar,Spear Goblins,3.88,Control,42.23,2668,8945,Weak
+389,PEKKA,Skeletons,Archer Queen,Mother Witch,Goblins,Arrows,Mega Knight,Little Prince,4.0,Beatdown,55.42,988,45488,Good
+390,Furnace,Mega Minion,Minion Horde,Mirror,Skeleton King,Fire Spirit,Clone,Magic Archer,3.25,Cycle,41.1,5909,34339,Weak
+391,Bomber,Ice Wizard,Goblinstein,Valkyrie,Archer Queen,Royal Ghost,Arrows,Lumberjack,3.75,Cycle,57.11,1796,9324,Good
+392,Phoenix,Poison,Dark Prince,Knight,Goblin Hut,Flying Machine,Furnace,Royal Giant,4.25,Beatdown,51.02,4956,41927,Good
+393,Tornado,Goblinstein,Fire Spirit,Freeze,Skeleton Army,Musketeer,Flying Machine,Royal Champion,4.0,Cycle,54.7,6684,25475,Good
+394,X-Bow,Goblin Gang,Archers,Royal Champion,Inferno Tower,Ice Spirit,Cannon,Earthquake,3.88,Control,63.08,2733,40558,Excellent
+395,Wall Breakers,Valkyrie,Skeleton Barrel,Royal Ghost,Baby Dragon,Battle Ram,Elite Barbarians,Goblin Hut,3.88,Control,48.25,2359,7615,Average
+396,Balloon,Rocket,PEKKA,Tornado,Goblin Cage,Three Musketeers,Inferno Dragon,Valkyrie,5.25,Beatdown,60.4,9492,30552,Excellent
+397,Poison,Royal Giant,Spear Goblins,Lava Hound,Skeleton Army,Minion Horde,Skeletons,Furnace,4.0,Cycle,54.07,7128,44196,Good
+398,Royal Giant,Royal Champion,Archer Queen,Executioner,Skeleton Army,Royal Recruits,Spear Goblins,Princess,4.75,Hog Cycle,62.51,1082,34343,Excellent
+399,Mirror,Skeleton Army,Cannon Cart,Royal Champion,Heal Spirit,Skeleton King,Goblin Hut,Ice Golem,3.5,Siege,62.03,3678,22050,Excellent
+400,Inferno Dragon,Royal Giant,Royal Ghost,Archer Queen,Wizard,Prince,Giant,Princess,4.5,Hog Cycle,56.19,8037,30703,Good
+401,Princess,Night Witch,Barbarians,Flying Machine,Archers,Poison,Royal Champion,Fireball,4.25,Control,56.35,4317,8648,Good
+402,Mortar,X-Bow,Princess,Sparky,Lightning,Minion Horde,Dark Prince,Phoenix,4.75,Control,60.4,6047,1318,Excellent
+403,Inferno Dragon,Mortar,Skeletons,Battle Ram,Bowler,Poison,Barbarians,Elixir Collector,4.12,Control,56.03,9924,22735,Good
+404,Lumberjack,Goblin Hut,Royal Hogs,Flying Machine,Graveyard,Valkyrie,Royal Ghost,Hunter,4.25,Control,63.21,9213,41478,Excellent
+405,Arrows,PEKKA,Elixir Golem,Bandit,Archers,Royal Champion,Prince,Goblins,4.12,Siege,40.71,5275,18982,Weak
+406,Ice Golem,Goblins,Rascals,Skeleton Army,Monk,Hunter,Three Musketeers,Arrows,4.12,Beatdown,42.48,8203,12575,Weak
+407,Elixir Collector,Three Musketeers,Barbarians,Fisherman,Skeletons,Fire Spirit,Bomb Tower,Witch,4.38,Control,44.06,1979,16601,Weak
+408,Tesla,Fire Spirit,Fireball,Bandit,Mega Knight,Bomber,Elite Barbarians,Clone,4.0,Cycle,59.24,2399,32506,Good
+409,Mega Minion,Inferno Tower,Mortar,Giant,Fireball,Little Prince,Magic Archer,Rascals,4.12,Siege,57.58,8603,18379,Good
+410,Inferno Dragon,Heal Spirit,Magic Archer,Inferno Tower,Lumberjack,Elixir Golem,Bomber,Night Witch,3.5,Control,47.81,9266,25235,Average
+411,Witch,Graveyard,Elite Barbarians,Goblins,Rascals,Fireball,Royal Giant,Flying Machine,4.62,Cycle,53.01,4464,2716,Good
+412,Royal Recruits,Skeleton Barrel,Ice Spirit,Goblin Gang,Royal Champion,Flying Machine,Elixir Collector,Bomb Tower,4.38,Control,53.17,4301,6351,Good
+413,Bomber,Magic Archer,Royal Giant,Cannon,Royal Hogs,Elixir Collector,Flying Machine,Goblin Cage,4.38,Beatdown,51.91,3540,1741,Good
+414,Graveyard,Miner,The Log,Royal Delivery,Lightning,Goblinstein,Royal Champion,Tesla,4.38,Siege,41.26,7176,30717,Weak
+415,Royal Delivery,Zap,Battle Healer,Arrows,Lightning,Skeleton Barrel,Mighty Miner,Earthquake,3.5,Beatdown,61.59,7441,17709,Excellent
+416,Bomb Tower,Tornado,Mirror,Skeleton King,Freeze,Firecracker,Three Musketeers,Rascals,4.12,Siege,44.23,198,19153,Weak
+417,Zap,Hunter,Goblin Gang,Tornado,Ram Rider,Hog Rider,Witch,Skeleton Barrel,3.62,Control,44.37,7911,40796,Weak
+418,Cannon Cart,Mighty Miner,Giant Skeleton,Skeleton King,Goblin Cage,Heal Spirit,Skeleton Barrel,Barbarians,4.0,Control,52.2,2136,23789,Good
+419,Dark Prince,Heal Spirit,Princess,Fire Spirit,Prince,Rascals,Night Witch,Mortar,3.5,Siege,57.77,7498,24092,Good
+420,Clone,Elite Barbarians,Prince,Battle Healer,Inferno Tower,Ice Spirit,Sparky,Monk,4.38,Cycle,63.09,4744,26895,Excellent
+421,Valkyrie,Ram Rider,Giant Skeleton,Goblins,Zap,Little Prince,Royal Ghost,Mirror,3.25,Cycle,59.52,3230,22863,Good
+422,Goblin Barrel,Furnace,Goblin Cage,Freeze,Giant,Cannon,Archers,Graveyard,3.88,Control,63.06,3890,33036,Excellent
+423,Giant,Giant Skeleton,Fireball,Arrows,Fisherman,Royal Champion,Mighty Miner,Bomb Tower,4.5,Control,56.47,7206,46435,Good
+424,Skeleton Army,Rocket,Inferno Tower,Mirror,Mini PEKKA,Bowler,Skeleton King,Goblin Hut,4.12,Beatdown,64.35,561,31545,Excellent
+425,Clone,Witch,Sparky,Cannon Cart,Mega Knight,Minions,Wizard,Bowler,4.88,Control,40.1,6436,7524,Weak
+426,Battle Healer,Goblin Cage,Archer Queen,Bowler,Lava Hound,Night Witch,Royal Recruits,Skeleton King,5.0,Siege,60.14,359,19302,Excellent
+427,Goblin Gang,Executioner,Barbarians,Flying Machine,Cannon,Firecracker,Goblin Barrel,Bowler,3.88,Cycle,46.49,9881,25704,Average
+428,Night Witch,Mirror,Wizard,Ice Golem,Inferno Tower,X-Bow,Skeleton King,Sparky,4.12,Cycle,42.16,7606,11219,Weak
+429,Princess,Furnace,Goblin Cage,Bomber,Flying Machine,Bomb Tower,Mighty Miner,Elixir Golem,3.62,Beatdown,56.5,3550,9418,Good
+430,Battle Ram,Arrows,Goblins,Magic Archer,Royal Ghost,Inferno Dragon,Skeletons,Archers,3.0,Cycle,59.94,5442,5677,Good
+431,Lava Hound,Skeleton Army,Tornado,Giant Skeleton,Archer Queen,Bomber,Mortar,Little Prince,4.25,Cycle,60.28,5133,1521,Excellent
+432,Ice Spirit,Ice Golem,Minion Horde,Skeletons,PEKKA,Skeleton Army,Little Prince,Dark Prince,3.25,Hog Cycle,53.44,1002,10695,Good
+433,Knight,Cannon Cart,Skeleton Army,The Log,Fire Spirit,Royal Recruits,Ram Rider,Mega Knight,4.25,Siege,40.93,6496,3283,Weak
+434,Skeleton Army,Rocket,Bowler,Spear Goblins,Night Witch,Zappies,Ram Rider,Ice Golem,3.88,Hog Cycle,52.44,9519,11533,Good
+435,Cannon Cart,Wall Breakers,Rascals,Elite Barbarians,Zappies,Fisherman,Battle Healer,Minions,4.0,Cycle,56.15,1959,41487,Good
+436,Firecracker,Skeleton Army,Skeleton King,Minion Horde,Goblin Hut,Royal Recruits,Balloon,Bomb Tower,4.5,Beatdown,61.62,6173,41998,Excellent
+437,Mega Knight,Electro Wizard,Royal Hogs,Archer Queen,Tesla,Zappies,Mother Witch,Monk,4.75,Beatdown,43.87,2932,10212,Weak
+438,Bomber,Tornado,Sparky,Tombstone,Baby Dragon,Little Prince,Mirror,Miner,3.25,Cycle,44.86,9323,33737,Weak
+439,Mega Knight,Witch,Baby Dragon,Goblinstein,Spear Goblins,Phoenix,Princess,Skeleton Army,4.12,Control,51.96,2791,20726,Good
+440,Goblin Barrel,Zappies,Valkyrie,Bomber,Executioner,Bowler,Royal Giant,Freeze,4.25,Hog Cycle,57.16,6108,40190,Good
+441,Royal Recruits,Zap,Arrows,Valkyrie,Inferno Tower,Giant Skeleton,Monk,Inferno Dragon,4.5,Cycle,55.46,6235,25365,Good
+442,Night Witch,Ice Spirit,Three Musketeers,Goblin Hut,Bowler,Ice Wizard,Royal Giant,Skeleton King,4.62,Beatdown,58.44,6311,18722,Good
+443,Skeleton King,Poison,Wizard,Goblin Cage,Elixir Collector,Arrows,Sparky,Zap,4.25,Beatdown,40.83,6234,17988,Weak
+444,Hog Rider,Spear Goblins,PEKKA,Mega Knight,Cannon Cart,Bowler,Executioner,Flying Machine,4.88,Hog Cycle,60.44,607,24119,Excellent
+445,Sparky,Cannon Cart,Zap,Furnace,Clone,PEKKA,Lumberjack,Valkyrie,4.38,Siege,49.0,6945,7867,Average
+446,Royal Hogs,Night Witch,Ice Golem,Tesla,The Log,Bomber,Elite Barbarians,Monk,3.88,Cycle,60.05,6610,18398,Excellent
+447,Royal Hogs,Executioner,Bomber,Zappies,Tombstone,Inferno Dragon,Battle Healer,Clone,3.88,Cycle,62.62,9208,36720,Excellent
+448,Ice Golem,Skeleton Army,Electro Wizard,Wizard,Monk,Goblins,Minion Horde,Zappies,3.75,Siege,60.43,3251,5110,Excellent
+449,Goblin Barrel,Fisherman,Mini PEKKA,Bomber,Witch,Monk,Graveyard,Goblinstein,4.12,Hog Cycle,44.1,6117,38889,Weak
+450,Dark Prince,Skeleton King,Royal Ghost,Royal Champion,Skeleton Barrel,Tornado,Little Prince,Ram Rider,4.0,Hog Cycle,58.6,5369,10764,Good
+451,Night Witch,Knight,Clone,Hog Rider,Fireball,Executioner,PEKKA,Three Musketeers,4.88,Beatdown,48.73,6192,7992,Average
+452,Heal Spirit,Battle Healer,Hog Rider,Tombstone,Executioner,Bowler,PEKKA,Rascals,4.25,Siege,60.73,1344,46047,Excellent
+453,Skeletons,Rascals,Ice Spirit,Fire Spirit,Royal Recruits,Zap,Miner,Mega Minion,3.0,Hog Cycle,47.63,2635,19656,Average
+454,Earthquake,Goblin Barrel,Bandit,Skeleton King,Valkyrie,Monk,Sparky,Goblins,3.75,Control,44.64,1983,1540,Weak
+455,Flying Machine,Skeleton King,Furnace,Fireball,Spear Goblins,Clone,Bandit,Electro Wizard,3.5,Cycle,62.4,2703,30814,Excellent
+456,Fire Spirit,Royal Champion,Executioner,Cannon,Goblin Hut,Dark Prince,Tesla,Witch,4.38,Beatdown,57.88,261,23628,Good
+457,Mega Knight,Hog Rider,Zap,Bandit,Giant,Cannon,Archers,Goblin Barrel,3.75,Siege,44.38,3763,13463,Weak
+458,Little Prince,Bowler,Baby Dragon,Princess,Giant Skeleton,Elixir Golem,Zap,Royal Champion,4.12,Beatdown,48.4,4341,20493,Average
+459,Knight,Mini PEKKA,Zap,Goblin Hut,Cannon Cart,Zappies,The Log,Lumberjack,3.62,Hog Cycle,58.12,7111,18054,Good
+460,Executioner,Skeleton Barrel,Fisherman,Skeleton Army,Minions,Mega Knight,Giant,Sparky,4.38,Hog Cycle,61.15,3350,4747,Excellent
+461,Mother Witch,Flying Machine,Witch,Battle Healer,Fireball,Electro Wizard,Heal Spirit,Baby Dragon,3.75,Control,40.62,1737,39431,Weak
+462,X-Bow,Royal Ghost,Spear Goblins,Ram Rider,Little Prince,Skeleton King,Mini PEKKA,Valkyrie,3.88,Cycle,54.07,3089,41343,Good
+463,Royal Ghost,Bandit,The Log,Mighty Miner,Fireball,Knight,Ice Wizard,Giant Skeleton,3.5,Siege,42.46,9107,18854,Weak
+464,Mother Witch,Royal Delivery,Royal Ghost,X-Bow,Fisherman,Valkyrie,Ice Golem,Zap,3.38,Beatdown,56.09,3100,10513,Good
+465,Fire Spirit,Royal Recruits,Royal Hogs,Cannon Cart,Prince,Battle Ram,Little Prince,Lightning,4.62,Cycle,45.4,702,21215,Average
+466,Goblin Gang,Magic Archer,Heal Spirit,Arrows,Skeleton Army,Elite Barbarians,Giant Skeleton,Mirror,3.38,Hog Cycle,44.74,1330,34006,Weak
+467,Wall Breakers,Rocket,Elixir Golem,Royal Recruits,Three Musketeers,Executioner,Skeleton King,Baby Dragon,5.0,Cycle,60.69,7266,27615,Excellent
+468,Tombstone,Elite Barbarians,Goblinstein,Valkyrie,Ice Wizard,Tornado,Cannon Cart,Miner,4.0,Beatdown,52.52,6911,29405,Good
+469,Knight,Tornado,Mini PEKKA,Furnace,Spear Goblins,Cannon,Musketeer,PEKKA,3.75,Cycle,59.34,5518,38939,Good
+470,Mega Minion,Battle Healer,Tesla,Archers,Wizard,Prince,Mighty Miner,Barbarians,4.12,Hog Cycle,42.25,1366,7576,Weak
+471,Wizard,X-Bow,Elite Barbarians,Skeleton Barrel,Knight,Cannon,Earthquake,Royal Hogs,4.25,Cycle,42.67,5862,35907,Weak
+472,Battle Healer,Mother Witch,Battle Ram,Arrows,Ram Rider,Mortar,Musketeer,Sparky,4.25,Siege,63.65,6872,32721,Excellent
+473,PEKKA,Inferno Tower,Three Musketeers,Executioner,Royal Recruits,Hog Rider,Giant,Bowler,5.88,Cycle,59.49,4005,4775,Good
+474,PEKKA,Ice Spirit,Furnace,Fireball,Arrows,Hunter,Goblinstein,Skeleton Army,3.88,Siege,41.5,3965,16503,Weak
+475,Zap,Clone,Wizard,Tornado,Freeze,Little Prince,Goblin Hut,Battle Healer,3.62,Cycle,46.84,3604,41440,Average
+476,Graveyard,X-Bow,Royal Recruits,Inferno Tower,Princess,Firecracker,Ice Spirit,Lightning,4.5,Hog Cycle,63.44,5140,18793,Excellent
+477,Bomber,Ram Rider,Zap,Clone,Skeletons,Goblinstein,Hog Rider,Freeze,3.38,Control,52.47,7257,4849,Good
+478,Arrows,Skeleton King,Little Prince,Hog Rider,Wall Breakers,Baby Dragon,Royal Ghost,Bomb Tower,3.38,Control,54.17,3772,3160,Good
+479,Bandit,Rascals,Clone,Hog Rider,Magic Archer,Royal Delivery,Little Prince,Baby Dragon,3.62,Siege,40.06,792,30171,Weak
+480,Poison,Elixir Collector,Skeleton Barrel,Barbarians,Miner,Clone,Fire Spirit,Three Musketeers,4.38,Siege,61.08,8707,35359,Excellent
+481,Goblin Hut,Goblin Barrel,Fire Spirit,Phoenix,Zap,Cannon Cart,PEKKA,Skeleton Barrel,3.88,Control,41.14,1273,2667,Weak
+482,Freeze,Miner,Archers,Baby Dragon,Giant,Mega Minion,Executioner,Balloon,4.0,Hog Cycle,56.48,2027,3832,Good
+483,Flying Machine,Goblin Hut,Mega Knight,Heal Spirit,Minion Horde,Wizard,Goblin Cage,Electro Wizard,4.38,Hog Cycle,64.88,8404,7542,Excellent
+484,Wizard,Royal Hogs,Wall Breakers,Ram Rider,Inferno Dragon,Hog Rider,Graveyard,Flying Machine,4.25,Cycle,61.57,4596,32712,Excellent
+485,Cannon Cart,Archer Queen,Rocket,Bowler,Monk,Royal Delivery,The Log,Mighty Miner,4.38,Siege,46.04,9033,2693,Average
+486,Royal Hogs,Rocket,Musketeer,Ice Spirit,Mega Knight,Hunter,Goblin Hut,Tesla,4.5,Hog Cycle,47.73,8058,4160,Average
+487,Skeleton King,Bandit,Goblin Cage,Musketeer,Royal Recruits,Mortar,Archers,Tesla,4.12,Beatdown,59.29,1574,24632,Good
+488,Lumberjack,Night Witch,Goblin Barrel,Ram Rider,Balloon,Fireball,The Log,Tombstone,3.75,Cycle,43.74,6166,13291,Weak
+489,Archer Queen,Ice Spirit,Bomber,Rocket,Mortar,Earthquake,Bomb Tower,Bowler,3.88,Cycle,56.08,1713,10014,Good
+490,Heal Spirit,Royal Recruits,Elixir Collector,Ice Wizard,Tombstone,Goblin Barrel,Battle Healer,Knight,3.75,Control,52.15,5227,43026,Good
+491,Furnace,Flying Machine,Barbarians,Royal Champion,Giant Skeleton,Goblin Hut,Night Witch,Miner,4.75,Siege,64.59,2277,34246,Excellent
+492,Balloon,Little Prince,Royal Ghost,Ram Rider,Goblinstein,Inferno Tower,Fire Spirit,Valkyrie,4.0,Hog Cycle,56.45,4997,46937,Good
+493,Goblin Gang,Dark Prince,Zap,Knight,Poison,Graveyard,Flying Machine,Lava Hound,4.0,Hog Cycle,42.46,5093,9634,Weak
+494,Bandit,Furnace,Goblins,Royal Hogs,Royal Ghost,Hog Rider,Skeletons,Bomber,3.12,Cycle,52.38,1222,11752,Good
+495,Mirror,Archers,Tesla,Goblin Gang,Dark Prince,Rocket,Royal Giant,Elixir Collector,4.12,Siege,47.45,9781,23971,Average
+496,Mother Witch,Earthquake,Firecracker,Mortar,Elixir Golem,Inferno Tower,Battle Ram,Mini PEKKA,3.75,Siege,47.35,7178,20744,Average
+497,Goblin Barrel,Royal Delivery,Executioner,Zap,Cannon,Hunter,Valkyrie,Mortar,3.5,Siege,43.34,2419,33100,Weak
+498,Skeleton Barrel,Royal Hogs,Ice Wizard,Zap,Musketeer,Baby Dragon,Goblinstein,Goblin Hut,3.88,Control,58.72,7000,33636,Good
+499,Flying Machine,Rascals,Miner,Inferno Tower,Ice Wizard,Cannon Cart,Goblin Cage,Mother Witch,4.12,Hog Cycle,58.19,309,36145,Good
+500,Lightning,Mega Minion,Barbarians,Phoenix,Royal Giant,Mighty Miner,Goblin Cage,Battle Ram,4.5,Siege,64.52,8308,6397,Excellent
