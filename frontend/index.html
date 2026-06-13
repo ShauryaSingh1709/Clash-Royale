@@ -3,160 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏆 Clash Royale Deck Analyzer</title>
+    <title>RoyaleForge — The Ultimate Clash Royale Analytics Platform</title>
+    <meta name="description" content="Master Clash Royale with AI-powered deck analysis, real-time meta insights, and professional analytics.">
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/components.css">
     <link rel="stylesheet" href="/static/css/home.css">
 </head>
 <body>
-    <!-- ── NAVBAR ─────────────────────────────────────────────────── -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <span class="navbar-logo-icon">🏆</span>
-                <span>CR Analyzer</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="/" class="navbar-link">Home</a></li>
-                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
-                <li><a href="/cards" class="navbar-link">Cards</a></li>
-                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
-                <li><a href="/about" class="navbar-link">About</a></li>
-            </ul>
-            <button class="navbar-toggle">☰</button>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main>
-        <!-- ── HERO SECTION ─────────────────────────────────────────── -->
+        <!-- ═══════════════════════════════════════════════════════════
+             HERO SECTION
+             ═══════════════════════════════════════════════════════════ -->
         <section class="hero">
-            <div class="hero-bg"></div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge animate-fadeIn">
-                        <span>✨</span> AI-Powered Analytics
-                    </div>
-                    <h1 class="hero-title animate-fadeIn">
-                        <span class="gradient-text">DOMINATE</span>
-                        <br>
-                        THE ARENA
-                    </h1>
-                    <p class="hero-subtitle animate-fadeIn">
-                        Analyze your Clash Royale decks with cutting-edge Machine Learning.
-                        Get win rate predictions, find similar decks, and discover the meta.
-                    </p>
-                    <div class="hero-buttons animate-fadeIn">
-                        <a href="/analyzer" class="btn btn-primary btn-lg">
-                            🎯 Analyze Deck
-                        </a>
-                        <a href="/dashboard" class="btn btn-secondary btn-lg">
-                            📊 View Meta
-                        </a>
-                    </div>
+            <div class="hero-bg-cards">
+                <div class="hero-floating-card hero-card-1">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/mega-knight.png" alt="">
+                </div>
+                <div class="hero-floating-card hero-card-2">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/electro-wizard.png" alt="">
+                </div>
+                <div class="hero-floating-card hero-card-3">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/hog-rider.png" alt="">
+                </div>
+                <div class="hero-floating-card hero-card-4">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/pekka.png" alt="">
+                </div>
+                <div class="hero-floating-card hero-card-5">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/sparky.png" alt="">
+                </div>
+                <div class="hero-floating-card hero-card-6">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/lava-hound.png" alt="">
                 </div>
             </div>
-        </section>
 
-        <!-- ── STATS SECTION ────────────────────────────────────────── -->
-        <section class="stats-section">
-            <div class="container">
-                <div class="stats-grid" id="statsGrid">
-                    <div class="stat-card">
-                        <div class="stat-icon">🃏</div>
-                        <div class="stat-value" id="statCards">--</div>
-                        <div class="stat-label">Cards</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🎴</div>
-                        <div class="stat-value" id="statDecks">--</div>
-                        <div class="stat-label">Decks Analyzed</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">⚔️</div>
-                        <div class="stat-value" id="statBattles">--</div>
-                        <div class="stat-label">Battles Data</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🤖</div>
-                        <div class="stat-value">4</div>
-                        <div class="stat-label">ML Models</div>
-                    </div>
+            <div class="hero-container">
+                <div class="hero-eyebrow animate-fadeIn">
+                    <span class="hero-eyebrow-dot"></span>
+                    <span>Powered by Machine Learning</span>
                 </div>
-            </div>
-        </section>
 
-        <!-- ── FEATURES SECTION ─────────────────────────────────────── -->
-        <section class="features-section">
-            <div class="container">
-                <h2 class="section-title">
-                    POWERFUL <span class="gradient-text">FEATURES</span>
-                </h2>
-                <p class="section-subtitle">
-                    Everything you need to analyze, improve, and master your deck.
+                <h1 class="hero-title animate-fadeIn">
+                    <span class="hero-title-row">Master the</span>
+                    <span class="hero-title-row text-gold">Royal Arena</span>
+                </h1>
+
+                <p class="hero-description animate-fadeIn">
+                    Professional Clash Royale analytics platform. Build perfect decks, predict win rates, 
+                    and dominate the meta with AI-powered insights.
                 </p>
 
-                <div class="features-grid">
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Deck Analyzer</h3>
-                        <p>Get instant ML predictions for win rate, strength score, and archetype classification.</p>
+                <div class="hero-actions animate-fadeIn">
+                    <a href="/analyzer" class="btn btn-primary btn-lg" id="ctaPrimary">
+                        <span>Build Your Deck</span>
+                    </a>
+                    <a href="/dashboard" class="btn btn-secondary btn-lg">
+                        <span>Explore Meta</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats animate-fadeIn">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="statCards">97</div>
+                        <div class="hero-stat-label">Cards</div>
                     </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">🔍</div>
-                        <h3>Card Explorer</h3>
-                        <p>Browse all 97+ cards with detailed stats, win rates, and usage statistics.</p>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="statDecks">500</div>
+                        <div class="hero-stat-label">Decks</div>
                     </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Meta Dashboard</h3>
-                        <p>Visualize the current meta with beautiful charts and trend analysis.</p>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value" id="statBattles">5K</div>
+                        <div class="hero-stat-label">Battles</div>
                     </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">💡</div>
-                        <h3>Smart Recommendations</h3>
-                        <p>AI suggests card replacements and similar decks to improve your strategy.</p>
-                    </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">🏆</div>
-                        <h3>Strength Scoring</h3>
-                        <p>Get a 0-100 score and letter grade for any deck composition.</p>
-                    </div>
-                    <div class="feature-card glass-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Real-Time Analysis</h3>
-                        <p>Instant feedback powered by pre-loaded ML models for lightning-fast responses.</p>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value">4</div>
+                        <div class="hero-stat-label">ML Models</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ── CTA SECTION ──────────────────────────────────────────── -->
-        <section class="cta-section">
+        <!-- ═══════════════════════════════════════════════════════════
+             FEATURES SECTION
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="features">
             <div class="container">
-                <div class="cta-card glass-card">
-                    <h2 class="gradient-text">READY TO WIN?</h2>
-                    <p>Start analyzing your deck now and climb the ladder faster than ever.</p>
-                    <a href="/analyzer" class="btn btn-primary btn-lg mt-3">
-                        🚀 Get Started Free
-                    </a>
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span>Features</span>
+                    </div>
+                    <h2 class="section-title">
+                        Everything you need to <span class="text-gold">win</span>
+                    </h2>
+                    <p class="section-description">
+                        Built for serious players who want to climb the ladder and dominate tournaments.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/electro-wizard.png" alt="">
+                        </div>
+                        <h3 class="feature-title">AI Deck Analysis</h3>
+                        <p class="feature-description">
+                            Machine learning models predict win rates, score deck strength, and classify archetypes instantly.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png" alt="">
+                        </div>
+                        <h3 class="feature-title">Smart Recommendations</h3>
+                        <p class="feature-description">
+                            Get personalized card replacement suggestions and discover similar high-performing decks.
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/mega-knight.png" alt="">
+                        </div>
+                        <h3 class="feature-title">Meta Insights</h3>
+                        <p class="feature-description">
+                            Real-time analytics on the most popular cards, winning archetypes, and seasonal trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SHOWCASE SECTION
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="showcase">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span>How it works</span>
+                    </div>
+                    <h2 class="section-title">
+                        From deck to <span class="text-gold">domination</span>
+                    </h2>
+                    <p class="section-description">
+                        Three simple steps to elevate your gameplay
+                    </p>
+                </div>
+
+                <div class="showcase-grid">
+                    <div class="showcase-content">
+                        <div class="showcase-step">
+                            <div class="showcase-step-number">1</div>
+                            <div class="showcase-step-content">
+                                <h4>Build Your Deck</h4>
+                                <p>Select 8 cards from our complete library of 97+ Clash Royale cards. Filter by rarity, type, or archetype.</p>
+                            </div>
+                        </div>
+
+                        <div class="showcase-step">
+                            <div class="showcase-step-number">2</div>
+                            <div class="showcase-step-content">
+                                <h4>Get AI Analysis</h4>
+                                <p>Our ML models analyze your deck instantly — predicting win rates, identifying strengths and weaknesses.</p>
+                            </div>
+                        </div>
+
+                        <div class="showcase-step">
+                            <div class="showcase-step-number">3</div>
+                            <div class="showcase-step-content">
+                                <h4>Optimize & Win</h4>
+                                <p>Receive smart card replacement suggestions and discover similar winning decks from the meta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="showcase-visual">
+                        <div class="showcase-arena">
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/hog-rider.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/musketeer.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/ice-spirit.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/skeletons.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/fireball.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/the-log.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/cannon.png" alt="">
+                            </div>
+                            <div class="showcase-card-slot">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/ice-golem.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             CTA SECTION
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-card">
+                    <div class="cta-cards-decoration cta-cards-left">
+                        <img src="https://cdn.royaleapi.com/static/img/cards-150/royal-champion.png" alt="">
+                    </div>
+                    <div class="cta-cards-decoration cta-cards-right">
+                        <img src="https://cdn.royaleapi.com/static/img/cards-150/skeleton-king.png" alt="">
+                    </div>
+                    
+                    <div class="cta-content">
+                        <h2 class="cta-title">
+                            Ready to <span class="text-gold">dominate?</span>
+                        </h2>
+                        <p class="cta-description">
+                            Join thousands of players using AI to build winning decks. Start analyzing your deck right now — completely free.
+                        </p>
+                        <a href="/analyzer" class="btn btn-primary btn-lg">
+                            <span>Get Started Now</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ── FOOTER ─────────────────────────────────────────────────── -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">
-                Made with ❤️ by Clash Royale enthusiasts | 
-                Powered by Machine Learning
-            </p>
-            <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 0.5rem;">
-                © 2026 CR Analyzer | Open Source Project
-            </p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
+    <script src="/static/js/icons.js"></script>
     <script src="/static/js/api.js"></script>
     <script src="/static/js/utils.js"></script>
     <script src="/static/js/navbar.js"></script>

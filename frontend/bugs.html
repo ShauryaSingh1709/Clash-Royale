@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Reports — RoyaleForge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/docs.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <div class="page-header-badge">
+                        <span id="bugIcon"></span>
+                        <span>Bug Reports</span>
+                    </div>
+                    <h1 class="page-header-title">
+                        Found a <span class="text-gold">bug?</span>
+                    </h1>
+                    <p class="page-header-description">
+                        Help us improve RoyaleForge by reporting bugs with clear details. 
+                        Quality reports lead to faster fixes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="docs-layout">
+            <div class="container">
+                <div class="docs-main" style="max-width: 800px; margin: 0 auto;">
+                    
+                    <article class="docs-article">
+                        <section>
+                            <h2 class="docs-heading-1">Before Reporting</h2>
+                            <p class="docs-text">
+                                Save time by checking these first — your issue might already be known.
+                            </p>
+                            <ul class="docs-list">
+                                <li>Search <strong>existing issues</strong> on GitHub</li>
+                                <li>Make sure you're on the <strong>latest version</strong></li>
+                                <li>Try to <strong>reproduce</strong> the bug consistently</li>
+                                <li>Check the <strong>browser console</strong> for errors (F12)</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">How to Write a Good Bug Report</h2>
+                            <p class="docs-text">
+                                Good bug reports have these qualities. Follow this structure for fastest results.
+                            </p>
+
+                            <div class="tutorial-steps">
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">1</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Clear Title</div>
+                                        <div class="tutorial-step-text">
+                                            Summarize the bug in one line. Bad: "It doesn't work". 
+                                            Good: "Deck analyzer returns 500 error when using champion cards".
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">2</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Describe the Bug</div>
+                                        <div class="tutorial-step-text">
+                                            Explain what's happening vs what should happen. Be specific.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">3</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Steps to Reproduce</div>
+                                        <div class="tutorial-step-text">
+                                            Number each step clearly. Anyone should be able to follow them and see the bug.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">4</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Include Screenshots</div>
+                                        <div class="tutorial-step-text">
+                                            A picture is worth a thousand words. Screenshots and screen recordings 
+                                            dramatically speed up debugging.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">5</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Add Environment Info</div>
+                                        <div class="tutorial-step-text">
+                                            Share OS, browser, Python version, and any other relevant details.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Bug Report Template</h2>
+                            <p class="docs-text">
+                                Copy this template when opening a new issue on GitHub.
+                            </p>
+
+                            <div class="code-block">
+                                <div class="code-block-header">
+                                    <span class="code-block-lang">Markdown Template</span>
+                                    <button class="code-block-copy" onclick="copyCode(this)">Copy</button>
+                                </div>
+<pre><span class="code-keyword">## Bug Description</span>
+A clear and concise description of what the bug is.
+
+<span class="code-keyword">## Steps to Reproduce</span>
+1. Navigate to '...'
+2. Click on '...'
+3. Enter '...'
+4. See error
+
+<span class="code-keyword">## Expected Behavior</span>
+What you expected to happen.
+
+<span class="code-keyword">## Actual Behavior</span>
+What actually happened instead.
+
+<span class="code-keyword">## Screenshots</span>
+If applicable, add screenshots to help explain.
+
+<span class="code-keyword">## Environment</span>
+- OS: <span class="code-comment">[e.g., Windows 11, macOS Sonoma]</span>
+- Browser: <span class="code-comment">[e.g., Chrome 120, Firefox 121]</span>
+- Python Version: <span class="code-comment">[e.g., 3.10.5]</span>
+- RoyaleForge Version: <span class="code-comment">[e.g., 1.0.0]</span>
+
+<span class="code-keyword">## Additional Context</span>
+Any other context about the problem.</pre>
+                            </div>
+
+                            <div class="callout callout-info">
+                                <div class="callout-icon" id="infoIconBug"></div>
+                                <div class="callout-content">
+                                    <div class="callout-title">Pro Tip</div>
+                                    <div class="callout-text">
+                                        Include browser console output by pressing F12 → Console tab. 
+                                        Copy any error messages and paste them into your report.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Severity Levels</h2>
+                            <p class="docs-text">
+                                Help us prioritize by labeling the severity of the bug.
+                            </p>
+
+                            <div class="tutorial-steps">
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number" style="background: linear-gradient(135deg, #EF4444, #DC2626);">!</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Critical</div>
+                                        <div class="tutorial-step-text">
+                                            App is unusable, data loss, security vulnerability.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number" style="background: linear-gradient(135deg, #F59E0B, #D97706);">H</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">High</div>
+                                        <div class="tutorial-step-text">
+                                            Major feature broken, blocking workflow.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number" style="background: linear-gradient(135deg, #3B82F6, #1E40AF);">M</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Medium</div>
+                                        <div class="tutorial-step-text">
+                                            Feature works incorrectly but has workaround.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number" style="background: linear-gradient(135deg, #10B981, #059669);">L</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Low</div>
+                                        <div class="tutorial-step-text">
+                                            Minor visual issue, typo, cosmetic problem.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="docs-cta">
+                            <h3 class="docs-cta-title">Ready to report a bug?</h3>
+                            <p class="docs-cta-description">
+                                Open a new issue on GitHub with the template above.
+                            </p>
+                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary">
+                                <span>Open Issue on GitHub</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="/static/js/icons.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/docs.js"></script>
+</body>
+</html>

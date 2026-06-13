@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributing — RoyaleForge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/docs.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <div class="page-header-badge">
+                        <span id="ctbIcon"></span>
+                        <span>Open Source</span>
+                    </div>
+                    <h1 class="page-header-title">
+                        Build with the <span class="text-gold">community</span>
+                    </h1>
+                    <p class="page-header-description">
+                        RoyaleForge is open source and welcomes contributions of all sizes — 
+                        from typo fixes to major features.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="docs-layout">
+            <div class="container">
+                <div class="docs-main" style="max-width: 900px; margin: 0 auto;">
+                    
+                    <div class="doc-card-grid">
+                        <a href="#code" class="doc-card">
+                            <div class="doc-card-icon" id="codeIcon"></div>
+                            <div class="doc-card-title">Contribute Code</div>
+                            <div class="doc-card-description">
+                                Help build features, fix bugs, and improve the codebase.
+                            </div>
+                            <div class="doc-card-link">Get started <span id="ar1"></span></div>
+                        </a>
+
+                        <a href="#docs" class="doc-card">
+                            <div class="doc-card-icon" id="bookIcon"></div>
+                            <div class="doc-card-title">Improve Docs</div>
+                            <div class="doc-card-description">
+                                Make documentation clearer, fix typos, add examples.
+                            </div>
+                            <div class="doc-card-link">Get started <span id="ar2"></span></div>
+                        </a>
+
+                        <a href="#design" class="doc-card">
+                            <div class="doc-card-icon" id="designIcon"></div>
+                            <div class="doc-card-title">Design & UX</div>
+                            <div class="doc-card-description">
+                                Improve UI, suggest UX improvements, create assets.
+                            </div>
+                            <div class="doc-card-link">Get started <span id="ar3"></span></div>
+                        </a>
+                    </div>
+
+                    <article class="docs-article" style="margin-top: var(--space-12);">
+
+                        <section id="code">
+                            <h2 class="docs-heading-1">Contributing Code</h2>
+                            <p class="docs-text">
+                                We follow the standard GitHub fork-and-pull-request workflow. 
+                                Here's exactly how to contribute code to RoyaleForge.
+                            </p>
+
+                            <div class="tutorial-steps">
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">1</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Fork the Repository</div>
+                                        <div class="tutorial-step-text">
+                                            Click the "Fork" button on the GitHub repository page to create your own copy.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">2</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Clone Your Fork</div>
+                                        <div class="tutorial-step-text">
+                                            Clone your forked repository locally.
+                                        </div>
+                                        <div class="code-block">
+                                            <div class="code-block-header">
+                                                <span class="code-block-lang">Terminal</span>
+                                            </div>
+<pre>git clone https://github.com/YOUR-USERNAME/royaleforge.git
+cd royaleforge</pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">3</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Create a Branch</div>
+                                        <div class="tutorial-step-text">
+                                            Create a new branch with a descriptive name following the convention.
+                                        </div>
+                                        <div class="code-block">
+                                            <div class="code-block-header">
+                                                <span class="code-block-lang">Branch Naming</span>
+                                            </div>
+<pre><span class="code-comment"># Feature branches</span>
+git checkout -b feature/add-deck-export
+
+<span class="code-comment"># Bug fix branches</span>
+git checkout -b fix/card-image-loading
+
+<span class="code-comment"># Documentation branches</span>
+git checkout -b docs/update-api-reference</pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">4</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Make Your Changes</div>
+                                        <div class="tutorial-step-text">
+                                            Write your code following our standards. Test thoroughly before committing.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">5</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Commit with Clear Messages</div>
+                                        <div class="tutorial-step-text">
+                                            Use conventional commits for clear history.
+                                        </div>
+                                        <div class="code-block">
+                                            <div class="code-block-header">
+                                                <span class="code-block-lang">Git</span>
+                                            </div>
+<pre>git add .
+git commit -m <span class="code-string">"feat: add deck export to JSON"</span>
+git push origin feature/add-deck-export</pre>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">6</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Open a Pull Request</div>
+                                        <div class="tutorial-step-text">
+                                            Go to GitHub and open a PR. Fill out the template with a clear description 
+                                            of what changed and why.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Coding Standards</h2>
+                            
+                            <h3 class="docs-heading-3">Python</h3>
+                            <ul class="docs-list">
+                                <li>Follow <strong>PEP 8</strong> style guide</li>
+                                <li>Use <strong>type hints</strong> for function signatures</li>
+                                <li>Write <strong>docstrings</strong> for all public functions and classes</li>
+                                <li>Keep functions focused — one responsibility per function</li>
+                                <li>Use meaningful variable names</li>
+                            </ul>
+
+                            <h3 class="docs-heading-3">JavaScript</h3>
+                            <ul class="docs-list">
+                                <li>Use <strong>ES6+ syntax</strong> (const, let, arrow functions)</li>
+                                <li>Prefer <strong>async/await</strong> over promise chains</li>
+                                <li>Comment complex logic, not obvious code</li>
+                                <li>Keep functions small and pure when possible</li>
+                            </ul>
+
+                            <h3 class="docs-heading-3">CSS</h3>
+                            <ul class="docs-list">
+                                <li>Use <strong>CSS variables</strong> from the design system</li>
+                                <li>Follow BEM-like naming for new components</li>
+                                <li>Mobile-first responsive design</li>
+                                <li>Avoid <code>!important</code> unless absolutely necessary</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Commit Message Format</h2>
+                            <p class="docs-text">
+                                We use <a href="https://www.conventionalcommits.org">Conventional Commits</a> 
+                                for consistent commit history.
+                            </p>
+
+                            <div class="code-block">
+                                <div class="code-block-header">
+                                    <span class="code-block-lang">Format</span>
+                                </div>
+<pre><span class="code-keyword">&lt;type&gt;</span>(<span class="code-property">&lt;scope&gt;</span>): <span class="code-string">&lt;description&gt;</span>
+
+<span class="code-comment"># Examples:</span>
+feat(analyzer): add deck export to JSON
+fix(api): correct rarity filter not working
+docs(readme): update installation instructions
+style(navbar): improve mobile responsiveness
+refactor(ml): optimize model loading
+test(decks): add validation tests</pre>
+                            </div>
+
+                            <div class="callout callout-info">
+                                <div class="callout-icon" id="infoIconCtb"></div>
+                                <div class="callout-content">
+                                    <div class="callout-title">Commit Types</div>
+                                    <div class="callout-text">
+                                        <code>feat</code> for features, <code>fix</code> for bug fixes, 
+                                        <code>docs</code> for documentation, <code>style</code> for formatting, 
+                                        <code>refactor</code> for code changes, <code>test</code> for tests.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Project Structure</h2>
+                            <p class="docs-text">
+                                Understanding the codebase will help you contribute effectively.
+                            </p>
+
+                            <div class="code-block">
+                                <div class="code-block-header">
+                                    <span class="code-block-lang">Directory Tree</span>
+                                </div>
+<pre>royaleforge/
+├── frontend/                    <span class="code-comment"># Static frontend files</span>
+│   ├── css/                     <span class="code-comment"># Stylesheets</span>
+│   ├── js/                      <span class="code-comment"># JavaScript modules</span>
+│   └── *.html                   <span class="code-comment"># Page templates</span>
+│
+├── backend/
+│   ├── app.py                   <span class="code-comment"># Flask entry point</span>
+│   ├── config/                  <span class="code-comment"># App configuration</span>
+│   ├── routes/                  <span class="code-comment"># REST API endpoints</span>
+│   ├── services/                <span class="code-comment"># Business logic</span>
+│   ├── models/                  <span class="code-comment"># OOP data models</span>
+│   ├── ml/                      <span class="code-comment"># ML integration</span>
+│   └── utils/                   <span class="code-comment"># Helper utilities</span>
+│
+├── dataset/                     <span class="code-comment"># Data files</span>
+│   ├── raw/                     <span class="code-comment"># Original CSVs</span>
+│   └── processed/               <span class="code-comment"># Cleaned data</span>
+│
+├── notebooks/                   <span class="code-comment"># Jupyter notebooks</span>
+└── scripts/                     <span class="code-comment"># Helper scripts</span></pre>
+                            </div>
+                        </section>
+
+                        <section id="docs">
+                            <h2 class="docs-heading-2">Improving Documentation</h2>
+                            <p class="docs-text">
+                                Great documentation makes great projects. Help us improve by:
+                            </p>
+                            <ul class="docs-list">
+                                <li>Fixing typos or grammatical errors</li>
+                                <li>Adding more code examples</li>
+                                <li>Clarifying confusing sections</li>
+                                <li>Translating to other languages</li>
+                                <li>Adding diagrams or screenshots</li>
+                            </ul>
+                        </section>
+
+                        <section id="design">
+                            <h2 class="docs-heading-2">Design Contributions</h2>
+                            <p class="docs-text">
+                                Designers can help by:
+                            </p>
+                            <ul class="docs-list">
+                                <li>Suggesting UI/UX improvements via GitHub Issues</li>
+                                <li>Creating mockups for new features</li>
+                                <li>Improving accessibility (ARIA labels, color contrast)</li>
+                                <li>Designing illustrations or icons</li>
+                            </ul>
+                        </section>
+
+                        <section>
+                            <h2 class="docs-heading-2">Code of Conduct</h2>
+                            <p class="docs-text">
+                                We are committed to providing a welcoming and inclusive environment. 
+                                All contributors are expected to:
+                            </p>
+                            <ul class="docs-list">
+                                <li>Be respectful and constructive in all communications</li>
+                                <li>Welcome newcomers and help them get started</li>
+                                <li>Accept constructive feedback gracefully</li>
+                                <li>Focus on what's best for the community</li>
+                            </ul>
+
+                            <div class="callout callout-warning">
+                                <div class="callout-icon" id="warnIcon"></div>
+                                <div class="callout-content">
+                                    <div class="callout-title">Zero Tolerance</div>
+                                    <div class="callout-text">
+                                        Harassment, discrimination, or toxic behavior will result in immediate removal 
+                                        from the project.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="docs-cta">
+                            <h3 class="docs-cta-title">Ready to contribute?</h3>
+                            <p class="docs-cta-description">
+                                Head over to GitHub and start exploring the codebase.
+                            </p>
+                            <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary">
+                                <span>Open GitHub Repository</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="/static/js/icons.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/docs.js"></script>
+</body>
+</html>

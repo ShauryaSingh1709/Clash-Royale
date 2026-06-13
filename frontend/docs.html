@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation — RoyaleForge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/docs.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <main>
+        <!-- ── PAGE HEADER ── -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <div class="page-header-badge">
+                        <span id="docsIcon"></span>
+                        <span>Documentation</span>
+                    </div>
+                    <h1 class="page-header-title">
+                        Build with <span class="text-gold">RoyaleForge</span>
+                    </h1>
+                    <p class="page-header-description">
+                        Complete documentation for using RoyaleForge — from quick start guides 
+                        to advanced ML model insights.
+                    </p>
+                    <div class="page-header-meta">
+                        <div class="page-header-meta-item" id="versionMeta"></div>
+                        <div class="page-header-meta-divider"></div>
+                        <div class="page-header-meta-item" id="updatedMeta"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── DOC LAYOUT ── -->
+        <section class="docs-layout">
+            <div class="container">
+                <div class="docs-layout-grid">
+
+                    <!-- SIDEBAR -->
+                    <aside class="docs-sidebar">
+                        <div class="docs-sidebar-section">
+                            <div class="docs-sidebar-heading">Getting Started</div>
+                            <a href="#introduction" class="docs-sidebar-link active">Introduction</a>
+                            <a href="#installation" class="docs-sidebar-link">Installation</a>
+                            <a href="#quick-start" class="docs-sidebar-link">Quick Start</a>
+                        </div>
+                        <div class="docs-sidebar-section">
+                            <div class="docs-sidebar-heading">Core Features</div>
+                            <a href="#deck-analyzer" class="docs-sidebar-link">Deck Analyzer</a>
+                            <a href="#card-explorer" class="docs-sidebar-link">Card Explorer</a>
+                            <a href="#meta-dashboard" class="docs-sidebar-link">Meta Dashboard</a>
+                        </div>
+                        <div class="docs-sidebar-section">
+                            <div class="docs-sidebar-heading">Machine Learning</div>
+                            <a href="#ml-overview" class="docs-sidebar-link">ML Overview</a>
+                            <a href="#predictions" class="docs-sidebar-link">Predictions</a>
+                        </div>
+                        <div class="docs-sidebar-section">
+                            <div class="docs-sidebar-heading">Help</div>
+                            <a href="#faq" class="docs-sidebar-link">FAQ</a>
+                        </div>
+                    </aside>
+
+                    <!-- MAIN CONTENT -->
+                    <div class="docs-main">
+                        <article class="docs-article">
+                            
+                            <section id="introduction">
+                                <h2 class="docs-heading-1">Introduction</h2>
+                                <p class="docs-text">
+                                    Welcome to <strong>RoyaleForge</strong> — the most advanced open-source 
+                                    Clash Royale analytics platform. RoyaleForge combines machine learning, 
+                                    data analysis, and an intuitive interface to help players build winning decks 
+                                    and master the meta.
+                                </p>
+                                <p class="docs-text">
+                                    This documentation covers everything you need to know — from installation 
+                                    to advanced features. Whether you're a casual ladder player or competitive 
+                                    tournament pro, RoyaleForge provides the insights you need to climb higher.
+                                </p>
+
+                                <div class="callout callout-info">
+                                    <div class="callout-icon" id="infoIcon1"></div>
+                                    <div class="callout-content">
+                                        <div class="callout-title">Open Source & Free</div>
+                                        <div class="callout-text">
+                                            RoyaleForge is 100% free and open-source under the MIT license. 
+                                            Contribute on GitHub to help improve the platform.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="installation">
+                                <h2 class="docs-heading-2">Installation</h2>
+                                <p class="docs-text">
+                                    RoyaleForge runs locally on your machine. You'll need Python 3.10 or higher installed.
+                                </p>
+                                
+                                <h3 class="docs-heading-3">Requirements</h3>
+                                <ul class="docs-list">
+                                    <li>Python 3.10 or higher</li>
+                                    <li>pip (Python package manager)</li>
+                                    <li>Git for cloning the repository</li>
+                                    <li>Modern web browser (Chrome, Firefox, Edge)</li>
+                                </ul>
+
+                                <h3 class="docs-heading-3">Clone the Repository</h3>
+                                <div class="code-block">
+                                    <div class="code-block-header">
+                                        <span class="code-block-lang">Terminal</span>
+                                        <button class="code-block-copy" onclick="copyCode(this)">Copy</button>
+                                    </div>
+<pre><span class="code-comment"># Clone the project</span>
+git clone https://github.com/your-username/royaleforge.git
+cd royaleforge
+
+<span class="code-comment"># Install dependencies</span>
+pip install -r requirements.txt</pre>
+                                </div>
+                            </section>
+
+                            <section id="quick-start">
+                                <h2 class="docs-heading-2">Quick Start</h2>
+                                <p class="docs-text">
+                                    Get up and running in less than 2 minutes with these steps.
+                                </p>
+
+                                <div class="tutorial-steps">
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-number">1</div>
+                                        <div class="tutorial-step-content">
+                                            <div class="tutorial-step-title">Generate the Dataset</div>
+                                            <div class="tutorial-step-text">
+                                                Run the dataset generator script to create the necessary data files.
+                                            </div>
+                                            <div class="code-block">
+                                                <div class="code-block-header">
+                                                    <span class="code-block-lang">Terminal</span>
+                                                </div>
+<pre>python scripts/generate_dataset.py</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-number">2</div>
+                                        <div class="tutorial-step-content">
+                                            <div class="tutorial-step-title">Start the Server</div>
+                                            <div class="tutorial-step-text">
+                                                Launch the Flask backend. ML models will load automatically.
+                                            </div>
+                                            <div class="code-block">
+                                                <div class="code-block-header">
+                                                    <span class="code-block-lang">Terminal</span>
+                                                </div>
+<pre>python -m backend.app</pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="tutorial-step">
+                                        <div class="tutorial-step-number">3</div>
+                                        <div class="tutorial-step-content">
+                                            <div class="tutorial-step-title">Open in Browser</div>
+                                            <div class="tutorial-step-text">
+                                                Navigate to <code>http://127.0.0.1:5000</code> in your browser.
+                                                You're ready to analyze decks!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="callout callout-success">
+                                    <div class="callout-icon" id="successIcon"></div>
+                                    <div class="callout-content">
+                                        <div class="callout-title">You're all set!</div>
+                                        <div class="callout-text">
+                                            Visit the <a href="/analyzer">Deck Analyzer</a> to start building your first AI-analyzed deck.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <section id="deck-analyzer">
+                                <h2 class="docs-heading-2">Deck Analyzer</h2>
+                                <p class="docs-text">
+                                    The Deck Analyzer is the heart of RoyaleForge. Build any 8-card deck 
+                                    and receive instant AI-powered analysis.
+                                </p>
+
+                                <h3 class="docs-heading-3">How It Works</h3>
+                                <ul class="docs-list">
+                                    <li>Select 8 cards from the library (97+ available)</li>
+                                    <li>ML models predict your deck's win rate</li>
+                                    <li>Receive a strength score (0-100) with letter grade</li>
+                                    <li>Get classified into one of 5 archetypes</li>
+                                    <li>See suggested card replacements to improve</li>
+                                    <li>Discover similar high-performing decks</li>
+                                </ul>
+                            </section>
+
+                            <section id="card-explorer">
+                                <h2 class="docs-heading-2">Card Explorer</h2>
+                                <p class="docs-text">
+                                    Browse all available Clash Royale cards with detailed statistics. 
+                                    Filter by rarity, type, or sort by win rate and usage.
+                                </p>
+                            </section>
+
+                            <section id="meta-dashboard">
+                                <h2 class="docs-heading-2">Meta Dashboard</h2>
+                                <p class="docs-text">
+                                    Visualize the current meta with four interactive charts powered by Chart.js. 
+                                    Track popular cards, top win rates, archetype distribution, and seasonal trends.
+                                </p>
+                            </section>
+
+                            <section id="ml-overview">
+                                <h2 class="docs-heading-2">ML Models Overview</h2>
+                                <p class="docs-text">
+                                    RoyaleForge uses four production-grade machine learning models trained on 
+                                    real Clash Royale data. All models load into memory at startup for instant predictions.
+                                </p>
+                            </section>
+
+                            <section id="predictions">
+                                <h2 class="docs-heading-2">Making Predictions</h2>
+                                <p class="docs-text">
+                                    All predictions happen server-side in milliseconds. The frontend communicates 
+                                    with the backend via REST API.
+                                </p>
+                            </section>
+
+                            <section id="faq">
+                                <h2 class="docs-heading-2">Frequently Asked Questions</h2>
+                                
+                                <div class="faq-list">
+                                    <div class="faq-item">
+                                        <button class="faq-question" onclick="toggleFaq(this)">
+                                            Is RoyaleForge free to use?
+                                        </button>
+                                        <div class="faq-answer">
+                                            Yes, RoyaleForge is 100% free and open-source under the MIT license. 
+                                            You can use it for personal or commercial purposes without any restrictions.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question" onclick="toggleFaq(this)">
+                                            How accurate are the predictions?
+                                        </button>
+                                        <div class="faq-answer">
+                                            The ML models are trained on a curated dataset and achieve strong baseline accuracy. 
+                                            Predictions improve as the dataset grows. For best results, treat predictions as 
+                                            guidance rather than absolute truth.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question" onclick="toggleFaq(this)">
+                                            Can I use the API in my own project?
+                                        </button>
+                                        <div class="faq-answer">
+                                            Absolutely! The REST API is fully documented in the 
+                                            <a href="/api">API Reference</a>. Use any endpoint freely in your own applications.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question" onclick="toggleFaq(this)">
+                                            Is this officially affiliated with Supercell?
+                                        </button>
+                                        <div class="faq-answer">
+                                            No. RoyaleForge is an independent open-source project and is not affiliated, 
+                                            associated, or endorsed by Supercell. Clash Royale is a trademark of Supercell.
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <button class="faq-question" onclick="toggleFaq(this)">
+                                            How can I contribute?
+                                        </button>
+                                        <div class="faq-answer">
+                                            Visit the <a href="/contributing">Contributing Guide</a> to learn how to 
+                                            fork the repo, make changes, and submit pull requests.
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </article>
+
+                        <div class="docs-cta">
+                            <h3 class="docs-cta-title">Need help or have questions?</h3>
+                            <p class="docs-cta-description">
+                                Open an issue on GitHub or check out the API Reference for technical details.
+                            </p>
+                            <a href="/api" class="btn btn-primary">
+                                <span>View API Reference</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="/static/js/icons.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/docs.js"></script>
+</body>
+</html>

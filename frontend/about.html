@@ -3,97 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📄 About - CR Analyzer</title>
+    <title>About — RoyaleForge</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/about.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <span class="navbar-logo-icon">🏆</span>
-                <span>CR Analyzer</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="/" class="navbar-link">Home</a></li>
-                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
-                <li><a href="/cards" class="navbar-link">Cards</a></li>
-                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
-                <li><a href="/about" class="navbar-link">About</a></li>
-            </ul>
-            <button class="navbar-toggle">☰</button>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main>
-        <section>
-            <div class="container" style="max-width: 900px;">
-                <h1 class="section-title">
-                    ABOUT <span class="gradient-text">CR ANALYZER</span>
-                </h1>
-
-                <div class="glass-card animate-fadeIn">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🎯 Mission</h3>
-                    <p>Clash Royale Deck Analyzer is an open-source platform that helps players master the game through 
-                    data-driven insights and AI-powered analysis. Our goal is to make competitive analytics 
-                    accessible to every player.</p>
+        <!-- ═══════════════════════════════════════════════════════════
+             ABOUT HERO
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-icon">
+                    <img src="https://cdn.royaleapi.com/static/img/cards-150/archer-queen.png" alt="">
                 </div>
+                <div class="section-eyebrow">
+                    <span>Our Story</span>
+                </div>
+                <h1 class="about-hero-title">
+                    Built for <span class="text-gold">champions</span>
+                </h1>
+                <p class="about-hero-description">
+                    RoyaleForge is the most advanced open-source Clash Royale analytics platform, 
+                    crafted to help players master the arena through data-driven insights.
+                </p>
+            </div>
+        </section>
 
-                <div class="glass-card mt-3 animate-fadeIn">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🛠️ Tech Stack</h3>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
-                        <div>
-                            <h4 style="color: var(--color-accent);">Frontend</h4>
-                            <p>HTML5, CSS3, JavaScript, Chart.js</p>
+        <!-- ═══════════════════════════════════════════════════════════
+             STATS BAR
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-stats">
+            <div class="container">
+                <div class="about-stats-grid">
+                    <div class="about-stat-card">
+                        <div class="about-stat-value">97+</div>
+                        <div class="about-stat-label">Cards</div>
+                    </div>
+                    <div class="about-stat-card">
+                        <div class="about-stat-value">500</div>
+                        <div class="about-stat-label">Decks</div>
+                    </div>
+                    <div class="about-stat-card">
+                        <div class="about-stat-value">5K</div>
+                        <div class="about-stat-label">Battles</div>
+                    </div>
+                    <div class="about-stat-card">
+                        <div class="about-stat-value">4</div>
+                        <div class="about-stat-label">AI Models</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             STORY SECTION
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-story">
+            <div class="container">
+                <div class="about-story-grid">
+                    <div class="about-story-text">
+                        <div class="section-eyebrow">
+                            <span>Mission</span>
                         </div>
-                        <div>
-                            <h4 style="color: var(--color-accent);">Backend</h4>
-                            <p>Python, Flask, REST API, OOP</p>
-                        </div>
-                        <div>
-                            <h4 style="color: var(--color-accent);">ML & Data</h4>
-                            <p>Scikit-Learn, Pandas, NumPy, KNN</p>
+                        <h2>Make pro analytics <span class="text-gold">accessible</span></h2>
+                        <p>
+                            We believe every Clash Royale player deserves access to the same advanced analytics 
+                            used by top tournament competitors. RoyaleForge brings cutting-edge machine learning 
+                            to your fingertips — completely free.
+                        </p>
+                        <p>
+                            From casual ladder climbers to esports professionals, our platform provides the insights 
+                            you need to build winning decks, understand the meta, and make smarter strategic decisions.
+                        </p>
+                    </div>
+
+                    <div class="about-story-visual">
+                        <div class="about-card-stack">
+                            <div class="about-stack-card about-stack-card-1">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/sparky.png" alt="">
+                            </div>
+                            <div class="about-stack-card about-stack-card-2">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/royal-champion.png" alt="">
+                            </div>
+                            <div class="about-stack-card about-stack-card-3">
+                                <img src="https://cdn.royaleapi.com/static/img/cards-150/mega-knight.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="glass-card mt-3 animate-fadeIn">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">🤖 ML Models</h3>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
-                            🎯 <strong>Win Rate Predictor</strong> - Random Forest Regressor
-                        </li>
-                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
-                            💪 <strong>Deck Strength Scorer</strong> - Gradient Boosting
-                        </li>
-                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md); margin-bottom: 0.5rem;">
-                            🏷️ <strong>Archetype Classifier</strong> - Random Forest Classifier
-                        </li>
-                        <li style="padding: 0.75rem; background: var(--bg-tertiary); border-radius: var(--radius-md);">
-                            🔍 <strong>Similar Deck Finder</strong> - KNN + Cosine Similarity
-                        </li>
-                    </ul>
+        <!-- ═══════════════════════════════════════════════════════════
+             TECH STACK
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-tech">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span>Technology</span>
+                    </div>
+                    <h2 class="section-title">
+                        Built with <span class="text-gold">modern tools</span>
+                    </h2>
+                    <p class="section-description">
+                        A powerful tech stack chosen for performance, scalability, and developer experience.
+                    </p>
                 </div>
 
-                <div class="glass-card mt-3 animate-fadeIn text-center">
-                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">⭐ Open Source</h3>
-                    <p>This project is open-source and welcomes contributions from the community.</p>
-                    <a href="https://github.com" class="btn btn-primary mt-3" target="_blank">
-                        🔗 View on GitHub
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-card-icon" id="techIcon1"></div>
+                        <h4 class="tech-card-title">Frontend</h4>
+                        <div class="tech-card-items">
+                            <span class="tech-pill">HTML5</span>
+                            <span class="tech-pill">CSS3</span>
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">Chart.js</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-card-icon" id="techIcon2"></div>
+                        <h4 class="tech-card-title">Backend</h4>
+                        <div class="tech-card-items">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Flask</span>
+                            <span class="tech-pill">REST API</span>
+                            <span class="tech-pill">OOP</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-card-icon" id="techIcon3"></div>
+                        <h4 class="tech-card-title">Machine Learning</h4>
+                        <div class="tech-card-items">
+                            <span class="tech-pill">Scikit-Learn</span>
+                            <span class="tech-pill">Pandas</span>
+                            <span class="tech-pill">NumPy</span>
+                            <span class="tech-pill">KNN</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-card">
+                        <div class="tech-card-icon" id="techIcon4"></div>
+                        <h4 class="tech-card-title">Data</h4>
+                        <div class="tech-card-items">
+                            <span class="tech-pill">97 Cards</span>
+                            <span class="tech-pill">500 Decks</span>
+                            <span class="tech-pill">5K Battles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             ML MODELS
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-models">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-eyebrow">
+                        <span>AI Models</span>
+                    </div>
+                    <h2 class="section-title">
+                        Four models, <span class="text-gold">one mission</span>
+                    </h2>
+                    <p class="section-description">
+                        Trained on thousands of battles and decks to deliver accurate predictions.
+                    </p>
+                </div>
+
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-card-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/musketeer.png" alt="">
+                        </div>
+                        <div class="model-card-content">
+                            <div class="model-card-title">Win Rate Predictor</div>
+                            <div class="model-card-tech">Random Forest Regressor</div>
+                            <p class="model-card-description">
+                                Predicts the expected win rate of any deck based on card composition and meta data.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-card-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/pekka.png" alt="">
+                        </div>
+                        <div class="model-card-content">
+                            <div class="model-card-title">Deck Strength Scorer</div>
+                            <div class="model-card-tech">Gradient Boosting</div>
+                            <p class="model-card-description">
+                                Scores deck strength on a 0-100 scale with letter grades from F to S.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-card-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/hog-rider.png" alt="">
+                        </div>
+                        <div class="model-card-content">
+                            <div class="model-card-title">Archetype Classifier</div>
+                            <div class="model-card-tech">Random Forest Classifier</div>
+                            <p class="model-card-description">
+                                Classifies decks into archetypes: Beatdown, Control, Cycle, Siege, or Hog Cycle.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-card-icon">
+                            <img src="https://cdn.royaleapi.com/static/img/cards-150/electro-wizard.png" alt="">
+                        </div>
+                        <div class="model-card-content">
+                            <div class="model-card-title">Similar Deck Finder</div>
+                            <div class="model-card-tech">KNN + Cosine Similarity</div>
+                            <p class="model-card-description">
+                                Finds the most similar decks from our database using vector similarity algorithms.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════
+             CTA
+             ═══════════════════════════════════════════════════════════ -->
+        <section class="about-cta">
+            <div class="container">
+                <div class="about-cta-card">
+                    <div class="section-eyebrow">
+                        <span>Open Source</span>
+                    </div>
+                    <h2 class="about-cta-title">
+                        Join the <span class="text-gold">community</span>
+                    </h2>
+                    <p class="about-cta-description">
+                        RoyaleForge is 100% open-source. Contribute, fork, or star us on GitHub.
+                    </p>
+                    <a href="https://github.com" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                        <span>View on GitHub</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">Made with ❤️ | Powered by ML</p>
-        </div>
-    </footer>
+    <footer class="footer"></footer>
 
+    <script src="/static/js/icons.js"></script>
     <script src="/static/js/api.js"></script>
     <script src="/static/js/utils.js"></script>
     <script src="/static/js/navbar.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const icons = ['cards', 'sword', 'chart', 'sparkles'];
+            icons.forEach((icon, i) => {
+                const el = document.getElementById(`techIcon${i+1}`);
+                if (el && Icons[icon]) el.innerHTML = Icons[icon];
+            });
+        });
+    </script>
 </body>
 </html>

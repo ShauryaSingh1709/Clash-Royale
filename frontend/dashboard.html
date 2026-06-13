@@ -3,61 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>📊 Dashboard - CR Analyzer</title>
+    <title>Dashboard | CR Analyzer</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/components.css">
     <link rel="stylesheet" href="/static/css/dashboard.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <span class="navbar-logo-icon">🏆</span>
-                <span>CR Analyzer</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="/" class="navbar-link">Home</a></li>
-                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
-                <li><a href="/cards" class="navbar-link">Cards</a></li>
-                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
-                <li><a href="/about" class="navbar-link">About</a></li>
-            </ul>
-            <button class="navbar-toggle">☰</button>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main>
         <section>
             <div class="container">
+                <div class="section-eyebrow" style="margin: 0 auto; display: flex; justify-content: center; width: fit-content;">
+                    <span>Meta Insights</span>
+                </div>
                 <h1 class="section-title">
-                    META <span class="gradient-text">DASHBOARD</span>
+                    META <span class="text-gradient-gold">DASHBOARD</span>
                 </h1>
+                <div class="divider-gold"></div>
                 <p class="section-subtitle">
-                    Real-time analytics and game-wide statistics
+                    Real-time analytics and game-wide statistics from the arena
                 </p>
 
                 <div class="dashboard-grid">
                     <div class="chart-card glass-card">
-                        <h3>🔥 Top 10 Most Used Cards</h3>
+                        <h3>Most Used Cards</h3>
                         <canvas id="popularChart"></canvas>
                     </div>
                     <div class="chart-card glass-card">
-                        <h3>🏆 Top 10 Win Rate Cards</h3>
+                        <h3>Top Win Rate Cards</h3>
                         <canvas id="winRateChart"></canvas>
                     </div>
                     <div class="chart-card glass-card">
-                        <h3>🎯 Archetype Distribution</h3>
+                        <h3>Archetype Distribution</h3>
                         <canvas id="archetypeChart"></canvas>
                     </div>
                     <div class="chart-card glass-card">
-                        <h3>📈 Meta Trends</h3>
+                        <h3>Seasonal Trends</h3>
                         <canvas id="trendsChart"></canvas>
                     </div>
                 </div>
 
                 <div class="top-decks-section glass-card">
-                    <h3>🏆 Top Performing Decks</h3>
+                    <h3>Top Performing Decks</h3>
                     <div class="top-decks-list" id="topDecksList">
                         <div class="spinner"></div>
                     </div>
@@ -67,11 +56,68 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">Made with ❤️ | Powered by ML</p>
-        </div>
-    </footer>
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-mark" id="footerLogo"></div>
+                    <div class="footer-logo-text">RoyaleForge</div>
+                </div>
+                <p class="footer-tagline">
+                    Professional Clash Royale analytics powered by Machine Learning.
+                    Built for players who want to dominate the arena.
+                </p>
+            </div>
 
+            <div class="footer-links">
+                <div class="footer-link-group">
+                    <h5>Platform</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="/analyzer">Deck Analyzer</a></li>
+                        <li><a href="/cards">Card Explorer</a></li>
+                        <li><a href="/dashboard">Meta Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group">
+                    <h5>Resources</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group">
+                    <h5>Community</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Contributing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2026 RoyaleForge. All rights reserved.
+            </div>
+            <div class="footer-credit">
+                Crafted with precision by
+                <span class="footer-credit-name">Shaurya</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Inject footer logo icon
+    document.addEventListener('DOMContentLoaded', () => {
+        const logo = document.getElementById('footerLogo');
+        if (logo && typeof Icons !== 'undefined') logo.innerHTML = Icons.crown;
+    });
+</script>
+
+    <script src="/static/js/icons.js"></script>
     <script src="/static/js/api.js"></script>
     <script src="/static/js/utils.js"></script>
     <script src="/static/js/navbar.js"></script>

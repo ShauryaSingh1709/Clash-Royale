@@ -3,41 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🃏 Cards - CR Analyzer</title>
+    <title>Cards | CR Analyzer</title>
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="stylesheet" href="/static/css/components.css">
     <link rel="stylesheet" href="/static/css/cards.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="/" class="navbar-logo">
-                <span class="navbar-logo-icon">🏆</span>
-                <span>CR Analyzer</span>
-            </a>
-            <ul class="navbar-menu">
-                <li><a href="/" class="navbar-link">Home</a></li>
-                <li><a href="/analyzer" class="navbar-link">Analyzer</a></li>
-                <li><a href="/cards" class="navbar-link">Cards</a></li>
-                <li><a href="/dashboard" class="navbar-link">Dashboard</a></li>
-                <li><a href="/about" class="navbar-link">About</a></li>
-            </ul>
-            <button class="navbar-toggle">☰</button>
-        </div>
-    </nav>
+    <nav class="navbar"></nav>
 
     <main>
         <section>
             <div class="container">
+                <div class="section-eyebrow" style="margin: 0 auto; display: flex; justify-content: center; width: fit-content;">
+                    <span>Arsenal</span>
+                </div>
                 <h1 class="section-title">
-                    CARD <span class="gradient-text">EXPLORER</span>
+                    CARD <span class="text-gradient-gold">EXPLORER</span>
                 </h1>
+                <div class="divider-gold"></div>
                 <p class="section-subtitle">
-                    Browse all cards with detailed statistics
+                    Browse all cards with detailed statistics and meta insights
                 </p>
 
                 <div class="cards-controls glass-card">
-                    <input type="text" class="input" id="searchInput" placeholder="🔍 Search cards...">
+                    <div class="input-with-icon">
+                        <input type="text" class="input" id="searchInput" placeholder="Search cards...">
+                    </div>
                     <select class="input" id="rarityFilter">
                         <option value="">All Rarities</option>
                         <option value="Common">Common</option>
@@ -48,9 +39,9 @@
                     </select>
                     <select class="input" id="typeFilter">
                         <option value="">All Types</option>
-                        <option value="Troop">⚔️ Troop</option>
-                        <option value="Spell">✨ Spell</option>
-                        <option value="Building">🏰 Building</option>
+                        <option value="Troop">Troop</option>
+                        <option value="Spell">Spell</option>
+                        <option value="Building">Building</option>
                     </select>
                     <select class="input" id="sortFilter">
                         <option value="name">Sort: Name</option>
@@ -74,11 +65,68 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">Made with ❤️ | Powered by ML</p>
-        </div>
-    </footer>
+    <div class="footer-content">
+        <div class="footer-top">
+            <div class="footer-brand-section">
+                <div class="footer-logo">
+                    <div class="footer-logo-mark" id="footerLogo"></div>
+                    <div class="footer-logo-text">RoyaleForge</div>
+                </div>
+                <p class="footer-tagline">
+                    Professional Clash Royale analytics powered by Machine Learning.
+                    Built for players who want to dominate the arena.
+                </p>
+            </div>
 
+            <div class="footer-links">
+                <div class="footer-link-group">
+                    <h5>Platform</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="/analyzer">Deck Analyzer</a></li>
+                        <li><a href="/cards">Card Explorer</a></li>
+                        <li><a href="/dashboard">Meta Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group">
+                    <h5>Resources</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group">
+                    <h5>Community</h5>
+                    <ul class="footer-link-list">
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Contributing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                © 2026 RoyaleForge. All rights reserved.
+            </div>
+            <div class="footer-credit">
+                Crafted with precision by
+                <span class="footer-credit-name">Shaurya</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Inject footer logo icon
+    document.addEventListener('DOMContentLoaded', () => {
+        const logo = document.getElementById('footerLogo');
+        if (logo && typeof Icons !== 'undefined') logo.innerHTML = Icons.crown;
+    });
+</script>
+
+    <script src="/static/js/icons.js"></script>
     <script src="/static/js/api.js"></script>
     <script src="/static/js/utils.js"></script>
     <script src="/static/js/navbar.js"></script>

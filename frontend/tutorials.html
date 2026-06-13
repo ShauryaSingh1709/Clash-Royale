@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials — RoyaleForge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/components.css">
+    <link rel="stylesheet" href="/static/css/docs.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <div class="page-header-badge">
+                        <span id="tutIcon"></span>
+                        <span>Tutorials</span>
+                    </div>
+                    <h1 class="page-header-title">
+                        Learn by <span class="text-gold">doing</span>
+                    </h1>
+                    <p class="page-header-description">
+                        Practical, hands-on tutorials to help you master RoyaleForge 
+                        and become a better Clash Royale player.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="docs-layout">
+            <div class="container">
+                <div class="docs-main" style="max-width: 900px; margin: 0 auto;">
+                    
+                    <div class="doc-card-grid">
+                        <a href="#beginner" class="doc-card">
+                            <div class="doc-card-icon" id="iconBeginner"></div>
+                            <div class="doc-card-title">Build Your First Deck</div>
+                            <div class="doc-card-description">
+                                Step-by-step guide to building a competitive deck using the Analyzer tool.
+                            </div>
+                            <div class="doc-card-link">
+                                Start tutorial <span id="arr1"></span>
+                            </div>
+                        </a>
+
+                        <a href="#meta" class="doc-card">
+                            <div class="doc-card-icon" id="iconMeta"></div>
+                            <div class="doc-card-title">Understanding the Meta</div>
+                            <div class="doc-card-description">
+                                Learn how to read dashboard data and stay ahead of meta shifts.
+                            </div>
+                            <div class="doc-card-link">
+                                Start tutorial <span id="arr2"></span>
+                            </div>
+                        </a>
+
+                        <a href="#api" class="doc-card">
+                            <div class="doc-card-icon" id="iconApiUse"></div>
+                            <div class="doc-card-title">Using the API</div>
+                            <div class="doc-card-description">
+                                Integrate RoyaleForge into your own projects with our REST API.
+                            </div>
+                            <div class="doc-card-link">
+                                Start tutorial <span id="arr3"></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <article class="docs-article" style="margin-top: var(--space-12);">
+                        
+                        <section id="beginner">
+                            <h2 class="docs-heading-1">Building Your First Winning Deck</h2>
+                            <p class="docs-text">
+                                This tutorial walks you through building a competitive deck from scratch 
+                                using RoyaleForge's AI-powered Analyzer.
+                            </p>
+
+                            <div class="tutorial-steps">
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">1</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Choose Your Win Condition</div>
+                                        <div class="tutorial-step-text">
+                                            Start with a strong win condition card. Popular choices include 
+                                            <code>Hog Rider</code>, <code>Giant</code>, <code>Balloon</code>, or <code>X-Bow</code>. 
+                                            This card defines your deck's strategy.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">2</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Add Support Troops</div>
+                                        <div class="tutorial-step-text">
+                                            Add 2-3 support troops that complement your win condition. 
+                                            For Hog Rider, consider <code>Musketeer</code>, <code>Ice Golem</code>, 
+                                            or <code>Valkyrie</code>.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">3</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Include Defense</div>
+                                        <div class="tutorial-step-text">
+                                            Add defensive cards or buildings. <code>Cannon</code>, <code>Tesla</code>, 
+                                            or <code>Inferno Tower</code> are great defensive options.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">4</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Pick Your Spells</div>
+                                        <div class="tutorial-step-text">
+                                            Every deck needs 2-3 spells. Combine a big spell (<code>Fireball</code>, 
+                                            <code>Lightning</code>) with a small spell (<code>The Log</code>, <code>Zap</code>) 
+                                            for versatility.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">5</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Add a Cycle Card</div>
+                                        <div class="tutorial-step-text">
+                                            Include a cheap cycle card like <code>Skeletons</code>, <code>Ice Spirit</code>, 
+                                            or <code>Goblins</code> to maintain elixir advantage.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">6</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Analyze & Optimize</div>
+                                        <div class="tutorial-step-text">
+                                            Click "Analyze Deck" to get AI predictions. Review the strengths and 
+                                            weaknesses, then apply suggested card replacements to improve your deck.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="callout callout-success">
+                                <div class="callout-icon" id="sucIcon"></div>
+                                <div class="callout-content">
+                                    <div class="callout-title">Pro Tip</div>
+                                    <div class="callout-text">
+                                        Aim for an average elixir cost between 3.0 and 4.0 for a balanced deck. 
+                                        Lower for cycle decks, higher for beatdown.
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="meta">
+                            <h2 class="docs-heading-2">Reading the Meta Dashboard</h2>
+                            <p class="docs-text">
+                                The Meta Dashboard reveals what's working in the current game state. 
+                                Use these insights to make smarter deck choices.
+                            </p>
+
+                            <div class="tutorial-steps">
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">1</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Identify Top Cards</div>
+                                        <div class="tutorial-step-text">
+                                            Check the "Most Used Cards" chart to see what's dominant. 
+                                            Either include these cards or build counters to them.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">2</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Find Hidden Gems</div>
+                                        <div class="tutorial-step-text">
+                                            Cards with high win rates but low usage are underrated. 
+                                            They can give you a competitive edge against unprepared opponents.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tutorial-step">
+                                    <div class="tutorial-step-number">3</div>
+                                    <div class="tutorial-step-content">
+                                        <div class="tutorial-step-title">Study Archetypes</div>
+                                        <div class="tutorial-step-text">
+                                            The archetype distribution shows what styles are popular. 
+                                            Build a deck that counters the dominant archetype.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="api">
+                            <h2 class="docs-heading-2">Using the API in Your Project</h2>
+                            <p class="docs-text">
+                                Integrate RoyaleForge into your own application using the REST API. 
+                                Here's how to analyze a deck from JavaScript.
+                            </p>
+
+                            <h3 class="docs-heading-3">JavaScript Example</h3>
+                            <div class="code-block">
+                                <div class="code-block-header">
+                                    <span class="code-block-lang">JavaScript</span>
+                                    <button class="code-block-copy" onclick="copyCode(this)">Copy</button>
+                                </div>
+<pre><span class="code-comment">// Analyze a deck using the RoyaleForge API</span>
+<span class="code-keyword">async function</span> <span class="code-function">analyzeDeck</span>(cards) {
+    <span class="code-keyword">const</span> response = <span class="code-keyword">await</span> <span class="code-function">fetch</span>(
+        <span class="code-string">'http://127.0.0.1:5000/api/v1/decks/analyze'</span>,
+        {
+            method: <span class="code-string">'POST'</span>,
+            headers: { <span class="code-string">'Content-Type'</span>: <span class="code-string">'application/json'</span> },
+            body: <span class="code-function">JSON.stringify</span>({ cards })
+        }
+    );
+    <span class="code-keyword">return await</span> response.<span class="code-function">json</span>();
+}
+
+<span class="code-comment">// Example usage</span>
+<span class="code-keyword">const</span> myDeck = [
+    <span class="code-string">'Hog Rider'</span>, <span class="code-string">'Musketeer'</span>, <span class="code-string">'Ice Spirit'</span>, <span class="code-string">'Skeletons'</span>,
+    <span class="code-string">'Fireball'</span>, <span class="code-string">'The Log'</span>, <span class="code-string">'Cannon'</span>, <span class="code-string">'Ice Golem'</span>
+];
+
+<span class="code-function">analyzeDeck</span>(myDeck).<span class="code-function">then</span>(result => {
+    <span class="code-function">console.log</span>(<span class="code-string">'Win Rate:'</span>, result.scoring.win_rate);
+    <span class="code-function">console.log</span>(<span class="code-string">'Grade:'</span>, result.scoring.strength.grade);
+});</pre>
+                            </div>
+
+                            <h3 class="docs-heading-3">Python Example</h3>
+                            <div class="code-block">
+                                <div class="code-block-header">
+                                    <span class="code-block-lang">Python</span>
+                                    <button class="code-block-copy" onclick="copyCode(this)">Copy</button>
+                                </div>
+<pre><span class="code-keyword">import</span> requests
+
+<span class="code-keyword">def</span> <span class="code-function">analyze_deck</span>(cards):
+    response = requests.<span class="code-function">post</span>(
+        <span class="code-string">'http://127.0.0.1:5000/api/v1/decks/analyze'</span>,
+        json={<span class="code-string">'cards'</span>: cards}
+    )
+    <span class="code-keyword">return</span> response.<span class="code-function">json</span>()
+
+deck = [
+    <span class="code-string">'Hog Rider'</span>, <span class="code-string">'Musketeer'</span>, <span class="code-string">'Ice Spirit'</span>, <span class="code-string">'Skeletons'</span>,
+    <span class="code-string">'Fireball'</span>, <span class="code-string">'The Log'</span>, <span class="code-string">'Cannon'</span>, <span class="code-string">'Ice Golem'</span>
+]
+
+result = <span class="code-function">analyze_deck</span>(deck)
+<span class="code-function">print</span>(<span class="code-string">f"Win Rate: {result['scoring']['win_rate']}"</span>)</pre>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="/static/js/icons.js"></script>
+    <script src="/static/js/api.js"></script>
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/docs.js"></script>
+</body>
+</html>

@@ -85,6 +85,35 @@ def create_app() -> Flask:
     def about():
         """Serve about page."""
         return send_from_directory(FRONTEND_DIR, "about.html")
+    
+    @app.route("/docs")
+    def docs():
+        return send_from_directory(FRONTEND_DIR, "docs.html")
+
+    @app.route("/api-reference")
+    @app.route("/api")
+    def api_reference():
+        return send_from_directory(FRONTEND_DIR, "api.html")
+
+    @app.route("/tutorials")
+    def tutorials():
+        return send_from_directory(FRONTEND_DIR, "tutorials.html")
+
+    @app.route("/contributing")
+    def contributing():
+        return send_from_directory(FRONTEND_DIR, "contributing.html")
+
+    @app.route("/bugs")
+    def bugs():
+        return send_from_directory(FRONTEND_DIR, "bugs.html")
+    
+    @app.route("/privacy")
+    def privacy():
+        return send_from_directory(FRONTEND_DIR, "privacy.html")
+
+    @app.route("/terms")
+    def terms():
+        return send_from_directory(FRONTEND_DIR, "terms.html")
 
     # ── API Health Check ─────────────────────────────────
     @app.route(f"{api_prefix}/health")

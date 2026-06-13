@@ -1,5 +1,5 @@
 /* ==========================================================================
-   🏠 HOME PAGE - Load stats from API
+   🏠 HOME PAGE - Animate Stats
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -12,10 +12,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         animateValue('statBattles', 0, 5000, 1500);
     } catch (error) {
         console.error('Failed to load stats:', error);
-        // Fallback values
-        document.getElementById('statCards').textContent = '97';
-        document.getElementById('statDecks').textContent = '500';
-        document.getElementById('statBattles').textContent = '5K';
     }
 });
 
@@ -29,7 +25,7 @@ function animateValue(id, start, end, duration) {
         const progress = Math.min(elapsed / duration, 1);
         const easeOut = 1 - Math.pow(1 - progress, 3);
         const current = Math.floor(start + (end - start) * easeOut);
-        element.textContent = Utils.formatNumber(current);
+        element.textContent = current >= 1000 ? (current / 1000).toFixed(1) + 'K' : current;
         if (progress < 1) requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
