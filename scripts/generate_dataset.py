@@ -4,7 +4,7 @@
 ==========================================================================
 
 Uses REAL Clash Royale meta decks from real_meta_database.py
-Combined with full cards data for complete dataset generation.
+Generates UNIQUE decks with proper names, tiers, and sources.
 """
 
 import pandas as pd
@@ -21,7 +21,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ============================================================================
-# 🃏 ALL CARDS DATA (Complete - 97 cards)
+# 🃏 ALL CARDS DATA (Complete - 98 cards)
 # ============================================================================
 
 CARDS_DATA = [
@@ -138,15 +138,15 @@ CARDS_DATA = [
 # ============================================================================
 
 def generate_cards_csv():
-    """Generate cards.csv with realistic statistics."""
+    """Generate cards.csv with realistic statistics based on meta appearances."""
     print("📦 Generating cards.csv...")
     
     cards = []
     for idx, (name, elixir, rarity, ctype, arena, dmg, hp, archetype) in enumerate(CARDS_DATA, 1):
-        # Determine win/usage based on how often card appears in real meta
+        # Count appearances in real meta decks
         card_appearances = sum(1 for d in REAL_META_DECKS if name in d["cards"])
         
-        # More popular cards = higher usage and slightly better win rate
+        # Smart stats: popular cards have higher win/usage rates
         if card_appearances >= 10:
             win_rate = round(np.random.uniform(52, 58), 2)
             usage_rate = round(np.random.uniform(15, 25), 2)
@@ -184,42 +184,47 @@ def generate_cards_csv():
 
 
 def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
-    """Generate decks from REAL meta templates with variations."""
-    print(f"🃏 Generating {target_count} decks from REAL meta templates...")
+    """Generate UNIQUE decks from REAL meta templates with proper names."""
+    print(f"🃏 Generating decks from REAL meta templates...")
 
     card_dict = cards_df.set_index('name').to_dict('index')
     decks = []
     deck_id = 1
 
-    # Calculate how many variations per template to reach target
-    multiplier = max(1, target_count // len(REAL_META_DECKS))
+    # Each real deck gets variations
+    variations_per_deck = max(1, target_count // len(REAL_META_DECKS))
+    
+    skipped = []
     
     for template in REAL_META_DECKS:
-        for variation in range(multiplier):
-            cards = template["cards"]
-            
-            # Validate all cards exist in our database
-            valid_cards = [c for c in cards if c in card_dict]
-            if len(valid_cards) < 8:
-                print(f"⚠️  Skipping '{template['name']}' - missing cards: {[c for c in cards if c not in card_dict]}")
-                continue
-            
-            # Calculate REAL average elixir from card data
-            avg_elixir = round(
-                sum(card_dict[c]['elixir_cost'] for c in valid_cards[:8]) / 8, 2
-            )
-            
-            # Win rate with small variation around base
+        cards = template["cards"]
+        
+        # Validate all cards exist
+        valid_cards = [c for c in cards if c in card_dict]
+        if len(valid_cards) < 8:
+            missing = [c for c in cards if c not in card_dict]
+            skipped.append(f"{template['name']}: missing {missing}")
+            continue
+        
+        # Calculate REAL average elixir
+        avg_elixir = round(
+            sum(card_dict[c]['elixir_cost'] for c in valid_cards[:8]) / 8, 2
+        )
+        
+        # Add multiple variations
+        for variation in range(variations_per_deck):
             base_wr = template["win_rate"]
             win_rate = round(max(35, min(70, base_wr + np.random.uniform(-1.5, 1.5))), 2)
             
-            # Usage with variation
             base_usage = template["usage_rate"]
             usage_count = max(0, int(base_usage * 100 + np.random.uniform(-50, 100)))
             total_battles = max(1, int(usage_count * np.random.uniform(3, 8)))
             
             decks.append({
                 "deck_id": deck_id,
+                "deck_name": template["name"],            # ✨ Real deck name
+                "tier": template["tier"],                  # ✨ S/A/B/C tier
+                "source": template.get("source", ""),      # ✨ Source info
                 "card_1": valid_cards[0],
                 "card_2": valid_cards[1],
                 "card_3": valid_cards[2],
@@ -241,9 +246,12 @@ def generate_decks_csv(cards_df: pd.DataFrame, target_count: int = 500):
         if len(decks) >= target_count:
             break
     
+    if skipped:
+        print(f"⚠️  Skipped {len(skipped)} decks with missing cards")
+    
     df = pd.DataFrame(decks)
     df.to_csv(OUTPUT_DIR / "decks.csv", index=False)
-    print(f"✅ {len(df)} REAL meta decks saved\n")
+    print(f"✅ {len(df)} decks saved ({len(REAL_META_DECKS) - len(skipped)} unique templates)\n")
     return df
 
 
@@ -253,19 +261,16 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
     
     battles = []
     for battle_id in range(1, num_battles + 1):
-        # Pick two real decks
         d1 = decks_df.sample(1).iloc[0]
         d2 = decks_df.sample(1).iloc[0]
         
         p1_deck = [d1[f'card_{i}'] for i in range(1, 9)]
         p2_deck = [d2[f'card_{i}'] for i in range(1, 9)]
         
-        # Realistic trophy ranges
         trophy_base = random.choice([4500, 5500, 6500, 7500])
         p1_trophies = trophy_base + np.random.randint(-200, 200)
         p2_trophies = trophy_base + np.random.randint(-200, 200)
         
-        # Crowns based on actual win rate difference
         wr_diff = d1['win_rate'] - d2['win_rate']
         if wr_diff > 4:
             p1_crowns = np.random.choice([2, 3], p=[0.3, 0.7])
@@ -306,7 +311,7 @@ def generate_battles_csv(cards_df: pd.DataFrame, decks_df: pd.DataFrame, num_bat
 
 
 def generate_meta_stats_csv(cards_df: pd.DataFrame):
-    """Generate meta stats with realistic patterns."""
+    """Generate meta stats with realistic seasonal trends."""
     print("📊 Generating meta_stats.csv...")
     
     seasons = ["Season_45", "Season_46", "Season_47", "Season_48", "Season_49"]
@@ -317,14 +322,12 @@ def generate_meta_stats_csv(cards_df: pd.DataFrame):
         base_wr = float(row['win_rate'])
         base_usage = float(row['usage_rate'])
         
-        # Trend pattern: most cards stable, some rising/falling
         primary_trend = random.choices(
             ["Stable", "Rising", "Falling"],
             weights=[0.5, 0.25, 0.25]
         )[0]
         
         for i, season in enumerate(seasons):
-            # Apply trend over time
             if primary_trend == "Rising":
                 wr_adj = i * 0.5
                 usage_adj = i * 0.8
@@ -359,26 +362,19 @@ def main():
     print("🏆 ROYALEFORGE - REAL META DATA GENERATOR")
     print("=" * 60 + "\n")
     
-    print(f"📚 Loaded {len(REAL_META_DECKS)} REAL meta decks from database\n")
+    print(f"📚 Loaded {len(REAL_META_DECKS)} REAL meta decks\n")
     
-    # Generate all datasets
     cards_df = generate_cards_csv()
     decks_df = generate_decks_csv(cards_df, target_count=500)
     battles_df = generate_battles_csv(cards_df, decks_df, num_battles=5000)
     meta_df = generate_meta_stats_csv(cards_df)
     
-    # Summary
     print("=" * 60)
-    print("🎉 DATASETS GENERATED WITH REAL META DECKS!")
+    print("🎉 DATASETS GENERATED!")
     print("=" * 60)
-    print(f"\n📁 Files saved in: {OUTPUT_DIR.absolute()}\n")
-    print("✨ Real Meta Source:")
-    print(f"   • {len(REAL_META_DECKS)} curated competitive decks")
-    print(f"   • 4 tiers (S, A, B, C)")
-    print(f"   • 4 archetypes (Beatdown, Control, Cycle, Siege)")
     print(f"\n📊 Generated:")
     print(f"   • {len(cards_df)} cards")
-    print(f"   • {len(decks_df)} decks (from real templates)")
+    print(f"   • {len(decks_df)} decks (with names, tiers, sources)")
     print(f"   • {len(battles_df)} battles")
     print(f"   • {len(meta_df)} meta records")
     print(f"\n🚀 Next Steps:")
@@ -386,7 +382,6 @@ def main():
     print(f"   2. Re-run notebook 04 (ML Training)")
     print(f"   3. Re-run notebook 05 (Recommendations)")
     print(f"   4. Restart Flask server")
-    print(f"   5. Check dashboard → REAL meta decks!")
 
 
 if __name__ == "__main__":

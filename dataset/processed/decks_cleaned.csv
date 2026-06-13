@@ -1,481 +1,481 @@
-deck_id,card_1,card_2,card_3,card_4,card_5,card_6,card_7,card_8,avg_elixir,archetype,win_rate,usage_count,total_battles,quality
-1,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.48,1324,9844,Good
-2,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.64,1286,4399,Good
-3,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.78,1324,7986,Good
-4,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.33,1205,7612,Good
-5,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.32,1214,6972,Good
-6,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.08,1027,4232,Good
-7,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.14,965,4465,Good
-8,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.24,1027,7441,Good
-9,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,57.97,1015,3520,Good
-10,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,57.1,969,4089,Good
-11,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,59.72,768,5729,Good
-12,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.69,829,4570,Good
-13,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.53,783,3113,Good
-14,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.97,752,2347,Good
-15,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.74,736,5668,Good
-16,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,56.76,1207,5854,Good
-17,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,53.95,1209,6215,Good
-18,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,56.8,1214,8819,Good
-19,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,54.78,1127,8177,Good
-20,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,54.85,1095,6333,Good
-21,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,57.51,894,5230,Good
-22,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,54.99,882,7012,Good
-23,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,55.12,867,6404,Good
-24,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,56.92,894,5822,Good
-25,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,55.78,834,5877,Good
-26,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,56.83,750,5674,Good
-27,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,55.93,695,4859,Good
-28,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,56.35,725,5059,Good
-29,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,57.07,670,3268,Good
-30,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,54.68,706,2244,Good
-31,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,53.7,441,1954,Good
-32,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.07,364,1159,Good
-33,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.77,414,1505,Good
-34,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,53.87,475,1937,Good
-35,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.17,372,1212,Good
-36,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.29,411,2542,Good
-37,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.88,476,2656,Good
-38,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,53.67,449,1955,Good
-39,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.02,341,1066,Good
-40,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,55.59,455,2948,Good
-41,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.83,495,1872,Good
-42,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.35,552,3628,Good
-43,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,55.58,511,3972,Good
-44,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,55.81,553,3350,Good
-45,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.86,507,2423,Good
-46,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,55.47,532,1904,Good
-47,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,53.34,536,3900,Good
-48,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,55.31,601,2096,Good
-49,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,54.67,601,2323,Good
-50,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,54.5,589,3580,Good
-51,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.01,596,2904,Good
-52,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,53.98,665,4842,Good
-53,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.08,614,2058,Good
-54,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.03,593,3515,Good
-55,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.92,676,3340,Good
-56,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,54.93,338,1936,Good
-57,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.82,327,2552,Good
-58,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.72,299,1000,Good
-59,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,53.3,272,944,Good
-60,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.05,280,1286,Good
-61,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,55.13,513,3628,Good
-62,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,53.45,527,3416,Good
-63,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,54.49,641,4278,Good
-64,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,55.01,552,2145,Good
-65,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,54.85,631,5018,Good
-66,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.54,345,2374,Good
-67,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.32,429,3128,Good
-68,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.59,402,2722,Good
-69,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,51.61,425,2348,Good
-70,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,53.78,338,2527,Good
-71,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,53.57,421,3168,Good
-72,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,52.67,467,3619,Good
-73,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,55.25,506,3116,Good
-74,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,53.75,463,2149,Good
-75,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,54.42,532,3701,Good
-76,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,54.07,443,2424,Good
-77,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.87,512,2666,Good
-78,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,54.36,482,1728,Good
-79,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.13,544,3313,Good
-80,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.0,442,2875,Good
-81,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,50.42,353,2305,Good
-82,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,50.44,242,1919,Good
-83,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.32,285,2013,Good
-84,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.04,377,2551,Good
-85,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.33,242,1666,Good
-86,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.58,373,2809,Good
-87,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,50.23,383,1170,Good
-88,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.31,318,1142,Good
-89,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,50.25,407,2739,Good
-90,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.65,454,2212,Good
-91,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,50.16,320,1317,Good
-92,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.19,191,1499,Good
-93,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,49.43,323,1821,Average
-94,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.28,201,1159,Good
-95,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.21,268,1647,Good
-96,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.89,438,2688,Good
-97,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.55,505,1629,Good
-98,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,51.64,512,3815,Good
-99,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.17,463,2031,Good
-100,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,51.36,439,2092,Good
-101,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,51.45,171,1346,Good
-102,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,52.66,264,1499,Good
-103,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,50.63,282,1811,Good
-104,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,50.19,296,2105,Good
-105,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,52.55,268,1625,Good
-106,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,50.15,269,1971,Good
-107,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,49.04,133,649,Average
-108,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,51.33,278,1043,Good
-109,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,50.68,187,1467,Good
-110,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,51.43,255,1362,Good
-111,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,51.84,251,823,Good
-112,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.19,331,2647,Good
-113,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.59,293,2005,Good
-114,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.43,337,1427,Good
-115,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,51.95,229,1779,Good
-116,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.22,214,1360,Good
-117,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.25,233,831,Good
-118,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.41,258,1770,Good
-119,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,50.96,307,1768,Good
-120,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.08,311,1560,Good
-121,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,50.5,144,975,Good
-122,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,51.96,245,995,Good
-123,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,50.51,142,674,Good
-124,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,51.87,198,1027,Good
-125,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,52.81,192,1069,Good
-126,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.55,209,1277,Good
-127,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.79,292,1090,Good
-128,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.98,223,956,Good
-129,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,50.58,297,1622,Good
-130,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,50.19,245,1029,Good
-131,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.03,239,870,Good
-132,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.26,240,1489,Good
-133,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.35,271,2028,Good
-134,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,51.22,320,1235,Good
-135,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.38,226,868,Good
-136,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.84,286,984,Good
-137,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.36,329,1326,Good
-138,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,52.09,335,2161,Good
-139,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.12,379,2326,Good
-140,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.25,391,2973,Good
-141,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,50.48,281,1975,Good
-142,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,52.54,267,1080,Good
-143,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,51.41,312,1900,Good
-144,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,51.41,309,2081,Good
-145,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,50.41,277,1818,Good
-146,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,54.59,486,2751,Good
-147,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.22,477,2701,Good
-148,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.63,450,2198,Good
-149,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,51.96,458,1858,Good
-150,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.88,427,3182,Good
-151,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.38,271,1882,Good
-152,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.1,183,1040,Good
-153,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.36,281,1449,Good
-154,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,49.98,212,1020,Average
-155,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.54,255,1219,Good
-156,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,52.06,280,1172,Good
-157,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.41,212,896,Average
-158,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.58,217,960,Average
-159,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.62,324,1101,Average
-160,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,50.67,251,1985,Good
-161,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,49.04,169,1326,Average
-162,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,51.3,232,995,Good
-163,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,49.21,210,1605,Average
-164,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,50.37,195,857,Good
-165,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,51.01,138,637,Good
-166,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.48,166,699,Average
-167,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,47.54,181,804,Average
-168,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.94,113,610,Average
-169,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.8,97,454,Average
-170,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,47.6,99,787,Average
-171,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,48.67,191,816,Average
-172,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,49.74,184,1099,Average
-173,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,49.11,131,621,Average
-174,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,50.49,194,1518,Good
-175,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,48.07,179,1376,Average
-176,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,48.84,129,865,Average
-177,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,50.02,246,909,Good
-178,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,50.69,150,572,Good
-179,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,48.79,242,1530,Average
-180,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,49.87,173,1277,Average
-181,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,48.08,182,945,Average
-182,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,48.03,129,581,Average
-183,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.14,135,561,Average
-184,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.6,117,668,Average
-185,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.62,153,548,Average
-186,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,50.42,124,579,Good
-187,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,48.02,149,908,Average
-188,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,49.2,164,1138,Average
-189,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,48.06,76,322,Average
-190,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,49.83,35,204,Average
-191,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.69,211,993,Average
-192,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.86,96,694,Average
-193,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,47.78,139,971,Average
-194,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,47.85,114,753,Average
-195,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.56,176,1138,Average
-196,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.63,147,695,Average
-197,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,48.54,246,1455,Average
-198,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.2,179,1384,Average
-199,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,48.46,197,1089,Average
-200,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.83,112,824,Average
-201,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,56.1,404,2619,Good
-202,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,56.07,426,1602,Good
-203,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,55.03,411,2104,Good
-204,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,55.51,460,3508,Good
-205,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,54.65,336,2662,Good
-206,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.62,378,2874,Good
-207,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.71,437,2602,Good
-208,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,53.3,368,1720,Good
-209,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.51,360,1680,Good
-210,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,53.29,440,3343,Good
-211,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.84,522,3490,Good
-212,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.16,503,2646,Good
-213,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.22,496,2723,Good
-214,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.06,607,2920,Good
-215,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.54,564,1728,Good
-216,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,52.39,256,1998,Good
-217,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,50.85,292,1000,Good
-218,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,53.39,305,1822,Good
-219,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,50.6,342,1384,Good
-220,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,53.09,260,1027,Good
-221,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.41,470,2737,Good
-222,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.5,516,2717,Good
-223,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.87,466,2331,Good
-224,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.98,423,1653,Good
-225,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,54.89,541,2632,Good
-226,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,53.41,436,2199,Good
-227,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,52.68,363,2388,Good
-228,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,54.58,344,1413,Good
-229,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,53.29,440,1363,Good
-230,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,52.91,459,1786,Good
-231,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,53.96,405,1416,Good
-232,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.73,478,3479,Good
-233,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,54.49,429,2720,Good
-234,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.61,413,3089,Good
-235,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.04,382,1543,Good
-236,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,56.98,657,3886,Good
-237,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.16,763,5407,Good
-238,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.93,668,3272,Good
-239,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.67,670,4100,Good
-240,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.13,712,3688,Good
-241,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,56.48,632,4308,Good
-242,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,56.02,620,3371,Good
-243,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,58.28,609,3121,Good
-244,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,55.67,530,3025,Good
-245,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,57.5,528,1951,Good
-246,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.2,457,2572,Good
-247,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,52.22,350,1082,Good
-248,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.44,327,1923,Good
-249,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,52.52,393,2459,Good
-250,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.19,340,1038,Good
-251,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.51,405,2984,Good
-252,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,54.89,360,2277,Good
-253,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.63,407,2073,Good
-254,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,54.25,347,1122,Good
-255,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.6,380,1297,Good
-256,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,56.11,456,2255,Good
-257,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,55.17,473,3119,Good
-258,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,55.19,504,2711,Good
-259,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,56.29,560,3731,Good
-260,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,54.94,424,1827,Good
-261,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.49,197,1079,Good
-262,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.49,240,1645,Good
-263,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,52.02,201,1334,Good
-264,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.19,293,1516,Good
-265,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,52.44,312,2183,Good
-266,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,52.98,200,1190,Good
-267,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.98,173,1312,Good
-268,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.31,302,1579,Good
-269,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.46,241,1774,Good
-270,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,53.1,280,1762,Good
-271,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.28,267,1134,Good
-272,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.67,173,1373,Good
-273,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.03,145,946,Good
-274,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.98,167,975,Good
-275,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.95,145,940,Good
-276,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.99,318,2497,Good
-277,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.93,251,1834,Good
-278,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.63,227,1621,Good
-279,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.21,269,1116,Good
-280,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.46,191,1237,Good
-281,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.62,438,1457,Good
-282,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.55,410,2850,Good
-283,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.56,423,3142,Good
-284,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,54.45,364,1136,Good
-285,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.21,333,2455,Good
-286,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.79,410,2867,Good
-287,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,54.19,322,2201,Good
-288,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.41,341,2092,Good
-289,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,53.82,417,2852,Good
-290,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.45,333,2227,Good
-291,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.02,396,1890,Good
-292,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.16,424,1767,Good
-293,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,53.43,382,3032,Good
-294,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.58,437,2796,Good
-295,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,53.95,522,3618,Good
-296,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,50.27,292,2159,Good
-297,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,52.83,300,1820,Good
-298,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,50.5,378,1571,Good
-299,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,52.83,327,1974,Good
-300,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,51.54,264,1025,Good
-301,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.96,237,1634,Good
-302,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.35,218,1710,Good
-303,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.95,349,2783,Good
-304,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.82,269,1826,Good
-305,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.39,233,1649,Good
-306,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,51.57,273,1551,Good
-307,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,52.68,327,1130,Good
-308,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.53,279,1017,Good
-309,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.57,383,2799,Good
-310,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.33,338,1944,Good
-311,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.86,351,1707,Good
-312,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,51.38,398,2180,Good
-313,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.84,323,2072,Good
-314,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.83,417,2283,Good
-315,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,52.04,378,2692,Good
-316,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,53.24,361,2104,Good
-317,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,53.0,391,2731,Good
-318,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.18,387,2839,Good
-319,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.33,385,2497,Good
-320,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.24,352,2380,Good
-321,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.88,352,2590,Good
-322,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.49,343,1250,Good
-323,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,52.41,331,1259,Good
-324,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,53.85,344,1904,Good
-325,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.42,263,1600,Good
-326,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,51.04,194,834,Good
-327,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.0,180,1241,Good
-328,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,48.42,214,1221,Average
-329,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.99,151,930,Good
-330,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.9,115,883,Good
-331,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.46,210,946,Good
-332,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.52,210,1241,Good
-333,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,51.44,293,946,Good
-334,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,53.01,346,2714,Good
-335,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.65,219,1487,Good
-336,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,50.87,263,1214,Good
-337,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.27,375,2406,Good
-338,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.14,301,2403,Good
-339,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.08,327,1248,Good
-340,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,53.18,364,1493,Good
-341,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,51.45,392,2458,Good
-342,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,52.02,432,1622,Good
-343,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,52.5,431,2197,Good
-344,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,53.12,349,1525,Good
-345,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,54.15,351,2622,Good
-346,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,50.59,201,634,Good
-347,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.86,225,1647,Good
-348,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.32,315,1237,Good
-349,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,52.51,286,1960,Good
-350,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,52.43,284,1741,Good
-351,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.99,314,2387,Good
-352,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.45,429,2319,Good
-353,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.95,328,2108,Good
-354,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.89,340,1855,Good
-355,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.79,397,1724,Good
-356,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,53.39,236,1245,Good
-357,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,51.03,200,992,Good
-358,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,52.44,280,1248,Good
-359,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,53.08,319,2200,Good
-360,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,51.12,262,923,Good
-361,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,52.63,377,1399,Good
-362,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.4,322,2096,Good
-363,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.58,231,1070,Good
-364,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.45,243,1155,Good
-365,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,52.0,241,1201,Good
-366,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.7,265,1708,Good
-367,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,53.7,210,805,Good
-368,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.61,275,1796,Good
-369,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.39,320,1043,Good
-370,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,52.92,286,2103,Good
-371,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.04,380,1784,Good
-372,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.34,272,2032,Good
-373,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.54,382,2009,Good
-374,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.83,338,2250,Good
-375,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.14,269,1139,Good
-376,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,48.78,220,901,Average
-377,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.23,140,547,Good
-378,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,50.67,188,1032,Good
-379,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,49.97,197,816,Average
-380,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.29,236,1475,Good
-381,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,48.0,172,578,Average
-382,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,47.49,108,573,Average
-383,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,50.0,179,1201,Good
-384,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,48.68,121,587,Average
-385,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,50.36,76,557,Good
-386,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.34,175,1159,Good
-387,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.06,241,1808,Good
-388,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,49.87,151,900,Average
-389,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,51.34,141,862,Good
-390,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.49,219,801,Good
-391,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.05,216,842,Good
-392,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,48.61,225,878,Average
-393,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.46,153,648,Good
-394,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.51,146,813,Good
-395,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,48.98,168,641,Average
-396,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,49.27,245,1051,Average
-397,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,50.07,148,1016,Good
-398,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,48.49,245,1290,Average
-399,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,48.81,111,427,Average
-400,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,49.66,150,1071,Average
-401,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.19,157,955,Good
-402,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.02,145,556,Good
-403,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,49.01,230,1453,Average
-404,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.32,246,1728,Good
-405,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.66,250,1007,Good
-406,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.64,260,854,Good
-407,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,51.89,360,1150,Good
-408,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.67,287,2201,Good
-409,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,51.25,296,949,Good
-410,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.75,367,2871,Good
-411,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,50.61,332,2056,Good
-412,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,53.2,258,1439,Good
-413,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,52.07,290,1072,Good
-414,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,50.69,236,1539,Good
-415,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,51.21,291,2284,Good
-416,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,51.38,380,1983,Good
-417,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,53.7,306,1977,Good
-418,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,53.61,421,2701,Good
-419,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,52.59,372,2732,Good
-420,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,52.81,284,2173,Good
-421,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,53.47,401,1635,Good
-422,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,53.38,359,2245,Good
-423,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,51.72,398,3182,Good
-424,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,51.54,446,2245,Good
-425,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,54.01,417,2433,Good
-426,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,54.82,501,2515,Good
-427,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,53.58,470,3308,Good
-428,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,54.89,489,2532,Good
-429,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,55.05,388,2220,Good
-430,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,52.62,418,2019,Good
-431,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.99,244,1206,Good
-432,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,51.15,175,851,Good
-433,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.48,150,902,Good
-434,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,51.8,232,1233,Good
-435,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.94,269,1505,Good
-436,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.64,163,767,Good
-437,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.34,219,1292,Good
-438,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.8,251,1712,Good
-439,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.64,267,2076,Good
-440,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.25,189,574,Good
-441,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.84,364,1535,Good
-442,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.68,239,1833,Good
-443,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,51.95,245,1330,Good
-444,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,51.67,272,1233,Good
-445,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.31,310,1412,Good
-446,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.93,427,1863,Good
-447,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.34,338,1320,Good
-448,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.14,347,1952,Good
-449,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.23,336,1961,Good
-450,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,52.87,464,2513,Good
-451,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.12,292,939,Good
-452,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,52.6,352,2114,Good
-453,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.16,342,1416,Good
-454,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.34,301,1521,Good
-455,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.22,345,1644,Good
-456,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.41,207,905,Average
-457,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.17,153,969,Good
-458,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.99,183,962,Average
-459,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.46,115,768,Good
-460,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.29,122,424,Good
-461,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.37,166,1001,Average
-462,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.94,104,515,Average
-463,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.08,144,1143,Good
-464,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.71,174,873,Average
-465,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.58,177,1143,Average
-466,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.07,149,524,Good
-467,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.27,216,944,Good
-468,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.34,142,1060,Average
-469,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.68,178,735,Average
-470,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.16,140,783,Good
-471,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.4,360,1500,Good
-472,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.82,372,2326,Good
-473,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.8,288,1343,Good
-474,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.21,389,2454,Good
-475,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.87,349,1858,Good
-476,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.08,344,2679,Good
-477,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.43,363,1453,Good
-478,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.51,274,1439,Good
-479,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.17,312,1973,Good
-480,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.29,399,1665,Good
+deck_id,deck_name,tier,source,card_1,card_2,card_3,card_4,card_5,card_6,card_7,card_8,avg_elixir,archetype,win_rate,usage_count,total_battles,quality
+1,2.6 Hog Cycle,S,Classic competitive deck,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.48,1324,9844,Good
+2,2.6 Hog Cycle,S,Classic competitive deck,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.64,1286,4399,Good
+3,2.6 Hog Cycle,S,Classic competitive deck,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.78,1324,7986,Good
+4,2.6 Hog Cycle,S,Classic competitive deck,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.33,1205,7612,Good
+5,2.6 Hog Cycle,S,Classic competitive deck,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.32,1214,6972,Good
+6,Mega Knight Miner Bait,S,Top ladder favorite,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.08,1027,4232,Good
+7,Mega Knight Miner Bait,S,Top ladder favorite,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.14,965,4465,Good
+8,Mega Knight Miner Bait,S,Top ladder favorite,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,58.24,1027,7441,Good
+9,Mega Knight Miner Bait,S,Top ladder favorite,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,57.97,1015,3520,Good
+10,Mega Knight Miner Bait,S,Top ladder favorite,Mega Knight,Miner,Bats,Skeletons,Inferno Tower,Goblin Barrel,The Log,Princess,3.25,Control,57.1,969,4089,Good
+11,Royal Hogs Earthquake,S,Top 100 global,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,59.72,768,5729,Good
+12,Royal Hogs Earthquake,S,Top 100 global,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.69,829,4570,Good
+13,Royal Hogs Earthquake,S,Top 100 global,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.53,783,3113,Good
+14,Royal Hogs Earthquake,S,Top 100 global,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.97,752,2347,Good
+15,Royal Hogs Earthquake,S,Top 100 global,Royal Hogs,Earthquake,Mighty Miner,Royal Recruits,Hunter,Skeletons,Fisherman,The Log,3.62,Beatdown,58.74,736,5668,Good
+16,PEKKA Bridge Spam,S,Tournament meta,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,56.76,1207,5854,Good
+17,PEKKA Bridge Spam,S,Tournament meta,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,53.95,1209,6215,Good
+18,PEKKA Bridge Spam,S,Tournament meta,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,56.8,1214,8819,Good
+19,PEKKA Bridge Spam,S,Tournament meta,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,54.78,1127,8177,Good
+20,PEKKA Bridge Spam,S,Tournament meta,PEKKA,Battle Ram,Bandit,Magic Archer,Electro Wizard,Poison,Zap,Royal Ghost,3.88,Beatdown,54.85,1095,6333,Good
+21,Goblin Barrel Bait,S,Classic log bait,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,57.51,894,5230,Good
+22,Goblin Barrel Bait,S,Classic log bait,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,54.99,882,7012,Good
+23,Goblin Barrel Bait,S,Classic log bait,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,55.12,867,6404,Good
+24,Goblin Barrel Bait,S,Classic log bait,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,56.92,894,5822,Good
+25,Goblin Barrel Bait,S,Classic log bait,Goblin Barrel,Princess,Goblin Gang,Knight,Inferno Tower,Rocket,The Log,Skeleton Army,3.5,Cycle,55.78,834,5877,Good
+26,Mortar Cycle,S,OJ's favorite,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,56.83,750,5674,Good
+27,Mortar Cycle,S,OJ's favorite,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,55.93,695,4859,Good
+28,Mortar Cycle,S,OJ's favorite,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,56.35,725,5059,Good
+29,Mortar Cycle,S,OJ's favorite,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,57.07,670,3268,Good
+30,Mortar Cycle,S,OJ's favorite,Mortar,Miner,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Knight,2.88,Siege,54.68,706,2244,Good
+31,LavaLoon,A,Air beatdown classic,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,53.7,441,1954,Good
+32,LavaLoon,A,Air beatdown classic,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.07,364,1159,Good
+33,LavaLoon,A,Air beatdown classic,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.77,414,1505,Good
+34,LavaLoon,A,Air beatdown classic,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,53.87,475,1937,Good
+35,LavaLoon,A,Air beatdown classic,Lava Hound,Balloon,Mega Minion,Minions,Fireball,Arrows,Tombstone,Skeleton Army,3.88,Beatdown,54.17,372,1212,Good
+36,Golem Night Witch,A,Heavy meta,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.29,411,2542,Good
+37,Golem Night Witch,A,Heavy meta,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.88,476,2656,Good
+38,Golem Night Witch,A,Heavy meta,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,53.67,449,1955,Good
+39,Golem Night Witch,A,Heavy meta,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,54.02,341,1066,Good
+40,Golem Night Witch,A,Heavy meta,Lava Hound,Mega Minion,Baby Dragon,Tombstone,Lightning,Arrows,Inferno Dragon,Night Witch,4.25,Beatdown,55.59,455,2948,Good
+41,X-Bow 2.9,A,Surgical Goblin's deck,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.83,495,1872,Good
+42,X-Bow 2.9,A,Surgical Goblin's deck,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.35,552,3628,Good
+43,X-Bow 2.9,A,Surgical Goblin's deck,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,55.58,511,3972,Good
+44,X-Bow 2.9,A,Surgical Goblin's deck,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,55.81,553,3350,Good
+45,X-Bow 2.9,A,Surgical Goblin's deck,X-Bow,Tesla,Archers,Knight,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.86,507,2423,Good
+46,Hog Earthquake,A,Earthquake meta,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,55.47,532,1904,Good
+47,Hog Earthquake,A,Earthquake meta,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,53.34,536,3900,Good
+48,Hog Earthquake,A,Earthquake meta,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,55.31,601,2096,Good
+49,Hog Earthquake,A,Earthquake meta,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,54.67,601,2323,Good
+50,Hog Earthquake,A,Earthquake meta,Hog Rider,Musketeer,Ice Spirit,Skeletons,Earthquake,The Log,Cannon,Ice Golem,2.5,Cycle,54.5,589,3580,Good
+51,Mega Knight Bridge,A,Aggro favorite,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.01,596,2904,Good
+52,Mega Knight Bridge,A,Aggro favorite,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,53.98,665,4842,Good
+53,Mega Knight Bridge,A,Aggro favorite,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.08,614,2058,Good
+54,Mega Knight Bridge,A,Aggro favorite,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.03,593,3515,Good
+55,Mega Knight Bridge,A,Aggro favorite,Mega Knight,Bandit,Battle Ram,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.88,Beatdown,54.92,676,3340,Good
+56,Graveyard Freeze,A,Tilt strategy,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,54.93,338,1936,Good
+57,Graveyard Freeze,A,Tilt strategy,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.82,327,2552,Good
+58,Graveyard Freeze,A,Tilt strategy,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.72,299,1000,Good
+59,Graveyard Freeze,A,Tilt strategy,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,53.3,272,944,Good
+60,Graveyard Freeze,A,Tilt strategy,Graveyard,Baby Dragon,Tombstone,Knight,Freeze,Ice Spirit,Bowler,The Log,3.38,Control,55.05,280,1286,Good
+61,Royal Giant Lightning,A,RG meta deck,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,55.13,513,3628,Good
+62,Royal Giant Lightning,A,RG meta deck,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,53.45,527,3416,Good
+63,Royal Giant Lightning,A,RG meta deck,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,54.49,641,4278,Good
+64,Royal Giant Lightning,A,RG meta deck,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,55.01,552,2145,Good
+65,Royal Giant Lightning,A,RG meta deck,Royal Giant,Fisherman,Lightning,The Log,Mega Minion,Skeletons,Furnace,Hunter,3.62,Control,54.85,631,5018,Good
+66,Three Musketeers,A,3M classic,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.54,345,2374,Good
+67,Three Musketeers,A,3M classic,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.32,429,3128,Good
+68,Three Musketeers,A,3M classic,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,52.59,402,2722,Good
+69,Three Musketeers,A,3M classic,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,51.61,425,2348,Good
+70,Three Musketeers,A,3M classic,Three Musketeers,Battle Ram,Ice Golem,Elixir Collector,Fireball,The Log,Dark Prince,Ice Spirit,4.0,Beatdown,53.78,338,2527,Good
+71,Miner Poison,A,Chip damage meta,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,53.57,421,3168,Good
+72,Miner Poison,A,Chip damage meta,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,52.67,467,3619,Good
+73,Miner Poison,A,Chip damage meta,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,55.25,506,3116,Good
+74,Miner Poison,A,Chip damage meta,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,53.75,463,2149,Good
+75,Miner Poison,A,Chip damage meta,Miner,Poison,Mega Minion,Skeletons,Inferno Tower,Goblin Barrel,The Log,Knight,3.0,Control,54.42,532,3701,Good
+76,Giant Double Prince,A,Heavy push deck,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,54.07,443,2424,Good
+77,Giant Double Prince,A,Heavy push deck,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.87,512,2666,Good
+78,Giant Double Prince,A,Heavy push deck,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,54.36,482,1728,Good
+79,Giant Double Prince,A,Heavy push deck,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.13,544,3313,Good
+80,Giant Double Prince,A,Heavy push deck,Giant,Prince,Dark Prince,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.0,442,2875,Good
+81,Skeleton King Bridge,B,Champion variant,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,50.42,353,2305,Good
+82,Skeleton King Bridge,B,Champion variant,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,50.44,242,1919,Good
+83,Skeleton King Bridge,B,Champion variant,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.32,285,2013,Good
+84,Skeleton King Bridge,B,Champion variant,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.04,377,2551,Good
+85,Skeleton King Bridge,B,Champion variant,Skeleton King,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.33,242,1666,Good
+86,Hog Bait,B,Hybrid bait,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.58,373,2809,Good
+87,Hog Bait,B,Hybrid bait,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,50.23,383,1170,Good
+88,Hog Bait,B,Hybrid bait,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.31,318,1142,Good
+89,Hog Bait,B,Hybrid bait,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,50.25,407,2739,Good
+90,Hog Bait,B,Hybrid bait,Hog Rider,Musketeer,Goblin Gang,Skeletons,Fireball,The Log,Cannon,Princess,3.0,Cycle,51.65,454,2212,Good
+91,Hog Freeze,B,Freeze variant,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,50.16,320,1317,Good
+92,Hog Freeze,B,Freeze variant,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.19,191,1499,Good
+93,Hog Freeze,B,Freeze variant,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,49.43,323,1821,Average
+94,Hog Freeze,B,Freeze variant,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.28,201,1159,Good
+95,Hog Freeze,B,Freeze variant,Hog Rider,Musketeer,Ice Spirit,Skeletons,Freeze,The Log,Cannon,Ice Golem,2.62,Cycle,52.21,268,1647,Good
+96,RG Earthquake,B,EQ meta RG,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.89,438,2688,Good
+97,RG Earthquake,B,EQ meta RG,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.55,505,1629,Good
+98,RG Earthquake,B,EQ meta RG,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,51.64,512,3815,Good
+99,RG Earthquake,B,EQ meta RG,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,52.17,463,2031,Good
+100,RG Earthquake,B,EQ meta RG,Royal Giant,Earthquake,Mighty Miner,Lightning,Hunter,Skeletons,Fisherman,The Log,3.62,Siege,51.36,439,2092,Good
+101,Princess Hut,B,Defensive build,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,51.45,171,1346,Good
+102,Princess Hut,B,Defensive build,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,52.66,264,1499,Good
+103,Princess Hut,B,Defensive build,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,50.63,282,1811,Good
+104,Princess Hut,B,Defensive build,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,50.19,296,2105,Good
+105,Princess Hut,B,Defensive build,Princess,Knight,Skeleton Army,Goblin Hut,Inferno Tower,Fireball,Goblin Barrel,The Log,3.5,Control,52.55,268,1625,Good
+106,Sparky Beatdown,B,Sparky push,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,50.15,269,1971,Good
+107,Sparky Beatdown,B,Sparky push,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,49.04,133,649,Average
+108,Sparky Beatdown,B,Sparky push,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,51.33,278,1043,Good
+109,Sparky Beatdown,B,Sparky push,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,50.68,187,1467,Good
+110,Sparky Beatdown,B,Sparky push,Sparky,Giant,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.5,Beatdown,51.43,255,1362,Good
+111,Balloon Freeze,B,Loon classic,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,51.84,251,823,Good
+112,Balloon Freeze,B,Loon classic,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.19,331,2647,Good
+113,Balloon Freeze,B,Loon classic,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.59,293,2005,Good
+114,Balloon Freeze,B,Loon classic,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,53.43,337,1427,Good
+115,Balloon Freeze,B,Loon classic,Balloon,Lumberjack,Freeze,Bowler,Tornado,Ice Spirit,Skeletons,Inferno Dragon,3.38,Beatdown,51.95,229,1779,Good
+116,Royal Giant Bait,B,RG bait combo,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.22,214,1360,Good
+117,Royal Giant Bait,B,RG bait combo,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.25,233,831,Good
+118,Royal Giant Bait,B,RG bait combo,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.41,258,1770,Good
+119,Royal Giant Bait,B,RG bait combo,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,50.96,307,1768,Good
+120,Royal Giant Bait,B,RG bait combo,Royal Giant,Princess,Goblin Barrel,Knight,Rocket,Goblin Gang,Inferno Tower,The Log,3.88,Control,51.08,311,1560,Good
+121,Lava Miner,B,LavaMiner combo,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,50.5,144,975,Good
+122,Lava Miner,B,LavaMiner combo,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,51.96,245,995,Good
+123,Lava Miner,B,LavaMiner combo,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,50.51,142,674,Good
+124,Lava Miner,B,LavaMiner combo,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,51.87,198,1027,Good
+125,Lava Miner,B,LavaMiner combo,Lava Hound,Miner,Mega Minion,Skeleton Army,Fireball,Arrows,Tombstone,Inferno Dragon,3.75,Beatdown,52.81,192,1069,Good
+126,Witch Cycle,B,Witch defense,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.55,209,1277,Good
+127,Witch Cycle,B,Witch defense,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.79,292,1090,Good
+128,Witch Cycle,B,Witch defense,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,51.98,223,956,Good
+129,Witch Cycle,B,Witch defense,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,50.58,297,1622,Good
+130,Witch Cycle,B,Witch defense,Witch,Knight,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Control,50.19,245,1029,Good
+131,Goblin Drill,B,Goblin spam,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.03,239,870,Good
+132,Goblin Drill,B,Goblin spam,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.26,240,1489,Good
+133,Goblin Drill,B,Goblin spam,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.35,271,2028,Good
+134,Goblin Drill,B,Goblin spam,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,51.22,320,1235,Good
+135,Goblin Drill,B,Goblin spam,Goblin Barrel,Goblin Gang,Princess,Skeletons,Ice Spirit,The Log,Knight,Rocket,2.75,Cycle,50.38,226,868,Good
+136,Mortar Bait,B,Mortar variation,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.84,286,984,Good
+137,Mortar Bait,B,Mortar variation,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.36,329,1326,Good
+138,Mortar Bait,B,Mortar variation,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,52.09,335,2161,Good
+139,Mortar Bait,B,Mortar variation,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.12,379,2326,Good
+140,Mortar Bait,B,Mortar variation,Mortar,Princess,Goblin Gang,Skeleton Army,Inferno Tower,Rocket,The Log,Knight,3.62,Siege,51.25,391,2973,Good
+141,Bridge Spam Bandit,B,Quick aggro,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,50.48,281,1975,Good
+142,Bridge Spam Bandit,B,Quick aggro,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,52.54,267,1080,Good
+143,Bridge Spam Bandit,B,Quick aggro,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,51.41,312,1900,Good
+144,Bridge Spam Bandit,B,Quick aggro,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,51.41,309,2081,Good
+145,Bridge Spam Bandit,B,Quick aggro,Bandit,Battle Ram,Royal Ghost,Magic Archer,Electro Wizard,Zap,Fireball,Mini PEKKA,3.5,Beatdown,50.41,277,1818,Good
+146,Archer Queen Cycle,B,Champion Hog,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,54.59,486,2751,Good
+147,Archer Queen Cycle,B,Champion Hog,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.22,477,2701,Good
+148,Archer Queen Cycle,B,Champion Hog,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.63,450,2198,Good
+149,Archer Queen Cycle,B,Champion Hog,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,51.96,458,1858,Good
+150,Archer Queen Cycle,B,Champion Hog,Archer Queen,Hog Rider,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.75,Cycle,52.88,427,3182,Good
+151,Inferno Dragon Beatdown,B,Inferno Giant,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.38,271,1882,Good
+152,Inferno Dragon Beatdown,B,Inferno Giant,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.1,183,1040,Good
+153,Inferno Dragon Beatdown,B,Inferno Giant,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.36,281,1449,Good
+154,Inferno Dragon Beatdown,B,Inferno Giant,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,49.98,212,1020,Average
+155,Inferno Dragon Beatdown,B,Inferno Giant,Giant,Inferno Dragon,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.54,255,1219,Good
+156,Wall Breakers Cycle,B,WB chip,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,52.06,280,1172,Good
+157,Wall Breakers Cycle,B,WB chip,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.41,212,896,Average
+158,Wall Breakers Cycle,B,WB chip,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.58,217,960,Average
+159,Wall Breakers Cycle,B,WB chip,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,49.62,324,1101,Average
+160,Wall Breakers Cycle,B,WB chip,Wall Breakers,Miner,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,2.25,Cycle,50.67,251,1985,Good
+161,Skeleton Barrel,B,Barrel bait,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,49.04,169,1326,Average
+162,Skeleton Barrel,B,Barrel bait,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,51.3,232,995,Good
+163,Skeleton Barrel,B,Barrel bait,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,49.21,210,1605,Average
+164,Skeleton Barrel,B,Barrel bait,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,50.37,195,857,Good
+165,Skeleton Barrel,B,Barrel bait,Skeleton Barrel,Bats,Skeletons,Ice Spirit,Fireball,The Log,Knight,Princess,2.38,Cycle,51.01,138,637,Good
+166,Elite Barb Rage,C,EBarb push,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.48,166,699,Average
+167,Elite Barb Rage,C,EBarb push,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,47.54,181,804,Average
+168,Elite Barb Rage,C,EBarb push,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.94,113,610,Average
+169,Elite Barb Rage,C,EBarb push,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,48.8,97,454,Average
+170,Elite Barb Rage,C,EBarb push,Elite Barbarians,Battle Ram,Bandit,Fireball,The Log,Skeletons,Ice Spirit,Royal Ghost,3.0,Beatdown,47.6,99,787,Average
+171,Goblin Giant Sparky,C,Sparky variant,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,48.67,191,816,Average
+172,Goblin Giant Sparky,C,Sparky variant,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,49.74,184,1099,Average
+173,Goblin Giant Sparky,C,Sparky variant,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,49.11,131,621,Average
+174,Goblin Giant Sparky,C,Sparky variant,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,50.49,194,1518,Good
+175,Goblin Giant Sparky,C,Sparky variant,Giant Skeleton,Sparky,Wizard,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.75,Beatdown,48.07,179,1376,Average
+176,Three Musketeers Rage,C,Heal 3M,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,48.84,129,865,Average
+177,Three Musketeers Rage,C,Heal 3M,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,50.02,246,909,Good
+178,Three Musketeers Rage,C,Heal 3M,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,50.69,150,572,Good
+179,Three Musketeers Rage,C,Heal 3M,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,48.79,242,1530,Average
+180,Three Musketeers Rage,C,Heal 3M,Three Musketeers,Battle Ram,Heal Spirit,Elixir Collector,Fireball,The Log,Dark Prince,Ice Golem,4.0,Beatdown,49.87,173,1277,Average
+181,Royal Recruits Spam,C,Recruit heavy,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,48.08,182,945,Average
+182,Royal Recruits Spam,C,Recruit heavy,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,48.03,129,581,Average
+183,Royal Recruits Spam,C,Recruit heavy,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.14,135,561,Average
+184,Royal Recruits Spam,C,Recruit heavy,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.6,117,668,Average
+185,Royal Recruits Spam,C,Recruit heavy,Royal Recruits,Battle Healer,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.5,Beatdown,49.62,153,548,Average
+186,Clone Beatdown,C,Clone gimmick,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,50.42,124,579,Good
+187,Clone Beatdown,C,Clone gimmick,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,48.02,149,908,Average
+188,Clone Beatdown,C,Clone gimmick,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,49.2,164,1138,Average
+189,Clone Beatdown,C,Clone gimmick,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,48.06,76,322,Average
+190,Clone Beatdown,C,Clone gimmick,Giant,Witch,Clone,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.25,Beatdown,49.83,35,204,Average
+191,Goblin Gang Cycle,C,Goblin spam,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.69,211,993,Average
+192,Goblin Gang Cycle,C,Goblin spam,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.86,96,694,Average
+193,Goblin Gang Cycle,C,Goblin spam,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,47.78,139,971,Average
+194,Goblin Gang Cycle,C,Goblin spam,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,47.85,114,753,Average
+195,Goblin Gang Cycle,C,Goblin spam,Goblin Gang,Spear Goblins,Goblins,Ice Spirit,The Log,Princess,Knight,Fireball,2.5,Cycle,49.56,176,1138,Average
+196,Cannon Cart Beatdown,C,Cart push,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.63,147,695,Average
+197,Cannon Cart Beatdown,C,Cart push,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,48.54,246,1455,Average
+198,Cannon Cart Beatdown,C,Cart push,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.2,179,1384,Average
+199,Cannon Cart Beatdown,C,Cart push,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,48.46,197,1089,Average
+200,Cannon Cart Beatdown,C,Cart push,Giant,Cannon Cart,Musketeer,Mini PEKKA,Fireball,Zap,Mega Minion,Skeletons,3.5,Beatdown,49.83,112,824,Average
+201,Monk Bridge,A,Monk champion meta,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,56.1,404,2619,Good
+202,Monk Bridge,A,Monk champion meta,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,56.07,426,1602,Good
+203,Monk Bridge,A,Monk champion meta,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,55.03,411,2104,Good
+204,Monk Bridge,A,Monk champion meta,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,55.51,460,3508,Good
+205,Monk Bridge,A,Monk champion meta,Monk,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.62,Beatdown,54.65,336,2662,Good
+206,Phoenix Cycle,A,Phoenix meta,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.62,378,2874,Good
+207,Phoenix Cycle,A,Phoenix meta,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.71,437,2602,Good
+208,Phoenix Cycle,A,Phoenix meta,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,53.3,368,1720,Good
+209,Phoenix Cycle,A,Phoenix meta,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,54.51,360,1680,Good
+210,Phoenix Cycle,A,Phoenix meta,Phoenix,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.88,Cycle,53.29,440,3343,Good
+211,Little Prince Cycle,A,LP champion deck,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.84,522,3490,Good
+212,Little Prince Cycle,A,LP champion deck,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.16,503,2646,Good
+213,Little Prince Cycle,A,LP champion deck,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.22,496,2723,Good
+214,Little Prince Cycle,A,LP champion deck,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.06,607,2920,Good
+215,Little Prince Cycle,A,LP champion deck,Little Prince,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.54,564,1728,Good
+216,Goblinstein Beatdown,B,New champion,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,52.39,256,1998,Good
+217,Goblinstein Beatdown,B,New champion,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,50.85,292,1000,Good
+218,Goblinstein Beatdown,B,New champion,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,53.39,305,1822,Good
+219,Goblinstein Beatdown,B,New champion,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,50.6,342,1384,Good
+220,Goblinstein Beatdown,B,New champion,Goblinstein,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.62,Beatdown,53.09,260,1027,Good
+221,Mighty Miner Cycle,A,MM Hog combo,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.41,470,2737,Good
+222,Mighty Miner Cycle,A,MM Hog combo,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.5,516,2717,Good
+223,Mighty Miner Cycle,A,MM Hog combo,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.87,466,2331,Good
+224,Mighty Miner Cycle,A,MM Hog combo,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.98,423,1653,Good
+225,Mighty Miner Cycle,A,MM Hog combo,Mighty Miner,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,54.89,541,2632,Good
+226,Royal Champion Recruits,A,Royal beatdown,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,53.41,436,2199,Good
+227,Royal Champion Recruits,A,Royal beatdown,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,52.68,363,2388,Good
+228,Royal Champion Recruits,A,Royal beatdown,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,54.58,344,1413,Good
+229,Royal Champion Recruits,A,Royal beatdown,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,53.29,440,1363,Good
+230,Royal Champion Recruits,A,Royal beatdown,Royal Champion,Royal Recruits,Mighty Miner,Hunter,Earthquake,Skeletons,Fisherman,The Log,3.88,Beatdown,52.91,459,1786,Good
+231,Archer Queen Beatdown,A,AQ Giant push,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,53.96,405,1416,Good
+232,Archer Queen Beatdown,A,AQ Giant push,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.73,478,3479,Good
+233,Archer Queen Beatdown,A,AQ Giant push,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,54.49,429,2720,Good
+234,Archer Queen Beatdown,A,AQ Giant push,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.61,413,3089,Good
+235,Archer Queen Beatdown,A,AQ Giant push,Archer Queen,Giant,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.88,Beatdown,52.04,382,1543,Good
+236,World Finals Hog,S,World Finals 2024,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,56.98,657,3886,Good
+237,World Finals Hog,S,World Finals 2024,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.16,763,5407,Good
+238,World Finals Hog,S,World Finals 2024,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,57.93,668,3272,Good
+239,World Finals Hog,S,World Finals 2024,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.67,670,4100,Good
+240,World Finals Hog,S,World Finals 2024,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,58.13,712,3688,Good
+241,Champion League PEKKA,S,Champion League winner,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,56.48,632,4308,Good
+242,Champion League PEKKA,S,Champion League winner,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,56.02,620,3371,Good
+243,Champion League PEKKA,S,Champion League winner,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,58.28,609,3121,Good
+244,Champion League PEKKA,S,Champion League winner,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,55.67,530,3025,Good
+245,Champion League PEKKA,S,Champion League winner,PEKKA,Royal Ghost,Battle Ram,Magic Archer,Electro Wizard,Poison,Zap,Bandit,3.88,Beatdown,57.5,528,1951,Good
+246,CWA Recommended,A,CWA YouTube,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.2,457,2572,Good
+247,CWA Recommended,A,CWA YouTube,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,52.22,350,1082,Good
+248,CWA Recommended,A,CWA YouTube,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.44,327,1923,Good
+249,CWA Recommended,A,CWA YouTube,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,52.52,393,2459,Good
+250,CWA Recommended,A,CWA YouTube,Mega Knight,Inferno Dragon,Skeleton Army,Ice Spirit,Bats,Fireball,Zap,Goblin Gang,3.25,Beatdown,54.19,340,1038,Good
+251,OJ Mortar Cycle,A,OJ classic,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.51,405,2984,Good
+252,OJ Mortar Cycle,A,OJ classic,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,54.89,360,2277,Good
+253,OJ Mortar Cycle,A,OJ classic,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.63,407,2073,Good
+254,OJ Mortar Cycle,A,OJ classic,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,54.25,347,1122,Good
+255,OJ Mortar Cycle,A,OJ classic,Mortar,Knight,Skeletons,Ice Spirit,Bomber,The Log,Rocket,Miner,2.88,Siege,53.6,380,1297,Good
+256,MorTen Spam,A,MorTen pro,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,56.11,456,2255,Good
+257,MorTen Spam,A,MorTen pro,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,55.17,473,3119,Good
+258,MorTen Spam,A,MorTen pro,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,55.19,504,2711,Good
+259,MorTen Spam,A,MorTen pro,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,56.29,560,3731,Good
+260,MorTen Spam,A,MorTen pro,PEKKA,Battle Ram,Royal Ghost,Bandit,Magic Archer,Electro Wizard,Poison,Zap,3.88,Beatdown,54.94,424,1827,Good
+261,Fisherman Control,B,Underrated gem,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.49,197,1079,Good
+262,Fisherman Control,B,Underrated gem,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.49,240,1645,Good
+263,Fisherman Control,B,Underrated gem,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,52.02,201,1334,Good
+264,Fisherman Control,B,Underrated gem,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,53.19,293,1516,Good
+265,Fisherman Control,B,Underrated gem,Fisherman,Royal Giant,Mighty Miner,Hunter,Lightning,Skeletons,The Log,Tornado,3.62,Control,52.44,312,2183,Good
+266,Mother Witch Defense,B,Defensive sleeper,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,52.98,200,1190,Good
+267,Mother Witch Defense,B,Defensive sleeper,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.98,173,1312,Good
+268,Mother Witch Defense,B,Defensive sleeper,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.31,302,1579,Good
+269,Mother Witch Defense,B,Defensive sleeper,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,51.46,241,1774,Good
+270,Mother Witch Defense,B,Defensive sleeper,Mother Witch,Knight,Skeletons,Ice Spirit,Fireball,The Log,Tombstone,Musketeer,2.75,Control,53.1,280,1762,Good
+271,Ram Rider Control,B,Ram push,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.28,267,1134,Good
+272,Ram Rider Control,B,Ram push,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.67,173,1373,Good
+273,Ram Rider Control,B,Ram push,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.03,145,946,Good
+274,Ram Rider Control,B,Ram push,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.98,167,975,Good
+275,Ram Rider Control,B,Ram push,Ram Rider,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,52.95,145,940,Good
+276,Magic Archer Beat,B,MA value,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.99,318,2497,Good
+277,Magic Archer Beat,B,MA value,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.93,251,1834,Good
+278,Magic Archer Beat,B,MA value,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,53.63,227,1621,Good
+279,Magic Archer Beat,B,MA value,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.21,269,1116,Good
+280,Magic Archer Beat,B,MA value,Giant,Magic Archer,Witch,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.38,Beatdown,51.46,191,1237,Good
+281,Hog Cycle Variant,A,Valk variant,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.62,438,1457,Good
+282,Hog Cycle Variant,A,Valk variant,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.55,410,2850,Good
+283,Hog Cycle Variant,A,Valk variant,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.56,423,3142,Good
+284,Hog Cycle Variant,A,Valk variant,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,54.45,364,1136,Good
+285,Hog Cycle Variant,A,Valk variant,Hog Rider,Valkyrie,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,55.21,333,2455,Good
+286,Hog Tesla,B,Tesla defense,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.79,410,2867,Good
+287,Hog Tesla,B,Tesla defense,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,54.19,322,2201,Good
+288,Hog Tesla,B,Tesla defense,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.41,341,2092,Good
+289,Hog Tesla,B,Tesla defense,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,53.82,417,2852,Good
+290,Hog Tesla,B,Tesla defense,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Tesla,Ice Golem,2.75,Cycle,52.45,333,2227,Good
+291,Royal Hogs Hunter,A,Hunter RH,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.02,396,1890,Good
+292,Royal Hogs Hunter,A,Hunter RH,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.16,424,1767,Good
+293,Royal Hogs Hunter,A,Hunter RH,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,53.43,382,3032,Good
+294,Royal Hogs Hunter,A,Hunter RH,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,54.58,437,2796,Good
+295,Royal Hogs Hunter,A,Hunter RH,Royal Hogs,Hunter,Mighty Miner,Royal Recruits,Earthquake,Skeletons,Fisherman,The Log,3.62,Beatdown,53.95,522,3618,Good
+296,Hog Rocket,B,Rocket bait,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,50.27,292,2159,Good
+297,Hog Rocket,B,Rocket bait,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,52.83,300,1820,Good
+298,Hog Rocket,B,Rocket bait,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,50.5,378,1571,Good
+299,Hog Rocket,B,Rocket bait,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,52.83,327,1974,Good
+300,Hog Rocket,B,Rocket bait,Hog Rider,Musketeer,Goblin Gang,Princess,Rocket,The Log,Cannon,Knight,3.5,Cycle,51.54,264,1025,Good
+301,Giant Witch,B,Giant Witch,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.96,237,1634,Good
+302,Giant Witch,B,Giant Witch,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.35,218,1710,Good
+303,Giant Witch,B,Giant Witch,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.95,349,2783,Good
+304,Giant Witch,B,Giant Witch,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.82,269,1826,Good
+305,Giant Witch,B,Giant Witch,Giant,Witch,Mini PEKKA,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.39,233,1649,Good
+306,Balloon Cycle,B,Loon variant,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,51.57,273,1551,Good
+307,Balloon Cycle,B,Loon variant,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,52.68,327,1130,Good
+308,Balloon Cycle,B,Loon variant,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.53,279,1017,Good
+309,Balloon Cycle,B,Loon variant,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.57,383,2799,Good
+310,Balloon Cycle,B,Loon variant,Balloon,Miner,Inferno Dragon,Skeleton Army,Fireball,The Log,Ice Spirit,Mega Minion,3.12,Beatdown,53.33,338,1944,Good
+311,Mega Knight Goblin,B,MK Bait,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.86,351,1707,Good
+312,Mega Knight Goblin,B,MK Bait,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,51.38,398,2180,Good
+313,Mega Knight Goblin,B,MK Bait,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.84,323,2072,Good
+314,Mega Knight Goblin,B,MK Bait,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,50.83,417,2283,Good
+315,Mega Knight Goblin,B,MK Bait,Mega Knight,Goblin Barrel,Princess,Goblin Gang,Inferno Tower,Rocket,The Log,Knight,4.0,Beatdown,52.04,378,2692,Good
+316,X-Bow Knight,B,Knight XB,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,53.24,361,2104,Good
+317,X-Bow Knight,B,Knight XB,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,53.0,391,2731,Good
+318,X-Bow Knight,B,Knight XB,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.18,387,2839,Good
+319,X-Bow Knight,B,Knight XB,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.33,385,2497,Good
+320,X-Bow Knight,B,Knight XB,X-Bow,Knight,Tesla,Archers,Skeletons,Ice Spirit,Fireball,The Log,3.0,Siege,54.24,352,2380,Good
+321,Mortar Miner,B,Miner Mortar,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.88,352,2590,Good
+322,Mortar Miner,B,Miner Mortar,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.49,343,1250,Good
+323,Mortar Miner,B,Miner Mortar,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,52.41,331,1259,Good
+324,Mortar Miner,B,Miner Mortar,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,53.85,344,1904,Good
+325,Mortar Miner,B,Miner Mortar,Mortar,Miner,Knight,Skeletons,Princess,The Log,Rocket,Ice Spirit,2.88,Siege,51.42,263,1600,Good
+326,Royal Giant Sparky,C,RG Sparky combo,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,51.04,194,834,Good
+327,Royal Giant Sparky,C,RG Sparky combo,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.0,180,1241,Good
+328,Royal Giant Sparky,C,RG Sparky combo,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,48.42,214,1221,Average
+329,Royal Giant Sparky,C,RG Sparky combo,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.99,151,930,Good
+330,Royal Giant Sparky,C,RG Sparky combo,Royal Giant,Sparky,Electro Wizard,Zap,Mega Minion,Tombstone,Fireball,Ice Spirit,3.62,Beatdown,50.9,115,883,Good
+331,Goblin Drill Bait,B,Bait variant,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.46,210,946,Good
+332,Goblin Drill Bait,B,Bait variant,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.52,210,1241,Good
+333,Goblin Drill Bait,B,Bait variant,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,51.44,293,946,Good
+334,Goblin Drill Bait,B,Bait variant,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,53.01,346,2714,Good
+335,Goblin Drill Bait,B,Bait variant,Goblin Barrel,Princess,Goblin Gang,Bats,Inferno Tower,Rocket,The Log,Knight,3.38,Cycle,52.65,219,1487,Good
+336,Bandit Cycle,B,Bandit Hog,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,50.87,263,1214,Good
+337,Bandit Cycle,B,Bandit Hog,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.27,375,2406,Good
+338,Bandit Cycle,B,Bandit Hog,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.14,301,2403,Good
+339,Bandit Cycle,B,Bandit Hog,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,52.08,327,1248,Good
+340,Bandit Cycle,B,Bandit Hog,Bandit,Hog Rider,Musketeer,Ice Spirit,Fireball,The Log,Cannon,Skeletons,2.75,Cycle,53.18,364,1493,Good
+341,Royal Ghost Hog,B,Ghost Hog,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,51.45,392,2458,Good
+342,Royal Ghost Hog,B,Ghost Hog,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,52.02,432,1622,Good
+343,Royal Ghost Hog,B,Ghost Hog,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,52.5,431,2197,Good
+344,Royal Ghost Hog,B,Ghost Hog,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,53.12,349,1525,Good
+345,Royal Ghost Hog,B,Ghost Hog,Royal Ghost,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.75,Cycle,54.15,351,2622,Good
+346,Electro Wizard Beat,B,EWiz support,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,50.59,201,634,Good
+347,Electro Wizard Beat,B,EWiz support,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.86,225,1647,Good
+348,Electro Wizard Beat,B,EWiz support,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.32,315,1237,Good
+349,Electro Wizard Beat,B,EWiz support,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,52.51,286,1960,Good
+350,Electro Wizard Beat,B,EWiz support,Giant,Electro Wizard,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,52.43,284,1741,Good
+351,Hunter Hog,B,Hunter cycle,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.99,314,2387,Good
+352,Hunter Hog,B,Hunter cycle,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.45,429,2319,Good
+353,Hunter Hog,B,Hunter cycle,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.95,328,2108,Good
+354,Hunter Hog,B,Hunter cycle,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.89,340,1855,Good
+355,Hunter Hog,B,Hunter cycle,Hog Rider,Hunter,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.79,397,1724,Good
+356,Bowler Graveyard,B,Bowler GY,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,53.39,236,1245,Good
+357,Bowler Graveyard,B,Bowler GY,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,51.03,200,992,Good
+358,Bowler Graveyard,B,Bowler GY,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,52.44,280,1248,Good
+359,Bowler Graveyard,B,Bowler GY,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,53.08,319,2200,Good
+360,Bowler Graveyard,B,Bowler GY,Graveyard,Bowler,Baby Dragon,Tombstone,Knight,Tornado,Ice Spirit,The Log,3.25,Control,51.12,262,923,Good
+361,Tornado Executioner,B,Exe Tornado,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,52.63,377,1399,Good
+362,Tornado Executioner,B,Exe Tornado,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.4,322,2096,Good
+363,Tornado Executioner,B,Exe Tornado,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.58,231,1070,Good
+364,Tornado Executioner,B,Exe Tornado,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,53.45,243,1155,Good
+365,Tornado Executioner,B,Exe Tornado,Executioner,Tornado,Knight,Skeletons,Fireball,The Log,Ice Spirit,Mega Minion,2.75,Control,52.0,241,1201,Good
+366,Inferno Dragon Loon,B,InfernoLoon,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.7,265,1708,Good
+367,Inferno Dragon Loon,B,InfernoLoon,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,53.7,210,805,Good
+368,Inferno Dragon Loon,B,InfernoLoon,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.61,275,1796,Good
+369,Inferno Dragon Loon,B,InfernoLoon,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,51.39,320,1043,Good
+370,Inferno Dragon Loon,B,InfernoLoon,Lava Hound,Inferno Dragon,Balloon,Mega Minion,Tombstone,Fireball,Arrows,Skeleton Army,4.0,Beatdown,52.92,286,2103,Good
+371,Firecracker Hog,B,FC Hog,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.04,380,1784,Good
+372,Firecracker Hog,B,FC Hog,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.34,272,2032,Good
+373,Firecracker Hog,B,FC Hog,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.54,382,2009,Good
+374,Firecracker Hog,B,FC Hog,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.83,338,2250,Good
+375,Firecracker Hog,B,FC Hog,Hog Rider,Firecracker,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.14,269,1139,Good
+376,Zappies Beat,C,Zappies push,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,48.78,220,901,Average
+377,Zappies Beat,C,Zappies push,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.23,140,547,Good
+378,Zappies Beat,C,Zappies push,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,50.67,188,1032,Good
+379,Zappies Beat,C,Zappies push,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,49.97,197,816,Average
+380,Zappies Beat,C,Zappies push,Giant,Zappies,Wizard,Musketeer,Fireball,Zap,Mega Minion,Tombstone,3.75,Beatdown,51.29,236,1475,Good
+381,Rascals Recruits,C,Heavy team,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,48.0,172,578,Average
+382,Rascals Recruits,C,Heavy team,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,47.49,108,573,Average
+383,Rascals Recruits,C,Heavy team,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,50.0,179,1201,Good
+384,Rascals Recruits,C,Heavy team,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,48.68,121,587,Average
+385,Rascals Recruits,C,Heavy team,Royal Recruits,Rascals,Three Musketeers,Elixir Collector,Fireball,Zap,Mega Minion,Ice Spirit,4.62,Beatdown,50.36,76,557,Good
+386,Flying Machine Cycle,C,FM Hog,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.34,175,1159,Good
+387,Flying Machine Cycle,C,FM Hog,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.06,241,1808,Good
+388,Flying Machine Cycle,C,FM Hog,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,49.87,151,900,Average
+389,Flying Machine Cycle,C,FM Hog,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,51.34,141,862,Good
+390,Flying Machine Cycle,C,FM Hog,Hog Rider,Flying Machine,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Knight,2.75,Cycle,50.49,219,801,Good
+391,Battle Healer Recruit,C,Healer push,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.05,216,842,Good
+392,Battle Healer Recruit,C,Healer push,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,48.61,225,878,Average
+393,Battle Healer Recruit,C,Healer push,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.46,153,648,Good
+394,Battle Healer Recruit,C,Healer push,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,50.51,146,813,Good
+395,Battle Healer Recruit,C,Healer push,Royal Recruits,Battle Healer,Hunter,Earthquake,Fireball,Skeletons,Fisherman,The Log,3.5,Beatdown,48.98,168,641,Average
+396,Elixir Golem Battle,C,Elixir Golem,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,49.27,245,1051,Average
+397,Elixir Golem Battle,C,Elixir Golem,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,50.07,148,1016,Good
+398,Elixir Golem Battle,C,Elixir Golem,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,48.49,245,1290,Average
+399,Elixir Golem Battle,C,Elixir Golem,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,48.81,111,427,Average
+400,Elixir Golem Battle,C,Elixir Golem,Elixir Golem,Battle Healer,Night Witch,Lumberjack,Fireball,Zap,Mega Minion,Tombstone,3.38,Beatdown,49.66,150,1071,Average
+401,Heal Spirit Cycle,C,Heal Hog,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.19,157,955,Good
+402,Heal Spirit Cycle,C,Heal Hog,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.02,145,556,Good
+403,Heal Spirit Cycle,C,Heal Hog,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,49.01,230,1453,Average
+404,Heal Spirit Cycle,C,Heal Hog,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.32,246,1728,Good
+405,Heal Spirit Cycle,C,Heal Hog,Hog Rider,Musketeer,Heal Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,50.66,250,1007,Good
+406,Hog Skeleton Army,B,Skarmy Hog,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.64,260,854,Good
+407,Hog Skeleton Army,B,Skarmy Hog,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,51.89,360,1150,Good
+408,Hog Skeleton Army,B,Skarmy Hog,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.67,287,2201,Good
+409,Hog Skeleton Army,B,Skarmy Hog,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,51.25,296,949,Good
+410,Hog Skeleton Army,B,Skarmy Hog,Hog Rider,Musketeer,Ice Spirit,Skeleton Army,Fireball,The Log,Cannon,Ice Golem,2.88,Cycle,50.75,367,2871,Good
+411,Hog Bats,B,Bats Hog,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,50.61,332,2056,Good
+412,Hog Bats,B,Bats Hog,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,53.2,258,1439,Good
+413,Hog Bats,B,Bats Hog,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,52.07,290,1072,Good
+414,Hog Bats,B,Bats Hog,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,50.69,236,1539,Good
+415,Hog Bats,B,Bats Hog,Hog Rider,Musketeer,Bats,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.62,Cycle,51.21,291,2284,Good
+416,Mega Knight Inferno,B,MK Inferno,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,51.38,380,1983,Good
+417,Mega Knight Inferno,B,MK Inferno,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,53.7,306,1977,Good
+418,Mega Knight Inferno,B,MK Inferno,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,53.61,421,2701,Good
+419,Mega Knight Inferno,B,MK Inferno,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,52.59,372,2732,Good
+420,Mega Knight Inferno,B,MK Inferno,Mega Knight,Inferno Dragon,Bats,Skeletons,Ice Spirit,Fireball,Zap,Goblin Gang,3.0,Beatdown,52.81,284,2173,Good
+421,PEKKA Wizard,B,Wiz PEKKA,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,53.47,401,1635,Good
+422,PEKKA Wizard,B,Wiz PEKKA,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,53.38,359,2245,Good
+423,PEKKA Wizard,B,Wiz PEKKA,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,51.72,398,3182,Good
+424,PEKKA Wizard,B,Wiz PEKKA,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,51.54,446,2245,Good
+425,PEKKA Wizard,B,Wiz PEKKA,PEKKA,Wizard,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,4.0,Beatdown,54.01,417,2433,Good
+426,PEKKA Hunter,A,Hunter PEKKA,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,54.82,501,2515,Good
+427,PEKKA Hunter,A,Hunter PEKKA,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,53.58,470,3308,Good
+428,PEKKA Hunter,A,Hunter PEKKA,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,54.89,489,2532,Good
+429,PEKKA Hunter,A,Hunter PEKKA,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,55.05,388,2220,Good
+430,PEKKA Hunter,A,Hunter PEKKA,PEKKA,Hunter,Battle Ram,Bandit,Magic Archer,Poison,Zap,Royal Ghost,3.88,Beatdown,52.62,418,2019,Good
+431,Giant Skeleton Beat,B,GS Beatdown,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.99,244,1206,Good
+432,Giant Skeleton Beat,B,GS Beatdown,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,51.15,175,851,Good
+433,Giant Skeleton Beat,B,GS Beatdown,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.48,150,902,Good
+434,Giant Skeleton Beat,B,GS Beatdown,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,51.8,232,1233,Good
+435,Giant Skeleton Beat,B,GS Beatdown,Giant Skeleton,Wizard,Musketeer,Mega Minion,Fireball,Zap,Tombstone,Ice Spirit,3.5,Beatdown,50.94,269,1505,Good
+436,Prince Dark Prince,B,Double Prince,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.64,163,767,Good
+437,Prince Dark Prince,B,Double Prince,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.34,219,1292,Good
+438,Prince Dark Prince,B,Double Prince,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,51.8,251,1712,Good
+439,Prince Dark Prince,B,Double Prince,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,52.64,267,2076,Good
+440,Prince Dark Prince,B,Double Prince,Prince,Dark Prince,Giant,Musketeer,Fireball,Zap,Mega Minion,Ice Spirit,3.5,Beatdown,50.25,189,574,Good
+441,Battle Ram Cycle,B,BR Hog,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,52.84,364,1535,Good
+442,Battle Ram Cycle,B,BR Hog,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.68,239,1833,Good
+443,Battle Ram Cycle,B,BR Hog,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,51.95,245,1330,Good
+444,Battle Ram Cycle,B,BR Hog,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,51.67,272,1233,Good
+445,Battle Ram Cycle,B,BR Hog,Battle Ram,Hog Rider,Musketeer,Skeletons,Fireball,The Log,Cannon,Ice Spirit,2.88,Cycle,53.31,310,1412,Good
+446,Knight Cycle,B,Knight Hog,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.93,427,1863,Good
+447,Knight Cycle,B,Knight Hog,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,53.34,338,1320,Good
+448,Knight Cycle,B,Knight Hog,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.14,347,1952,Good
+449,Knight Cycle,B,Knight Hog,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,54.23,336,1961,Good
+450,Knight Cycle,B,Knight Hog,Knight,Hog Rider,Musketeer,Ice Spirit,Skeletons,Fireball,The Log,Cannon,2.75,Cycle,52.87,464,2513,Good
+451,Valkyrie Bridge,B,Valk Bridge,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.12,292,939,Good
+452,Valkyrie Bridge,B,Valk Bridge,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,52.6,352,2114,Good
+453,Valkyrie Bridge,B,Valk Bridge,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.16,342,1416,Good
+454,Valkyrie Bridge,B,Valk Bridge,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,51.34,301,1521,Good
+455,Valkyrie Bridge,B,Valk Bridge,Valkyrie,Battle Ram,Bandit,Magic Archer,Electro Wizard,Zap,Poison,Royal Ghost,3.5,Beatdown,53.22,345,1644,Good
+456,Bomber Cycle,C,Bomber Hog,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.41,207,905,Average
+457,Bomber Cycle,C,Bomber Hog,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.17,153,969,Good
+458,Bomber Cycle,C,Bomber Hog,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.99,183,962,Average
+459,Bomber Cycle,C,Bomber Hog,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.46,115,768,Good
+460,Bomber Cycle,C,Bomber Hog,Hog Rider,Bomber,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.29,122,424,Good
+461,Archers Cycle,C,Archer Hog,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.37,166,1001,Average
+462,Archers Cycle,C,Archer Hog,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.94,104,515,Average
+463,Archers Cycle,C,Archer Hog,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.08,144,1143,Good
+464,Archers Cycle,C,Archer Hog,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,48.71,174,873,Average
+465,Archers Cycle,C,Archer Hog,Hog Rider,Archers,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.58,177,1143,Average
+466,Minions Cycle,C,Minion Hog,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.07,149,524,Good
+467,Minions Cycle,C,Minion Hog,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.27,216,944,Good
+468,Minions Cycle,C,Minion Hog,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.34,142,1060,Average
+469,Minions Cycle,C,Minion Hog,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,49.68,178,735,Average
+470,Minions Cycle,C,Minion Hog,Hog Rider,Minions,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,50.16,140,783,Good
+471,Mini PEKKA Cycle,B,MP Hog,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,51.4,360,1500,Good
+472,Mini PEKKA Cycle,B,MP Hog,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.82,372,2326,Good
+473,Mini PEKKA Cycle,B,MP Hog,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.8,288,1343,Good
+474,Mini PEKKA Cycle,B,MP Hog,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,53.21,389,2454,Good
+475,Mini PEKKA Cycle,B,MP Hog,Hog Rider,Mini PEKKA,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.62,Cycle,52.87,349,1858,Good
+476,Mega Minion Cycle,B,MM Hog,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.08,344,2679,Good
+477,Mega Minion Cycle,B,MM Hog,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,51.43,363,1453,Good
+478,Mega Minion Cycle,B,MM Hog,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,52.51,274,1439,Good
+479,Mega Minion Cycle,B,MM Hog,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.17,312,1973,Good
+480,Mega Minion Cycle,B,MM Hog,Hog Rider,Mega Minion,Ice Spirit,Skeletons,Fireball,The Log,Cannon,Ice Golem,2.5,Cycle,53.29,399,1665,Good

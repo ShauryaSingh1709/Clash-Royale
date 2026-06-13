@@ -1,5 +1,5 @@
 /* ==========================================================================
-   📊 DASHBOARD LOGIC - Charts with Chart.js
+   📊 DASHBOARD LOGIC - Charts + Premium Top Decks
    ========================================================================== */
 
 const CHART_COLORS = [
@@ -92,7 +92,7 @@ async function loadArchetypeChart() {
                 datasets: [{
                     data: Object.values(dist),
                     backgroundColor: CHART_COLORS,
-                    borderColor: '#0A0E27',
+                    borderColor: '#0A0E2A',
                     borderWidth: 3
                 }]
             },
@@ -144,11 +144,13 @@ async function loadTrendsChart() {
     } catch (e) { console.error(e); }
 }
 
-// ── TOP DECKS ────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════
+// 🏆 TOP DECKS - PREMIUM DISPLAY WITH NAMES, TIERS, SOURCES
+// ══════════════════════════════════════════════════════════════════
 async function loadTopDecks() {
     const container = document.getElementById('topDecksList');
     try {
-        const data = await API.meta.getTopDecks(5);
+        const data = await API.meta.getTopDecks(10);
         const decks = data.decks;
 
         container.innerHTML = decks.map((deck, i) => {
@@ -156,11 +158,41 @@ async function loadTopDecks() {
                 deck.card_1, deck.card_2, deck.card_3, deck.card_4,
                 deck.card_5, deck.card_6, deck.card_7, deck.card_8
             ];
+            
+            // Tier colors
+            const tierColors = {
+                'S': '#FFD700',
+                'A': '#A78BFA',
+                'B': '#60A5FA',
+                'C': '#9CA3AF'
+            };
+            const tierColor = tierColors[deck.tier] || '#9CA3AF';
+            
+            // Use real deck name or fallback
+            const deckName = deck.deck_name || `${deck.archetype} Deck #${i + 1}`;
+            
             return `
                 <div class="top-deck-item">
                     <div class="deck-rank">#${i + 1}</div>
+                    
                     <div class="deck-info">
-                        <strong>${deck.archetype}</strong> | Avg Elixir: ${deck.avg_elixir}
+                        <div class="deck-info-header">
+                            <strong class="deck-name">${deckName}</strong>
+                            ${deck.tier ? `
+                                <span class="deck-tier" style="background: ${tierColor}22; color: ${tierColor}; border-color: ${tierColor}55;">
+                                    ${deck.tier}-Tier
+                                </span>
+                            ` : ''}
+                        </div>
+                        <div class="deck-info-meta">
+                            <span><strong>${deck.archetype}</strong></span>
+                            <span class="meta-dot">·</span>
+                            <span>Avg Elixir: <strong>${deck.avg_elixir}</strong></span>
+                            ${deck.source ? `
+                                <span class="meta-dot">·</span>
+                                <span class="deck-source">${deck.source}</span>
+                            ` : ''}
+                        </div>
                         <div class="deck-cards-display">
                             ${cards.map(c => `
                                 <div class="deck-card-chip-img" title="${c}">
@@ -172,6 +204,7 @@ async function loadTopDecks() {
                             `).join('')}
                         </div>
                     </div>
+                    
                     <div class="deck-metric">
                         <div class="deck-metric-value">${deck.win_rate}%</div>
                         <div class="deck-metric-label">Win Rate</div>
@@ -180,6 +213,7 @@ async function loadTopDecks() {
             `;
         }).join('');
     } catch (e) {
+        console.error('Top decks error:', e);
         Utils.showError(container, 'Failed to load top decks');
     }
 }
