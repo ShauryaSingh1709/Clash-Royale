@@ -1,6 +1,6 @@
 # RoyaleForge
 
-Open-source Clash Royale analytics platform powered by machine learning. Analyze decks, explore cards, and master the meta with data-driven insights.
+Open-source Clash Royale analytics platform . Analyze decks, explore cards, and master the meta with data-driven insights.
 
 ## Features
 
