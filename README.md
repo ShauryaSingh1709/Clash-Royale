@@ -14,7 +14,8 @@ Open-source Clash Royale analytics platform . Analyze decks, explore cards, and 
 | Layer | Technology |
 |-------|------------|
 | Frontend | HTML5, CSS3, JavaScript, Chart.js |
-| Backend | Python 3.10+, Flask |
+| Backend | Python 3.10+, Flask, Gunicorn |
+| Containerization | Docker, Docker Compose |
 | Machine Learning | Scikit-Learn, Pandas, NumPy |
 | Data Processing | CSV-based datasets |
 
@@ -22,9 +23,12 @@ Open-source Clash Royale analytics platform . Analyze decks, explore cards, and 
 
 - Python 3.10 or higher
 - pip (Python package manager)
+- Docker & Docker Compose (for containerized deployment)
 - Git
 
 ## Installation
+
+### Option 1: Local Setup
 
 ```bash
 git clone https://github.com/ShauryaSingh1709/Clash-Royale.git
@@ -32,14 +36,66 @@ cd Clash-Royale
 pip install -r requirements.txt
 ```
 
+### Option 2: Docker (Recommended)
+
+```bash
+git clone https://github.com/ShauryaSingh1709/Clash-Royale.git
+cd Clash-Royale
+docker-compose up --build
+```
+
 ## Quick Start
+
+### Local
 
 ```bash
 python scripts/generate_dataset.py
 python -m backend.app
 ```
 
+### Docker
+
+```bash
+docker-compose up --build
+```
+
 Navigate to `http://127.0.0.1:5000` in your browser.
+
+## Docker Configuration
+
+The project includes a production-ready Docker setup with multi-layered health checks and persistent volumes.
+
+### Dockerfile Features
+
+- **Base Image**: `python:3.10.13-slim-bookworm` for minimal footprint
+- **Non-root User**: Runs as `royaleforge` user for security
+- **Gunicorn WSGI**: Production-grade server with 2 workers, 4 threads
+- **Health Checks**: Container-level health monitoring via `/api/v1/health`
+- **Optimized Build**: Layer caching for faster rebuilds
+
+### Docker Compose Services
+
+| Service | Description |
+|---------|-------------|
+| `royaleforge` | Main application container |
+
+### Volumes
+
+| Volume | Purpose |
+|--------|---------|
+| `./dataset` | Persist card/deck/battle data |
+| `./logs` | Application log storage |
+
+### Useful Commands
+
+```bash
+
+docker-compose up -d --build
+docker-compose logs -f royaleforge
+docker-compose down
+docker-compose up --build
+docker inspect --format='{{.State.Health.Status}}' royaleforge-app
+```
 
 ## Project Structure
 
